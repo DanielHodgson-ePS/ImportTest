@@ -3,9 +3,5 @@
   <title>Table of Contents</title>
   <page href="../contents/Radius_Modernization_vs_Radius_Classic.htm" format="html" processing-role="normal"></page>
   <page href="../contents/index.htm" format="html" processing-role="normal"></page>
-<<<<<<< HEAD
-=======
   <page href="../contents/New_Topic_Dan.htm" format="html" processing-role="normal"></page>
-  <page href="../contents/New_Topic.htm" format="html" processing-role="normal"></page>
->>>>>>> 8d68c6b0ee47f6d4082204e4e3bcf77a02f7e092
 </map>
