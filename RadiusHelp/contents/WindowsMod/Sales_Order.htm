@@ -104,7 +104,7 @@
           <p><span class="software">Customer</span></p>
         </td>
         <td>
-          <p>Specify the code for the customer that this order is for. </p>
+          <p>Specify the customer account code that this order is for. If you selected a production estimate, this field will automatically populate when the estimate is selected. This can then be changed as needed. </p>
         </td>
         <td>
           <p>Yes</p>
@@ -126,7 +126,7 @@
           <p><span class="software">Have Ready Date</span></p>
         </td>
         <td>
-          <p>Specify the date by which th eorder needs to be available for shipment in order to meet the delivery date. The default calculation is the <span class="software">Required Date</span> less the prior days. </p>
+          <p>Specify the date by which the order needs to be available for shipment in order to meet the delivery date. The default calculation is the <span class="software">Required Date</span> less the prior days. </p>
         </td>
         <td>
           <p>Yes</p>
@@ -137,7 +137,7 @@
           <p><span class="software">Estimate Code</span></p>
         </td>
         <td>
-          <p>If an estimate exists, specify the estimate number. The sales order details and lines will be created from the estimate. </p>
+          <p>If a production estimate exists, specify the production estimate number. The sales order details and lines will be created from the estimate. </p>
           <p class="Tip-Note-Text"><span class="software">Note</span>: If you use the EFI Radius - EFI iQuote integration, this estimate code will likely refer to an estimate created in EFI iQuote. This is only possible when an iQuote integration has been set up, and made active in the <span class="software">Integration Options</span> window.</p>
         </td>
         <td>
@@ -157,19 +157,134 @@
       </tr>
       <tr>
         <td>
-          <p> </p>
+          <p><span class="software">Job Code</span></p>
         </td>
         <td>
-          <p> </p>
+          <p>The job linked to this sales order. This field is populated when the job is generated automatically with the sales order or when a job is created at a later point and linked to the sales order.</p>
         </td>
         <td>
-          <p> </p>
+          <p>No</p>
         </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Document Language</span></p>
+        </td>
+        <td>
+          <p>Select the language to print reports and documents in when you print them from the <span class="software">Sales Orders</span> window. </p>
+        </td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Sales Order</span></p>
+        </td>
+        <td>
+          <p>The unique number to identify this sales order. This number is automatically generated when the sales order is saved. </p>
+        </td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Your Contact</span></p>
+        </td>
+        <td>
+          <p>Specify the contact at the customer. </p>
+        </td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Order Status</span></p>
+        </td>
+        <td>
+          <p>The current status of the order. This defaults to <span class="software">Authorized</span> but can be set to <span class="software">Held</span>, or <span class="software">Credit held</span>. <span class="software">Complete</span> would not be appropriate for a new order entry.</p>
+        </td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Job Status Code</span></p>
+        </td>
+        <td>
+          <p>The status of the production job. The field will normally be automatically populated based on the linked job. </p>
+        </td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">CSR</span></p>
+        </td>
+        <td>
+          <p>The customer service respresentative code. This will default to the CSR code maintained on the Customer Representative table. </p>
+        </td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Customer Order Date</span></p>
+        </td>
+        <td>
+          <p>Enter the date that the customer placed the order. This will default to today&#39;s date but can be changed as needed.  </p>
+        </td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Entered By</span></p>
+        </td>
+        <td>
+          <p>The name of the Radius user who entered the sales order. This will default to the user that is currently logged in. </p>
+        </td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Sub-Client Name</span></p>
+        </td>
+        <td>
+          <p>Enter the name of the sub-division of the customer that this order is for. </p>
+        </td>
+        <td>No</td>
       </tr>
     </tbody>
   </table>
   <table class="StdTable" style="border-collapse:collapse; border:undefined" width="100%">
     <tbody>
+    </tbody>
+  </table>
+  <h3>Check Boxes</h3>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+    <colgroup>
+      <col />
+      <col />
+      <col />
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>
+          <p><b>Check Box</b></p>
+        </td>
+        <td>Description</td>
+        <td>Required</td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p><span class="software">Create Job</span></p>
+        </td>
+        <td>
+          <p>Select to create a job when the sales order is created. If the check box is not selected, the requirement will have to be processed manually.</p>
+          <p class="Tip-Note-Text"><span class="software">Note</span>: You can only create a job where this is a valid production estimate. </p>
+        </td>
+        <td>
+          <p>No</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td><span class="software">Auto Invoice</span></td>
+        <td> </td>
+        <td>No</td>
+      </tr>
     </tbody>
   </table>
   <h2>Additional Fields</h2>

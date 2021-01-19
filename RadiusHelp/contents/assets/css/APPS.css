@@ -312,6 +312,41 @@ table.StdTable {
   x-1st-row: 1;
   x-row-pat-count: 2;
   x-border-spacing: 0px;
+  border-width: 1px;
+  border-style: none;
+  border-color: #000000;
+  border-left-width: 0;
+  border-top-width: 1px;
+  border-top-style: none;
+  border-top-color: #000000;
+  border-right-width: 0;
+  border-bottom-width: 0;
+}
+table.StdTable td {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+table.StdTable tr:nth-child(even) td {
+  border-bottom-style: Solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #c0c0c0;
+}
+table.StdTable tr:nth-child(odd) td {
+  font-family: Arial;
+  font-size: 10pt;
+  border-bottom-style: Solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #c0c0c0;
+}
+table.StdTable tr:first-child td {
+  font-family: Arial;
+  font-size: 10pt;
+  font-weight: bold;
+  border-bottom-style: Solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #999999;
 }
 span.software {
   font-family: Arial;
@@ -1784,32 +1819,6 @@ ol.ArticlesAndSections>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before
   width: var(--prefix-size);
   overflow: hidden;
 }
-table.StdTable tr:first-child td {
-  font-family: Arial;
-  font-size: 10pt;
-  font-weight: bold;
-  border-bottom-style: Solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #999999;
-}
-table.StdTable tr:nth-child(odd) td {
-  font-family: Arial;
-  font-size: 10pt;
-  border-bottom-style: Solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #c0c0c0;
-}
-table.StdTable tr:nth-child(even) td {
-  border-bottom-style: Solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #c0c0c0;
-}
-table.StdTable td {
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
 ol.RoundSquare {
   list-style: disc;
 }
@@ -1827,4 +1836,19 @@ ol.RoundSquare>li>ol>li>ol>li>ol>li>ol {
 }
 ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol {
   list-style: circle;
+}
+:root {
+  --borderonly-theme-color: #bfbfbf;
+}
+table.borderonly {
+  border-collapse: collapse;
+}
+table.borderonly td {
+  padding-top: 2px;
+  padding-right: 4px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--borderonly-theme-color);
 }
