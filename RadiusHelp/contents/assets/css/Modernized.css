@@ -38,21 +38,22 @@
 #Modern {
   color: black;
 }
-.horizontal-rule-align-left {
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
+.horizontal-rule-align-left {}
 .hrule {
   background: #2B77CB;
   height: 4px;
   width: 20%;
   border: none;
   margin-left: 0;
-  margin-top: 1em;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 .hrule-inner {
   background: #c0c0c0;
-  margin: auto !important;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: auto !important;
+  margin-right: auto !important;
   height: 1px;
   width: 90%;
   border: none;
@@ -68,7 +69,7 @@ ol.modernlist {
   --prefix-size: 40px;
   --prefix-fixed-size: false;
   --prefix-gap: 20px;
-  --list-indent: 64px;
+  --list-indent: 48px;
   --vertical-spacing: 12px;
   counter-reset: item1;
   padding-left: var(--prefix-size);
@@ -91,7 +92,7 @@ ol.modernlist>li {
   --prefix-size: 40px;
   --prefix-fixed-size: false;
   --prefix-gap: 20px;
-  --list-indent: 64px;
+  --list-indent: 48px;
   --vertical-spacing: 12px;
   position: relative;
   margin-top: calc(var(--vertical-spacing) / 2);
@@ -163,3 +164,28 @@ ol.modernlist>li>ol>li>ol>li {
   margin-top: calc(var(--vertical-spacing) / 2);
   margin-bottom: calc(var(--vertical-spacing) / 2);
 }
+ol.modern-numbered>li {
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 20px;
+  --list-indent: 64px;
+  --vertical-spacing: 12px;
+  position: relative;
+  list-style-type: decimal;
+  margin-top: calc(var(--vertical-spacing) / 2);
+  margin-bottom: calc(var(--vertical-spacing) / 2);
+}
+ol.modern-numbered>li:before {
+  counter-increment: item1;
+  content: counter(item1, decimal);
+  list-style: decimal;
+  text-align: right;
+  position: absolute;
+  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
+  margin-right: var(--prefix-gap);
+  width: var(--prefix-size);
+  overflow: hidden;
+  font-family: Inter;
+  font-size: 1rem;
+}
+ol.modern-number {}
