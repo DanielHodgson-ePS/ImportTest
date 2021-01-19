@@ -27,41 +27,246 @@
       </tr>
       <tr class="t2Row">
         <td><img height="17" src="../assets/Images/CommandsMod/Sales_Order_Analysis.png" width="20" /> <span class="software">Sales Order Analysis</span></td>
-        <td>Click to open the <a data-xref="{title}" href="Sales_Order_Analysis.htm">Sales Order Analysis</a> window to maintain sales order analysis codes.  These codes are used for transaction analysis.</td>
+        <td>
+          <p>Click to open the <a data-xref="{title}" href="Sales_Order_Analysis.htm">Sales Order Analysis</a> window to maintain sales order analysis codes.  These codes are used for transaction analysis.</p>
+        </td>
       </tr>
       <tr class="t1Row">
         <td><span class="software">User Defined Elements</span></td>
-        <td>Click to open the <a data-xref="{title}" href="User_Defined_Elements.htm">User Defined Elements</a> where you can view user defined elements (custom fields) associated with the sales order. User Defined Elements are additional fields which you can define and add into the EFI Radius database. The purpose of the fields is to allow you to record additional information which can be viewed or added to customized reports. See <span class="software">Company &gt; Jobs and Costing &gt; User Defined Elements</span>.</td>
+        <td>
+          <p>Click to open the <a data-xref="{title}" href="User_Defined_Elements.htm">User Defined Elements</a> where you can view user defined elements (custom fields) associated with the sales order. User Defined Elements are additional fields which you can define and add into the EFI Radius database. The purpose of the fields is to allow you to record additional information which can be viewed or added to customized reports. See <span class="software">Company &gt; Jobs and Costing &gt; User Defined Elements</span>.</p>
+        </td>
       </tr>
       <tr class="t2Row">
         <td><span class="software">View Quantities by Plant</span></td>
-        <td>Click to open the <a data-xref="{title}" href="Quantities_By_Plant.htm">Quantities By Plant</a> window to view which plants the order has been allocated to.</td>
+        <td>
+          <p>Click to open the <a data-xref="{title}" href="Quantities_By_Plant.htm">Quantities By Plant</a> window to view which plants the order has been allocated to.</p>
+        </td>
       </tr>
       <tr class="t1Row">
         <td><span class="software">Interface Order Details</span></td>
-        <td>Click to open the <a data-xref="{title}" href="Interface_Order_Details.htm">Interface Order Details</a> window where you can maintain interface details when sales orders are created from a third party system.</td>
+        <td>
+          <p>Click to open the <a data-xref="{title}" href="Interface_Order_Details.htm">Interface Order Details</a> window where you can maintain interface details when sales orders are created from a third party system.</p>
+        </td>
       </tr>
       <tr>
-        <td><span class="software">Sales Order Notes</span></td>
-        <td>Click to open the <a data-xref="{title}" href="Sales_Order_Notes.htm">Sales Order Notes</a> window</td>
+        <td>
+          <p><span class="software">Sales Order Notes</span></p>
+        </td>
+        <td>
+          <p>Click to open the <a data-xref="{title}" href="Sales_Order_Notes.htm">Sales Order Notes</a> window</p>
+        </td>
       </tr>
       <tr>
-        <td><span class="software">Files Attachment</span></td>
+        <td>
+          <p><span class="software">Files Attachment</span></p>
+        </td>
         <td>Click to open the <a data-xref="{title}" href="File_and_Link_Attachments.htm">File and Link Attachments</a></td>
       </tr>
       <tr>
-        <td><span class="software">Intercompany Transaction Details</span></td>
-        <td>Click to open the <a data-xref="{title}" href="Intercompany_Transaction_Details.htm">Intercompany Transaction Details</a> window</td>
+        <td>
+          <p><span class="software">Intercompany Transaction Details</span></p>
+        </td>
+        <td>
+          <p>Click to open the <a data-xref="{title}" href="Intercompany_Transaction_Details.htm">Intercompany Transaction Details</a> window</p>
+        </td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
+  <h3>Fields</h3>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+    <colgroup>
+      <col />
+      <col />
+      <col />
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>
+          <p><span class="software">Field</span></p>
+        </td>
+        <td>Description</td>
+        <td>Required</td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p><span class="software">Order Date</span></p>
+        </td>
+        <td>
+          <p>Enter the date of the order. This defaults to today but may be amended.</p>
+        </td>
+        <td>
+          <p>Yes</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p><span class="software">Customer</span></p>
+        </td>
+        <td>
+          <p>Specify the code for the customer that this order is for. </p>
+        </td>
+        <td>
+          <p>Yes</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p><span class="software">Required Date</span></p>
+        </td>
+        <td>
+          <p>Specify the date that the customer required the order. </p>
+        </td>
+        <td>
+          <p>Yes</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p><span class="software">Have Ready Date</span></p>
+        </td>
+        <td>
+          <p>Specify the date by which th eorder needs to be available for shipment in order to meet the delivery date. The default calculation is the <span class="software">Required Date</span> less the prior days. </p>
+        </td>
+        <td>
+          <p>Yes</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Estimate Code</span></p>
+        </td>
+        <td>
+          <p>If an estimate exists, specify the estimate number. The sales order details and lines will be created from the estimate. </p>
+          <p class="Tip-Note-Text"><span class="software">Note</span>: If you use the EFI Radius - EFI iQuote integration, this estimate code will likely refer to an estimate created in EFI iQuote. This is only possible when an iQuote integration has been set up, and made active in the <span class="software">Integration Options</span> window.</p>
+        </td>
+        <td>
+          <p>No</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Version</span></p>
+        </td>
+        <td>
+          <p>Select which version of the estimate is to be used to create the sales order. </p>
+        </td>
+        <td>
+          <p>No</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   <table class="StdTable" style="border-collapse:collapse; border:undefined" width="100%">
     <tbody>
     </tbody>
   </table>
+  <h2>Additional Fields</h2>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+    <tbody>
+      <tr class="t1st">
+        <td>
+          <p><span class="software">Field</span></p>
+        </td>
+        <td>Description</td>
+        <td>Required</td>
+      </tr>
+      <tr class="t2Row">
+        <td>Term Code</td>
+        <td> </td>
+        <td>Yes</td>
+      </tr>
+      <tr class="t1Row">
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr class="t2Row">
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr class="t1Row">
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+    </tbody>
+  </table>
   <h2>Comments and Addresses</h2>
   <p>placeholder text</p>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+    <tbody>
+      <tr class="t1st">
+        <td>
+          <p><span class="software">Field</span></p>
+        </td>
+        <td>Description</td>
+        <td>Required</td>
+      </tr>
+      <tr class="t2Row">
+        <td>Ship to address</td>
+        <td> </td>
+        <td>Yes</td>
+      </tr>
+      <tr class="t1Row">
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr class="t2Row">
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr class="t1Row">
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+    </tbody>
+  </table>
   <h2>Order lines</h2>
   <p>placeholder text</p>
   <h2>Shipping</h2>
