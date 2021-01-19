@@ -39,7 +39,7 @@
   </mobileapp>
   <search>
     <suggestion type="boolean">true</suggestion>
-    <context type="boolean">false</context>
+    <context type="boolean">true</context>
     <contextLimit type="number">100</contextLimit>
     <maxSearchresults type="number">20</maxSearchresults>
     <glossary type="boolean">false</glossary>
@@ -49,7 +49,7 @@
     <fuzzy type="boolean">true</fuzzy>
   </search>
   <sitemap>
-    <use type="boolean">false</use>
+    <use type="boolean">true</use>
   </sitemap>
   <skin>
     <name>frameless</name>
