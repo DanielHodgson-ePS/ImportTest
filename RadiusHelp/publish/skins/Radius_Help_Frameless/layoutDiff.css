@@ -101,6 +101,17 @@ label {
 .RH-LAYOUT-LEFTPANEL-container {
   font-weight: 400;
   font-style: normal;
+  border-width: 0px;
+  border-style: none;
+  border-color: transparent;
+  border-left-width: 0;
+  border-top-width: 0px;
+  border-top-style: none;
+  border-top-color: transparent;
+  border-right-width: 0px;
+  border-right-style: none;
+  border-right-color: transparent;
+  border-bottom-width: 0;
 }
 
 .RH-LAYOUT-LEFTPANEL-tab-panel {
@@ -488,6 +499,7 @@ label {
   margin-right: 2rem;
   margin-bottom: 2rem;
   margin-left: 0.25rem;
+  background-color: #4f66c7;
 }
 
 .RH-LAYOUT-TOOLBAR-toolbar {
@@ -644,10 +656,14 @@ label {
 
 
 .RH-LAYOUT-RIGHTPANEL-container {
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 0px;
+  padding-left: 2rem;
 }
 
 .RH-LAYOUT-RIGHTPANEL-top-buttons {
-  background-color: #EBECF0;
+  background-color: #4f66c7;
   margin-top: 1rem;
   margin-bottom: 2rem;
   padding-left: 10px;
@@ -726,6 +742,7 @@ label {
 .RH-LAYOUT-FOOTER-container {
 }
 .RH-LAYOUT-HOMEPAGE-TITLEBAR-container {
+  background-image: url('quick_finder_banner.jpg');;;
 }
 
 .RH-LAYOUT-HOMEPAGE-TITLEBAR-title-bar {
@@ -1269,14 +1286,19 @@ label {
 .js-focus-visible input.rh-layout-HOMEPAGE-FILTERS-group-box-item.focus-visible~label {
 }
 .RH-LAYOUT-BCRUMBS-container {
+  display: none;
   font-weight: 600;
   font-size: 0.9rem;
   text-transform: uppercase;
-  color: #828282;
+  color: #818181;
   padding-right: 0px;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.3125rem;
   padding-left: 0px;
   padding-top: 0.5rem;
+  margin-top: -1em;
+  margin-right: -1em;
+  margin-bottom: -1em;
+  margin-left: -1em;
 }
 
 .RH-LAYOUT-BCRUMBS-label {
