@@ -11,7 +11,12 @@
       <name>RadiusHelp</name>
       <path>../../toc/RadiusHelp.toc</path>
     </toc>
-    <index type="boolean">true</index>
+    <index type="boolean">false</index>
+    <mapFiles type="array">
+      <mapFilesitem>
+        <path>../mapfiles/EFI_Radius_Help.ali</path>
+      </mapFilesitem>
+    </mapFiles>
     <includeExpandingText type="boolean">true</includeExpandingText>
     <includeDropdownText type="boolean">true</includeDropdownText>
   </content>
@@ -21,7 +26,7 @@
   <name>RadiusHelpFrameless</name>
   <starterPage>index.htm</starterPage>
   <defaultTopic>
-    <name>Intro/welcome.htm</name>
+    <name>welcome</name>
     <path>../../contents/Intro/welcome.htm</path>
   </defaultTopic>
   <chatbot>
@@ -47,8 +52,8 @@
     <use type="boolean">false</use>
   </sitemap>
   <skin>
-    <path>../skins/Radius_Help_Frameless/frameless.skn</path>
     <name>frameless</name>
+    <path>../skins/Radius_Help_Frameless/frameless.skn</path>
   </skin>
   <createThumbNails type="boolean">false</createThumbNails>
   <patchHomepage type="boolean">false</patchHomepage>
