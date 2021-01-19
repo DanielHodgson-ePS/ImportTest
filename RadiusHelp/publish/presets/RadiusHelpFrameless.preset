@@ -5,11 +5,11 @@
   <retryMsg>Hold on a minute...</retryMsg>
   <placeholderText>Type your message here.</placeholderText>
   <errorMsg>There seems to be a problem, please contact the administrator.</errorMsg>
-  <title>RadiusModernizedHelp</title>
+  <title>EFI Radius Help</title>
   <content>
     <toc>
-      <path>../../toc/RadiusHelp.toc</path>
       <name>RadiusHelp</name>
+      <path>../../toc/RadiusHelp.toc</path>
     </toc>
     <index type="boolean">true</index>
     <includeExpandingText type="boolean">true</includeExpandingText>
@@ -17,16 +17,16 @@
   </content>
   <type>frameless</type>
   <glosstermEffect type="number">0</glosstermEffect>
-  <outputPath>C:/Users/danielho/OneDrive - Electronics for Imaging, Inc/Documents/My RoboHelp Projects/outputs/RadiusModernizedHelp/RadiusHelpFrameless</outputPath>
+  <outputPath>C:/EPS_Documentation/HelpOutput/Radius8.1-EAMod/</outputPath>
   <name>RadiusHelpFrameless</name>
   <starterPage>index.htm</starterPage>
   <defaultTopic>
-    <name>Radius_Modernization_vs_Radius_Classic.htm</name>
-    <path>../../contents/Radius_Modernization_vs_Radius_Classic.htm</path>
+    <name>Intro/welcome.htm</name>
+    <path>../../contents/Intro/welcome.htm</path>
   </defaultTopic>
   <chatbot>
-    <name>dialogflow</name>
     <displayName>Google Dialogflow</displayName>
+    <name>dialogflow</name>
   </chatbot>
   <mobileapp>
     <android type="boolean">true</android>
@@ -37,7 +37,8 @@
     <context type="boolean">false</context>
     <contextLimit type="number">100</contextLimit>
     <maxSearchresults type="number">20</maxSearchresults>
-    <glossary type="boolean">true</glossary>
+    <glossary type="boolean">false</glossary>
+    <searchsubstrings type="boolean">true</searchsubstrings>
     <showSpeclChars type="boolean">false</showSpeclChars>
     <speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
     <fuzzy type="boolean">true</fuzzy>
@@ -47,6 +48,7 @@
   </sitemap>
   <skin>
     <path>../skins/Radius_Help_Frameless/frameless.skn</path>
+    <name>frameless</name>
   </skin>
   <createThumbNails type="boolean">false</createThumbNails>
   <patchHomepage type="boolean">false</patchHomepage>
