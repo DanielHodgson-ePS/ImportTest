@@ -67,7 +67,7 @@
       </tocImageDataSet>
       <showBreadcrumbs type="boolean">true</showBreadcrumbs>
       <treeChevronPosition>right</treeChevronPosition>
-      <showBrowseSequenceInRightPanel type="boolean">true</showBrowseSequenceInRightPanel>
+      <showBrowseSequenceInRightPanel type="boolean">false</showBrowseSequenceInRightPanel>
       <minitoc_levelFrom>2</minitoc_levelFrom>
       <minitoc_levelTo>4</minitoc_levelTo>
       <minitoc_caption></minitoc_caption>
@@ -83,8 +83,8 @@
       <avoidPageRefresh type="boolean">true</avoidPageRefresh>
       <page_font_family>sans-serif</page_font_family>
       <show_toc type="boolean">true</show_toc>
-      <show_index type="boolean">true</show_index>
-      <show_glossary type="boolean">true</show_glossary>
+      <show_index type="boolean">false</show_index>
+      <show_glossary type="boolean">false</show_glossary>
       <show_filter type="boolean">true</show_filter>
       <default_pane>toc</default_pane>
       <assets type="array">
@@ -147,29 +147,7 @@
           <show>@showSearchIcon</show>
         </custom_buttonsitem>
       </custom_buttons>
-      <custom_links type="array">
-        <custom_linksitem>
-          <name>Link1</name>
-          <title>Features</title>
-          <url>#nogo</url>
-          <tooltip>Features</tooltip>
-          <id>0</id>
-        </custom_linksitem>
-        <custom_linksitem>
-          <name>Link2</name>
-          <title>About</title>
-          <url>#nogo</url>
-          <tooltip>About</tooltip>
-          <id>1</id>
-        </custom_linksitem>
-        <custom_linksitem>
-          <name>Link3</name>
-          <title>Feedback</title>
-          <url>#nogo</url>
-          <tooltip>Feedback</tooltip>
-          <id>2</id>
-        </custom_linksitem>
-      </custom_links>
+      <custom_links type="array"></custom_links>
       <dropdown_options type="array"></dropdown_options>
       <max_width_mobile>1000</max_width_mobile>
       <max_width_tablet>1000</max_width_tablet>
