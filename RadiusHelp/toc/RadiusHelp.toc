@@ -7,18 +7,20 @@
     <page href="../contents/Navigation.htm" format="html" processing-role="normal"></page>
   </book>
   <book navtitle="Windows" format="html" processing-role="normal">
-    <page href="../contents/WindowsMod/Advanced_Search_Features.htm" format="html" processing-role="normal"></page>
-    <page href="../contents/WindowsMod/File_and_Link_Attachments.htm" format="html" processing-role="normal"></page>
-    <page href="../contents/WindowsMod/Intercompany_Transaction_Details.htm" format="html" processing-role="normal"></page>
-    <page href="../contents/WindowsMod/Interface_Order_Details.htm" format="html" processing-role="normal"></page>
-    <page href="../contents/WindowsMod/Manage_View.htm" format="html" processing-role="normal"></page>
-    <page href="../contents/WindowsMod/Quantities_By_Plant.htm" format="html" processing-role="normal"></page>
-    <page href="../contents/WindowsMod/Sales_Order.htm" format="html" processing-role="normal"></page>
-    <page href="../contents/WindowsMod/Sales_Order_Analysis.htm" format="html" processing-role="normal"></page>
     <page href="../contents/WindowsMod/Sales_Order_Landing_Page.htm" format="html" processing-role="normal"></page>
-    <page href="../contents/WindowsMod/Sales_Order_Notes.htm" format="html" processing-role="normal"></page>
-    <page href="../contents/WindowsMod/Shipment_Tracking_Details.htm" format="html" processing-role="normal"></page>
-    <page href="../contents/WindowsMod/User_Defined_Elements.htm" format="html" processing-role="normal"></page>
-    <page href="../contents/WindowsMod/View_Access_Control.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/WindowsMod/Sales_Order.htm" format="html" processing-role="normal"></page>
+    <book navtitle="SubWindows" format="html" processing-role="normal">
+      <page href="../contents/WindowsMod/Advanced_Search_Features.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/WindowsMod/File_and_Link_Attachments.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/WindowsMod/Intercompany_Transaction_Details.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/WindowsMod/Interface_Order_Details.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/WindowsMod/Manage_View.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/WindowsMod/Quantities_By_Plant.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/WindowsMod/Sales_Order_Analysis.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/WindowsMod/Sales_Order_Notes.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/WindowsMod/Shipment_Tracking_Details.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/WindowsMod/User_Defined_Elements.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/WindowsMod/View_Access_Control.htm" format="html" processing-role="normal"></page>
+    </book>
   </book>
 </map>
