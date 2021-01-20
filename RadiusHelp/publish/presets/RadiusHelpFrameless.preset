@@ -11,10 +11,11 @@
       <name>RadiusHelp</name>
       <path>../../toc/RadiusHelp.toc</path>
     </toc>
-    <index type="boolean">false</index>
+    <index type="boolean">true</index>
     <mapFiles type="array">
       <mapFilesitem>
         <path>../mapfiles/EFI_Radius_Help.ali</path>
+        <name>EFI_Radius_Help</name>
       </mapFilesitem>
     </mapFiles>
     <includeExpandingText type="boolean">true</includeExpandingText>
@@ -56,7 +57,7 @@
     <path>../skins/Radius_Help_Frameless/frameless.skn</path>
   </skin>
   <createThumbNails type="boolean">false</createThumbNails>
-  <patchHomepage type="boolean">false</patchHomepage>
+  <patchHomepage type="boolean">true</patchHomepage>
   <gdprCompliance type="boolean">true</gdprCompliance>
   <dgflowApiClientKey></dgflowApiClientKey>
   <dgflowApiDevKey></dgflowApiDevKey>
