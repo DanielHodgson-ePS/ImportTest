@@ -6,11 +6,75 @@
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <title>How to Create a Shipping Request</title>
   <meta name="topic-status" content="Draft" />
-  <link rel="stylesheet" type="text/css" href="assets/css/default.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/APPS.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/Modernized.css" />
 </head>
 <body>
-  <h1>How to Create a Shipping Request</h1>
+  <h1 style="font-size: 2.5rem;font-family: Verdana"><span style="font-size:2.1rem;"><span style="font-weight:bold;">Radius Tutorials - How to Create a Shipping Request</span></span></h1>
+  <p class="modernbody"><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText"><span style="font-size: 1rem;"></span></span></span></span></p>
+  <p class="modernbody"><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText">Radius uses a header - lines relationship for its shipping requests, meaning that you can combine </span></span></span>multiple sales orders onto a single shipping request and shipping note. This is useful in the situation where the customer calls-off different finished product items from several orders that are all to be shipped on the same day. Each request is for one address on one date.</p>
+  <p class="modernbody"><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText">Additionally, you can attach shipping lines to a header that were generated from different sales orders and plants. </span></span></span></p>
+  <p class="modernbody"><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText">This is due to Radius using a header - lines relationship for shipping requests. The header contains details of a shipment, such as the customer and the address, while the lines contain everything you want to send with that shipment.</span>  </span></span></p>
+  <div class="horizontal-rule-align-left">
+    <hr class="hrule" />
+  </div>
+  <h2 class="modernbody"><span style="font-family:Verdana;"><span style="font-size:1.5rem;">Prerequisite: Create a Sales Order</span></span></h2>
+  <p class="modernbody">The following instructions assume that you have already created a sales orde rthat you want to create a shipment for. For a detailed description on how to create a sales order, see <a data-xref="{title}" href="How_to_Create_a_Sales_Order.htm">How to Create a Sales Order</a>.</p>
+  <p class="modernbody"><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText"><span style="font-size: 1rem;"></span></span></span></span><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText"><span class="bodyText"></span></span></span></span></p>
+  <div class="horizontal-rule-align-left">
+    <hr class="hrule" />
+  </div>
+  <h2 style="font-size: 16pt"><span style="font-family:Verdana;"><span style="font-size:1.5rem;">Step 1: Create a Shipping Request Header</span></span></h2>
+  <p class="modernbody">To create a Shipping Request, do the following:</p>
+  <p class="Tip-Note-Text-Modern"><span style="font-family:Inter"><span style="font-weight:bold;">Note     </span>You can populate as much header information as you require, however the following instructed fields are mandatory and you are prevented from saving until you populate them. For a detailed description of each field&#39;s purpose see <a data-xref="{title}" href="WindowsMod/Sales_Order.htm">Sales Order (Add/Edit Mode)</a>.</span></p>
+  <ol class="BasicNumber-modern">
+    <li class="modernbody">On the Radius landing page (<span style="font-weight:bold;">Sales Order</span>) click the sales order number you want to create a shipping request for. The <span style="font-weight:bold;">Sales Order</span> (Add / Edit) page opens for the respective sales order. </li>
+    <li class="modernbody">Click the <span style="font-weight:bold;">Shipping </span>button to display the <span style="font-weight:bold;">Shipping Request Headers</span> and <span style="font-weight:bold;">Shipping Request Lines </span>sections. </li>
+    <li class="modernbody">Click the <span style="font-weight:bold;">+ Shipping</span> button to create a new shipping request header and expand the header deatil entry fields. </li>
+    <li class="modernbody">Do the following to complete your shipping header details: 
+      <ol>
+        <li class="modernbody">Specify the customer the shipment is for in the <span style="font-weight:bold;">Customer </span>field.</li>
+        <li class="modernbody">Specify the plant the shipment is coming form in the <span style="font-weight:bold;">Ship From Plant</span> field.</li>
+        <li class="modernbody">Specify when the shipment must leave the plant in the <span style="font-weight:bold;">Ship Date &amp; Time</span> field.</li>
+      </ol>
+    </li>
+    <li class="modernbody">Click the <span style="font-weight:bold;">Save All</span> button to save the shipment header.</li>
+    <li class="modernbody">Continue to Step 2.</li>
+  </ol>
   <p> </p>
+  <div class="horizontal-rule-align-left">
+    <hr class="hrule-inner" />
+  </div>
+  <div class="row"> </div>
+  <p class="modernbody">The <span style="font-weight:bold;">Shipping Request Headers</span> and <span style="font-weight:bold;">Shipping Request Lines</span> sections of the <span style="font-weight:bold;">Sales Order</span> (Add / Edit) window becomes available once you have created sales order lines. </p>
+  <p class="Tip-Note-Text-Modern"><span style="font-weight:bold;">Tip     </span>Once a header or line is created, it can easily be duplicated by clicking <span style="font-weight:bold;">Duplicate </span><img height="21" src="assets/Images/Duplicate.png" width="20" /> next to it in the browser. </p>
+  <p><img height="234" src="assets/Images/ShippingHeader.png" width="NaN" /></p>
+  <div class="horizontal-rule-align-left">
+    <hr class="hrule" />
+  </div>
+  <h2><span style="font-weight:bold;"><span style="font-family:Verdana;"><span style="font-size:1.5rem;">Step 2: Add Shipping Request Lines</span></span></span></h2>
+  <p class="modernbody">Next, you must add shipping lines to your header that contain the details of the items to be shipped. Shipping lines can be added from different sales orders, as well as different plants. You can add as many shipping lines as you need but must have a minimum of one.</p>
+  <p class="modernbody">To add shipping request lines, do the following:</p>
+  <p class="Tip-Note-Text-Modern"><span style="font-family:Inter"><span style="font-weight:bold;">Note     </span>You can populate as much information as you require, however the following instructed fields are mandatory and you are prevented from saving until you populate them. For a detailed description of each field&#39;s purpose see <a data-xref="{title}" href="WindowsMod/Sales_Order.htm">Sales Order (Add/Edit Mode)</a>.</span></p>
+  <ol class="BasicNumber-modern">
+    <li>Navigate to the <span style="font-weight:bold;">Shipping Request Lines </span>section of the <span style="font-weight:bold;">Sales Order</span> (Add / Edit page):</li>
+    <li>Click the <span style="font-weight:bold;">+ Shipping Line</span> button to add a new shipping request line. The <span style="font-weight:bold;">Add Ship Request from Order Lines</span> window opens. </li>
+    <li>Do the following in the <span style="font-weight:bold;">Select Order Lines</span> section to add shipping lines for your sales orders:
+      <ol>
+        <li>Specify the sales order for the lines you want to add in the <span style="font-weight:bold;">Sales Order</span> field. By default the current sales order is populated. </li>
+        <li>Select the check box next to the sales order lines you want to create shipping lines for from the browser below. </li>
+        <li>Click the <span style="font-weight:bold;">Next </span>button. The <span style="font-weight:bold;">Add Ship Request Lines</span> section opens. </li>
+        <li>Enter the quantity of item to add to the shipping line in the <span style="font-weight:bold;">Ship Quantity</span> field. </li>
+        <li>Click the <span style="font-weight:bold;">Save </span>button to save your shipping lines and return to the <span style="font-weight:bold;">Shipping Request Lines</span> section of the <span style="font-weight:bold;">Sales Order</span> (Add / Edit) page. </li>
+      </ol>
+    </li>
+    <li>Repeat steps 2 and 3 for until you have completed added your shipping lines. </li>
+  </ol>
+  <div class="horizontal-rule-align-left">
+    <hr class="hrule-inner" />
+  </div>
+  <p class="modernbody">The <span style="font-weight:bold;">Shipping Request Headers</span> and <span style="font-weight:bold;">Shipping Request Lines</span> sections of the <span style="font-weight:bold;">Sales Order</span> (Add / Edit) window becomes available once you have created sales order lines. </p>
+  <p class="Tip-Note-Text-Modern"><span style="font-weight:bold;">Tip     </span>Once a header or line is created, it can easily be duplicated by clicking <span style="font-weight:bold;">Duplicate </span><img height="21" src="assets/Images/Duplicate.png" width="20" /> next to it in the browser. </p>
+  <p><img height="" src="assets/Images/ShippingLines.png" width="90%" /></p>
 </body>
 </html>
