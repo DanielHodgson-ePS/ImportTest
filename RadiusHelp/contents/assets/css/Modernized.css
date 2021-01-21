@@ -2,7 +2,13 @@
 .note {
   border-left: 4px solid #2B77CB;
   padding-left: 0.5rem;
-  margin-left: 0.75rem;
+  margin-left: 1rem;
+}
+
+.note2 {
+  border-left: 4px solid #2B77CB;
+  padding-left: 0.5rem;
+  margin-left: 3rem;
 }
 .column {
   float: left;
@@ -66,8 +72,8 @@
 }
 .hrule-inner {
   background: #c0c0c0;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 1.75em;
+  margin-bottom: 2.5em;
   margin-left: auto !important;
   margin-right: auto !important;
   height: 1px;
