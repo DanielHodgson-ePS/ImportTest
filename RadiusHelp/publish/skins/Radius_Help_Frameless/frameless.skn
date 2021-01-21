@@ -90,6 +90,7 @@
       <assets type="array">
         <assetsitem>example.pdf</assetsitem>
         <assetsitem>font.css</assetsitem>
+        <assetsitem>Animations.css</assetsitem>
       </assets>
       <custom_buttons type="array">
         <custom_buttonsitem>

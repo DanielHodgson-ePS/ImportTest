@@ -574,7 +574,7 @@ ol.BasicNumber>li>ol>li>ol {
 ol.BasicNumber-modern>li>ol>li>ol {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
-  --prefix-gap: 24px;
+  --prefix-gap: 20px;
   --list-indent: 34px;
   --vertical-spacing: 12px;
   list-style: none;
@@ -595,7 +595,7 @@ ol.BasicNumber>li>ol>li>ol>li {
 ol.BasicNumber-modern>li>ol>li>ol>li {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
-  --prefix-gap: 24px;
+  --prefix-gap: 20px;
   --list-indent: 34px;
   --vertical-spacing: 12px;
   position: relative;

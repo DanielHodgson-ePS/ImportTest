@@ -545,6 +545,8 @@ label {
 
 
 .RH-LAYOUT-CENTERPANEL-topic-box {
+  margin-top: -2rem;
+  margin-left: 0.1rem;
 }
 
 
@@ -1157,7 +1159,7 @@ label {
 
 .RH-LAYOUT-FILTERS-caption {
   height: 36px;
-  background-color: #EBECF0;
+  background-color: #4f66c7;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0px;
@@ -1167,6 +1169,7 @@ label {
 
 .RH-LAYOUT-FILTERS-caption p {
   font-size: 0.9rem;
+  color: #fefefe;
 }
 
 .RH-LAYOUT-FILTERS-resetall {
@@ -1296,17 +1299,15 @@ label {
   text-transform: uppercase;
   color: #818181;
   padding-right: 0px;
-  padding-bottom: 0.3125rem;
   padding-left: 0px;
-  padding-top: 0.5rem;
-  margin-top: -1em;
-  margin-right: -1em;
-  margin-bottom: -1em;
-  margin-left: -1em;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
 }
 
 .RH-LAYOUT-BCRUMBS-label {
-  color: #F2BF24;
+  color: #4f66c7;
 }
 
 .RH-LAYOUT-BCRUMBS-list-box {
@@ -1435,7 +1436,7 @@ label {
 
 .RH-LAYOUT-FAVORITE-header {
   font-weight: 700;
-  background-color: #EBECF0;
+  background-color: #4f66c7;
   padding-left: 1rem;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1446,6 +1447,7 @@ label {
 .RH-LAYOUT-FAVORITE-label {
   width: fit-content;
   font-size: 0.9rem;
+  color: #fefefe;
 }
 
 .RH-LAYOUT-FAVORITE-edit-button {
@@ -2183,6 +2185,7 @@ label {
 
 }
 .RH-LAYOUT-CENTERPANEL-top-panel {
+  display: none;
 }
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-SEARCHRESULTS-container {
 
@@ -3252,6 +3255,7 @@ input[type='text']::-ms-clear {
 
 .RH-LAYOUT-FILTERS-caption p,.RH-LAYOUT-HOMEPAGE-FILTERS-caption p {
   font-size: 0.9rem;
+  color: #fefefe;
 }
 
 .RH-LAYOUT-FILTERS-resetall,.RH-LAYOUT-HOMEPAGE-FILTERS-resetall {
@@ -3268,6 +3272,7 @@ input[type='text']::-ms-clear {
 
 .RH-LAYOUT-FAVORITE-label,.RH-LAYOUT-HOMEPAGE-FAVORITE-label {
   font-size: 0.9rem;
+  color: #fefefe;
 }
 
 .RH-LAYOUT-FAVORITE-edit-button,.RH-LAYOUT-HOMEPAGE-FAVORITE-edit-button {;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

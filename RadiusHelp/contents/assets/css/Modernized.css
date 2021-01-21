@@ -4,31 +4,6 @@
   padding-left: 0.5rem;
   margin-left: 0.75rem;
 }
-
-#sparkle {
-      animation-name: sparkle;
-      animation-duration: 3s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-    }
-
-@keyframes sparkle {
-      from {
-        color: #6666ff;
-      }
-      10% {
-        color: #0099ff;
-      }
-      50% {
-        color: #00ff00;
-      }
-      75% {
-        color: #ff3399;
-      }
-      100% {
-        color: #6666ff;
-      }
-    }
 .column {
   float: left;
   width: 45%;
@@ -103,7 +78,7 @@ p.modernbody {
   font-family: Inter;
   font-size: 1rem;
   color: #000000;
-  line-height: 1.15;
+  line-height: 1.5;
 }
 ol.modernlist {
   list-style: none;
