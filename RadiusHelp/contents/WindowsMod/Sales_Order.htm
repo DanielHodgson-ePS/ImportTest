@@ -216,7 +216,7 @@
           <p><span class="software">CSR</span></p>
         </td>
         <td>
-          <p>The customer service respresentative code. This will default to the CSR code maintained on the Customer Representative table. </p>
+          <p>The customer service representative code. This will default to the CSR code maintained on the Customer Representative table. </p>
         </td>
         <td>No</td>
       </tr>
@@ -243,7 +243,9 @@
           <p><span class="software">Sub-Client Name</span></p>
         </td>
         <td>
-          <p>Enter the name of the sub-division of the customer that this order is for. </p>
+          <p>Enter the name of the broker&#39;s client. This will appear on the shipping documentation.</p>
+          <p>A broker order is an order received from a third-party on behalf of the final customer. The broker purchases the finished product from you (and is your customer) but requests that you ship the products to his customer pretending to be the broker. The shipping documentation therefore does not show your company’s name and address but uses the broker’s address instead.</p>
+          <p class="Tip-Note-Text"><span class="software">Note</span>: This field is only active when the Broker Order check box is selected. </p>
         </td>
         <td>No</td>
       </tr>
@@ -268,6 +270,14 @@
         <td>Description</td>
         <td>Required</td>
       </tr>
+      <tr>
+        <td><span class="software">Broker Order</span></td>
+        <td>
+          <p>Select this check box if the order has been received from a broker. This opens up the <span class="software">Sub-Client Nam</span>e field to enter their client&#39;s name.</p>
+          <p>A broker order is an order received from a third-party on behalf of the final customer. The broker purchases the finished product from you (and is your customer) but requests that you ship the products to his customer pretending to be the broker. The shipping documentation therefore does not show your company’s name and address but uses the broker’s address instead when this check box is selected. </p>
+        </td>
+        <td>No</td>
+      </tr>
       <tr class="t2Row">
         <td>
           <p><span class="software">Create Job</span></p>
@@ -282,7 +292,11 @@
       </tr>
       <tr class="t1Row">
         <td><span class="software">Auto Invoice</span></td>
-        <td> </td>
+        <td>
+          <p>Select to automatically create invoices when a shipment is completed. This will automatically default to selected if the <span class="software">Auto invoice sales orders</span> check box is selected on the <span class="software">General Options</span> tab of the <span class="software">Plant &gt; Options &gt; Plant Level Options</span> window. </p>
+          <p>When a billing requirement is automatically created, it will default this selection to the billing requirement and the billing requirement will not be set as <span class="software">On Hold</span>. </p>
+          <p class="Tip-Note-Text"><span class="software">Note</span>: For the automatic invoicing to run, you need to set up a Windows Scheduled task.</p>
+        </td>
         <td>No</td>
       </tr>
     </tbody>
@@ -297,40 +311,120 @@
         <td>Description</td>
         <td>Required</td>
       </tr>
+      <tr>
+        <td>
+          <p>Terms Code</p>
+        </td>
+        <td>
+          <p>Specify the credit terms that you want to use for the customer&#39;s invoices and payments. This will default to the terms code set on the customer record but may be changed.</p>
+        </td>
+        <td>
+          <p>Yes</p>
+        </td>
+      </tr>
       <tr class="t2Row">
-        <td>Term Code</td>
-        <td> </td>
-        <td>Yes</td>
+        <td>
+          <p>Additional Customer Reference</p>
+        </td>
+        <td>
+          <p>Enter any additional reference numbers or codes that the customer might have for this order. </p>
+        </td>
+        <td>
+          <p>No</p>
+        </td>
       </tr>
       <tr class="t1Row">
-        <td> </td>
-        <td> </td>
-        <td> </td>
+        <td>
+          <p>Sales Order Version</p>
+        </td>
+        <td>
+          <p>The first version of the sales order is zero. Once the order acknowledgement is printed, any changes made to the sales order increment the version number. Notes relating to the change can be entered using the <span class="software">Version</span> <span class="software">Comments</span> button at the bottom of the page. The order acknowledgement status is displayed alongside the version number. These are:</p>
+          <ol class="RoundSquare">
+            <li><span class="rls-1-Bullets"></span>Not printed</li>
+            <li>Printed</li>
+            <li>Amended not printed </li>
+          </ol>
+        </td>
+        <td>
+          <p> </p>
+        </td>
       </tr>
       <tr class="t2Row">
-        <td> </td>
-        <td> </td>
-        <td> </td>
+        <td>
+          <p>Payment Mode</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
       </tr>
       <tr class="t1Row">
-        <td> </td>
-        <td> </td>
-        <td> </td>
+        <td>
+          <p>Rep</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
       </tr>
       <tr>
-        <td> </td>
-        <td> </td>
-        <td> </td>
+        <td>
+          <p>Day Prior</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
       </tr>
       <tr>
-        <td> </td>
-        <td> </td>
-        <td> </td>
+        <td>
+          <p>EDI Change Status</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
       </tr>
       <tr>
-        <td> </td>
-        <td> </td>
-        <td> </td>
+        <td>
+          <p>Currency</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Source</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p>No</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Customer PO Reference</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
       </tr>
     </tbody>
   </table>
