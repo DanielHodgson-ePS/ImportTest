@@ -23,7 +23,9 @@
         <td>
           <p><span class="software">Button</span></p>
         </td>
-        <td>Description</td>
+        <td>
+          <p><span class="software">Description</span></p>
+        </td>
       </tr>
       <tr class="t2Row">
         <td><img height="17" src="../assets/Images/CommandsMod/Sales_Order_Analysis.png" width="20" /> <span class="software">Sales Order Analysis</span></td>
@@ -85,8 +87,12 @@
         <td>
           <p><span class="software">Field</span></p>
         </td>
-        <td>Description</td>
-        <td>Required</td>
+        <td>
+          <p><span class="software">Description</span></p>
+        </td>
+        <td>
+          <p><span class="software">Required</span></p>
+        </td>
       </tr>
       <tr class="t2Row">
         <td>
@@ -171,7 +177,7 @@
           <p><span class="software">Document Language</span></p>
         </td>
         <td>
-          <p>Select the language to print reports and documents in when you print them from the <span class="software">Sales Orders</span> window. </p>
+          <p>Select the language to use for external documents associated with this order. </p>
         </td>
         <td>No</td>
       </tr>
@@ -265,10 +271,14 @@
     <tbody>
       <tr class="t1st">
         <td>
-          <p><b>Check Box</b></p>
+          <p><span class="software"><b>Check Box</b></span></p>
         </td>
-        <td>Description</td>
-        <td>Required</td>
+        <td>
+          <p><span class="software">Description</span></p>
+        </td>
+        <td>
+          <p><span class="software">Required</span></p>
+        </td>
       </tr>
       <tr>
         <td><span class="software">Broker Order</span></td>
@@ -308,12 +318,16 @@
         <td>
           <p><span class="software">Field</span></p>
         </td>
-        <td>Description</td>
-        <td>Required</td>
+        <td>
+          <p><span class="software">Description</span></p>
+        </td>
+        <td>
+          <p><span class="software">Required</span></p>
+        </td>
       </tr>
       <tr>
         <td>
-          <p>Terms Code</p>
+          <p><span class="software">Terms Code</span></p>
         </td>
         <td>
           <p>Specify the credit terms that you want to use for the customer&#39;s invoices and payments. This will default to the terms code set on the customer record but may be changed.</p>
@@ -324,7 +338,7 @@
       </tr>
       <tr class="t2Row">
         <td>
-          <p>Additional Customer Reference</p>
+          <p><span class="software">Additional Customer Reference</span></p>
         </td>
         <td>
           <p>Enter any additional reference numbers or codes that the customer might have for this order. </p>
@@ -335,14 +349,20 @@
       </tr>
       <tr class="t1Row">
         <td>
-          <p>Sales Order Version</p>
+          <p><span class="software">Sales Order Version</span></p>
         </td>
         <td>
           <p>The first version of the sales order is zero. Once the order acknowledgement is printed, any changes made to the sales order increment the version number. Notes relating to the change can be entered using the <span class="software">Version</span> <span class="software">Comments</span> button at the bottom of the page. The order acknowledgement status is displayed alongside the version number. These are:</p>
           <ol class="RoundSquare">
-            <li><span class="rls-1-Bullets"></span>Not printed</li>
-            <li>Printed</li>
-            <li>Amended not printed </li>
+            <li>
+              <p><span class="rls-1-Bullets"></span>Not printed</p>
+            </li>
+            <li>
+              <p>Printed</p>
+            </li>
+            <li>
+              <p>Amended not printed </p>
+            </li>
           </ol>
         </td>
         <td>
@@ -351,10 +371,32 @@
       </tr>
       <tr class="t2Row">
         <td>
-          <p>Payment Mode</p>
+          <p><span class="software">Payment Mode</span></p>
         </td>
         <td>
-          <p> </p>
+          <p>This field displays the status of credit card orders:</p>
+          <ol class="RoundSquare">
+            <li>
+              <p><span class="rls-1-Bullets"></span><span class="software">Payment Request Sent </span> - Indicates that the billing process has been run and a payment request has been sent to the integrated product.</p>
+            </li>
+            <li>
+              <p><span class="software">Payment Rejected</span>- Indicates that integrated product cannot process the credit card payment. You should contact your customer, and diagnose the issue or arrange payment via a different method.</p>
+            </li>
+            <li>
+              <p><span class="software">Payment Received</span> - Indicates that the payment has been sent to your account from your customer&#39;s credit card.</p>
+            </li>
+            <li>
+              <p><span class="rls-1-Bullets"></span><span class="rls-1-Bullets"></span><span class="software">Authorization Request Sent</span> - Indicates that your customer&#39;s credit card details have been entered into the Wells Fargo Payment Gateway.</p>
+            </li>
+            <li>
+              <p><span class="software">Authorization Accepted</span> - Indicates that Wells Fargo has sent confirmation that there is sufficient credit for the payment.</p>
+            </li>
+            <li>
+              <p><span class="software">Authorization Declined</span> - Indicates that Wells Fargo has found that the credit is insufficient for the payment.You should contact your customer, and diagnose the issue or arrange payment via a different method.</p>
+            </li>
+          </ol>
+          <p>For more information on the Wells Fargo Payment Gateway Interface, contact EFI support. <br />
+             </p>
         </td>
         <td>
           <p> </p>
@@ -362,7 +404,29 @@
       </tr>
       <tr class="t1Row">
         <td>
-          <p>Rep</p>
+          <p><span class="software">Rep</span></p>
+        </td>
+        <td>
+          <p>Sales representative code; this will default to the sales representative code maintained on the Customer Representative table.</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Day Prior</span></p>
+        </td>
+        <td>
+          <p>The number of days the order is to be ready before the customer&#39;s date. This will default on selection of the ship to address if lead time has been defined for the address. You can exclude non shipment days from the lead days calculation by using the<span class="software"> Non ShipmentDates/Days</span> window.</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">EDI Change Status</span></p>
         </td>
         <td>
           <p> </p>
@@ -373,21 +437,14 @@
       </tr>
       <tr>
         <td>
-          <p>Day Prior</p>
+          <p><span class="software">Currency</span></p>
         </td>
         <td>
-          <p> </p>
-        </td>
-        <td>
-          <p> </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>EDI Change Status</p>
-        </td>
-        <td>
-          <p> </p>
+          <p>The currency in which the sales order is priced. This will default from the customer record.</p>
+          <p>If the <span class="software">Status</span> field under <span class="software">GL Interface</span> is set to <span class="software">XLink Onl</span>y on the <span class="software">General Ledge</span>r tab of the <span class="software">Company &gt; Options &gt; Company Level Options</span> window, you can change the currency to be different to the currency of the customer. After saving the sales order, you can update the sales order currency until an order line item is created for this order. Then, you will no longer be able to change the currency.  </p>
+          <p>When the currency of the customer and sales order is different, the currency will be automatically converted to the currency of the customer when displayed in the <span class="software">Sales order balance</span> field on the <span class="software">Detail</span> tab of the <span class="software">Company &gt; Customers and Suppliers &gt; Customers</span> window. </p>
+          <p class="Tip-Note-Text"><span class="software">Note</span>:  If you have the iQuote integration enabled in the <span class="software">Integrations &gt; Integration Options</span> window, changing the currency is not supported in that workflow even if the <span class="software">Status</span> under <span class="software">GL Interface</span> is set to <span class="software">XLink Only</span> on the <span class="software">General Ledge</span><span class="software">r</span> tab of the <span class="software">Company &gt; Options &gt; Company Level Option</span>s window. <br />
+             </p>
         </td>
         <td>
           <p> </p>
@@ -395,18 +452,94 @@
       </tr>
       <tr>
         <td>
-          <p>Currency</p>
+          <p><span class="software">Source</span></p>
         </td>
         <td>
-          <p> </p>
+          <p>Enter how the order was received. This may be used to calculate the order charge. </p>
+        </td>
+        <td>
+          <p>No</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Customer PO Reference</span></p>
+        </td>
+        <td>
+          <p>Enter the customer&#39;s sales order reference. </p>
         </td>
         <td>
           <p> </p>
         </td>
       </tr>
+    </tbody>
+  </table>
+  <h2>Comments and Addresses</h2>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+    <colgroup>
+      <col />
+      <col />
+      <col />
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>
+          <p><span class="software">Field</span></p>
+        </td>
+        <td>
+          <p><span class="software">Description</span></p>
+        </td>
+        <td>
+          <p><span class="software">Required</span></p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p><span class="software">Ship to Address</span></p>
+        </td>
+        <td>
+          <p>Select the delivery address. </p>
+        </td>
+        <td>
+          <p>Yes</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p><span class="software">Bill to Address</span></p>
+        </td>
+        <td>
+          <p>Select the invoice address.</p>
+        </td>
+        <td>
+          <p>Yes</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p><span class="software">Order Comments</span></p>
+        </td>
+        <td>
+          <p>Enter any additional notes relating to the order. </p>
+        </td>
+        <td>
+          <p>No</p>
+        </td>
+      </tr>
       <tr>
         <td>
-          <p>Source</p>
+          <p><span class="software">Order Notes</span></p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p>No</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p><span class="software">Customer Notes</span></p>
         </td>
         <td>
           <p> </p>
@@ -417,67 +550,415 @@
       </tr>
       <tr>
         <td>
-          <p>Customer PO Reference</p>
+          <p><span class="software">EDI Remitance to Address</span></p>
         </td>
         <td>
-          <p> </p>
+          <p>Optionally, select a separate address to use for EDI (Electronic Data Interchange) transmissions where the customers can send their payments. </p>
         </td>
         <td>
-          <p> </p>
+          <p>No</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Acknowledgement to Address</span></p>
+        </td>
+        <td>
+          <p>Select an address to use for order acknowlegdements. </p>
+        </td>
+        <td>
+          <p>No</p>
         </td>
       </tr>
     </tbody>
   </table>
-  <h2>Comments and Addresses</h2>
-  <p>placeholder text</p>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+  <h2>Order Lines</h2>
+  <h3>Buttons (Order Lines View)</h3>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+    <colgroup>
+      <col />
+      <col />
+    </colgroup>
     <tbody>
       <tr class="t1st">
         <td>
-          <p><span class="software">Field</span></p>
+          <p><span class="software">Button</span></p>
         </td>
-        <td>Description</td>
-        <td>Required</td>
+        <td>
+          <p><span class="software">Description</span></p>
+        </td>
       </tr>
       <tr class="t2Row">
-        <td>Ship to address</td>
-        <td> </td>
-        <td>Yes</td>
+        <td>
+          <p><img src="../assets/Images/CommandsMod/Edit.png" /> Edit All Lines</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
       </tr>
       <tr class="t1Row">
-        <td> </td>
-        <td> </td>
-        <td> </td>
+        <td>
+          <p><img height="14" src="../assets/Images/CommandsMod/Add.png" style="cursor: nesw-resize;" width="15" /> Order Line</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
       </tr>
       <tr class="t2Row">
-        <td> </td>
-        <td> </td>
-        <td> </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
       </tr>
       <tr class="t1Row">
-        <td> </td>
-        <td> </td>
-        <td> </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
       </tr>
       <tr>
-        <td> </td>
-        <td> </td>
-        <td> </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
       </tr>
       <tr>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-      </tr>
-      <tr>
-        <td> </td>
-        <td> </td>
-        <td> </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
       </tr>
     </tbody>
   </table>
-  <h2>Order lines</h2>
-  <p>placeholder text</p>
+  <h3>Buttons (Order Lines - Individual Edit)</h3>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+    <colgroup>
+      <col />
+      <col />
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>
+          <p><span class="software">Button</span></p>
+        </td>
+        <td>
+          <p><span class="software">Description</span></p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p><span class="software"><img src="../assets/Images/CommandsMod/Sales_Order_Search.png" /> Search for Sales Order by Item Code</span></p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p><span class="software">User Defined Elements</span></p>
+        </td>
+        <td>
+          <p>Click to open the <a data-xref="{title}" href="User_Defined_Elements.htm">User Defined Elements</a> where you can view user defined elements (custom fields) associated with the sales order. User Defined Elements are additional fields which you can define and add into the EFI Radius database. The purpose of the fields is to allow you to record additional information which can be viewed or added to customized reports. See <span class="software">Company &gt; Jobs and Costing &gt; User Defined Elements</span>.</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p><span class="software">Part Item Details</span></p>
+        </td>
+        <td>
+          <p>Click to show a list of sub-components that make up the kit. This button is only relevant to items which are &quot;kits&quot;, meaning they are an assembly of sub-components. </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Item Narratives</span></p>
+        </td>
+        <td>
+          <p>Click to open the read-only <span class="software">Item Narratives</span> window, where predefined standard text phrases that have been assigned to the item are displayed. This window is only active if an item has been given a narrative in <span class="software">Items &gt; Items</span> window.</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p><span class="software">Sales Order Line Pricing</span></p>
+        </td>
+        <td>
+          <p>Click to open <a href="Sales_Order_Line_Price_Breadkdown.htm">Sales Order Line Price Breakdown</a> window to allow information on numbering to be entered for numbered items. These options relate to the EFI Radius Business Forms Estimating module. </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Sales Order Line Comments</span></p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Sales Order Line Item Numbering</span></p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Columns / Fields</h3>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+    <tbody>
+      <tr class="t1st">
+        <td>
+          <p><span class="software">Field / Column</span></p>
+        </td>
+        <td>
+          <p><span class="software">Description</span></p>
+        </td>
+        <td>
+          <p><span class="software">Required</span></p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p><span class="software">Item Code</span></p>
+        </td>
+        <td>
+          <p>Specify the item required by the customer. All sales order lines must be a valid item code. </p>
+        </td>
+        <td>
+          <p>Yes</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p><span class="software">Quantity</span></p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p>Yes</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p><span class="software">Price</span></p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p>Yes</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Required Date</span></p>
+        </td>
+        <td>
+          <p>Specify the date when the customer requires the order. This date will default from the<span class="software"> Required Date</span> in the main sales order details.</p>
+        </td>
+        <td>
+          <p>Yes</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p><span class="software">Have Ready Date</span></p>
+        </td>
+        <td>
+          <p>Specify the date when the finished products must be available for shipment. This date will default from the<span class="software"> Have Ready Date</span> in the main sales order details. </p>
+        </td>
+        <td>
+          <p>Yes</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Size</span></p>
+        </td>
+        <td>
+          <p>Enter the dimensions of the roll or sheet in millimeters or inches.</p>
+          <p>These fields will only be active for sheet  (Class 2 - Sheet material) or roll (Class 1 - Roll material) products. This is normally only relevant for raw materials sold to the customer. </p>
+          <p>When you specify a roll or sheet material in the Item code field that has a default size to an order line, the default size will automatically populate in this field. This will be from the size defined as the default size in the <span class="software">Items &gt; Set-up &gt; Standard Substrate Sizes</span> window.</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Item Status</span></p>
+        </td>
+        <td>
+          <p>The current status of the inventory for this sales order line. The status will normally change from <span class="software">Unplanned</span>, to <span class="software">Planned </span>when the sales order line has been reserved against a production job, then to In Inventory when sufficient inventory is available, and finally to a status of <span class="software">Complete</span>.</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Consignment Stock (check box)</span></p>
+        </td>
+        <td>
+          <p>Select to indicate that the item is to be held as consignment inventory at the customer’s premises. The item’s inventory will be shipped to the customer but not billed until used by the customer. This option will be set automatically according to the settings on the consignment flag of the item but is still available for updating.</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Customer Item Reference</span></p>
+        </td>
+        <td>
+          <p>Optionally, enter the customer’s reference for the item that they require or click <img src="../assets/Images/CommandsMod/lookup.png" /> to select from a list of finished productitems which are linked to the customer. Items are linked to customers using the <span class="software">Customer code</span> field on the <span class="software">Produced/Sold Details</span> tab of the <span class="software">Items</span> window.</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Customer PO Line</span></p>
+        </td>
+        <td>
+          <p>Optionally, enter the customer&#39;s PO line reference. This is sometimes required by some customers as a means of identifying the purchase order line in their computer system. </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Run on Price</span></p>
+        </td>
+        <td>
+          <p>If required, enter a selling price per unit of measure (usually per thousand) for additional quantities above the ordered quantity. The run on price is based on the variable cost of the additional quantity. The setup costs having already been recovered within the order quantity.</p>
+          <p>The unit of measure is displayed to the right of the <span class="software">Run On Price</span> field. </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Ordered Value</span></p>
+        </td>
+        <td>
+          <p>This field is calculated by EFI Radius from the <span class="software">Quantity</span> and <span class="software">Price</span> fields. To override the value, select the <span class="software">Lot Priced</span> check box. </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Proof Required Date</span></p>
+        </td>
+        <td>
+          <p>Optionally, specify the date when approved proofs are required from the customer. This is for information only and has no operational function in EFI Radius.</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Order Type</span></p>
+        </td>
+        <td>
+          <p>Optionally, select whether the sales order line is for a new item or repeat work. </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">EDI Change Code</span></p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Production Grouping Number</span></p>
+        </td>
+        <td>
+          <p>A production grouping number is assigned to a grouping of production requirements by pricing combination. When sales orders are priced, the price is often influenced by the fact that certain items may be run in combination (minimizing make ready costs). </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Unders %</span></p>
+        </td>
+        <td>
+          <p>Optionally, enter the under production percentage which is acceptable to the customer.  This will default from the <span class="software">Unders percent</span> field on the <span class="software">Details</span> tab of the <span class="software">Company &gt; Customers and Suppliers &gt; Customers</span> window.</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Overs %</span></p>
+        </td>
+        <td>
+          <p>Optionally, enter the over production percentage which is acceptable to the customer. This will default from the <span class="software">Overs percent</span> field on the <span class="software">Details</span> tab of the <span class="software">Company &gt; Customers and Suppliers &gt; Customers</span> window. <br />
+             </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">End Use</span></p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Lot Priced (check box)</span></p>
+        </td>
+        <td>
+          <p>Select to indicate that the sales order line will be sold for a fixed value no matter what quantity is eventually delivered. Selecting this option activates the <span class="software">Ordered Value</span> field and deactivates the <span class="software">Price</span> field.</p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   <h2>Shipping</h2>
   <p>placeholder text</p>
   <h2>Version Comments</h2>
