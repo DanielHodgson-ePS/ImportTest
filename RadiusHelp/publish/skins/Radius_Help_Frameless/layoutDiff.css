@@ -91,7 +91,7 @@ label {
 
 .RH-LAYOUT-HEADER-title {
   font-weight: 600;
-  font-size: 2rem rem;
+  font-size: 2.5rem;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -545,6 +545,8 @@ label {
 
 
 .RH-LAYOUT-CENTERPANEL-topic-box {
+  margin-top: -2rem;
+  margin-left: 0.1rem;
 }
 
 
@@ -748,19 +750,21 @@ label {
 }
 
 .RH-LAYOUT-HOMEPAGE-TITLEBAR-title-bar {
+  height: 11rem;
+  font-size: 2rem;
   margin-bottom: 3.5rem;
   color: #ffffff;
   background-color: #263138;
   padding-right: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 2rem;
+  padding-left: 1.5rem rem;
 }
 
 .RH-LAYOUT-HOMEPAGE-TITLEBAR-logo {
   background-image: url('logo.png');;
   margin-right: 0.5rem;
-  background-size: 48px 48px;
+  background-size: 100% 5rem;
 }
 
 .rh-layout-HOMEPAGE-TITLEBAR-logo-link {
@@ -769,7 +773,7 @@ label {
 .RH-LAYOUT-HOMEPAGE-TITLEBAR-title {
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #ffffff;
 }
 
@@ -1155,7 +1159,7 @@ label {
 
 .RH-LAYOUT-FILTERS-caption {
   height: 36px;
-  background-color: #EBECF0;
+  background-color: #4f66c7;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0px;
@@ -1165,6 +1169,7 @@ label {
 
 .RH-LAYOUT-FILTERS-caption p {
   font-size: 0.9rem;
+  color: #fefefe;
 }
 
 .RH-LAYOUT-FILTERS-resetall {
@@ -1294,17 +1299,15 @@ label {
   text-transform: uppercase;
   color: #818181;
   padding-right: 0px;
-  padding-bottom: 0.3125rem;
   padding-left: 0px;
-  padding-top: 0.5rem;
-  margin-top: -1em;
-  margin-right: -1em;
-  margin-bottom: -1em;
-  margin-left: -1em;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
 }
 
 .RH-LAYOUT-BCRUMBS-label {
-  color: #F2BF24;
+  color: #4f66c7;
 }
 
 .RH-LAYOUT-BCRUMBS-list-box {
@@ -1433,7 +1436,7 @@ label {
 
 .RH-LAYOUT-FAVORITE-header {
   font-weight: 700;
-  background-color: #EBECF0;
+  background-color: #4f66c7;
   padding-left: 1rem;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1444,6 +1447,7 @@ label {
 .RH-LAYOUT-FAVORITE-label {
   width: fit-content;
   font-size: 0.9rem;
+  color: #fefefe;
 }
 
 .RH-LAYOUT-FAVORITE-edit-button {
@@ -1898,6 +1902,7 @@ label {
 }
 
 .RH-LAYOUT-HOMEPAGE-HEADERMENU-item {
+    font-size: 2rem;
     border-width: none;
     border-style: none;
     border-color: #000000;
@@ -2180,6 +2185,7 @@ label {
 
 }
 .RH-LAYOUT-CENTERPANEL-top-panel {
+  display: none;
 }
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-SEARCHRESULTS-container {
 
@@ -3249,6 +3255,7 @@ input[type='text']::-ms-clear {
 
 .RH-LAYOUT-FILTERS-caption p,.RH-LAYOUT-HOMEPAGE-FILTERS-caption p {
   font-size: 0.9rem;
+  color: #fefefe;
 }
 
 .RH-LAYOUT-FILTERS-resetall,.RH-LAYOUT-HOMEPAGE-FILTERS-resetall {
@@ -3265,6 +3272,7 @@ input[type='text']::-ms-clear {
 
 .RH-LAYOUT-FAVORITE-label,.RH-LAYOUT-HOMEPAGE-FAVORITE-label {
   font-size: 0.9rem;
+  color: #fefefe;
 }
 
 .RH-LAYOUT-FAVORITE-edit-button,.RH-LAYOUT-HOMEPAGE-FAVORITE-edit-button {;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

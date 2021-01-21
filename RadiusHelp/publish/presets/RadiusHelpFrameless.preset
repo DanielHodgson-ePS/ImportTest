@@ -14,8 +14,8 @@
     <index type="boolean">true</index>
     <mapFiles type="array">
       <mapFilesitem>
-        <path>../mapfiles/EFI_Radius_Help.ali</path>
         <name>EFI_Radius_Help</name>
+        <path>../mapfiles/EFI_Radius_Help.ali</path>
       </mapFilesitem>
     </mapFiles>
     <includeExpandingText type="boolean">true</includeExpandingText>
