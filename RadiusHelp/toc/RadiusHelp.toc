@@ -7,6 +7,7 @@
     <page href="../contents/Navigation.htm" format="html" processing-role="normal"></page>
     <page href="../contents/How_to_Create_a_Sales_Order.htm" format="html" processing-role="normal"></page>
     <page href="../contents/How_to_Create_a_Shipping_Request.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/How_to_Create_Views_and_Layouts.htm" format="html" processing-role="normal"></page>
   </book>
   <book navtitle="Windows" format="html" processing-role="normal">
     <page href="../contents/WindowsMod/Sales_Order_Landing_Page.htm" format="html" processing-role="normal"></page>

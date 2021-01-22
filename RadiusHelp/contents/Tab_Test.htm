@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Tab Test</title>
+  <meta name="topic-status" content="Draft" />
+  <script src="assets/js/TabContent.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/APPS.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/Modernized.css" />
+</head>
+<body>
+  <h1 style="text-align:center;"><span style="font-size:2.5rem;"><span style="font-weight:bold;"><span style="font-size:2.5 rem;font-weight:bold">Adding Tabbed Content</span></span></span></h1>
+  <p class="modernbody">The following info is a quick tutorial on how to add tbs to your topic. It&#39;s a simple casse of adding the div tags where you need them, I&#39;ve set up the CSS and JS already. Just make sure you import the modernized.CSS stylesheet and the TabContent.js script.</p>
+  <p class="modernbody">I&#39;ll tidy up the CSS style as we go for the tabs, so they resize nicely for the screen / when there are lots of tabs etc.</p>
+  <p class="modernbody">Scripts don&#39;t run inside RoboHelp so you&#39;ll need to preview the topic in a browser to test it. (ctrl + w shortcut, then click the eye at the top of the screen and select a browser to launch in).</p>
+  <p> </p>
+  <h2 style="font-size: 1.5rem">Adding Tab Buttons</h2>
+  <p class="modernbody">To add a new tab, add a new button between the <span style="font-weight:bold;">&lt;div class=tablink-navigation&gt;</span>, for example:</p>
+  <p class="modernbody" style="margin-left: 0px">&lt;div class=&quot;tablink-navigation&quot;&gt;<br />
+        &lt;div style=&quot;text-align:center;&quot;&gt;<br />
+            &lt;button class=&quot;tablink tablink-left&quot; onclick=&quot;openTab(&amp;#39;Tab1&amp;#39;, this, &amp;#39;#c3c3c3&amp;#39;)&quot;&gt;Tab 1&lt;/button&gt;             <br />
+            <span style="color:#54b45c;">&lt;button class=&quot;tablink tablink-middle&quot; onclick=&quot;openTab(&amp;#39;Tab2&amp;#39;, this, &amp;#39;#c3c3c3&amp;#39;)&quot;&gt;Tab 2&lt;/button&gt;</span> <br />
+            &lt;button class=&quot;tablink tablink-right&quot; onclick=&quot;openTab(&amp;#39;Tab3&amp;#39;, this, &amp;#39;#c3c3c3&amp;#39;)&quot;&gt;Tab 3&lt;/button&gt; <br />
+        &lt;/div&gt;<br />
+    &lt;/div&gt;</p>
+  <p class="modernbody note" style="margin-left: 0px">For the first tab, use <span style="font-style:italic;">class=&quot;tablink tablink-left&quot;</span>, for midle tabs use <span style="font-style:italic;">&quot;tablink tablink-left&quot;</span> and for tabs on the end right, use <span style="font-style:italic;">&quot;tablink tablink-right&quot;</span>. This is because the corners of the end tabs have a curve in the CSS whereas the middle ones do not.</p>
+  <p class="modernbody" style="margin-left: 0px"> </p>
+  <h2 style="margin-left: 0px;font-size: 1.5rem">Adding Tab Content</h2>
+  <p class="modernbody" style="margin-left: 0px">You need to then add the following code under the <span style="font-weight:bold;">&lt;div class=&quot;tabcontent&quot;&gt;</span>, in the space where there new tab is, for example:</p>
+  <p class="modernbody" style="margin-left: 0px;">&lt;div class=&quot;tabcontent&quot; id=&quot;Tab1&quot;&gt;</p>
+  <p class="modernbody" style="margin-left: 0px;">    Place your content here</p>
+  <p class="modernbody" style="margin-left: 0px;"> &lt;/div&gt;</p>
+  <p class="modernbody" style="margin-left: 0px;"><span style="color:#54b45c;">&lt;div class=&quot;tabcontent&quot; id=&quot;Tab2&quot;&gt;</span></p>
+  <p class="modernbody" style="margin-left: 8px"><span style="color:#54b45c;">   Place your content here</span></p>
+  <p class="modernbody" style="margin-left: 0px;"><span style="color:#54b45c;">&lt;/div&gt;</span><br />
+     <br />
+    &lt;div class=&quot;tabcontent&quot; id=&quot;Tab3&quot;&gt;</p>
+  <p class="modernbody" style="margin-left: 8px">  Place your content here</p>
+  <p class="modernbody" style="margin-left: 0px;">&lt;/div&gt;</p>
+  <p class="modernbody" style="margin-left: 0px"> </p>
+  <p class="modernbody note" style="margin-left: 0px">By default the content for the tabs is hidden so it won&#39;t appear in authoring mode. This is becuase when the page loads the <span style="letter-spacing:1px;font-weight:bold">document.getElementById(&quot;defaultOpen&quot;).click();</span> logic is invoked to open the first tab by default.<br />
+    <br />
+    To show your content, simply chage the following code in Modernized.CSS from<br />
+    <br />
+    .tabcontent {<br />
+      color: white;<br />
+      display: <span style="color:#ff0000;">none</span>;<br />
+    }<br />
+    <br />
+    to<br />
+    <br />
+    .tabcontent {<br />
+      color: white;<br />
+      display: <span style="color:#54b45c;">block</span>;<br />
+    }<br />
+    <br />
+    Just remember to change it back once you&#39;re done!
+  </p>
+  <p class="modernbody" style="margin-left: 0px;"><br />
+     </p>
+  <div class="tablink-navigation">    
+    <div style="text-align:center;">        <button class="tablink tablink-left" id="defaultOpen" onclick="openTab(&#39;Tab1&#39;, this, &#39;#c3c3c3&#39;)">Tab 1</button>                      <button class="tablink tablink-middle" onclick="openTab(&#39;Tab2&#39;, this, &#39;#c3c3c3&#39;)">Tab 2</button>          <button class="tablink tablink-right" onclick="openTab(&#39;Tab3&#39;, this, &#39;#c3c3c3&#39;)">Tab 3</button>      </div>
+  </div>
+  <div class="tabcontent" id="Tab1">
+    <p class="modernbody">In the classic Radius system, you had to manually search for sales order records and filter them by their Status in order to view a refined list of them. You then had to select each record you wanted to edit and click multiple buttons in order to edit them.</p>
+    <img height="" src="assets/gifs/ClassicFilterByStatus.gif" style="display: block; margin: 1em auto 1em auto; border-width: 1px; border-style: ridge; border-color: #c3c3c3;" width="90%" />
+  </div>
+  <div class="tabcontent" id="Tab2">
+    <p class="modernbody">This is my new tab content</p>
+  </div>
+  <div class="tabcontent" id="Tab3">
+    <p class="modernbody">In the Modern Radius system, you can simply click one of your predefined views in order to filter which sales order records are displayed. You can then quickly and easily inline edit each record.</p>
+    <img height="" src="assets/gifs/FilterByStatusModern.gif" style="display: block; margin: 1em auto 1em auto; border-width: 1px; border-style: ridge; border-color: #c3c3c3;" width="90%" />
+  </div>
+  <script>
+    //<![CDATA[
+    document.getElementById("defaultOpen").click();
+    //]]>
+  </script>
+</body>
+</html>
