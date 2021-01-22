@@ -1,17 +1,5 @@
-function switchDisplayedContent() {
-  var x = document.getElementById("myDIV");
-  var y = document.getElementById("myDIV2");
-  if (x.style.display === "none") {
-	y.style.display = "none";
-    x.style.display = "block";	
-  } else {
-    x.style.display = "none";
-	y.style.display = "block";
-  }
-}
-
-
-function openPage(pageName, elmnt, color) {
+function openTab(pageName, elmnt, color) {
+  
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");

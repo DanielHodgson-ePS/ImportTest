@@ -4,7 +4,6 @@
   padding-left: 0.5rem;
   margin-left: 1rem;
 }
-
 .note2 {
   border-left: 4px solid #2B77CB;
   padding-left: 0.5rem;
@@ -43,6 +42,9 @@
 .tablink-left {
   border-radius: 8px 0px 0px 0px;
 }
+.tablink-middle {
+  border-radius: 0px 0px 0px 0px;
+}
 .tablink-right {
   border-radius: 0px 8px 0px 0px;
 }
@@ -54,10 +56,20 @@
   color: white;
   display: none;
 }
-#Classic {
+/* Tab IDs used for openTab function in myScript.js, add tabs as needed */
+#Tab1 {
   color: black;
 }
-#Modern {
+#Tab2 {
+  color: black;
+}
+#Tab3 {
+  color: black;
+}
+#Tab4 {
+  color: black;
+}
+#Tab5 {
   color: black;
 }
 .horizontal-rule-align-left {}
