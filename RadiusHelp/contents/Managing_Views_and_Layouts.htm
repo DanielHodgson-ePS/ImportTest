@@ -6,6 +6,7 @@
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <title>Managing Views and Layouts</title>
   <meta name="topic-status" content="Draft" />
+  <script src="assets/js/TabContent.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/APPS.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/Modernized.css" />
 </head>
@@ -14,29 +15,140 @@
   <p class="modernbody"><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText"><span style="font-size: 1rem;"></span></span></span></span></p>
   <p class="modernbody"><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText"></span></span></span></p>
   <p class="modernbody"><span style="font-family:Inter;"><span class="bodyText"><span style="font-size:1rem;">The modernized Radius application allows you to tailor build your Radius experience. You can now change the position of fields on the fly and decide which ones appear on your pages. Browsers can be easily reordered with drag and drop functionality, and you can customize them to choose which columns they display.</span></span></span></p>
-  <p class="modernbody">You can easily share, edit and delete views at any time. Default views can be assigned so that a page will always open in that view, and you can even control who has access to a view by assignign permissions at user or group level.</p>
-  <p class="modernbody">The following information gives instructions you on the many ways you can manage your Radius views.</p>
+  <p class="modernbody">You can easily share, edit and delete views at any time. Default views can be assigned so that a page will always open in that view, and you can even control who has access to a view by assigning permissions at user or group level.</p>
+  <p class="modernbody">While view management is largely the same for the landing page and forms, there are some slight differences. The following information gives instructions you on the many ways you can manage your Radius views from the landing page and from a form.</p>
   <p class="modernbody"><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText"></span></span></span></p>
   <div class="horizontal-rule-align-left">
     <hr class="hrule" />
   </div>
+  <div class="tablink-navigation">    
+    <div style="text-align:center;"><button class="tablink tablink-left" id="defaultOpen" onclick="openTab(&#39;Tab1&#39;, this, &#39;#aaaaaa&#39;)">Landing Page Views</button><button class="tablink tablink-right" onclick="openTab(&#39;Tab2&#39;, this, &#39;#aaaaaa&#39;)">Form Views</button></div>
+  </div>
+  <div class="tabcontent" id="Tab1">
+    <h2 class="modernbody">
+      <font face="Verdana"><span style="font-size: 24px;">Deleting a View</span></font>
+    </h2>
+    <p class="modernbody">
+      <font face="Verdana">If you have a view that you no longer want to keep, you can easily delete it via the <span style="font-weight:bold;">Manage Views</span> window.</font>
+    </p>
+    <p class="modernbody">To delete a view, do the following:</p>
+    <ol class="BasicNumber-modern">
+      <li class="modernbody">Hover over <span style="font-weight:bold;">More </span><img height="20" src="assets/Images/More.png" width="20" /> next to your view icons and select <span style="font-weight:bold;">Manage Views</span> <img height="21" src="assets/Images/ManageViews.png" width="20" />. The <font face="Verdana"><span style="font-weight:bold">Manage Views</span> window opens.</font>
+      </li>
+      <li class="modernbody" style="counter-reset: item1 1;" value="2">Click <span style="font-weight:bold;">Delete </span><img height="20" src="assets/Images/Delete_sml.png" width="20" /> next to the views you want to delete.</li>
+      <li class="modernbody" style="">Click the <span style="font-weight:bold;">Apply </span>button to delete the views.</li>
+    </ol>
+    <h2 class="modernbody">
+      <font face="Verdana"><span style="font-size: 24px;">Setting a Default View</span></font>
+    </h2>
+    <p class="modernbody">
+      <font face="Verdana">If you have a view that you want to show whenever you load the landing page, you can set it as a default view in the <span style="font-weight:bold">Manage Views</span> window.</font>
+    </p>
+    <p class="modernbody">To set a default view, do the following:</p>
+    <ol class="BasicNumber-modern">
+      <li class="modernbody">Hover over <span style="font-weight:bold;">More </span><img height="20" src="assets/Images/More.png" width="20" /> next to your view icons and select <span style="font-weight:bold;">Manage Views</span> <img height="21" src="assets/Images/ManageViews.png" width="20" />. The <font face="Verdana"><span style="font-weight:bold">Manage Views</span> window opens.</font>
+      </li>
+      <li class="modernbody" style="counter-reset: item1 1;" value="2">Click <span style="font-weight:bold;">Pin</span> <img height="20" src="assets/Images/Pin.png" width="20" /> next to the view you want to make default.</li>
+      <li class="modernbody" style="">Click the <span style="font-weight:bold;">Apply </span>button to set the view as default.</li>
+    </ol>
+    <h2 class="modernbody">
+      <font face="Verdana"><span style="font-size: 24px;">Rearranging a View</span></font>
+    </h2>
+    <p class="modernbody">
+      <font face="Verdana">You can easily rearrange the order that your views appear on the landing page in the <span style="font-weight:bold">Manage Views</span> window.</font>
+    </p>
+    <p class="modernbody">To rearrange your views, do the following:</p>
+    <ol class="BasicNumber-modern">
+      <li class="modernbody">Hover over <span style="font-weight:bold;">More </span><img height="20" src="assets/Images/More.png" width="20" /> next to your view icons and select <span style="font-weight:bold;">Manage Views</span> <img height="21" src="assets/Images/ManageViews.png" width="20" />. The <font face="Verdana"><span style="font-weight:bold">Manage Views</span> window opens.</font>
+      </li>
+      <li class="modernbody" style="counter-reset: item1 1;" value="2">Click and drag <b>Move</b> <img height="18" src="assets/Images/MoveLine.png" width="20" /> next to the view you want to rearrange, and move it above or under another view.</li>
+      <li class="modernbody" style="">Repeat step 2 for each view you want to rearrange.</li>
+      <li class="modernbody" style="">Click the <span style="font-weight:bold;">Apply </span>button to accept your changes.</li>
+    </ol>
+    <div class="horizontal-rule-align-left">
+      <hr class="hrule-inner" />
+    </div>
+    <p><img class="center-horizontal" height="42% " src="assets/Images/ManageViews-Landing.png" width="40% " /></p>
+    <h2 class="modernbody">
+      <font face="Verdana"><span style="font-size: 24px;">Rearranging a View</span></font>
+    </h2>
+    <p class="modernbody">
+      <font face="Verdana">You can easily rearrange the order that your views appear on the landing page in the <span style="font-weight:bold">Manage Views</span> window.</font>
+    </p>
+    <p class="modernbody">To rearrange your views, do the following:</p>
+    <ol class="BasicNumber-modern">
+      <li class="modernbody">Hover over <span style="font-weight:bold;">More </span><img height="20" src="assets/Images/More.png" width="20" /> next to your view icons and select <span style="font-weight:bold;">Manage Views</span> <img height="21" src="assets/Images/ManageViews.png" width="20" />. The <font face="Verdana"><span style="font-weight:bold">Manage Views</span> window opens.</font>
+      </li>
+      <li class="modernbody" style="counter-reset: item1 1;" value="2">Click and drag <b>Move</b> <img height="18" src="assets/Images/MoveLine.png" width="20" /> next to the view you want to rearrange, and move it above or under another view.</li>
+      <li class="modernbody" style="">Repeat step 2 for each view you want to rearrange.</li>
+      <li class="modernbody" style="">Click the <span style="font-weight:bold;">Apply </span>button to accept your changes.</li>
+    </ol>
+  </div>
+  <div class="tabcontent" id="Tab2">
+    <h2 class="modernbody">
+      <font face="Verdana"><span style="font-size: 24px;">Deleting a View</span></font>
+    </h2>
+    <p class="modernbody">
+      <font face="Verdana">If you have a view that you no longer want to keep, you can easily delete it via the <span style="font-weight:bold;">Manage Views</span> window.</font>
+    </p>
+    <p class="modernbody">To delete a view, do the following:</p>
+    <ol class="BasicNumber-modern">
+      <li class="modernbody">Hover the layouts drop-down <img height="20" src="assets/Images/Layouts.png" width="20" /> and select <span style="font-weight:bold;">Manage Views</span> <img height="21" src="assets/Images/ManageViews.png" width="20" />. The  <font face="Verdana"><span style="font-weight:bold">Manage Views</span> window opens.</font>
+      </li>
+    </ol>
+    <ol class="BasicNumber-modern">
+      <li class="modernbody" style="counter-reset: item1 1;" value="2">Click <span style="font-weight:bold;">Delete </span><img height="20" src="assets/Images/Delete_sml.png" width="20" /> next to the views you want to delete.</li>
+      <li class="modernbody" style="">Click the <span style="font-weight:bold;">Apply </span>button to delete the views.</li>
+    </ol>
+    <h2 class="modernbody">
+      <font face="Verdana"><span style="font-size: 24px;">Setting a Default View</span></font>
+    </h2>
+    <p class="modernbody">
+      <font face="Verdana">If you have a view that you want to show whenever you load the page the form is on, you can set it as a default view in the <span style="font-weight:bold">Manage Views</span> window.</font>
+    </p>
+    <p class="modernbody">To set a default view, do the following:</p>
+    <ol class="BasicNumber-modern">
+      <li class="modernbody">Hover the layouts drop-down <img height="20" src="assets/Images/Layouts.png" width="20" /> and select <span style="font-weight:bold;">Manage Views</span> <img height="21" src="assets/Images/ManageViews.png" width="20" />. The  <font face="Verdana"><span style="font-weight:bold">Manage Views</span> window opens.</font>
+      </li>
+      <li class="modernbody" style="counter-reset: item1 1;" value="2">Click <span style="font-weight:bold;">Pin</span> <img height="20" src="assets/Images/Pin.png" width="20" /> next to the view you want to make default.</li>
+      <li class="modernbody" style="">Click the <span style="font-weight:bold;">Apply </span>button to set the view as default.</li>
+    </ol>
+    <div class="horizontal-rule-align-left">
+      <hr class="hrule-inner" />
+    </div>
+    <p><img class="center-horizontal" height="" src="assets/Images/ManageViews-Form.png" width="40%" /></p>
+  </div>
+  <script>
+    //<![CDATA[
+    document.getElementById("defaultOpen").click();
+    //]]>
+  </script>
+  <h2 class="modernbody"> </h2>
+  <div class="horizontal-rule-align-left">
+    <hr class="hrule" />
+  </div>
   <h2 class="modernbody">
-    <font face="Verdana"><span style="font-size: 24px;">Deleting a View</span></font>
+    <font face="Verdana"><span style="font-size: 24px;">Assigning View Permissions</span></font>
   </h2>
   <p class="modernbody">
-    <font face="Verdana">If you have a view that you no longer want to keep, you can easily delete it via the <span style="font-weight:bold;">Manage Views</span> window.</font>
+    <font face="Verdana">After creating your Radius views, you can easily determine the users that have access to them via the <span style="font-weight:bold;">View Access Control</span> window. This window is the same regardless of whether you navighate to it via the landing page or a form.</font>
   </p>
-  <p class="modernbody">To delete a view, do the fol</p>
+  <p class="modernbody">
+    <font face="Verdana">View permissions can be assigned at user-level or group-level. </font>
+  </p>
+  <p class="modernbody">To assign permissions to your views, do the following</p>
   <ol class="BasicNumber-modern">
-    <li class="modernbody">Click <span style="font-weight:bold;">Customize Column</span> <img height="21" src="assets/Images/Customize Column.png" width="20" /> above the browser. The <span style="font-weight:bold;">Customize Column List</span> window opens.</li>
-    <li class="modernbody">Select the check box next to the columns that you want to display in the browser.</li>
-    <li class="modernbody">Optionally, select the <span style="font-weight:bold;">Select All </span>check box is you want to display every available column in the browser. </li>
-    <li class="modernbody">Click the <span style="font-weight:bold;">Okay </span>button to save your browser layout. </li>
+    <li class="modernbody">Do one of the following to access the <font face="Verdana"><span style="font-weight:bold">View Access Control</span> window</font>depending on whether you are on the landing page or a form page:</li>
   </ol>
-  <div class="horizontal-rule-align-left">
-    <hr class="hrule-inner" />
-  </div>
-  <p class="modernbody note">The <span style="font-weight:bold;">Customize Column List </span>window can be be used to quickly customize your browser, using the same techniques as described in Step 2. The order of the fields in this window determine the order of your columns, and you can rearrange them by clicking and dragging <span style="font-weight:bold;">Move Line</span> <img height="18" src="assets/Images/MoveLine.png" width="20" />. You can also quickly pin columns here by clicking <span style="font-weight:bold;">Pin Column</span> <img height="20" src="assets/Images/Pin.png" width="20" /> .</p>
-  <p> </p>
+  <ol class="modernlist" style="margin-left: 40px;">
+    <li class="modernbody">If you are on the landing page, hover over <span style="font-weight:bold;">More </span><img height="20" src="assets/Images/More.png" width="20" /> next to your view icons and select <span style="font-weight:bold;">
+        <font face="Verdana"><span style="font-weight:bold">View Access Control</span></font>
+      </span> <img height="19" src="assets/Images/ViewAccessControlButton.png" width="20" />. The <font face="Verdana"><span style="font-weight:bold"></span><span style="font-weight:bold">View Access Control</span><span style="font-weight:bold"></span> window opens.</font>
+    </li>
+    <li class="modernbody">If you are on a form page, hover the layouts drop-down <img height="20" src="assets/Images/Layouts.png" width="20" /> and select <span style="font-weight:bold;">
+        <font face="Verdana"><span style="font-weight:bold">View Access Control</span></font>
+      </span> <img height="19" src="assets/Images/ViewAccessControlButton.png" width="20" />. The <font face="Verdana"><span style="font-weight:bold">View Access Control</span><span style="font-weight:bold"></span> window opens.</font>
+    </li>
+  </ol>
 </body>
 </html>

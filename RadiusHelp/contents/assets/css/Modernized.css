@@ -1,4 +1,11 @@
 /*Created with Adobe RoboHelp*/
+
+.center-horizontal{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .note {
   border-left: 4px solid #2B77CB;
   padding-left: 0.5rem;
@@ -28,7 +35,7 @@
 .tablink {
   margin: 2em auto;
   display: inline-block;
-  background-color: #aaaaaa;
+  background-color: #c3c3c3;
   color: white;
   border: none;
   border-radius: 8px 8px 0px 0px;
@@ -39,6 +46,8 @@
   font-size: 17px;
   width: 25%;
 }
+
+
 .tablink-left {
   border-radius: 8px 0px 0px 0px;
 }
