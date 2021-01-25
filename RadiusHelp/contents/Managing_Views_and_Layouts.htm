@@ -22,7 +22,10 @@
     <hr class="hrule" />
   </div>
   <div class="tablink-navigation">    
-    <div style="text-align:center;"><button class="tablink tablink-left" id="defaultOpen" onclick="openTab(&#39;Tab1&#39;, this, &#39;#aaaaaa&#39;)">Landing Page Views</button><button class="tablink tablink-right" onclick="openTab(&#39;Tab2&#39;, this, &#39;#aaaaaa&#39;)">Form Views</button></div>
+    <div style="text-align:center;">        
+      <button class="tablink tablink-left" id="defaultOpen" onclick="openTab(&#39;Tab1&#39;, this, &#39;#c3c3c3&#39;)">Landing Page Views</button>                            
+      <button class="tablink tablink-right" onclick="openTab(&#39;Tab2&#39;, this, &#39;#c3c3c3&#39;)">Form Views</button>         
+    </div>
   </div>
   <div class="tabcontent" id="Tab1">
     <h2 class="modernbody">
@@ -118,9 +121,10 @@
     </div>
     <p><img class="center-horizontal" height="" src="assets/Images/ManageViews-Form.png" width="40%" /></p>
   </div>
+
   <script>
     //<![CDATA[
-    document.getElementById("defaultOpen").click();
+    openDefaultTab();
     //]]>
   </script>
   <h2 class="modernbody"> </h2>

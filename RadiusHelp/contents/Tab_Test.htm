@@ -12,7 +12,7 @@
 </head>
 <body>
   <h1 style="text-align:center;"><span style="font-size:2.5rem;"><span style="font-weight:bold;"><span style="font-size:2.5 rem;font-weight:bold">Adding Tabbed Content</span></span></span></h1>
-  <p class="modernbody">The following info is a quick tutorial on how to add tbs to your topic. It&#39;s a simple casse of adding the div tags where you need them, I&#39;ve set up the CSS and JS already. Just make sure you import the modernized.CSS stylesheet and the TabContent.js script.</p>
+  <p class="modernbody">The following info is a quick tutorial on how to add tbs to your topic. It&#39;s a simple case of adding the div tags where you need them, I&#39;ve set up the CSS and JS already. Just make sure you import the modernized.CSS stylesheet and the TabContent.js script.</p>
   <p class="modernbody">I&#39;ll tidy up the CSS style as we go for the tabs, so they resize nicely for the screen / when there are lots of tabs etc.</p>
   <p class="modernbody">Scripts don&#39;t run inside RoboHelp so you&#39;ll need to preview the topic in a browser to test it. (ctrl + w shortcut, then click the eye at the top of the screen and select a browser to launch in).</p>
   <p> </p>
@@ -40,9 +40,9 @@
   <p class="modernbody" style="margin-left: 8px">  Place your content here</p>
   <p class="modernbody" style="margin-left: 0px;">&lt;/div&gt;</p>
   <p class="modernbody" style="margin-left: 0px"> </p>
-  <p class="modernbody note" style="margin-left: 0px">By default the content for the tabs is hidden so it won&#39;t appear in authoring mode. This is becuase when the page loads the <span style="letter-spacing:1px;font-weight:bold">document.getElementById(&quot;defaultOpen&quot;).click();</span> logic is invoked to open the first tab by default.<br />
+  <p class="modernbody note" style="margin-left: 0px">By default the content for the tabs is hidden so it won&#39;t appear in authoring mode. This is because when the page loads the <span style="letter-spacing:1px;font-weight:bold">document.getElementById(&quot;defaultOpen&quot;).click();</span> logic is invoked to open the first tab by default.<br />
     <br />
-    To show your content, simply chage the following code in Modernized.CSS from<br />
+    To show your content, simply change the following code in Modernized.CSS from<br />
     <br />
     .tabcontent {<br />
       color: white;<br />
@@ -60,8 +60,13 @@
   </p>
   <p class="modernbody" style="margin-left: 0px;"><br />
      </p>
+
   <div class="tablink-navigation">    
-    <div style="text-align:center;">        <button class="tablink tablink-left" id="defaultOpen" onclick="openTab(&#39;Tab1&#39;, this, &#39;#c3c3c3&#39;)">Tab 1</button>                      <button class="tablink tablink-middle" onclick="openTab(&#39;Tab2&#39;, this, &#39;#c3c3c3&#39;)">Tab 2</button>          <button class="tablink tablink-right" onclick="openTab(&#39;Tab3&#39;, this, &#39;#c3c3c3&#39;)">Tab 3</button>      </div>
+    <div style="text-align:center;">        
+      <button class="tablink tablink-left" id="defaultOpen" onclick="openTab(&#39;Tab1&#39;, this, &#39;#c3c3c3&#39;)">Tab 1</button>                      
+      <button class="tablink tablink-middle" onclick="openTab(&#39;Tab2&#39;, this, &#39;#c3c3c3&#39;)">Tab 2</button>          
+      <button class="tablink tablink-right" onclick="openTab(&#39;Tab3&#39;, this, &#39;#c3c3c3&#39;)">Tab 3</button>      
+    </div>
   </div>
   <div class="tabcontent" id="Tab1">
     <p class="modernbody">This is tab 1 content.</p>
@@ -74,8 +79,9 @@
   </div>
   <script>
     //<![CDATA[
-    document.getElementById("defaultOpen").click();
+    openDefaultTab();
     //]]>
   </script>
+
 </body>
 </html>
