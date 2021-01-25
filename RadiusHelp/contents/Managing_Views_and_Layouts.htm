@@ -22,10 +22,7 @@
     <hr class="hrule" />
   </div>
   <div class="tablink-navigation">    
-    <div style="text-align:center;">        
-      <button class="tablink tablink-left" id="defaultOpen" onclick="openTab(&#39;Tab1&#39;, this, &#39;#c3c3c3&#39;)">Landing Page Views</button>                            
-      <button class="tablink tablink-right" onclick="openTab(&#39;Tab2&#39;, this, &#39;#c3c3c3&#39;)">Form Views</button>         
-    </div>
+    <div style="text-align:center;">        <button class="tablink tablink-left" id="defaultOpen" onclick="openTab(&#39;Tab1&#39;, this, &#39;#c3c3c3&#39;)">Landing Page Views</button>                            <button class="tablink tablink-right" onclick="openTab(&#39;Tab2&#39;, this, &#39;#c3c3c3&#39;)">Form Views</button>         </div>
   </div>
   <div class="tabcontent" id="Tab1">
     <h2 class="modernbody">
@@ -72,20 +69,7 @@
       <hr class="hrule-inner" />
     </div>
     <p><img class="center-horizontal" height="42% " src="assets/Images/ManageViews-Landing.png" width="40% " /></p>
-    <h2 class="modernbody">
-      <font face="Verdana"><span style="font-size: 24px;">Rearranging a View</span></font>
-    </h2>
-    <p class="modernbody">
-      <font face="Verdana">You can easily rearrange the order that your views appear on the landing page in the <span style="font-weight:bold">Manage Views</span> window.</font>
-    </p>
-    <p class="modernbody">To rearrange your views, do the following:</p>
-    <ol class="BasicNumber-modern">
-      <li class="modernbody">Hover over <span style="font-weight:bold;">More </span><img height="20" src="assets/Images/More.png" width="20" /> next to your view icons and select <span style="font-weight:bold;">Manage Views</span> <img height="21" src="assets/Images/ManageViews.png" width="20" />. The <font face="Verdana"><span style="font-weight:bold">Manage Views</span> window opens.</font>
-      </li>
-      <li class="modernbody" style="counter-reset: item1 1;" value="2">Click and drag <b>Move</b> <img height="18" src="assets/Images/MoveLine.png" width="20" /> next to the view you want to rearrange, and move it above or under another view.</li>
-      <li class="modernbody" style="">Repeat step 2 for each view you want to rearrange.</li>
-      <li class="modernbody" style="">Click the <span style="font-weight:bold;">Apply </span>button to accept your changes.</li>
-    </ol>
+
   </div>
   <div class="tabcontent" id="Tab2">
     <h2 class="modernbody">
@@ -121,7 +105,6 @@
     </div>
     <p><img class="center-horizontal" height="" src="assets/Images/ManageViews-Form.png" width="40%" /></p>
   </div>
-
   <script>
     //<![CDATA[
     openDefaultTab();
@@ -135,14 +118,14 @@
     <font face="Verdana"><span style="font-size: 24px;">Assigning View Permissions</span></font>
   </h2>
   <p class="modernbody">
-    <font face="Verdana">After creating your Radius views, you can easily determine the users that have access to them via the <span style="font-weight:bold;">View Access Control</span> window. This window is the same regardless of whether you navighate to it via the landing page or a form.</font>
+    <font face="Verdana">After creating your Radius views, you can easily determine the users that have access to them via the <span style="font-weight:bold;">View Access Control</span> window. This window is the same regardless of whether you navigate to it via the landing page or a form.</font>
   </p>
   <p class="modernbody">
     <font face="Verdana">View permissions can be assigned at user-level or group-level. </font>
   </p>
   <p class="modernbody">To assign permissions to your views, do the following</p>
   <ol class="BasicNumber-modern">
-    <li class="modernbody">Do one of the following to access the <font face="Verdana"><span style="font-weight:bold">View Access Control</span> window</font>depending on whether you are on the landing page or a form page:</li>
+    <li class="modernbody">Do one of the following to access the <font face="Verdana"><span style="font-weight:bold">View Access Control</span> window, </font>depending on whether you are on the landing page or a form page:</li>
   </ol>
   <ol class="modernlist" style="margin-left: 40px;">
     <li class="modernbody">If you are on the landing page, hover over <span style="font-weight:bold;">More </span><img height="20" src="assets/Images/More.png" width="20" /> next to your view icons and select <span style="font-weight:bold;">
@@ -154,5 +137,26 @@
       </span> <img height="19" src="assets/Images/ViewAccessControlButton.png" width="20" />. The <font face="Verdana"><span style="font-weight:bold">View Access Control</span><span style="font-weight:bold"></span> window opens.</font>
     </li>
   </ol>
+  <ol class="BasicNumber-modern">
+    <li class="modernbody" style="counter-reset: item1 1;" value="2">Do one of the following to choose which level to assign permissions at:</li>
+  </ol>
+  <ol class="modernlist" style="margin-left: 40px;">
+    <li class="modernbody">Select the <span style="font-weight:bold">Users </span>option <font face="Verdana">t</font>o assign permissions at user-level.</li>
+    <li class="modernbody">Select the <span style="font-weight:bold;">Group </span>option to assign permissions at group-level.</li>
+  </ol>
+  <ol class="BasicNumber-modern">
+    <li class="modernbody" style="counter-reset: item1 2;" value="3">Select the form you want to assign permissions for form the View Context field. </li>
+  </ol>
+  <p class="modernbody"><span class="note2">The landing page is named <span style="font-weight:bold;">SalesOrderMaintenance</span>.</span></p>
+  <ol class="BasicNumber-modern">
+    <li class="modernbody" style="counter-reset: item1 2;" value="3">Select the view you want to assign permissions for from the <span style="font-weight:bold;">View Name</span> field. </li>
+    <li class="modernbody" style="">Select the check box next to the users / group you want to assign permissions for in the left-hand browser.</li>
+    <li class="modernbody" style="">Click <span style="font-weight:bold;">Assign </span><img height="20" src="assets/Images/assign.png" width="20" />. The users / groups are moved to the right-hand browser.</li>
+    <li class="modernbody" style="">Click <span style="font-weight:bold;">Save </span><img height="21" src="assets/Images/SaveAsView.png" width="20" /> to save your changes,</li>
+    <li class="modernbody" style="">Click the <span style="font-weight:bold;">Done </span>to close the window.</li>
+  </ol>
+  <div class="horizontal-rule-align-left">
+    <hr class="hrule-inner" /><img class="center-horizontal" height="" src="assets/Images/ViewAccessControl.png" width="75%" />
+  </div>
 </body>
 </html>
