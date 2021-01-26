@@ -1,11 +1,9 @@
 /*Created with Adobe RoboHelp*/
-
-.center-horizontal{
+.center-horizontal {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 .note {
   border-left: 4px solid #2B77CB;
   padding-left: 0.5rem;
@@ -46,7 +44,6 @@
   font-size: 17px;
   width: 25%;
 }
-
 
 .tablink-left {
   border-radius: 8px 0px 0px 0px;
@@ -101,6 +98,36 @@
   width: 90%;
   border: none;
 }
+
+
+h1 {
+  font-size: 2.1rem;
+  font-style: normal;
+  margin-bottom: 12pt;
+  margin-left: -5px;
+  margin-top: 8pt;
+  text-indent: 0.03in;
+  font-family: Arial;
+  color: #000000;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+  text-decoration: none;
+}
+h2-modern {
+  font-family: Arial;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2pt;
+  margin-left: 0;
+  margin-right: 6.5pt;
+  text-align: left;
+  text-indent: 0.13pt;
+  margin-top: 24px;
+  font-weight: bold;
+}
+
 p.modernbody {
   font-family: Inter;
   font-size: 1rem;
