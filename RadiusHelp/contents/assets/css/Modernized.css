@@ -63,7 +63,7 @@
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: white;
-  display: block;
+  display: none;
 }
 /* Tab IDs used for openTab function in myScript.js, add tabs as needed */
 #Tab1 {
@@ -101,7 +101,6 @@
   width: 90%;
   border: none;
 }
-
 h1 {
   font-size: 2.1rem;
   font-style: normal;

@@ -20,7 +20,7 @@
   <p class="modernbody">To add a new tab, add a new button between the <span style="font-weight:bold;">&lt;div class=tablink-navigation&gt;</span>, for example:</p>
   <p class="modernbody" style="margin-left: 0px">&lt;div class=&quot;tablink-navigation&quot;&gt;<br />
         &lt;div style=&quot;text-align:center;&quot;&gt;<br />
-            &lt;button class=&quot;tablink tablink-left&quot; onclick=&quot;openTab(&amp;#39;Tab1&amp;#39;, this, &amp;#39;#c3c3c3&amp;#39;)&quot;&gt;Tab 1&lt;/button&gt;             <br />
+            &lt;button class=&quot;defualtopen tablink tablink-left&quot; onclick=&quot;openTab(&amp;#39;Tab1&amp;#39;, this, &amp;#39;#c3c3c3&amp;#39;)&quot;&gt;Tab 1&lt;/button&gt;             <br />
             <span style="color:#54b45c;">&lt;button class=&quot;tablink tablink-middle&quot; onclick=&quot;openTab(&amp;#39;Tab2&amp;#39;, this, &amp;#39;#c3c3c3&amp;#39;)&quot;&gt;Tab 2&lt;/button&gt;</span> <br />
             &lt;button class=&quot;tablink tablink-right&quot; onclick=&quot;openTab(&amp;#39;Tab3&amp;#39;, this, &amp;#39;#c3c3c3&amp;#39;)&quot;&gt;Tab 3&lt;/button&gt; <br />
         &lt;/div&gt;<br />
@@ -40,7 +40,7 @@
   <p class="modernbody" style="margin-left: 8px">  Place your content here</p>
   <p class="modernbody" style="margin-left: 0px;">&lt;/div&gt;</p>
   <p class="modernbody" style="margin-left: 0px"> </p>
-  <p class="modernbody note" style="margin-left: 0px">By default the content for the tabs is hidden so it won&#39;t appear in authoring mode. This is because when the page loads the <span style="letter-spacing:1px;font-weight:bold">document.getElementById(&quot;defaultOpen&quot;).click();</span> logic is invoked to open the first tab by default.<br />
+  <p class="modernbody note" style="margin-left: 0px">By default the content for the tabs is hidden so it won&#39;t appear in authoring mode. This is because when the page loads the <span style="letter-spacing:1px;font-weight:bold">openDefaultTabs();</span> method is called, which opens all tabs with a class name of defaultopen.<br />
     <br />
     To show your content, simply change the following code in Modernized.CSS from<br />
     <br />
@@ -60,13 +60,8 @@
   </p>
   <p class="modernbody" style="margin-left: 0px;"><br />
      </p>
-
   <div class="tablink-navigation">    
-    <div style="text-align:center;">        
-      <button class="tablink tablink-left" id="defaultOpen" onclick="openTab(&#39;Tab1&#39;, this, &#39;#c3c3c3&#39;)">Tab 1</button>                      
-      <button class="tablink tablink-middle" onclick="openTab(&#39;Tab2&#39;, this, &#39;#c3c3c3&#39;)">Tab 2</button>          
-      <button class="tablink tablink-right" onclick="openTab(&#39;Tab3&#39;, this, &#39;#c3c3c3&#39;)">Tab 3</button>      
-    </div>
+    <div style="text-align:center;">        <button class="defaultopen tablink tablink-left" onclick="openTab(&#39;Tab1&#39;, this, &#39;#aaaaaa&#39;)">Tab 1</button><button class="tablink tablink-middle" onclick="openTab(&#39;Tab2&#39;, this, &#39;#aaaaaa&#39;)">Tab 2</button><button class="tablink tablink-right" onclick="openTab(&#39;Tab3&#39;, this, &#39;#aaaaaa&#39;)">Tab 3</button> </div>
   </div>
   <div class="tabcontent" id="Tab1">
     <p class="modernbody">This is tab 1 content.</p>
@@ -79,9 +74,8 @@
   </div>
   <script>
     //<![CDATA[
-    openDefaultTab();
+    openDefaultTabs();
     //]]>
   </script>
-
 </body>
 </html>
