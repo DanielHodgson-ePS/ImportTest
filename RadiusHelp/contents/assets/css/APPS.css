@@ -2149,7 +2149,9 @@ ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol {
   list-style: circle;
 }
 :root {
-  --borderonly-theme-color: #bfbfbf;
+  --borderonly-theme-color: #406fcb;
+  --hdrevenrowsnobdr-theme-color: #ed7d31;
+  --hdrevenrowsnobdr-row-color: rgba(237, 125, 49, 0.25);
 }
 table.borderonly {
   border-collapse: collapse;
@@ -2168,4 +2170,37 @@ ol.Decimal {
 }
 ul.Disc {
   list-style-type: disc;
+}
+table.hdrevenrowsnobdr {
+  border-collapse: collapse;
+}
+table.hdrevenrowsnobdr td {
+  border-width: 1px;
+  border-style: none;
+  border-color: transparent;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+table.hdrevenrowsnobdr tr:first-child td {
+  background-color: var(--hdrevenrowsnobdr-theme-color);
+  color: #FFFFFF;
+}
+table.hdrevenrowsnobdr tr:nth-child(even) td {
+  background-color: var(--hdrevenrowsnobdr-row-color);
+}
+table.Table-Modern {
+  font-family: Inter;
+}
+table.Table-Modern tr:nth-child(even) td {
+  background-color: #ffffff;
+}
+table.Table-Modern tr:nth-child(odd) td {
+  background-color: #ffffff;
+}
+table.Table-Modern tr:first-child td {
+  font-family: Inter;
+  background-color: #406fcb;
+  color: #fdfdfd;
 }
