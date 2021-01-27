@@ -5,11 +5,15 @@
   margin-right: auto;
 }
 .note {
+  font-family: Inter;
+  font-size: 1rem;
   border-left: 4px solid #2B77CB;
   padding-left: 0.5rem;
   margin-left: 1rem;
 }
 .note2 {
+  font-family: Inter;
+  font-size: 1rem;
   border-left: 4px solid #2B77CB;
   padding-left: 0.5rem;
   margin-left: 3rem;
@@ -44,7 +48,6 @@
   font-size: 17px;
   width: 25%;
 }
-
 .tablink-left {
   border-radius: 8px 0px 0px 0px;
 }
@@ -60,7 +63,7 @@
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: white;
-  display: none;
+  display: block;
 }
 /* Tab IDs used for openTab function in myScript.js, add tabs as needed */
 #Tab1 {
@@ -99,7 +102,6 @@
   border: none;
 }
 
-
 h1 {
   font-size: 2.1rem;
   font-style: normal;
@@ -127,7 +129,6 @@ h2-modern {
   margin-top: 24px;
   font-weight: bold;
 }
-
 p.modernbody {
   font-family: Inter;
   font-size: 1rem;
@@ -259,3 +260,34 @@ ol.modern-numbered>li:before {
   font-size: 1rem;
 }
 ol.modern-number {}
+ol.modernlist>li>ol>li>ol>li>ol {
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 24px;
+  --list-indent: 32px;
+  --vertical-spacing: 0px;
+  counter-reset: item4;
+  list-style: none;
+  padding-left: var(--prefix-size);
+  margin-left: calc(var(--list-indent) - var(--prefix-size));
+}
+ol.modernlist>li>ol>li>ol>li>ol>li {
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 24px;
+  --list-indent: 32px;
+  --vertical-spacing: 0px;
+  position: relative;
+  margin-top: calc(var(--vertical-spacing) / 2);
+  margin-bottom: calc(var(--vertical-spacing) / 2);
+}
+ol.modernlist>li>ol>li>ol>li>ol>li:before {
+  counter-increment: item4;
+  content: counter(item4, disc);
+  text-align: right;
+  position: absolute;
+  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
+  margin-right: var(--prefix-gap);
+  width: var(--prefix-size);
+  overflow: hidden;
+}
