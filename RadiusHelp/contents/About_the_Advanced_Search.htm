@@ -8,9 +8,9 @@
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="assets/css/APPS.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/Modernized.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/Tables-Modern.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/Accordion_Dropdown.css" />
 </head>
-<body>e
+<body>
   <h1 style="font-size: 2.5rem;font-family: Verdana"><span style="font-size:2.1rem;"><span style="font-weight:bold;">Radius Tutorials - About the Advanced Search</span></span></h1>
   <p class="modernbody"><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText"><span style="font-size: 1rem;"></span></span></span></span></p>
   <p class="modernbody"><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText">The Radius Advanced Search utilizes the Elastic Search engine, allowing you to build and perform search queries that return results incredibly fast, even when searching large databases. You can access this window by clicking <span style="font-weight:bold;">Advanced Search</span> <img height="20" src="assets/Images/advanced_search.png" width="20" /> next to the search field on the toolbar.</span></span></span></p>
@@ -26,321 +26,253 @@
   <div class="horizontal-rule-align-left">
     <hr class="hrule-inner" />
   </div>
-  <p class="modernbody"><span style="font-family: Arial; font-size: 1.2rem; font-weight: bold; text-indent: 0.13pt;">Operators</span></p>
-  <p class="modernbody">Operators tell the <span style="font-weight:bold;">Advanced Search</span> to perform a specific mathematical, relational or logical operation and produce final result. Simply put, they are options you use to choose the type of search you want to perform.  The following operators are available to you:</p>
-  <p class="modernbody"><span style="font-weight:bold;">Match</span></p>
-  <p class="modernbody"><span style="font-weight:bold;"></span>The results have to contain this word.</p>
-  <p class="modernbody">The following example is looking for an estimate that has a Product group that contains the word Boxes. Results for this includes Boxes or Food Boxes.</p>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
-    <colgroup>
-    </colgroup>
-    <colgroup>
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-    </colgroup>
-    <tbody>
-      <tr class="t1st">
-        <td style="font-family: Inter;font-size: 1rem">Field</td>
-        <td style="font-family: Inter;font-size: 1rem">Type</td>
-        <td style="font-family: Inter;font-size: 1rem">Operator</td>
-        <td style="font-family: Inter;font-size: 1rem">Value</td>
-        <td style="font-family: Inter;font-size: 1rem">From Value</td>
-        <td style="font-family: Inter;font-size: 1rem">To Value</td>
-      </tr>
-      <tr class="t2Row">
-        <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Product Group</td>
-        <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Must</td>
-        <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Match</td>
-        <td style="font-family: Inter;font-size: 1rem"><span style="font-style:italic;">Boxes</span></td>
-        <td style="font-family: Inter;font-size: 1rem"> </td>
-        <td style="font-family: Inter;font-size: 1rem"> </td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="horizontal-rule-align-left"> </div>
-  <p class="modernbody"><span style="font-weight:bold;">Range</span></p>
-  <p class="modernbody"><span style="font-weight:bold;"></span><span>The value must be between the specified limits.</span></p>
-  <p class="modernbody">The following example is looking for an item with a Dim A that is greater than 4.000 but less than or equal to 12.000. </p>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
-    <colgroup>
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-    </colgroup>
-    <tbody>
-      <tr class="t1st">
-        <td style="font-family: Inter;font-size: 1rem">Field</td>
-        <td style="font-family: Inter;font-size: 1rem">Type</td>
-        <td style="font-family: Inter;font-size: 1rem">Operator</td>
-        <td style="font-family: Inter;font-size: 1rem">Value</td>
-        <td style="font-family: Inter;font-size: 1rem">From Value</td>
-        <td style="font-family: Inter;font-size: 1rem">To Value</td>
-      </tr>
-      <tr class="t2Row">
-        <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Dim A</td>
-        <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Must</td>
-        <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Range</td>
-        <td style="font-family: Inter;font-size: 1rem"> </td>
-        <td style="font-family: Inter;font-size: 1rem"><span style="font-style:italic;">4.000</span></td>
-        <td style="font-family: Inter;font-size: 1rem">12.00</td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="horizontal-rule-align-left"> </div>
-  <p class="modernbody"><span style="font-weight:bold;">Wildcard</span></p>
-  <p class="modernbody"><span style="font-weight:bold;"></span>You can search using wildcards, meaning that a symbol can be used to replace or represent one or more characters. The most common wildcards are the asterisk (*), which represents one or more characters and question mark (?) that represents a single character.</p>
-  <p class="modernbody">The following example is looking for an estimate that has an Estimate Title that contains the exact word coating using an operator of Match.</p>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
-    <colgroup>
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-    </colgroup>
-    <tbody>
-      <tr class="t1st">
-        <td style="font-family: Inter;font-size: 1rem">Field</td>
-        <td style="font-family: Inter;font-size: 1rem">Type</td>
-        <td style="font-family: Inter;font-size: 1rem">Operator</td>
-        <td style="font-family: Inter;font-size: 1rem">Value</td>
-        <td style="font-family: Inter;font-size: 1rem">From Value</td>
-        <td style="font-family: Inter;font-size: 1rem">To Value</td>
-      </tr>
-      <tr class="t2Row">
-        <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Estimate Title</td>
-        <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Must</td>
-        <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Match</td>
-        <td style="font-family: Inter;font-size: 1rem"><span style="font-style:italic;">Coating</span></td>
-        <td style="font-family: Inter;font-size: 1rem"> </td>
-        <td style="font-family: Inter;font-size: 1rem"> </td>
-      </tr>
-    </tbody>
-  </table>
-    <p class="modernbody">The results show the following estimate titles:</p>
-    <ol class="modernlist">
-      <li class="modernbody"><span style="font-style:italic;">Coating and Slitting</span></li>
-      <li class="modernbody"><span style="font-style:italic;">Extrusion Coating with Drool</span></li>
-    </ol>
-    <p class="modernbody">However, if you use an operator of Wildcard and look for an estimate that has an Estimate Title that contains coating*, the asterisk * can represent multiple characters.</p>
+  <div class="accordion-wrapper">
+    <h1><span style="color:#000000;"><span style="font-size:1.5rem;"><b>Operators</b></span></span></h1>
     <p> </p>
-    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
-      <colgroup>
-        <col style="width: 12.5%;" />
-        <col style="width: 12.5%;" />
-        <col style="width: 12.5%;" />
-        <col style="width: 12.5%;" />
-        <col style="width: 12.5%;" />
-        <col style="width: 12.5%;" />
-      </colgroup>
-      <tbody>
-        <tr class="t1st">
-          <td style="font-family: Inter;font-size: 1rem">Field</td>
-          <td style="font-family: Inter;font-size: 1rem">Type</td>
-          <td style="font-family: Inter;font-size: 1rem">Operator</td>
-          <td style="font-family: Inter;font-size: 1rem">Value</td>
-          <td style="font-family: Inter;font-size: 1rem">From Value</td>
-          <td style="font-family: Inter;font-size: 1rem">To Value</td>
-        </tr>
-        <tr class="t2Row">
-          <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Estimate Title</td>
-          <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Must</td>
-          <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Wildcard</td>
-          <td style="font-family: Inter;font-size: 1rem"><span style="font-style:italic;">Coating*</span></td>
-          <td style="font-family: Inter;font-size: 1rem"> </td>
-          <td style="font-family: Inter;font-size: 1rem"> </td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="modernbody">The results show the following estimate titles:</p>
-    <ol class="modernlist">
-      <li class="modernbody"><span style="font-style:italic;">Coating and Slitting</span></li>
-      <li class="modernbody"><span style="font-style:italic;">Coatings Multi pass</span></li>
-      <li class="modernbody"><span style="font-style:italic;">Carton Coatings</span></li>
-      <li class="modernbody"><span style="font-style:italic;">Extrusion Coating with Drool</span></li>
-    </ol>
-  <p> </p>
-  <p class="modernbody"><span style="font-weight:bold;">Exists</span></p>
-  <p class="modernbody">The estimate must have the specified field populated.</p>
-  <p class="modernbody">The following example is looking for an estimate that has a Customer code specified.</p>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
-    <colgroup>
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-    </colgroup>
-    <tbody>
-      <tr class="t1st">
-        <td style="font-size: 1rem;font-family: Inter">Field</td>
-        <td style="font-size: 1rem;font-family: Inter">Type</td>
-        <td style="font-size: 1rem;font-family: Inter">Operator</td>
-        <td style="font-size: 1rem;font-family: Inter">Value</td>
-        <td style="font-size: 1rem;font-family: Inter">From Value</td>
-        <td style="font-size: 1rem;font-family: Inter">To Value</td>
-      </tr>
-      <tr class="t2Row">
-        <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Customer Code</td>
-        <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Must</td>
-        <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Exists</td>
-        <td style="font-size: 1rem;font-family: Inter"> </td>
-        <td style="font-size: 1rem;font-family: Inter"> </td>
-        <td style="font-size: 1rem;font-family: Inter"> </td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="horizontal-rule-align-left"> </div>
-  <p class="modernbody"><span style="font-weight:bold;">Prefix</span>: The word in the specified field must begin with this. If there are two words in the field then either word can begin with this.</p>
-  <p class="modernbody">The following example is looking for an estimate that has a Product group that contains a word staring with Pack. For example, if you search for Pack then the results could include Packaging or Flexible Packaging.</p>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
-    <colgroup>
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-    </colgroup>
-    <tbody>
-      <tr class="t1st">
-        <td style="font-size: 1rem;font-family: Inter">Field</td>
-        <td style="font-size: 1rem;font-family: Inter">Type</td>
-        <td style="font-size: 1rem;font-family: Inter">Operator</td>
-        <td style="font-size: 1rem;font-family: Inter">Value</td>
-        <td style="font-size: 1rem;font-family: Inter">From Value</td>
-        <td style="font-size: 1rem;font-family: Inter">To Value</td>
-      </tr>
-      <tr class="t2Row">
-        <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Product Code</td>
-        <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Must</td>
-        <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Prefix</td>
-        <td style="font-size: 1rem;font-family: Inter"><span style="font-style:italic;">Pack</span></td>
-        <td style="font-size: 1rem;font-family: Inter"> </td>
-        <td style="font-size: 1rem;font-family: Inter"> </td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="horizontal-rule-align-left"> </div>
-  <p class="modernbody"><span style="font-weight:bold;">Fuzzy</span></p>
-  <p class="modernbody"><span style="font-weight:bold;"></span>The word in the specified field must be similar to this. This is useful for spelling mistakes.</p>
-  <p class="modernbody">For example, if you misspell Fle<span style="color:#00d100;">xi</span>ble as Fle<span style="color:#ff0000;">ix</span>ble in the search criteria then the results would include words listed as Flexible with the correct spelling.   </p>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
-    <colgroup>
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-      <col style="width: 12.5%;" />
-    </colgroup>
-    <tbody>
-      <tr class="t1st">
-        <td style="font-size: 1rem;font-family: Inter">Field</td>
-        <td style="font-size: 1rem;font-family: Inter">Type</td>
-        <td style="font-size: 1rem;font-family: Inter">Operator</td>
-        <td style="font-size: 1rem;font-family: Inter">Value</td>
-        <td style="font-size: 1rem;font-family: Inter">From Value</td>
-        <td style="font-size: 1rem;font-family: Inter">To Value</td>
-      </tr>
-      <tr class="t2Row">
-        <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Product Group</td>
-        <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Must</td>
-        <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Fuzzy</td>
-        <td style="font-size: 1rem;font-family: Inter"><span style="font-style:italic;">Flexible</span></td>
-        <td style="font-size: 1rem;font-family: Inter"> </td>
-        <td style="font-size: 1rem;font-family: Inter"> </td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="horizontal-rule-align-left">
-    <div class="horizontal-rule-align-left">
-      <hr class="hrule-inner" />
-    </div>
-    <p class="modernbody"><span style="font-family: Arial; font-size: 1.2rem; font-weight: bold; text-indent: 0.13pt;">Types</span><br />
-      You can select the following types to modify your search:</p>
-    <p class="modernbody"><span style="font-weight:bold;">Must</span></p>
-    <p class="modernbody"><span style="font-weight:bold;"></span>The results must equal the specified criteria. See the examples listed above.</p>
-    <p class="modernbody"><span style="font-weight:bold;">Must not</span></p>
-    <p class="modernbody"><span style="font-weight:bold;"></span>The results must not equal the specified criteria. For example, to exclude Flexible estimates from your search results, use the following criteria.</p>
-    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
-      <colgroup>
-        <col style="width: 12.5%;" />
-        <col style="width: 12.5%;" />
-        <col style="width: 12.5%;" />
-        <col style="width: 12.5%;" />
-        <col style="width: 12.5%;" />
-        <col style="width: 12.5%;" />
-      </colgroup>
-      <tbody>
-        <tr class="t1st">
-          <td style="font-size: 1rem;font-family: Inter">Field</td>
-          <td style="font-size: 1rem;font-family: Inter">Type</td>
-          <td style="font-size: 1rem;font-family: Inter">Operator</td>
-          <td style="font-size: 1rem;font-family: Inter">Value</td>
-          <td style="font-size: 1rem;font-family: Inter">From Value</td>
-          <td style="font-size: 1rem;font-family: Inter">To Value</td>
-        </tr>
-        <tr class="t2Row">
-          <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Product Group</td>
-          <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Must Not</td>
-          <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Match</td>
-          <td style="font-size: 1rem;font-family: Inter"><span style="font-style:italic;">Flexible</span></td>
-          <td style="font-size: 1rem;font-family: Inter"> </td>
-          <td style="font-size: 1rem;font-family: Inter"> </td>
-        </tr>
-      </tbody>
-    </table>
-    <p> </p>
-    <p class="modernbody"><span style="font-weight:bold;">Should</span></p>
-    <p class="modernbody"><span style="font-weight:bold;"></span>This prioritizes the results of the search results that have been returned with optional criteria. For example, if you have results returned that have a range of 2.000 to 4.000, you can prioritize 3.785 to the top of the results list.</p>
-    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
-      <colgroup>
-        <col style="width: 12.5%;" />
-        <col style="width: 12.5%;" />
-        <col style="width: 12.5%;" />
-        <col style="width: 12.5%;" />
-        <col style="width: 12.5%;" />
-        <col style="width: 12.5%;" />
-      </colgroup>
-      <tbody>
-        <tr class="t1st">
-          <td style="font-size: 1rem;font-family: Inter">Field</td>
-          <td style="font-size: 1rem;font-family: Inter">Type</td>
-          <td style="font-size: 1rem;font-family: Inter">Operator</td>
-          <td style="font-size: 1rem;font-family: Inter">Value</td>
-          <td style="font-size: 1rem;font-family: Inter">From Value</td>
-          <td style="font-size: 1rem;font-family: Inter">To Value</td>
-        </tr>
-        <tr class="t2Row">
-          <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Dim A</td>
-          <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Must</td>
-          <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Range</td>
-          <td style="font-size: 1rem;font-family: Inter"> </td>
-          <td style="font-size: 1rem;font-family: Inter">2.000</td>
-          <td style="font-size: 1rem;font-family: Inter"><span style="font-style:italic;">4.000</span></td>
-        </tr>
-        <tr>
-          <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Dim A</td>
-          <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Should</td>
-          <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Match</td>
-          <td style="font-size: 1rem;font-family: Inter"><span style="font-style:italic;">3.785</span></td>
-          <td style="font-size: 1rem;font-family: Inter"> </td>
-          <td style="font-size: 1rem;font-family: Inter"> </td>
-        </tr>
-      </tbody>
-    </table>
-    <hr class="hrule" />
+    <ul class="accordion">
+      <li class="accordion"><input name="accordion" type="checkbox" /> <i></i>
+        <h2>Match</h2>
+        <p class="modernbody accordion"><span style="font-weight:bold;"></span>The results have to contain this word.</p>
+        <p class="modernbody accordion">The following example is looking for an estimate that has a Product group that contains the word Boxes. Results for this includes Boxes or Food Boxes</p>
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
+          <colgroup>
+          </colgroup>
+          <colgroup>
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+          </colgroup>
+          <tbody>
+            <tr class="t1st">
+              <td style="font-family: Inter;font-size: 1rem">Field</td>
+              <td style="font-family: Inter;font-size: 1rem">Type</td>
+              <td style="font-family: Inter;font-size: 1rem">Operator</td>
+              <td style="font-family: Inter;font-size: 1rem">Value</td>
+              <td style="font-family: Inter;font-size: 1rem">From Value</td>
+              <td style="font-family: Inter;font-size: 1rem">To Value</td>
+            </tr>
+            <tr class="t2Row">
+              <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Product Group</td>
+              <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Must</td>
+              <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Match</td>
+              <td style="font-family: Inter;font-size: 1rem"><span style="font-style:italic;">Boxes</span></td>
+              <td style="font-family: Inter;font-size: 1rem"> </td>
+              <td style="font-family: Inter;font-size: 1rem"> </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li class="accordion"><input name="accordion" type="checkbox" /> <i></i>
+        <h2>Range</h2>
+        <p class="modernbody"><span style="font-weight:bold;"></span><span>The value must be between the specified limits.</span></p>
+        <p class="modernbody">The following example is looking for an item with a Dim A that is greater than 4.000 but less than or equal to 12.000. </p>
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
+          <colgroup>
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+          </colgroup>
+          <tbody>
+            <tr class="t1st">
+              <td style="font-family: Inter;font-size: 1rem">Field</td>
+              <td style="font-family: Inter;font-size: 1rem">Type</td>
+              <td style="font-family: Inter;font-size: 1rem">Operator</td>
+              <td style="font-family: Inter;font-size: 1rem">Value</td>
+              <td style="font-family: Inter;font-size: 1rem">From Value</td>
+              <td style="font-family: Inter;font-size: 1rem">To Value</td>
+            </tr>
+            <tr class="t2Row">
+              <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Dim A</td>
+              <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Must</td>
+              <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Range</td>
+              <td style="font-family: Inter;font-size: 1rem"> </td>
+              <td style="font-family: Inter;font-size: 1rem"><span style="font-style:italic;">4.000</span></td>
+              <td style="font-family: Inter;font-size: 1rem">12.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li class="accordion"><input name="accordion" type="checkbox" /> <i></i>
+        <h2>Wildcard</h2>
+        <p class="modernbody"><span style="font-weight:bold;"></span>You can search using wildcards, meaning that a symbol can be used to replace or represent one or more characters. The most common wildcards are the asterisk (*), which represents one or more characters and question mark (?) that represents a single character.</p>
+        <p class="modernbody">The following example is looking for an estimate that has an Estimate Title that contains the exact word coating using an operator of Match.</p>
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
+          <colgroup>
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+          </colgroup>
+          <tbody>
+            <tr class="t1st">
+              <td style="font-family: Inter;font-size: 1rem">Field</td>
+              <td style="font-family: Inter;font-size: 1rem">Type</td>
+              <td style="font-family: Inter;font-size: 1rem">Operator</td>
+              <td style="font-family: Inter;font-size: 1rem">Value</td>
+              <td style="font-family: Inter;font-size: 1rem">From Value</td>
+              <td style="font-family: Inter;font-size: 1rem">To Value</td>
+            </tr>
+            <tr class="t2Row">
+              <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Estimate Title</td>
+              <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Must</td>
+              <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Match</td>
+              <td style="font-family: Inter;font-size: 1rem"><span style="font-style:italic;">Coating</span></td>
+              <td style="font-family: Inter;font-size: 1rem"> </td>
+              <td style="font-family: Inter;font-size: 1rem"> </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="modernbody">The results show the following estimate titles:</p>
+        <ol class="modernlist">
+          <li class="modernbody"><span style="font-style:italic;">Coating and Slitting</span></li>
+          <li class="modernbody"><span style="font-style:italic;">Extrusion Coating with Drool</span></li>
+        </ol>
+        <p class="modernbody">However, if you use an operator of Wildcard and look for an estimate that has an Estimate Title that contains coating*, the asterisk * can represent multiple characters.</p>
+        <p> </p>
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
+          <colgroup>
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+          </colgroup>
+          <tbody>
+            <tr class="t1st">
+              <td style="font-family: Inter;font-size: 1rem">Field</td>
+              <td style="font-family: Inter;font-size: 1rem">Type</td>
+              <td style="font-family: Inter;font-size: 1rem">Operator</td>
+              <td style="font-family: Inter;font-size: 1rem">Value</td>
+              <td style="font-family: Inter;font-size: 1rem">From Value</td>
+              <td style="font-family: Inter;font-size: 1rem">To Value</td>
+            </tr>
+            <tr class="t2Row">
+              <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Estimate Title</td>
+              <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Must</td>
+              <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Wildcard</td>
+              <td style="font-family: Inter;font-size: 1rem"><span style="font-style:italic;">Coating*</span></td>
+              <td style="font-family: Inter;font-size: 1rem"> </td>
+              <td style="font-family: Inter;font-size: 1rem"> </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="modernbody">The results show the following estimate titles:</p>
+        <ol class="modernlist">
+          <li class="modernbody"><span style="font-style:italic;">Coating and Slitting</span></li>
+          <li class="modernbody"><span style="font-style:italic;">Coatings Multi pass</span></li>
+          <li class="modernbody"><span style="font-style:italic;">Carton Coatings</span></li>
+          <li class="modernbody"><span style="font-style:italic;">Extrusion Coating with Drool</span></li>
+        </ol>
+      </li>
+      <li class="accordion"><input name="accordion" type="checkbox" /> <i></i>
+        <h2>Exists</h2>
+        <p class="modernbody">The estimate must have the specified field populated.</p>
+        <p class="modernbody">The following example is looking for an estimate that has a Customer code specified.</p>
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
+          <colgroup>
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+          </colgroup>
+          <tbody>
+            <tr class="t1st">
+              <td style="font-size: 1rem;font-family: Inter">Field</td>
+              <td style="font-size: 1rem;font-family: Inter">Type</td>
+              <td style="font-size: 1rem;font-family: Inter">Operator</td>
+              <td style="font-size: 1rem;font-family: Inter">Value</td>
+              <td style="font-size: 1rem;font-family: Inter">From Value</td>
+              <td style="font-size: 1rem;font-family: Inter">To Value</td>
+            </tr>
+            <tr class="t2Row">
+              <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Customer Code</td>
+              <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Must</td>
+              <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Exists</td>
+              <td style="font-size: 1rem;font-family: Inter"> </td>
+              <td style="font-size: 1rem;font-family: Inter"> </td>
+              <td style="font-size: 1rem;font-family: Inter"> </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li class="accordion"><input name="accordion" type="checkbox" /> <i></i>
+        <h2>Prefix</h2>
+        <p class="modernbody">The word in the specified field must begin with this. If there are two words in the field then either word can begin with this.</p>
+        <p class="modernbody">The following example is looking for an estimate that has a Product group that contains a word staring with Pack. For example, if you search for Pack then the results could include Packaging or Flexible Packaging.</p>
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
+          <colgroup>
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+          </colgroup>
+          <tbody>
+            <tr class="t1st">
+              <td style="font-size: 1rem;font-family: Inter">Field</td>
+              <td style="font-size: 1rem;font-family: Inter">Type</td>
+              <td style="font-size: 1rem;font-family: Inter">Operator</td>
+              <td style="font-size: 1rem;font-family: Inter">Value</td>
+              <td style="font-size: 1rem;font-family: Inter">From Value</td>
+              <td style="font-size: 1rem;font-family: Inter">To Value</td>
+            </tr>
+            <tr class="t2Row">
+              <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Product Code</td>
+              <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Must</td>
+              <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Prefix</td>
+              <td style="font-size: 1rem;font-family: Inter"><span style="font-style:italic;">Pack</span></td>
+              <td style="font-size: 1rem;font-family: Inter"> </td>
+              <td style="font-size: 1rem;font-family: Inter"> </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li class="accordion"><input name="accordion" type="checkbox" /> <i></i>
+        <h2>Fuzzy</h2>
+        <p class="modernbody">The word in the specified field must be similar to this. This is useful for spelling mistakes.</p>
+        <p class="modernbody">For example, if you misspell Fle<span style="color:#00d100;">xi</span>ble as Fle<span style="color:#ff0000;">ix</span>ble in the search criteria then the results would include words listed as Flexible with the correct spelling.   </p>
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
+          <colgroup>
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+            <col style="width: 12.5%;" />
+          </colgroup>
+          <tbody>
+            <tr class="t1st">
+              <td style="font-size: 1rem;font-family: Inter">Field</td>
+              <td style="font-size: 1rem;font-family: Inter">Type</td>
+              <td style="font-size: 1rem;font-family: Inter">Operator</td>
+              <td style="font-size: 1rem;font-family: Inter">Value</td>
+              <td style="font-size: 1rem;font-family: Inter">From Value</td>
+              <td style="font-size: 1rem;font-family: Inter">To Value</td>
+            </tr>
+            <tr class="t2Row">
+              <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Product Group</td>
+              <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Must</td>
+              <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Fuzzy</td>
+              <td style="font-size: 1rem;font-family: Inter"><span style="font-style:italic;">Flexible</span></td>
+              <td style="font-size: 1rem;font-family: Inter"> </td>
+              <td style="font-size: 1rem;font-family: Inter"> </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
   </div>
-  <p> </p>
 </body>
 </html>
