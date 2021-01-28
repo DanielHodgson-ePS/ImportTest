@@ -26,6 +26,7 @@
   </ol>
   <h2><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#">Sales Order Details</a></h2>
   <div class="droptext" data-targetname="drop-down6">
+    <p>The <span class="software">Sales Order Details</span> section contains the main details of the sales order record, holding the customer account, order reference, the billing address, shipping address and other details.  </p>
     <h3>Buttons</h3>
     <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
       <colgroup>
@@ -48,40 +49,47 @@
           </td>
         </tr>
         <tr class="t1Row">
-          <td><span class="software">User Defined Elements</span></td>
+          <td><span class="software"><span class="software"><img src="../assets/Images/CommandsMod/UserDefinedElements.png" /> </span>User Defined Elements</span></td>
           <td>
             <p>Click to open the <a data-xref="{title}" href="User_Defined_Elements.htm">User Defined Elements</a> where you can view user defined elements (custom fields) associated with the sales order. User Defined Elements are additional fields which you can define and add into the EFI Radius database. The purpose of the fields is to allow you to record additional information which can be viewed or added to customized reports. See <span class="software">Company &gt; Jobs and Costing &gt; User Defined Elements</span>.</p>
           </td>
         </tr>
         <tr class="t2Row">
-          <td><span class="software">View Quantities by Plant</span></td>
+          <td>
+            <p><span class="software"><img src="../assets/Images/CommandsMod/View_Quantities_by_Plant.png" /> View Quantities by Plant</span></p>
+          </td>
           <td>
             <p>Click to open the <a data-xref="{title}" href="Quantities_By_Plant.htm">Quantities By Plant</a> window to view which plants the order has been allocated to.</p>
           </td>
         </tr>
         <tr class="t1Row">
-          <td><span class="software">Interface Order Details</span></td>
+          <td>
+            <p><span class="software"><img src="../assets/Images/CommandsMod/Interface_Order_Details.png" /> Interface Order Details</span></p>
+          </td>
           <td>
             <p>Click to open the <a data-xref="{title}" href="Interface_Order_Details.htm">Interface Order Details</a> window where you can maintain interface details when sales orders are created from a third party system.</p>
           </td>
         </tr>
         <tr>
           <td>
-            <p><span class="software">Sales Order Notes</span></p>
+            <p><span class="software"><img src="../assets/Images/CommandsMod/Sales_Order_Notes.png" /> Sales Order Notes</span></p>
           </td>
           <td>
-            <p>Click to open the <a data-xref="{title}" href="Sales_Order_Notes.htm">Sales Order Notes</a> window</p>
+            <p>Click to open the <a data-xref="{title}" href="Sales_Order_Notes.htm">Sales Order Notes</a> window where you can enter any additional notes on the sales order. </p>
           </td>
         </tr>
         <tr>
           <td>
-            <p><span class="software">Files Attachment</span></p>
+            <p><span class="software"><img src="../assets/Images/CommandsMod/Files_Attachment.png" /> Files Attachment</span></p>
           </td>
-          <td>Click to open the <a data-xref="{title}" href="File_and_Link_Attachments.htm">File and Link Attachments</a></td>
+          <td>
+            <p>Click to open the <a data-xref="{title}" href="File_and_Link_Attachments.htm">File and Link Attachments</a> where you can attach or link files to a sales order. This provides a way of including supplementary information. </p>
+            <p class="Tip-Note-Text"><span class="software">Note</span>:  By default, Radius allows.pdf, .xls, .xlsx, .doc, .docx, .png, .jpeg and .img file formats to be uploaded. The maximum number of files that can be uploaded is also limited to five, with a maximum file size of 10MB for each file. However, you can change these settings in the Admin Settings page or circumvent them by alternatively adding a weblink to the files. See <a href="../Configuring_File_Attachment_Settings.htm">Configuring File Attachment Settings</a> for more details.</p>
+          </td>
         </tr>
         <tr>
           <td>
-            <p><span class="software">Intercompany Transaction Details</span></p>
+            <p><span class="software"><img src="../assets/Images/CommandsMod/Intercompany_Transaction_Details.png" />Intercompany Transaction Details</span></p>
           </td>
           <td>
             <p>Click to open the <a data-xref="{title}" href="Intercompany_Transaction_Details.htm">Intercompany Transaction Details</a> window</p>
@@ -593,7 +601,662 @@
     <div class="horizontal-rule-align-left">
       <hr class="hrule" />
     </div>
-    <div class="horizontal-rule-align-left"><br />
+    <h2> </h2>
+    <div class="droptext" data-targetname="drop-down8">
+      <div class="droptext" data-targetname="drop-down10">
+        <div class="horizontal-rule-align-left"> </div>
+        <div class="horizontal-rule-align-left"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="droptext" data-targetname="drop-down14">
+    <h2><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down11" href="#">Order Details</a></h2>
+    <div class="droptext" data-targetname="drop-down11">
+      <div class="droptext" data-targetname="drop-down12">
+        <p class="">The <span class="software">Order Details</span> section contains the lines are the items on the sales order. If the sales order is linked to an estimate, the lines will be automatically created from the estimate details.</p>
+        <h3>Buttons (Order Lines Grid)</h3>
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+          <tbody>
+            <tr class="t1st">
+              <td>
+                <p><span class="software">Button</span></p>
+              </td>
+              <td>
+                <p><span class="software">Description</span></p>
+              </td>
+            </tr>
+            <tr class="t2Row">
+              <td><span class="software"> </span>
+                <p><span class="software"><img src="../assets/Images/CommandsMod/Edit.png" /> Edit All Lines</span></p> <span class="software"> </span>
+              </td>
+              <td>
+                <p>Click to edit all order lines in the grid.</p>
+              </td>
+            </tr>
+            <tr class="t1Row">
+              <td><span class="software"> </span>
+                <p><span class="software"><img height="14" src="../assets/Images/CommandsMod/Add.png" style="cursor: nesw-resize;" width="15" /> Order Line</span></p> <span class="software"> </span>
+              </td>
+              <td>
+                <p>Click to add a new order line and open the add/edit mode. </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Sales Order Lines<br /></h3>
+        <h4>Buttons </h4>
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
+          <colgroup>
+            <col />
+            <col />
+          </colgroup>
+          <tbody>
+            <tr class="t1st">
+              <td>
+                <p><span class="software">Button</span></p>
+              </td>
+              <td>
+                <p><span class="software">Description</span></p>
+              </td>
+            </tr>
+            <tr class="t2Row">
+              <td>
+                <p class=""><span class="software"><img src="../assets/Images/CommandsMod/Sales_Order_Search.png" /> Search for Sales Order by Item Code</span></p>
+              </td>
+              <td>
+                <p>Click to open the <a data-xref="{title}" href="Sales_Order_Analysis.htm">Sales Order Analysis</a> window to maintain sales order analysis codes.  These codes are used for transaction analysis.</p>
+              </td>
+            </tr>
+            <tr class="t1Row">
+              <td><span class="software"><img src="../assets/Images/CommandsMod/UserDefinedElements.png" /> User Defined Elements</span></td>
+              <td>
+                <p>Click to open the <a data-xref="{title}" href="User_Defined_Elements.htm">User Defined Elements</a> where you can view user defined elements (custom fields) associated with the sales order. User Defined Elements are additional fields which you can define and add into the EFI Radius database. The purpose of the fields is to allow you to record additional information which can be viewed or added to customized reports. See <span class="software">Company &gt; Jobs and Costing &gt; User Defined Elements</span>.</p>
+              </td>
+            </tr>
+            <tr class="t2Row">
+              <td>
+                <p class=""><span class="software">Part Item Details</span></p>
+              </td>
+              <td>
+                <p class="">This button is only relevant for items which are ‘kits’. That is they are an assembly of sub-components. Click to show a list of the sub-components that make up the kit.<br /></p>
+              </td>
+            </tr>
+            <tr class="t1Row">
+              <td>
+                <p class=""><span class="software">Item Narratives</span></p>
+              </td>
+              <td>
+                <p class="">Click to open the read-only <span class="software">Item Narrative</span> window, where predefined standard text phrases that have been assigned to the item are displayed. This window is only active if an item has been given a narrative in the <span class="software">Items &gt; Items</span> window.<br /></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Sales Order Line Pricing</span></p>
+              </td>
+              <td>
+                <p class=""><br /></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Sales Order Line Comments</span></p>
+              </td>
+              <td>
+                <p class=""><br /></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Sales Order Line Item Numbering</span></p>
+              </td>
+              <td>
+                <p class="">Click to open the <span class="software">Sales Order Numbering</span> window to allow information on numbering to be entered for numbered items. These options relate to the EFI Radius Business Forms Estimating module.<br /></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Fields</h4>
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+          <colgroup>
+            <col />
+            <col />
+            <col />
+          </colgroup>
+          <tbody>
+            <tr class="t1st">
+              <td>
+                <p><span class="software">Field/Column</span></p>
+              </td>
+              <td>
+                <p><span class="software">Description</span></p>
+              </td>
+              <td>
+                <p><span class="software">Required</span></p>
+              </td>
+            </tr>
+            <tr class="t2Row">
+              <td>
+                <p><span class="software">Item Code</span></p>
+              </td>
+              <td>
+                <p class="">Specify the reference for the item required by the customer. <br /></p>
+                <p>If you want to create a new item for this order line, you can do that directly from this field by using a template. Click <img src="../assets/Images/CommandsMod/lookup.png" /> to display the <a href="Item_Code.htm" data-xref="{title}">Item Code</a> window where you can select the <span class="software">From Template</span> option to create a new item. </p>
+              </td>
+              <td>
+                <p>Yes</p>
+              </td>
+            </tr>
+            <tr class="t1Row">
+              <td><span class="software">Quantity</span></td>
+              <td>
+                <p class=""> Enter the quantity the customer has ordered in the unit of measure described to the right of <span class="software">Quantity</span> field. Click <span class="software">Quantity Conversion Details</span> <img src="../assets/Images/QuantityConversionDetails.png" /> to display the <span class="software">Item Quantity Conversion</span> window to display the order units converted to the other units of measure defined on the system. </p>
+              </td>
+              <td>
+                <p>Yes</p>
+              </td>
+            </tr>
+            <tr class="t2Row">
+              <td><span class="software">Price</span></td>
+              <td>
+                <p class="">Enter the agreed selling price per unit of measure (normally per thousand). The price and unit of measure will have been automatically set by EFI Radius if the production estimate used to create the sales order was priced. The unit of measure is displayed to the right of the <span class="software">Price</span> field.</p>
+              </td>
+              <td>
+                <p>Yes</p>
+              </td>
+            </tr>
+            <tr class="t1Row">
+              <td>
+                <p class=""><span class="software">Required Date</span></p>
+              </td>
+              <td>
+                <p class="">Specify the date that the customer requires the order. This date will default from the <span class="software">Required Date</span> on the main sales order record. <br /></p>
+              </td>
+              <td>
+                <p>Yes</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Have Ready Date</span></p>
+              </td>
+              <td>
+                <p class="">Specify the date when the finished products should be available for shipment. This date will default from the <span class="software">Have Ready Date</span> on the main sales order record. </p>
+              </td>
+              <td>
+                <p>Yes</p>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="software">Size</span></td>
+              <td>
+                <p>Specify the dimnenstions of the product in millimeters or inches. <br /></p>
+                <p>These fields will only be active for sheet (Class 2 – Sheet material) or roll (Class 1 – Roll material) products. They are usually only relevant when raw material is sold to a customer. </p>
+                <p>When you specify a roll or sheet material in the <span class="software">Item Code</span> field that has a default size to an order line, the default size will automatically populate in this field. This will be from the size defined as the default size in the <span class="software">Items &gt; Set-up &gt; Standard Substrate Sizes</span> window.</p>
+              </td>
+              <td>
+                <p>No</p>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="software">Item Status</span></td>
+              <td>
+                <p>The current status of the inventory relating to this sales order line. Then status will normally follow the below sequence:</p>
+                <ol class="RoundSquare">
+                  <li>
+                    <p class=""><span class="software">Unplanned</span></p>
+                  </li>
+                  <li>
+                    <p class=""><span class="software">Planned </span>- Changes to this when the sales order line has been reserved against a production job.</p>
+                  </li>
+                  <li>
+                    <p class=""><span class="software">In Inventory</span> - Changes to this when sufficient inventory is available.</p>
+                  </li>
+                  <li>
+                    <p class=""><span class="software">Complete</span></p>
+                  </li>
+                </ol>
+              </td>
+              <td>
+                <p>No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Consignment Stock</span> (check box)</p>
+              </td>
+              <td>
+                <p class="">Select this check box to indicate that the item is to be held as consignment inventory at the customer’s premises. The item’s inventory will be shipped to the customer but not billed until used by the customer. This option will be set automatically according to the settings on the consignment flag of the item but you can still change this as required. <br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Customer Item Reference </span></p>
+              </td>
+              <td>
+                <p class="">Optionally, enter the customer’s reference for the item that they require or click <img src="../assets/Images/CommandsMod/lookup.png" /> to select from a list of finished product items which are linked to the customer. Items are linked to customers using the <span class="software">Customer code</span> field on the <span class="software">Produced/Sold Details</span> tab of the <span class="software">Items</span> window.<br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Customer PO Line</span></p>
+              </td>
+              <td>
+                <p class="">Optionally, enter a line reference. This is sometimes required by some customers as a means of identifying the purchase order line in their computer system.<br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Run on Price</span></p>
+              </td>
+              <td>
+                <p>If required, enter a selling price per unit of measure (usually per thousand) for additional quantities above the ordered quantity. The run on price is based on the variable cost of the additional quantity. The setup costs having already been recovered within the order quantity.</p>
+                <p>The unit of measure is displayed to the right of the <span class="software">Run On Price</span> field.</p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Ordered Value</span></p>
+              </td>
+              <td>
+                <p class="">    <br />This field is calculated by EFI Radius from the <span class="software">Quantity</span> and <span class="software">Price</span> fields. To override the value, select the <span class="software">LOT priced</span> check box.<br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Proof Required Date</span></p>
+              </td>
+              <td>
+                <p class="">Optionally, specify the date when approved proofs are required from the customer. This is for information only and has no operational function in EFI Radius.<br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Order Type</span></p>
+              </td>
+              <td>
+                <p class="">Optionally, select from the field whether the sales order line is for a new item or repeat work.<br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">EDI Change code</span></p>
+              </td>
+              <td>
+                <p class=""><br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Production Grouping Number</span></p>
+              </td>
+              <td>
+                <p class=""><br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Unders %</span></p>
+              </td>
+              <td>
+                <p class="">Optionally, enter the under production percentage which is acceptable to the customer.  This will default from the <span class="software">Unders percent</span> field on the <span class="software">Details</span> tab of the <span class="software">Company &gt; Customers and Suppliers &gt; Customers</span> window.<br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Overs %</span></p>
+              </td>
+              <td>
+                <p class="">Optionally, enter the over production percentage which is acceptable to the customer. This will default from the <span class="software">Overs percent</span> field on the <span class="software">Details</span> tab of the <span class="software">Company &gt; Customers and Suppliers &gt; Customers</span> window. <br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">End user</span></p>
+              </td>
+              <td>
+                <p class=""><br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">LOT Priced</span> (check box)</p>
+              </td>
+              <td>
+                <p class="">Select to indicate that the sales order line will be sold for a fixed value no matter what quantity is eventually delivered. Selecting this option activates the <span class="software">Ordered Value</span> field and deactivates the <span class="software">Price</span> field.<br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="StdTable" style="border-collapse:collapse; border:undefined" width="100%">
+          <tbody></tbody>
+        </table>
+        <h3>Production Info</h3>
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+          <colgroup>
+            <col />
+            <col />
+            <col />
+          </colgroup>
+          <tbody>
+            <tr class="t1st">
+              <td>
+                <p><span class="software"><b>Field</b></span></p>
+              </td>
+              <td>
+                <p><span class="software">Description</span></p>
+              </td>
+              <td>
+                <p><span class="software">Required</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Pre Press Required</span> (check box)</p>
+              </td>
+              <td>
+                <p class=""><br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr class="t2Row">
+              <td>
+                <p class=""><span class="software">Production Required</span> (check box)</p>
+              </td>
+              <td>
+                <p class=""><br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Pre Press Plant</span></p>
+              </td>
+              <td>
+                <p class=""><br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Production Plant</span></p>
+              </td>
+              <td>
+                <p class=""><br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Default Production Estimate</span></p>
+              </td>
+              <td>
+                <p class=""><br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Sales Price Quantity</span></p>
+              </td>
+              <td>
+                <p class=""><br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Price Code</span></p>
+              </td>
+              <td>
+                <p class=""><br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Price Group Code</span></p>
+              </td>
+              <td>
+                <p class=""><br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class=""><span class="software">Active Jobs</span></p>
+              </td>
+              <td>
+                <p class=""><br /></p>
+              </td>
+              <td>
+                <p class="">No</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p><br /></p>
+        <div class="droptext" data-targetname="drop-down13">
+          <h2>Balances</h2>
+          <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+            <tbody>
+              <tr class="t1st">
+                <td>
+                  <p><span class="software">Field</span></p>
+                </td>
+                <td>
+                  <p><span class="software">Description</span></p>
+                </td>
+                <td>
+                  <p><span class="software">Required</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td><br /></td>
+                <td><br /></td>
+                <td><br /></td>
+              </tr>
+              <tr class="t2Row">
+                <td><br /></td>
+                <td><br /></td>
+                <td><br /></td>
+              </tr>
+              <tr class="t1Row">
+                <td><br /></td>
+                <td><br /></td>
+                <td><br /></td>
+              </tr>
+              <tr class="t2Row">
+                <td><br /></td>
+                <td><br /></td>
+                <td><br /></td>
+              </tr>
+              <tr class="t1Row">
+                <td><br /></td>
+                <td><br /></td>
+                <td><br /></td>
+              </tr>
+              <tr>
+                <td><br /></td>
+                <td><br /></td>
+                <td><br /></td>
+              </tr>
+              <tr>
+                <td><br /></td>
+                <td><br /></td>
+                <td><br /></td>
+              </tr>
+              <tr>
+                <td><br /></td>
+                <td><br /></td>
+                <td><br /></td>
+              </tr>
+              <tr>
+                <td><br /></td>
+                <td><br /></td>
+                <td><br /></td>
+              </tr>
+              <tr>
+                <td><br /></td>
+                <td><br /></td>
+                <td><br /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p><br /></p>
+        <h2>Comments and Addresses</h2>
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+          <tbody>
+            <tr class="t1st">
+              <td>
+                <p><span class="software">Field</span></p>
+              </td>
+              <td>
+                <p><span class="software">Description</span></p>
+              </td>
+              <td>
+                <p><span class="software">Required</span></p>
+              </td>
+            </tr>
+            <tr class="t2Row">
+              <td>
+                <p><span class="software">Ship to Address</span></p>
+              </td>
+              <td>
+                <p>Select the delivery address. </p>
+              </td>
+              <td>
+                <p>Yes</p>
+              </td>
+            </tr>
+            <tr class="t1Row">
+              <td>
+                <p><span class="software">Bill to Address</span></p>
+              </td>
+              <td>
+                <p>Select the invoice address.</p>
+              </td>
+              <td>
+                <p>Yes</p>
+              </td>
+            </tr>
+            <tr class="t2Row">
+              <td>
+                <p><span class="software">Order Comments</span></p>
+              </td>
+              <td>
+                <p>Enter any additional notes relating to the order. </p>
+              </td>
+              <td>
+                <p>No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><span class="software">Order Notes</span></p>
+              </td>
+              <td>
+                <p><br /></p>
+              </td>
+              <td>
+                <p>No</p>
+              </td>
+            </tr>
+            <tr class="t1Row">
+              <td>
+                <p><span class="software">Customer Notes</span></p>
+              </td>
+              <td>
+                <p><br /></p>
+              </td>
+              <td>
+                <p>No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><span class="software">EDI Remitance to Address</span></p>
+              </td>
+              <td>
+                <p>Optionally, select a separate address to use for EDI (Electronic Data Interchange) transmissions where the customers can send their payments. </p>
+              </td>
+              <td>
+                <p>No</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><span class="software">Acknowledgement to Address</span></p>
+              </td>
+              <td>
+                <p>Select an address to use for order acknowledgements. </p>
+              </td>
+              <td>
+                <p>No</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="horizontal-rule-align-left">
+          <hr class="hrule" />
+        </div>
+        <div class="horizontal-rule-align-left"><br /></div>
+      </div>
     </div>
   </div>
   <h2><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Shipping</a></h2>
