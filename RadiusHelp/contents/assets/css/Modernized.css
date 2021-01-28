@@ -1,17 +1,19 @@
 /*Created with Adobe RoboHelp*/
-
-.center-horizontal{
+.center-horizontal {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 .note {
+  font-family: Inter;
+  font-size: 1rem;
   border-left: 4px solid #2B77CB;
   padding-left: 0.5rem;
   margin-left: 1rem;
 }
 .note2 {
+  font-family: Inter;
+  font-size: 1rem;
   border-left: 4px solid #2B77CB;
   padding-left: 0.5rem;
   margin-left: 3rem;
@@ -46,8 +48,6 @@
   font-size: 17px;
   width: 25%;
 }
-
-
 .tablink-left {
   border-radius: 8px 0px 0px 0px;
 }
@@ -100,6 +100,33 @@
   height: 1px;
   width: 90%;
   border: none;
+}
+h1 {
+  font-size: 2.1rem;
+  font-style: normal;
+  margin-bottom: 12pt;
+  margin-left: -5px;
+  margin-top: 8pt;
+  text-indent: 0.03in;
+  font-family: Arial;
+  color: #000000;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+  text-decoration: none;
+}
+h2-modern {
+  font-family: Arial;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2pt;
+  margin-left: 0;
+  margin-right: 6.5pt;
+  text-align: left;
+  text-indent: 0.13pt;
+  margin-top: 24px;
+  font-weight: bold;
 }
 p.modernbody {
   font-family: Inter;
@@ -232,3 +259,34 @@ ol.modern-numbered>li:before {
   font-size: 1rem;
 }
 ol.modern-number {}
+ol.modernlist>li>ol>li>ol>li>ol {
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 24px;
+  --list-indent: 32px;
+  --vertical-spacing: 0px;
+  counter-reset: item4;
+  list-style: none;
+  padding-left: var(--prefix-size);
+  margin-left: calc(var(--list-indent) - var(--prefix-size));
+}
+ol.modernlist>li>ol>li>ol>li>ol>li {
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 24px;
+  --list-indent: 32px;
+  --vertical-spacing: 0px;
+  position: relative;
+  margin-top: calc(var(--vertical-spacing) / 2);
+  margin-bottom: calc(var(--vertical-spacing) / 2);
+}
+ol.modernlist>li>ol>li>ol>li>ol>li:before {
+  counter-increment: item4;
+  content: counter(item4, disc);
+  text-align: right;
+  position: absolute;
+  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
+  margin-right: var(--prefix-gap);
+  width: var(--prefix-size);
+  overflow: hidden;
+}

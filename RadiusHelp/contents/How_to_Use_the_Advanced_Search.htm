@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  <title>How to Use the Advanced Search </title>
+  <meta name="topic-status" content="Draft"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/APPS.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/Modernized.css"/>
+</head>
+<body>
+  <h1 style="font-size: 2.5rem;font-family: Verdana"><span style="font-size:2.1rem;"><span style="font-weight:bold;">Radius Tutorials - How to Use the Advanced Search</span></span></h1>
+  <p class="modernbody"><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText"><span style="font-size: 1rem;"></span></span></span></span></p>
+  <p class="modernbody"><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText">The Radius Advanced Search utilizes the Elastic Search engine, allowing you to build and perform search queries that return results incredibly fast, even when searching large databases. You can access this window by clicking <span style="font-weight:bold;">Advanced Search</span> <img height="20" src="assets/Images/advanced_search.png" width="20"/> next to the search field on the toolbar.</span></span></span></p>
+  <p class="modernbody">The following information gives detailed instructions on performing an Advanced Search, as well as how to delete and edit your saved queries.</p>
+  <p class="modernbody note">For a full breakdown and description of each element of the advanced search, see <a data-xref="{title}" href="About_the_Advanced_Search.htm">Using the Advanced Search</a>.</p>
+  <p class="modernbody"><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText"><span style="font-size: 1rem;"></span></span></span></span><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText"><span class="bodyText"></span></span></span></span></p>
+  <div class="horizontal-rule-align-left">
+    <hr class="hrule"/>
+  </div>
+  <h2 style="font-size: 16pt"><span style="font-family:Verdana;"><span style="font-size:1.5rem;">Step 1: Create a Search Query</span></span></h2>
+  <ol class="BasicNumber-modern">
+    <li><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText">Click <span style="font-weight:bold;">Advanced Search</span> <img height="20" src="assets/Images/advanced_search.png" width="20"/> next to the search field on the toolbar. The <span style="font-weight:bold;">Advanced Search Filters</span> window Opens.</span></span></span></li>
+    <li class="modernbody">Do the following to build a search query:
+      <ol class="BasicNumber-modern">
+        <li class="modernbody">Select the field you want to query from <span style="font-weight:bold;">Field </span>field.</li>
+        <li class="modernbody">Select the strictness of the query from the <span style="font-weight:bold;">Type </span>section. Choose from:</li>
+      </ol>
+    </li>
+  </ol>
+  <ol class="modernlist" style="margin-left: 80px;">
+    <li><span style="font-weight:bold;">Must</span>: The results must equal the specified criteria.</li>
+    <li><span style="font-weight:bold;">Must not</span>: The results must not equal the specified criteria.</li>
+    <li><span style="font-weight:bold;">Should</span>: Prioritize the results of the search results that have been returned with optional criteria.</li>
+  </ol>
+  <ol class="BasicNumber-modern2">
+    <li style="counter-reset: item1 2" value="3">Select a search operator for the Value you are querying choose from the Operator column. Choose from:</li>
+  </ol>
+  <ol class="modernlist" style="margin-left: 80px;">
+    <li class="modernbody"><span style="font-weight:bold;">Range</span>: The value must be between the specified limits.</li>
+    <li class="modernbody"><span style="font-weight:bold;">Match</span>: The results have to contain this word.</li>
+    <li class="modernbody"><span style="font-weight:bold;">Exists</span>: The estimate must have the specified field populated.</li>
+    <li class="modernbody"><span style="font-weight:bold;">Prefix</span>: The word in the specified field must begin with this. If there are two words in the field then either word can begin with this.</li>
+    <li class="modernbody"><span style="font-weight:bold;">Fuzzy</span>: The word in the specified field must be similar to this. This is useful for spelling mistakes.</li>
+    <li class="modernbody"><span style="font-weight:bold;">Wildcard</span>: Use wildcards, meaning that a symbol can be used to replace or represent one or more characters. The most common wildcards are the asterisk (*), which represents one or more characters and question mark (?) that represents a single character. </li>
+  </ol>
+  <ol class="BasicNumber-modern2" style="counter-reset: item1 3" value="4">
+    <li>If you selected one of the following options from the <span style="font-weight:bold;">Operator </span>section, enter or select a value to query for in the respective value field at the bottom of the window:</li>
+  </ol>
+  <ol class="modernlist" style="margin-left: 80px;">
+    <li><span style="font-weight:bold;">Match</span></li>
+    <li><span style="font-weight:bold;">Wildcard</span></li>
+    <li><span style="font-weight:bold;">Prefix</span></li>
+    <li><span style="font-weight:bold;">Fuzzy</span></li>
+  </ol>
+  <ol class="BasicNumber-modern2">
+    <li style="counter-reset: item1 4" value="5">If you selected Range from the <span style="font-weight:bold;">Operator </span>field , do the following:</li>
+  </ol>
+  <ol class="BasicNumber-modern3">
+    <li>Enter the minimum value to filter by in the <span style="font-weight:bold;">From </span>field.</li>
+    <li style="counter-reset: item1 1" value="2">Enter the maximum value to filter by in the <span style="font-weight:bold;">To </span>field. </li>
+  </ol>
+  <ol class="BasicNumber-modern">
+    <li style="counter-reset: item1 2" value="3">Click the <span style="font-weight:bold;">+ Add Criteria</span> button and repeat Step 2 for each criteria you want to add to the query. Each criteria you add us automatically saved and added to the right-hand panel.</li>
+    <li>Click the <span style="font-weight:bold;">Search </span>button to perform the Search. The window closes and the <span style="font-weight:bold;">Sales Orders</span> page displays records filtered by your criteria.</li>
+  </ol>
+  <div class="horizontal-rule-align-left">
+    <hr class="hrule-inner"/>
+  </div>
+  <p><img height="" src="assets/gifs/advancedsearch.gif" width="100%"/></p>
+  <div class="horizontal-rule-align-left">
+    <hr class="hrule"/>
+  </div>
+  <p>
+    <h2-modern><span style="font-family:Verdana;"><span style="font-size:1.5rem;">Step 2: Save a Search Query</span></span></h2-modern>
+  </p>
+  <p class="modernbody">You can easily save the current page configuration as a view to capture your current search query for future use. for detailed instructions on creating and managing views see <a data-xref="{title}" href="How_to_Create_Views_and_Layouts.htm">How to Create Views and Layouts</a> and <a data-xref="{title}" href="Managing_Views_and_Layouts.htm">Managing Views and Layouts</a>.</p>
+  <div class="horizontal-rule-align-left">
+    <hr class="hrule"/>
+  </div>
+  <p>
+    <h2-modern><span style="font-family:Verdana;"><span style="font-size:1.5rem;">Step 3: Edit a Search Query</span></span></h2-modern>
+  </p>
+  <p class="modernbody">Each of your search criteria is displayed above the sales order records table. You can click <span style="font-weight:bold;">Edit </span><img height="19" src="assets/Images/edit.png" width="20"/> next to the criteria to open it in the <span style="font-weight:bold;">Advanced Search filter </span>window or navigate to the <span style="font-weight:bold;">Advanced Search Filter </span>window anc click click <span style="font-weight:bold;">Edit </span><img height="19" src="assets/Images/edit.png" width="20"/> next to the criteria there. Refer to the instructions in Step 2 to adjust your criteria.</p>
+  <div class="horizontal-rule-align-left">
+    <hr class="hrule"/>
+  </div>
+  <p>
+    <h2-modern><span style="font-family:Verdana;"><span style="font-size:1.5rem;">Step 4: Delete a Search Query</span></span></h2-modern>
+  </p>
+  <p class="modernbody">Each of your search criteria is displayed above the sales order records table. You can click <span style="font-weight:bold;">Delete </span><img height="20" src="assets/Images/delete_red.png" width="20"/> next to the criteria to open it in the <span style="font-weight:bold;">Advanced Search filter </span>window or navigate to the <span style="font-weight:bold;">Advanced Search Filter </span>window and click click <span style="font-weight:bold;">Delete </span><img height="20" src="assets/Images/delete_red.png" width="20"/> next to the criteria there. Refer to the instructions in Step 2 to adjust your criteria.</p>
+  <p> </p>
+
+</body></html>

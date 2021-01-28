@@ -41,7 +41,7 @@
   <h2><span style="font-weight:bold;font-size:1.2rem;font-family:Arial">Advanced search</span></h2>
   <p class="modernbody"><span style="font-size:1rem;"><span style="font-family:Inter">The search bar at the top of the page provides the standard Radius navigation search, however you now can build advanced search queries (like you can in the Estimating Advanced Search) for your other records. </span></span></p>
   <p class="modernbody"><span style="font-size:1rem;"><span style="font-family:Inter">To access the <span style="font-weight:bold;">Advanced Search Filters</span> window, click <span style="font-weight:bold;">Advanced Search</span> <img height="20" src="assets/Images/advanced_search.png" width="20" /> next to the <span style="font-weight:bold;">Search Sales Order</span> lookup.</span></span></p>
-  <p class="modernbody"><span style="font-size:1rem;"><span style="font-family:Inter"><span style="font-size:1rem;"><span class="note" style="font-family:Inter;">For detailed information on the advanced search, see <a data-xref="{title}" href="Advanced_Search.htm">Advanced Search</a>.</span></span></span></span><br />
+  <p class="modernbody"><span style="font-size:1rem;"><span style="font-family:Inter"><span style="font-size:1rem;"><span class="note" style="font-family:Inter;">For detailed information on the advanced search, see <a data-xref="{title}" href="About_the_Advanced_Search.htm">About the Advanced Search</a>.</span></span></span></span><br />
     <span style="font-size:1rem;"><span style="font-family:Inter;"></span></span>
   </p>
   <p><img height="" src="assets/gifs/advancedsearch.gif" width="100%" /></p>
@@ -54,7 +54,10 @@
   <p class="modernbody"><span style="font-family:Inter;"><span class="bodyText"><span style="font-size:1rem;">Once you have customized a page to how you want it, you can then save it as a view. Views can be shared with other users, and even set as default at an administrative level.</span></span></span></p>
   <p class="modernbody note">For detailed instructions on creating, saving, and assigning permissions for views and layouts, see <a data-xref="{title}" href="How_to_Create_Views_and_Layouts.htm">How to Create Views and Layouts</a>.</p>
   <div class="tablink-navigation">
-    <div style="text-align:center;"><button class="tablink tablink-left" id="defaultOpen" onclick="openTab(&#39;Tab1&#39;, this, &#39;#aaaaaa&#39;)">Classic</button><button class="tablink tablink-right" onclick="openTab(&#39;Tab2&#39;, this, &#39;#aaaaaa&#39;)">Modern</button> </div>
+    <div style="text-align:center;">
+      <button class="defaultopen tablink tablink-left" onclick="openTab(&#39;Tab1&#39;, this, &#39;#aaaaaa&#39;)">Classic</button>
+      <button class="tablink tablink-right" onclick="openTab(&#39;Tab2&#39;, this, &#39;#aaaaaa&#39;)">Modern</button> 
+    </div>
   </div>
   <div class="tabcontent" id="Tab1">
     <p class="modernbody">In the classic Radius system, you had to manually search for sales order records and filter them by their Status in order to view a refined list of them. You then had to select each record you wanted to edit and click multiple buttons in order to edit them.</p>
@@ -66,7 +69,7 @@
   </div>
   <script>
     //<![CDATA[
-    openDefaultTab();
+    openDefaultTabs();
     //]]>
   </script>
   <div class="horizontal-rule-align-left">
