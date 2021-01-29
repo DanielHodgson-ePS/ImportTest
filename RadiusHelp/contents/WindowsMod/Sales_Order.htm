@@ -115,7 +115,7 @@
     <tbody>
       <tr class="t1st">
         <td>
-          <p><span class="software">Field</span></p>
+          <p><span class="software">Field/Column</span></p>
         </td>
         <td>
           <p><span class="software">Description</span></p>
@@ -510,7 +510,7 @@
     </table>
     <hr class="hrule-inner" />
   </div>
-  <h2>Comments and Addresses</h2>
+  <h3>Comments and Addresses (Sales Order Details)</h3>
   <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
     <tbody>
       <tr class="t1st">
@@ -606,12 +606,13 @@
   <div class="horizontal-rule-align-left">
     <hr class="hrule" />
   </div>
-  <h2> </h2>
+  <h2>
+    <h2-modern>Order Details</h2-modern>
+  </h2>
   <div class="droptext" data-targetname="drop-down14">
-    <h2>
-      <h2-modern>Order Details</h2-modern>
-    </h2>
     <p>The <span class="software">Order Details</span> section contains the lines are the items on the sales order. If the sales order is linked to an estimate, the lines will be automatically created from the estimate details.</p>
+    <h3>Standard Grid Buttons</h3>
+    <div data-conref="../assets/snippets/Standard_Grid_Buttons.hts"> </div>
     <h3>Buttons (Order Lines Grid)</h3>
     <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
       <tbody>
@@ -625,11 +626,11 @@
         </tr>
         <tr class="t2Row">
           <td><span class="software"> </span>
-            <p><span class="software"><img src="../assets/Images/CommandsMod/Edit.png" /> Edit All Lines</span></p>
+            <p><span class="software"><img height="16" src="../assets/Images/CommandsMod/Edit.png" width="20" /> Edit All Lines</span></p>
             <span class="software"> </span>
           </td>
           <td>
-            <p>Click to edit all order lines in the grid.</p>
+            <p>Click to edit all order line in the grid. </p>
           </td>
         </tr>
         <tr class="t1Row">
@@ -639,6 +640,99 @@
           </td>
           <td>
             <p>Click to add a new order line and open the add/edit mode. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><img src="../assets/Images/CommandsMod/Clear_All.png" /> <span class="software">Cancel</span></p>
+          </td>
+          <td>If you choose to edit the order lines in the grid view, click this to cancel your changes. </td>
+        </tr>
+        <tr>
+          <td>
+            <p><img src="../assets/Images/CommandsMod/Save.png" /> <span class="software">Apply</span></p>
+          </td>
+          <td>If you choose to edit the order lines in the grid view, click this to save your changes. </td>
+        </tr>
+        <tr>
+          <td>
+            <p><img src="../assets/Images/CommandsMod/Duplicate_sml.png" />  <span class="software">Duplicate</span></p>
+          </td>
+          <td>
+            <p>Click to make a copy of the extra charge and open the <span class="software">Clone Extra Charge</span> section.</p>
+            <p>This button is located to the left of the order line. </p>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="../assets/Images/More.png" /> More Options</td>
+          <td>
+            <p>Click to select from a list of menu options: </p>
+            <ol class="RoundSquare">
+              <li>
+                <p><span class="software">Edit Sales Order</span>: Select to edit the sales order. </p>
+              </li>
+              <li>
+                <p><span class="software">Duplicate Sales Order</span>: Select to make a copy of the sales order line. </p>
+              </li>
+              <li>
+                <p><span class="software">Delete Sales Order</span>: Select to delete this sales order. </p>
+              </li>
+              <li>
+                <p><span class="software">Reset Total Order Quantity</span>: </p>
+              </li>
+            </ol>
+            <p>The following options are only applicable if you are running the modern Radius through classic Radius. </p>
+            <ol class="RoundSquare">
+              <li>
+                <p>Items</p>
+              </li>
+              <li>
+                <p>Supply / Demand</p>
+              </li>
+              <li>
+                <p>Inventory Status</p>
+              </li>
+              <li>
+                <p>Sales Order Inquiry</p>
+              </li>
+              <li>
+                <p>Inventory History Inquiry</p>
+              </li>
+              <li>
+                <p>Accounts Receivable Customer Inquiry</p>
+              </li>
+              <li>
+                <p>Purchase Order Inquiry</p>
+              </li>
+              <li>
+                <p>Shipping Request Inquiry</p>
+              </li>
+              <li>
+                <p>Job Level</p>
+              </li>
+              <li>
+                <p>Task Level Traceability Inquiry</p>
+              </li>
+              <li>
+                <p>Estimate Entry/Amend</p>
+              </li>
+              <li>
+                <p>View Sales Order Job</p>
+              </li>
+              <li>
+                <p>Maintain Sales Order Tasks</p>
+              </li>
+              <li>
+                <p>Standard Billing Requirements</p>
+              </li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="../assets/Images/CommandsMod/Edit3.png" /> Edit</td>
+          <td>
+            <p>Click to edit the individual order line in the grid. </p>
+            <p>This button is located to the left of the order line. </p>
           </td>
         </tr>
       </tbody>
@@ -691,23 +785,23 @@
         </tr>
         <tr>
           <td>
-            <p><span class="software">Sales Order Line Pricing</span></p>
+            <p><span class="software"><img src="../assets/Images/CommandsMod/Sales_Order_Line_Pricing.png" /> Sales Order Line Pricing</span></p>
           </td>
           <td>
-            <p> </p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p><span class="software">Sales Order Line Comments</span></p>
-          </td>
-          <td>
-            <p> </p>
+            <p>Click to display the <span class="software">Sales Order Line Price Breakdown</span> window. </p>
           </td>
         </tr>
         <tr>
           <td>
-            <p><span class="software">Sales Order Line Item Numbering</span></p>
+            <p><span class="software"><img src="../assets/Images/CommandsMod/Sales_Order_Notes.png" /> Sales Order Line Comments</span></p>
+          </td>
+          <td>
+            <p>Click to open the Sales Order Line Comments window where you can enter any additional information in regards to this order line. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software"><img src="../assets/Images/CommandsMod/Sales_Order_Line_Item_Numbering.png" /> Sales Order Line Item Numbering</span></p>
           </td>
           <td>
             <p>Click to open the <span class="software">Sales Order Numbering</span> window to allow information on numbering to be entered for numbered items. These options relate to the EFI Radius Business Forms Estimating module.</p>
@@ -1095,69 +1189,36 @@
     </table>
     <p> </p>
     <div class="droptext" data-targetname="drop-down18">
-      <h2>Balances</h2>
+      <h3>Balances</h3>
       <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+        <colgroup>
+          <col />
+          <col />
+        </colgroup>
         <tbody>
           <tr class="t1st">
             <td>
-              <p><span class="software">Field</span></p>
+              <p><span class="software">Buttons</span></p>
             </td>
             <td>
               <p><span class="software">Description</span></p>
             </td>
+          </tr>
+          <tr>
             <td>
-              <p><span class="software">Required</span></p>
+              <p><span class="software"><img src="../assets/Images/CommandsMod/Sales_Order_Search.png" /> Production Balance Plant Details</span></p>
+            </td>
+            <td>
+              <p> </p>
             </td>
           </tr>
-          <tr>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-          </tr>
           <tr class="t2Row">
-            <td> </td>
-            <td> </td>
-            <td> </td>
-          </tr>
-          <tr class="t1Row">
-            <td> </td>
-            <td> </td>
-            <td> </td>
-          </tr>
-          <tr class="t2Row">
-            <td> </td>
-            <td> </td>
-            <td> </td>
-          </tr>
-          <tr class="t1Row">
-            <td> </td>
-            <td> </td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td> </td>
-            <td> </td>
-            <td> </td>
+            <td>
+              <p><span class="software"><img src="../assets/Images/CommandsMod/Reservations.png" /> Reservations</span></p>
+            </td>
+            <td>
+              <p>Click to displays the <span class="software">Reservations</span> window </p>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -1234,7 +1295,7 @@
         </tr>
         <tr>
           <td>
-            <p><span class="software">EDI Remitance to Address</span></p>
+            <p><span class="software">EDI Remittance to Address</span></p>
           </td>
           <td>
             <p>Optionally, select a separate address to use for EDI (Electronic Data Interchange) transmissions where the customers can send their payments. </p>
@@ -1264,7 +1325,10 @@
     <h2-modern>Shipping</h2-modern>
   </h2>
   <h3>Shipping Request Headers</h3>
-  <h4>Buttons (Shipping Requests Grid)</h4>
+  <h3>Standard Grid Buttons</h3>
+  <div data-conref="../assets/snippets/Standard_Grid_Buttons.hts"> </div>
+  <p> </p>
+  <p> </p>
   <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
     <tbody>
       <tr class="t1st">
@@ -1601,10 +1665,9 @@
   <div class="horizontal-rule-align-left">
     <hr class="hrule" />
   </div>
-  <div class="horizontal-rule-align-left"> </div>
-  <h2>
+  <div class="horizontal-rule-align-left">
     <h2-modern>Version Comments</h2-modern>
-  </h2>
+  </div>
   <p>placeholder text</p>
   <h2>
     <h2-modern>Extra</h2-modern>
@@ -1626,44 +1689,6 @@
             </td>
             <td>
               <p><span class="software">Description</span></p>
-            </td>
-          </tr>
-          <tr class="t1Row">
-            <td>
-              <p><img src="../assets/Images/CommandsMod/Clear_All.png" /> <span class="software">Clear All </span></p>
-            </td>
-            <td>If you have rerranged the columns and not saved it as a view, click this to discard your changes and return to the original layout. </td>
-          </tr>
-          <tr>
-            <td>
-              <p><img src="../assets/Images/CommandsMod/Save.png" /> <span class="software">Save as View</span></p>
-            </td>
-            <td>
-              <p>If you have rearranged the columns, click this to save the layout as a view. </p>
-              <p>See <a data-xref="{title}" href="../How_to_Create_Views_and_Layouts.htm">How to Create Views and Layouts</a> for more information. </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p><img src="../assets/Images/Customize Column.png" /> <span class="software">Customize Column</span></p>
-            </td>
-            <td>
-              <p>Click to display the <span class="software">Customize Column List</span> where you can change which columns are displayed in the grid. </p>
-              <p>See <a data-xref="{title}" href="../How_to_Create_Views_and_Layouts.htm">How to Create Views and Layouts</a> for more information. </p>
-            </td>
-          </tr>
-          <tr>
-            <td><img src="../assets/Images/CommandsMod/Refresh_Data.png" /> <span class="software">Refresh Data</span></td>
-            <td>
-              <p>Click to refresh the data in the grid. </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p><img src="../assets/Images/CommandsMod/File_Output.png" /> <span class="software">File Output</span></p>
-            </td>
-            <td>
-              <p>Click to export the data from the grid to an Excel spreadsheet. </p>
             </td>
           </tr>
           <tr>
@@ -2052,87 +2077,90 @@
         </tr>
         <tr>
           <td>
-            <p>Terms Code</p>
+            <p><span class="software">Terms Code</span></p>
           </td>
           <td>
-            <p> </p>
+            <p> Terms of sale applying to the charge, this will default from the customer record.</p>
           </td>
           <td>
             <p>Yes</p>
           </td>
         </tr>
         <tr class="t2Row">
-          <td>GL Code</td>
+          <td><span class="software">GL Code</span></td>
           <td>
-            <p> </p>
+            <p> This field is only active if you have purchased the EFI Radius Ledger software or other integrated third party ledger software. The field may be automatically populated when the Bill Code is selected. Specify an appropriate general ledger account code for the sale of the extra charge.</p>
           </td>
           <td>
             <p>Yes</p>
           </td>
         </tr>
         <tr class="t1Row">
-          <td>Billing Account</td>
+          <td><span class="software">Billing Account</span></td>
           <td>
-            <p> </p>
+            <p> Select and alternative customer account to bill the extra charge.</p>
           </td>
           <td>No</td>
         </tr>
         <tr class="t2Row">
-          <td>Bill Date</td>
+          <td><span class="software">Bill Date</span></td>
           <td>
-            <p> </p>
+            <p>This field will be automatically populated when the extra charge has been converted to an invoice.</p>
           </td>
           <td>No</td>
         </tr>
         <tr class="t1Row">
-          <td>Ship Date</td>
+          <td><span class="software">Ship Date</span></td>
           <td>
-            <p> </p>
+            <p>This field is only used for shipments and is not used for extra charges.</p>
           </td>
           <td>
             <p>No</p>
           </td>
         </tr>
         <tr>
-          <td>Bill Reference Code</td>
+          <td><span class="software">Bill Reference Code</span></td>
           <td>
-            <p> </p>
+            <p>Optionally specify a billing reference code to attach to the extra requirement. These are used to group invoices and credit notes so they can be invoiced in a group. </p>
+            <p>These are created in the <span class="software">Company &gt; Billing &gt; Billing Reference Code</span> field. </p>
           </td>
           <td>
             <p>No</p>
           </td>
         </tr>
         <tr>
-          <td>Replaced Invoice</td>
+          <td><span class="software">Replaced Invoice</span></td>
           <td>
-            <p> </p>
+            <p>If this billing requirement generated from this is to correct a previously billed invoice and you used the <span class="software">Replace Final Invoice</span> window to generate a replacement invoice, the number of the original invoice is automatically populated here. </p>
           </td>
           <td>
             <p>No</p>
           </td>
         </tr>
         <tr>
-          <td>Job Code</td>
+          <td><span class="software">Job Code</span></td>
           <td>
-            <p> </p>
+            <p>This field links the extra charge to the revenue cost category of a production job so that the total profitability of the job can be calculated. This field will be automatically set with the job number created from the production estimate when the sales order is saved. If necessary, the extra charge can be added to the revenue value of a different job by specify a different job number</p>
           </td>
           <td>
             <p>No</p>
           </td>
         </tr>
         <tr>
-          <td>Original Invoice</td>
+          <td><span class="software">Original Invoice</span></td>
           <td>
-            <p> </p>
+            <p>If this billing requirement generated from this was used to correct a previously billed invoice and you are using <span class="software">Correction Invoices</span> for Polish tax legislation, enter the original invoice number here. </p>
+            <p class="Tip-Note-Text"><span class="software">Note</span>: This is not necessary if the correction invoice is created for CIS or customer returns. The linking of the original invoice is dealt with automatically.</p>
           </td>
           <td>
             <p>No</p>
           </td>
         </tr>
         <tr>
-          <td>Original Invoice - Line</td>
+          <td><span class="software">Original Invoice - Line</span></td>
           <td>
-            <p> </p>
+            <p>If this billing requirement generated from this was used to correct a previously billed invoice and you are using <span class="software">Correction Invoices</span> for Polish tax legislation, enter the original invoice number here. </p>
+            <p class="Tip-Note-Text"><span class="software">Note</span>: This is not necessary if the correction invoice is created for CIS or customer returns. The linking of the original invoice is dealt with automatically.</p>
           </td>
           <td>
             <p>No</p>
@@ -2158,26 +2186,36 @@
       </tr>
       <tr>
         <td>
-          <p>Comments</p>
+          <p><span class="software">Comments</span></p>
         </td>
         <td>
-          <p> </p>
+          <p> Optionally, enter  and an additional description of the charge that will appear on the invoice. </p>
         </td>
-        <td>No</td>
+        <td>
+          <p>No</p>
+        </td>
       </tr>
       <tr class="t2Row">
-        <td>Ship to Address</td>
         <td>
-          <p> </p>
+          <p><span class="software">Ship to Address</span></p>
         </td>
-        <td>No</td>
+        <td>
+          <p> Optionally, select an address to ship to. For example, the extra charge for freight is to be invoiced separately from the shipment.</p>
+        </td>
+        <td>
+          <p>No</p>
+        </td>
       </tr>
       <tr class="t1Row">
-        <td>Bill to Address</td>
         <td>
-          <p> </p>
+          <p><span class="software">Bill to Address</span></p>
         </td>
-        <td>No</td>
+        <td>
+          <p>This will default ot the billing address specified on the <span class="software">Sales Order Details</span> section of the sales order record. </p>
+        </td>
+        <td>
+          <p>No</p>
+        </td>
       </tr>
     </tbody>
   </table>
