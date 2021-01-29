@@ -12,8 +12,9 @@
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  border-top: solid 1rem #4e66c9;
+  border-top: solid 4px #4e66c9;
   padding-top: 1rem;
+  margin-top: 2rem;
   background-color: #fefffa;
   max-width: 95%;
 }
@@ -63,7 +64,7 @@ li.accordion {
   padding: 0;
   margin: 0;
   margin-bottom: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   padding-top: 1rem;
   border-bottom: 1px dotted #c0c0c0;    
 }
