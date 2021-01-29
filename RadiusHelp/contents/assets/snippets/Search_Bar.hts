@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="topic-comment" content="" />
+  <title>Search_Bar</title>
+  <link rel="stylesheet" type="text/css" href="../css/APPS.css" />
+</head>
+<body>
+  <p>Use the search bar at the top to filter topics in the grid. </p>
+  <p><img height="46" src="../Images/Screenshots/Search_Sales_Order_Bar.png" width="363" /></p>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+    <tbody>
+      <tr class="t1st">
+        <td>
+          <p><span class="software">Button</span></p>
+        </td>
+        <td>
+          <p><span class="software">Description</span></p>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="../Images/CommandsMod/X.PNG" /></td>
+        <td>
+          <p>Click to clear any criteria entered in the search bar. </p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td><img src="../Images/CommandsMod/Search.png" /></td>
+        <td>
+          <p>Enter text in the search bar and click this or press ENTER to filter the topics in the grid. </p>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="../Images/advanced_search.png" /> </td>
+        <td>Click to display the <a data-xref="{title}" href="../../WindowsMod/Advanced_Search_Features.htm">Advanced Search Filters</a> window where you can perform a more focused search on the data displayed in the grid.  </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
