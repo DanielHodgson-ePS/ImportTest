@@ -1609,9 +1609,15 @@
   <h2>
     <h2-modern>Extra</h2-modern>
   </h2>
+  <p>Use this section to maintain any extra charges associated with the order or to enter a requirement for a credit. This allows extras to be maintained for the sales order without having to open the <span class="software">Billing Requirements</span> window.</p>
+  <p>An extra charge is an additional cost, not included in the selling price of the finished product, which is to be recharged to the customer. The extra charge may be for pre-press costs, die cutter costs or freight cost, etc. An extra charge must be linked to a sales order.</p>
+  <p>If extra charges have been defined in the production estimate used to create the sales order then extra charges will be automatically created and appear in the <span class="software">Extras</span> tab. (See <span class="software">Estimating &gt; Estimate Entry/Amend &gt; Pricing &gt; Additional Charges</span>). Any other extra charges can be added manually on this window or on the <span class="software">Job Planning &gt; Billing &gt; Billing Requirements</span> window.</p>
   <div class="droptext" data-targetname="drop-down19">
     <div class="horizontal-rule-align-left">
-      <h3>Buttons (Extra Grid)</h3>
+      <h3>Standard Grid Buttons</h3>
+      <div data-conref="../assets/snippets/Standard_Grid_Buttons.hts"> </div>
+      <p> </p>
+      <h3>Grid Buttons (Extras)</h3>
       <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
         <tbody>
           <tr class="t1st">
@@ -1622,27 +1628,122 @@
               <p><span class="software">Description</span></p>
             </td>
           </tr>
-          <tr class="t2Row">
-            <td><span class="software"> </span>
-              <p><span class="software"><img src="../assets/Images/CommandsMod/Edit.png" /> Edit All Lines</span></p>
-              <span class="software"> </span>
+          <tr class="t1Row">
+            <td>
+              <p><img src="../assets/Images/CommandsMod/Clear_All.png" /> <span class="software">Clear All </span></p>
+            </td>
+            <td>If you have rerranged the columns and not saved it as a view, click this to discard your changes and return to the original layout. </td>
+          </tr>
+          <tr>
+            <td>
+              <p><img src="../assets/Images/CommandsMod/Save.png" /> <span class="software">Save as View</span></p>
             </td>
             <td>
-              <p>Click to edit existing shipping requests in the grid.</p>
+              <p>If you have rearranged the columns, click this to save the layout as a view. </p>
+              <p>See <a data-xref="{title}" href="../How_to_Create_Views_and_Layouts.htm">How to Create Views and Layouts</a> for more information. </p>
             </td>
           </tr>
-          <tr class="t1Row">
+          <tr>
+            <td>
+              <p><img src="../assets/Images/Customize Column.png" /> <span class="software">Customize Column</span></p>
+            </td>
+            <td>
+              <p>Click to display the <span class="software">Customize Column List</span> where you can change which columns are displayed in the grid. </p>
+              <p>See <a data-xref="{title}" href="../How_to_Create_Views_and_Layouts.htm">How to Create Views and Layouts</a> for more information. </p>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="../assets/Images/CommandsMod/Refresh_Data.png" /> <span class="software">Refresh Data</span></td>
+            <td>
+              <p>Click to refresh the data in the grid. </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><img src="../assets/Images/CommandsMod/File_Output.png" /> <span class="software">File Output</span></p>
+            </td>
+            <td>
+              <p>Click to export the data from the grid to an Excel spreadsheet. </p>
+            </td>
+          </tr>
+          <tr>
             <td><span class="software"> </span>
               <p><span class="software"><img height="14" src="../assets/Images/CommandsMod/Add.png" style="cursor: nesw-resize;" width="15" /> Add Extra</span></p>
               <span class="software"> </span>
             </td>
             <td>
-              <p>Click to add a new extra and open the add/edit mode. </p>
+              <p>Click to add a new extra and open the <span class="software">New Extra Charge</span> section.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><img src="../assets/Images/CommandsMod/Duplicate_sml.png" />  <span class="software">Duplicate</span></p>
+            </td>
+            <td>
+              <p>Click to make a copy of the extra charge and open the <span class="software">Clone Extra Charge</span> section.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><img src="../assets/Images/More.png" /> <span class="software">More Options</span></p>
+            </td>
+            <td>
+              <p>Click to select from a list of menu options:  </p>
+              <ol class="RoundSquare">
+                <li>
+                  <p><span class="software">Add Extra</span>: Select to add a new extra and open the <span class="software">New Extra Charge</span> section.</p>
+                </li>
+                <li>
+                  <p><span class="software">Edit Extra</span>: Select to edit the extra. </p>
+                </li>
+                <li>
+                  <p><span class="software">Clone Extra</span>: Select to make a copy of the extra charge and open the <span class="software">Clone Extra Charge</span> section.</p>
+                </li>
+                <li>
+                  <p><span class="software">Delete Extra</span>: Select to delete this extra. </p>
+                </li>
+              </ol>
+              <p>The following options are only applicable if you are running the modern Radius through classic Radius. </p>
+              <ol class="RoundSquare">
+                <li>
+                  <p>Items</p>
+                </li>
+                <li>
+                  <p>Supply / Demand</p>
+                </li>
+                <li>
+                  <p>Inventory Status</p>
+                </li>
+                <li>
+                  <p>Sales Order Inquiry</p>
+                </li>
+                <li>
+                  <p>Inventory History Inquiry</p>
+                </li>
+                <li>
+                  <p>Accounts Receivable Customer Inquiry</p>
+                </li>
+                <li>
+                  <p> Purchase Order Inquiry</p>
+                </li>
+                <li>
+                  <p>Shipping Request Inquiry</p>
+                </li>
+                <li>
+                  <p>Job Level</p>
+                </li>
+                <li>
+                  <p>Task Level Traceability Inquiry</p>
+                </li>
+                <li>
+                  <p>Estimate Entry/Amend</p>
+                </li>
+              </ol>
             </td>
           </tr>
         </tbody>
       </table>
-      <h3>New Extra Charge</h3>
+      <h3>New Extra Charge / Clone Extra Charge</h3>
       <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
         <tbody>
           <tr class="t1st">
@@ -1658,32 +1759,10 @@
           </tr>
           <tr>
             <td>
-              <p>Customer</p>
+              <p><span class="software">Customer</span></p>
             </td>
             <td>
-              <p> </p>
-            </td>
-            <td>
-              <p>Yes</p>
-            </td>
-          </tr>
-          <tr class="t2Row">
-            <td>
-              <p>Bill Code</p>
-            </td>
-            <td>
-              <p> </p>
-            </td>
-            <td>
-              <p>Yes</p>
-            </td>
-          </tr>
-          <tr class="t1Row">
-            <td>
-              <p>Price</p>
-            </td>
-            <td>
-              <p> </p>
+              <p>This will default from the customer of the sales order and cannot be changed.</p>
             </td>
             <td>
               <p>Yes</p>
@@ -1691,10 +1770,11 @@
           </tr>
           <tr class="t2Row">
             <td>
-              <p>Value</p>
+              <p><span class="software">Bill Code</span></p>
             </td>
             <td>
-              <p> </p>
+              <p>Specify the bill code. Billing codes can be used to analyze the types of extra charges which are being created. They can hold standard phrases which explain the reason for the extra charge which can reduce the amount of duplicated typing. They can hold a standard price, the appropriate tax rate and general ledger account code for the extra charge.</p>
+              <p>Selecting a bill code without the <span class="software">Negative extra</span> check box selected on the <span class="software">Billing Codes</span> window will force the quantity and/or value to be greater than zero. Negative extras cannot be entered if the billing requirement type is <span class="software">Credit</span>. If a negative bill code is selected then the quantity and/or value will be forced to be negative. See</p>
             </td>
             <td>
               <p>Yes</p>
@@ -1702,10 +1782,41 @@
           </tr>
           <tr class="t1Row">
             <td>
-              <p>Type</p>
+              <p><span class="software">Price</span></p>
             </td>
             <td>
-              <p> </p>
+              <p>Enter the price or alternatively enter the value to be invoiced or credited in the <span class="software">Value</span> field. Specify the unit of measure of the right of this field. For example, 61.55 EACH or 21.22 GALLON.</p>
+            </td>
+            <td>
+              <p>Yes</p>
+            </td>
+          </tr>
+          <tr class="t2Row">
+            <td>
+              <p><span class="software">Value</span></p>
+            </td>
+            <td>
+              <p>Specify the value of the extra.</p>
+              <p>This may be automatically calculated in the following scenarios:</p>
+              <ol class="RoundSquare">
+                <li>
+                  <p>If the quantity and unit price are entered.</p>
+                </li>
+                <li>
+                  <p>If the Bill Code is selected. </p>
+                </li>
+              </ol>
+            </td>
+            <td>
+              <p>Yes</p>
+            </td>
+          </tr>
+          <tr class="t1Row">
+            <td>
+              <p><span class="software">Type</span></p>
+            </td>
+            <td>
+              <p>This will be automatically set to <span class="software">Extra</span>.</p>
             </td>
             <td>
               <p>No</p>
@@ -1713,21 +1824,10 @@
           </tr>
           <tr>
             <td>
-              <p>Status</p>
+              <p><span class="software">Status</span></p>
             </td>
             <td>
-              <p> </p>
-            </td>
-            <td>
-              <p>No</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Invoice/Credit</p>
-            </td>
-            <td>
-              <p> </p>
+              <p>The current status of the extra charge.</p>
             </td>
             <td>
               <p>No</p>
@@ -1735,10 +1835,38 @@
           </tr>
           <tr>
             <td>
-              <p>Invoice/Credit Type</p>
+              <p><span class="software">Invoice/Credit</span></p>
             </td>
             <td>
-              <p> </p>
+              <p>Select whether an extra charge is an invoice or a credit from this field.</p>
+            </td>
+            <td>
+              <p>No</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span class="software">Invoice/Credit Type</span></p>
+            </td>
+            <td>
+              <p>Select from the following: </p>
+              <ol class="RoundSquare">
+                <li>
+                  <p><span class="software">Invoice with Shipment</span> - The extra charge will not be converted to an invoice until a shipment has been completed for the same sales order or sales order line. This is usually appropriate for freight charges.</p>
+                </li>
+                <li>
+                  <p><span class="software">Invoice Independently</span> - The extra charge will be converted to an invoice independently of whether a shipment exists or not but the extra may be included on an invoice for a shipment if it can be.</p>
+                </li>
+                <li>
+                  <p><span class="software">Invoice Separately</span> - The extra charge will be on a separate invoice or credit and not combined with any shipments or other extra charges. T his is usually appropriate for die cutter charges.</p>
+                </li>
+                <li>
+                  <p><span class="software">Invoice with Other Extras</span> - The extra charge will be combined with any other extra charges but not combined with any shipments. This is usually appropriate for pre press charges.</p>
+                </li>
+                <li>
+                  <p><span class="software">Credit with Return</span>: The credit extra charge will not be  converted to a credit until finished products relating to the sales order or sales order line have been returned from the customer. This is usually appropriate for freight costs incurred by the customer to return the products.</p>
+                </li>
+              </ol>
             </td>
             <td>
               <p> </p>
@@ -1746,21 +1874,10 @@
           </tr>
           <tr>
             <td>
-              <p>Sales Order Number</p>
+              <p><span class="software">Sales Order Number</span></p>
             </td>
             <td>
-              <p> </p>
-            </td>
-            <td>
-              <p> </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Sales Order - Line</p>
-            </td>
-            <td>
-              <p> </p>
+              <p>The sales order number will be populated automatically and indicates that the extra is linked to this sales order. </p>
             </td>
             <td>
               <p> </p>
@@ -1768,21 +1885,10 @@
           </tr>
           <tr>
             <td>
-              <p>Ship Request</p>
+              <p><span class="software">Sales Order - Line</span></p>
             </td>
             <td>
-              <p> </p>
-            </td>
-            <td>
-              <p> </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Ship Request - Line</p>
-            </td>
-            <td>
-              <p> </p>
+              <p>If you want to link the extra charge to a specific sales order line, optionally select the sales order line number. </p>
             </td>
             <td>
               <p> </p>
@@ -1790,21 +1896,10 @@
           </tr>
           <tr>
             <td>
-              <p>Legacy Customer Number</p>
+              <p><span class="software">Ship Request</span></p>
             </td>
             <td>
-              <p> </p>
-            </td>
-            <td>
-              <p> </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Item</p>
-            </td>
-            <td>
-              <p> </p>
+              <p>The shipping request this extra is linked to. This field is not active but can be populated in the <span class="software">Billing Requirements</span> by linking an extra charge to a specific shipping request.</p>
             </td>
             <td>
               <p> </p>
@@ -1812,21 +1907,10 @@
           </tr>
           <tr>
             <td>
-              <p>Required Quantity</p>
+              <p><span class="software">Ship Request - Line</span></p>
             </td>
             <td>
-              <p> </p>
-            </td>
-            <td>
-              <p> </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Currency Code</p>
-            </td>
-            <td>
-              <p> </p>
+              <p>The shipping request line this extra is linked to. This field is not active but can be populated in the <span class="software">Billing Requirements</span> by linking an extra charge to a specific shipping request line.</p>
             </td>
             <td>
               <p> </p>
@@ -1834,21 +1918,10 @@
           </tr>
           <tr>
             <td>
-              <p>Tax Code</p>
+              <p><span class="software">Legacy Customer Number</span></p>
             </td>
             <td>
-              <p> </p>
-            </td>
-            <td>
-              <p> </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Customer Reference</p>
-            </td>
-            <td>
-              <p> </p>
+              <p>Optionally, specify the customer number from a legacy system. This field is used during a system changeover periods to enter the customers account code from your previous system.</p>
             </td>
             <td>
               <p> </p>
@@ -1856,21 +1929,10 @@
           </tr>
           <tr>
             <td>
-              <p>Customer PO Line</p>
+              <p><span class="software">Item</span></p>
             </td>
             <td>
-              <p> </p>
-            </td>
-            <td>
-              <p> </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Customer PO Release</p>
-            </td>
-            <td>
-              <p> </p>
+              <p>The item that relates to this extra. This field is read-only and is automatically populated if you have selected a sales order line. </p>
             </td>
             <td>
               <p> </p>
@@ -1878,10 +1940,10 @@
           </tr>
           <tr>
             <td>
-              <p>Auto Invoice</p>
+              <p><span class="software">Required Quantity</span></p>
             </td>
             <td>
-              <p> </p>
+              <p>Optionally, enter the quantity to be billed if this appropriate. This may be automatically populated when the <span class="software">Bill Code</span> is selected. Specify the unit of measure to the right of this field. For example, 1 EACH or 1 UNIT.</p>
             </td>
             <td>
               <p> </p>
@@ -1889,10 +1951,82 @@
           </tr>
           <tr>
             <td>
-              <p>Requirement on Hold</p>
+              <p><span class="software">Currency Code</span></p>
+            </td>
+            <td>
+              <p>The currency this extra will be charged in. This will default to the customer’s currency.</p>
+              <p>If the <span class="software">Status</span> field under <span class="software">GL Interface</span> is set to <span class="software">XLink Only</span> on the <span class="software">General Ledger</span> tab of the <span class="software">Company &gt; Options &gt; Company Level Options</span> window, you can change the currency to be different to the currency of the customer. In this case, the currency in the <span class="software">Currency code</span> field will initially default from the sales order currency. You can then change this currency if needed. </p>
             </td>
             <td>
               <p> </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span class="software">Tax Code</span></p>
+            </td>
+            <td>
+              <p>Select the tax rate for this extra. </p>
+              <p>This may be automatically populated when the <span class="software">Bill Code</span> is selected. </p>
+            </td>
+            <td>
+              <p> </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span class="software">Customer Reference</span></p>
+            </td>
+            <td>
+              <p> Optionally enter the customer purchase order reference if the customer requires a separate purchase order reference for the extra charge.</p>
+            </td>
+            <td>
+              <p> </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span class="software">Customer PO Line</span></p>
+            </td>
+            <td>
+              <p>Optionally enter the customer’s purchase order line relating to the extra charge. Some customer’s require this information to allow them to record the extra charge in their system.</p>
+            </td>
+            <td>
+              <p> </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span class="software">Customer PO Release</span></p>
+            </td>
+            <td>
+              <p>Optionally enter the customer&#39;s release reference fro the extra charge.</p>
+            </td>
+            <td>
+              <p> </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="Normal-Text">
+                <normal><span class="software">Auto Invoice</span></normal> (check box)
+              </p>
+            </td>
+            <td>
+              <p>Select to automatically create invoices when a shipment is completed. This will automatically default to selected if the <span class="software">Auto invoice sales orders</span> check box is selected on the <span class="software">General Options</span> tab of the <span class="software">Plant &gt; Options &gt; Plant Level Options</span> window. </p>
+              <p>When a billing requirement is automatically created, it will default this selection to the billing requirement and the billing requirement will not be set as <span class="software">On Hold</span>. </p>
+              <p class="Tip-Note-Text"><span class="software">Note</span>: For the automatic invoicing to run, you need to set up a Windows Scheduled task.</p>
+            </td>
+            <td>
+              <p> </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span class="software">Requirement on Hold</span> (check box)</p>
+            </td>
+            <td>
+              <p>Select to place the billing requirement intially <span class="Emphasis">on hold</span> until it has been approved. </p>
             </td>
             <td>
               <p> </p>
@@ -1900,7 +2034,6 @@
           </tr>
         </tbody>
       </table>
-      <p> </p>
       <hr class="hrule-inner" />
     </div>
     <h3>Additional Fields (Extras)</h3>
