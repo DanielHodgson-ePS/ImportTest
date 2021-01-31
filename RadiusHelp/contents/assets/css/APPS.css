@@ -2774,3 +2774,6 @@ table.Table-Modern tr:first-child td {
   background-color: #406fcb;
   color: #fdfdfd;
 }
+ul.Square {
+  list-style-type: square;
+}

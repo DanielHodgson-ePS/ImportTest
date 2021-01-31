@@ -10,9 +10,10 @@
 </head>
 <body>
   <h1>Add Ship Request from Order Lines</h1>
-  <p>Click <img src="../assets/Images/CommandsMod/Add.png" style="cursor: nwse-resize;" /> Shipping Line under the Order Lines &gt; Shipping Request Lines section of the Sales Orders page. </p>
+  <p>Click <img src="../assets/Images/CommandsMod/Add.png" style="cursor: nwse-resize;" /> <span class="software">Shipping Line</span> under the <span class="software">Order Lines &gt; Shipping Request Lines</span> section of the <span class="software">Sales Orders</span> page. </p>
   <p>By default the sales order lines from the currently open sales order are displayed. </p>
   <h2>Select Order Lines</h2>
+  <p>Search for and select the sales order lines to add to the order. </p>
   <h3>Search Section</h3>
   <p>The search criteria defaults to the currently open sales order.  If you want to search for sales order lines from another sales order, enter the criteria and click <span class="software">Search</span>. </p>
   <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
@@ -46,10 +47,10 @@
           <p>Select one of the following options: </p>
           <ol class="RoundSquare">
             <li>
-              <p><span class="software">Outstanding</span>: Dipslays sales order lines that have not yet been shipped. It defaults to this selection. </p>
+              <p><span class="software">Outstanding</span>: Displays sales order lines that have not yet been shipped. It defaults to this selection. </p>
             </li>
             <li>
-              <p><span class="software">All</span>: Displays all ssles order lines regardless of their status. </p>
+              <p><span class="software">All</span>: Displays all sales order lines regardless of their status. </p>
             </li>
           </ol>
         </td>
@@ -59,7 +60,7 @@
           <p><span class="software">Sales Order</span></p>
         </td>
         <td>
-          <p>Optionally, specify the sales order number for the sales order lines you want to ship.  This defaults to the sales order that is currently open. </p>
+          <p>Optionally specify the sales order number for the sales order lines you want to ship.  This defaults to the sales order that is currently open. </p>
         </td>
       </tr>
       <tr class="t1Row">
@@ -67,7 +68,7 @@
           <p><span class="software">Item Code</span></p>
         </td>
         <td>
-          <p>Optionaly, specify the item code that you want to ship. </p>
+          <p>optionally specify the item code that you want to ship. </p>
         </td>
       </tr>
     </tbody>
@@ -84,5 +85,93 @@
     </li>
   </ol>
   <p>Click <span class="software">Next</span> to move to the next page.  </p>
+  <h2>Add Ship Request Lines</h2>
+  <p>Complete the following information for the shipping request line. </p>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+    <colgroup>
+      <col />
+      <col />
+      <col />
+    </colgroup>
+    <tbody>
+      <tr class="t2Row">
+        <td>
+          <p><span class="software">Column</span></p>
+        </td>
+        <td>
+          <p><span class="software">Description</span></p>
+        </td>
+        <td>
+          <p><span class="software">Required</span></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><b>Ship Quantity</b></p>
+        </td>
+        <td>
+          <p> Enter the quantity to ship against this individual shipping request.</p>
+        </td>
+        <td>Yes</td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p><span class="software">Customers Item Reference</span></p>
+        </td>
+        <td>
+          <p>Optionally specify the customer’s reference for the item. </p>
+        </td>
+        <td>
+          <p>No</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">End Use</span></p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td> </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p><span class="software">EDI Change Code</span></p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Customer PO Line Reference</span></p>
+        </td>
+        <td>
+          <p>Optionally enter a line reference from the customer. This is sometimes required by some customers as a means of identifying the purchase order line in their computer system.</p>
+        </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Customer PO Release Reference</span></p>
+        </td>
+        <td>
+          <p>Optionally enter a customer’s release reference for the shipping request.</p>
+        </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Ontime Date</span></p>
+        </td>
+        <td>
+          <p> </p>
+        </td>
+        <td> </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Click <b>Save </b>to create the shipping request line and return to the <span class="software">Sales Orders</span> page.   </p>
 </body>
 </html>
