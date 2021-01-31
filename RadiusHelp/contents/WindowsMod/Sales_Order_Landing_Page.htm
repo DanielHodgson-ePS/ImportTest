@@ -13,16 +13,23 @@
   <h1>Sales Orders (Landing Page)</h1>
   <p>Use the landing page of the Sales Order page to quickly and easily find sales order records, view data about the sales orders and create new sales orders. </p>
   <p>The search bar at the top of the screen is used to quickly filter which sales order records display in the sales order browser. Alternatively, you can click Advanced Search  next to the search bar to access the Advanced Search Filters window, where you can leverage the Advanced Search engine to build powerful queries to filter records by (which can then be saved for quick access).</p>
-  <p>
+  <div class="minitoc" data-minitoc-targetid="drop-down" data-type="minitoc" style="">
+    <p class="minitoc-caption" data-close-text="" data-expanded="true" data-open-text="Contents" data-type="minitoc-caption" href="#" style="">Mini TOC (placeholder)</p>
+    <ol class="minitoc-list" data-from-selector="h2" data-to-selector="h4" data-type="minitoc-list" style="">
+      <li>Heading</li>
+    </ol>
+  </div>
+  <h2>
     <h2-modern>Search Bar</h2-modern>
-  </p>
+  </h2>
   <div data-conref="../assets/snippets/Search_Bar.hts"> </div>
   <p> </p>
-  <p>
+  <h2>
     <h2-modern>Dashboard</h2-modern>
-  </p>
-  <p>The dashboard displays basic statistics that provide more inf</p>
-  <h2>Buttons</h2>
+  </h2>
+  <p>The dashboard displays basic statistics that provide more information about the sales orders. </p>
+  <p><img src="../assets/Images/Screenshots/Sales_order_dashboard.png" /></p>
+  <h3>Buttons</h3>
   <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
     <tbody>
       <tr class="t1st">
@@ -51,10 +58,75 @@
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p>
+  <h3>Filters</h3>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+    <tbody>
+      <tr class="t1st">
+        <td>
+          <p><span class="software">Filter</span></p>
+        </td>
+        <td>
+          <p><span class="software">Description</span></p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p><span class="software">1m</span></p>
+          <p><span class="software">3m</span></p>
+          <p><span class="software">6m</span></p>
+        </td>
+        <td>
+          <p>Select to display data on the dashboard for sales orders created in the last 1 month, 3 months or 6 months. </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><b>1y</b></p>
+        </td>
+        <td>
+          <p>Select to display data on the dashboard for sales orders created in the last year. </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Widgets</h3>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+    <tbody>
+      <tr class="t1st">
+        <td>
+          <p><span class="software">Widget</span></p>
+        </td>
+        <td>
+          <p><span class="software">Description</span></p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p><span class="software">Total Number of Sales Orders</span></p>
+        </td>
+        <td>
+          <p>Displays the sales orders based on the filters above categorized into <span class="software">Authorized</span>, <span class="software">Held</span>, <span class="software">Credit Held</span> and <span class="software">Completed</span> statuses. </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><b>Order Values By Customer (Top 10)</b></p>
+        </td>
+        <td>Displays the sales orders for by customers that have the highest values. </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Shipment Status for Top 10 Customers</span></p>
+        </td>
+        <td>
+          <p>Dsiplays the sales orders based on the filters above categoried by shipment status, enabling you to see sales orders that have been shipped or not shipped. </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>
     <h2-modern>Filters</h2-modern>
-  </p>
+  </h2>
   <p>Use the filters to filter the data displayed in the grid. </p>
   <p><img src="../assets/Images/Screenshots/Sales_Order_Filters.png" /></p>
   <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
@@ -129,13 +201,13 @@
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p>
+  <h2>
     <h2-modern>Grid</h2-modern>
-  </p>
-  <h2>Standard Grid Buttons</h2>
+  </h2>
+  <p><img src="../assets/Images/Screenshots/Sales_order_grid.png" /></p>
+  <h3>Standard Grid Buttons</h3>
   <div data-conref="../assets/snippets/Standard_Grid_Buttons.hts"> </div>
-  <h2>Buttons (Sales Order Landing Page)</h2>
+  <h3>Buttons </h3>
   <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
     <tbody>
       <tr class="t1st">
@@ -221,5 +293,9 @@
       </tr>
     </tbody>
   </table>
+  <h3>Column Filters</h3>
+  <p>To filter data in the grid, select or enter data in the column headers and the data automatically filters. </p>
+  <p>For a description of the column defintions, see <a data-xref="{title}" href="Sales_Order.htm">Sales Orders (Add/Edit Mode)</a>. <img src="../assets/Images/Screenshots/Sales_orders_column_filters.png" /></p>
+  <p> </p>
 </body>
 </html>

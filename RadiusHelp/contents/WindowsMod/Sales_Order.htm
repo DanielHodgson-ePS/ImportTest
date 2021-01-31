@@ -737,8 +737,7 @@
         </tr>
       </tbody>
     </table>
-    <h3>Sales Order Lines</h3>
-    <h4>Buttons </h4>
+    <h4>Buttons (Order Lines Add/Edit Mode)</h4>
     <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
       <colgroup>
         <col />
@@ -809,7 +808,7 @@
         </tr>
       </tbody>
     </table>
-    <h4>Fields</h4>
+    <h4>Fields/Columns (Order Lines)</h4>
     <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
       <colgroup>
         <col />
@@ -883,7 +882,7 @@
         <tr>
           <td><span class="software">Size</span></td>
           <td>
-            <p>Specify the dimnenstions of the product in millimeters or inches. </p>
+            <p>Specify the dimensions of the product in millimeters or inches. </p>
             <p>These fields will only be active for sheet (Class 2 – Sheet material) or roll (Class 1 – Roll material) products. They are usually only relevant when raw material is sold to a customer.</p>
             <p>When you specify a roll or sheet material in the <span class="software">Item Code</span> field that has a default size to an order line, the default size will automatically populate in this field. This will be from the size defined as the default size in the <span class="software">Items &gt; Set-up &gt; Standard Substrate Sizes</span> window.</p>
           </td>
@@ -1187,7 +1186,6 @@
         </tr>
       </tbody>
     </table>
-    <p> </p>
     <div class="droptext" data-targetname="drop-down18">
       <h3>Balances</h3>
       <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
@@ -1223,7 +1221,6 @@
         </tbody>
       </table>
     </div>
-    <p> </p>
     <h2>Comments and Addresses</h2>
     <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
       <tbody>
@@ -1324,11 +1321,13 @@
   <h2>
     <h2-modern>Shipping</h2-modern>
   </h2>
+  <p>Use this section to generate and view shipping instructions. You can also do this on the <span class="software">Shipping Requests</span> window. Shipping requests are a record of what the customer would like shipping on what date and to which location. Shipping requests tend to change as a result of delays in production and alterations by the customer. The shipping request is a key record in EFI Radius because it is used to monitor whether inventory will be produced in time, it forecasts likely sales turnover for a period and it allows the planning of shipments to customers.</p>
+  <p>Radius uses a header - lines relationship for its shipping requests, meaning that you can combine multiple sales orders onto a single shipping request and shipping note. This is useful in the situation where the customer calls-off different finished product items from several orders that are all to be shipped on the same day. Each request is for one address on one date.</p>
+  <p>Additionally, you can attach shipping lines to a header that were generated from different sales orders and plants. This is due to Radius using a header - lines relationship for shipping requests. The header contains details of a shipment, such as the customer and the address, while the lines contain everything you want to send with that shipment.  </p>
   <h3>Shipping Request Headers</h3>
-  <h3>Standard Grid Buttons</h3>
+  <h4>Standard Grid Buttons (Shipping Request Header)</h4>
   <div data-conref="../assets/snippets/Standard_Grid_Buttons.hts"> </div>
-  <p> </p>
-  <p> </p>
+  <h4>Grid Buttons (Shipping Request Header)</h4>
   <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
     <tbody>
       <tr class="t1st">
@@ -1339,13 +1338,12 @@
           <p><span class="software">Description</span></p>
         </td>
       </tr>
-      <tr class="t2Row">
-        <td><span class="software"> </span>
-          <p><span class="software"><img src="../assets/Images/CommandsMod/Edit.png" /> Edit All Lines</span></p>
-          <span class="software"> </span>
+      <tr>
+        <td>
+          <p><img src="../assets/Images/CommandsMod/Print.png" /> <span class="software">Print Shipping Release Form</span></p>
         </td>
         <td>
-          <p>Click to edit existing shipping requests in the grid.</p>
+          <p>Click to print the Shipping Request Release Form. </p>
         </td>
       </tr>
       <tr class="t1Row">
@@ -1357,9 +1355,43 @@
           <p>Click to add a new order line and open the add/edit mode. </p>
         </td>
       </tr>
+      <tr>
+        <td>
+          <p><img src="../assets/Images/More.png" /> <span class="software">More Options</span></p>
+        </td>
+        <td>
+          <p>Click to select from a list of menu options: </p>
+          <ol class="RoundSquare">
+            <li>
+              <p><img src="../assets/Images/CommandsMod/Add2.png" /> <span class="software">Add Lines</span>: Select to add a new shipping request. </p>
+            </li>
+            <li>
+              <p><span class="software"><img height="16" src="../assets/Images/CommandsMod/Edit.png" width="20" />Edit Shipping Request Header</span>: Select to edit the shipping request header details. </p>
+            </li>
+            <li>
+              <p><span class="software"><span class="software"><img src="../assets/Images/CommandsMod/Duplicate_sml.png" /> </span>Duplicate Shipping Request Headers</span>: Select to make a copy of the shipping request header information.</p>
+            </li>
+            <li>
+              <p><span class="software">Delete Shipping Request Headers</span>: Select to delete this sales order. </p>
+            </li>
+            <li>
+              <p><span class="software">Reset Total Order Quantity</span>: </p>
+            </li>
+          </ol>
+          <p>The following options are only applicable if you are running the modern Radius through classic Radius. </p>
+          <ol class="RoundSquare">
+            <li>
+              <p>Sales Order Inquiry</p>
+            </li>
+            <li>
+              <p>Shipping Request Inquiry</p>
+            </li>
+          </ol>
+        </td>
+      </tr>
     </tbody>
   </table>
-  <h3>New Shipping Request</h3>
+  <h3>New Shipping Request / Existing Shipping Request</h3>
   <h4>Buttons (Shipping Requests - Add/Edit Mode)</h4>
   <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
     <tbody>
@@ -1373,7 +1405,7 @@
       </tr>
       <tr class="t2Row">
         <td>
-          <p><span class="software">Go to Carrier Website</span></p>
+          <p><span class="software"><img src="../assets/Images/CommandsMod/Go_to_website.png" /> Go to Carrier Website</span></p>
         </td>
         <td>
           <p>Click to be directed to the carrier’s external delivery tracking webpage. The order tracking number you entered in the <span class="software">PRO Number</span> field will be combined with the <span class="software">Carrier URL </span>to direct create the address.  </p>
@@ -1382,10 +1414,10 @@
       </tr>
       <tr class="t1Row">
         <td>
-          <p><span class="software">Shipment Tracking Details</span></p>
+          <p><span class="software"><img height="16" src="../assets/Images/CommandsMod/Shipment_Tracking.png" width="16" /> Shipment Tracking Details</span></p>
         </td>
         <td>
-          <p> </p>
+          <p>Click to display the <a data-xref="{title}" href="Shipment_Tracking_Details.htm">Shipment Tracking Details</a> window where you can view all tracking numbers associated with a shipment and their individual freight value. </p>
         </td>
       </tr>
       <tr class="t2Row">
@@ -1631,44 +1663,91 @@
     </tbody>
   </table>
   <h3>Shipping Request Lines</h3>
-  <h4>Buttons (Shipping Requests Grid)</h4>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p><span class="software">Button</span></p>
-        </td>
-        <td>
-          <p><span class="software">Description</span></p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td><span class="software"> </span>
-          <p><span class="software"><img src="../assets/Images/CommandsMod/Edit.png" /> Edit All Lines</span></p>
-          <span class="software"> </span>
-        </td>
-        <td>
-          <p>Click to edit existing shipping requests in the grid.</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td><span class="software"> </span>
-          <p><span class="software"><img height="14" src="../assets/Images/CommandsMod/Add.png" style="cursor: nesw-resize;" width="15" /> Shipping Line</span></p>
-          <span class="software"> </span>
-        </td>
-        <td>
-          <p>Click to display the <a href="Add_Ship_Request_from_Order_Lines.htm">Add Ship Request from Order Lines</a> window to add a shipping order line and open the add/edit mode. </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <h4>Standard Grid Buttons (Shipping Request Header)</h4>
   <div class="horizontal-rule-align-left">
+    <div data-conref="../assets/snippets/Standard_Grid_Buttons.hts"> </div>
+    <h4>Grid Buttons (Shipping Request Lines)</h4>
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p><span class="software">Button</span></p>
+          </td>
+          <td>
+            <p><span class="software">Description</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="software"> </span>
+            <p><span class="software"><img height="14" src="../assets/Images/CommandsMod/Add.png" style="cursor: nesw-resize;" width="15" /> Shipping Line</span></p>
+            <span class="software"> </span>
+          </td>
+          <td>
+            <p>Click to display the <a href="Add_Ship_Request_from_Order_Lines.htm">Add Ship Request from Order Lines</a> window to add a shipping order line and open the add/edit mode. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><img src="../assets/Images/More.png" /> <span class="software">More Options</span></p>
+          </td>
+          <td>
+            <p>Click to select from a list of menu options: </p>
+            <ol class="RoundSquare">
+              <li>
+                <p><img src="../assets/Images/CommandsMod/Add2.png" /> <span class="software">Add Shipping Request Line</span>: Select to add a new shipping request line. </p>
+              </li>
+              <li>
+                <p><span class="software"><img height="16" src="../assets/Images/CommandsMod/Edit.png" width="20" />Edit Shipping Request Line</span>: Select to edit the shipping request linedetails. </p>
+              </li>
+              <li>
+                <p><span class="software"><span class="software"><img src="../assets/Images/CommandsMod/Duplicate_sml.png" /> </span>Clone Request Headers</span>: Select to make a copy of the shipping request line.</p>
+              </li>
+              <li>
+                <p><span class="software">Delete Shipping Request Line</span>: Select to delete this sales order shipping request line. </p>
+              </li>
+            </ol>
+            <p>The following options are only applicable if you are running the modern Radius through classic Radius. </p>
+            <ol class="RoundSquare">
+              <li>
+                <p>Items</p>
+              </li>
+              <li>
+                <p>Supply / Demand</p>
+              </li>
+              <li>
+                <p>Inventory Status</p>
+              </li>
+              <li>
+                <p>Print Shipping Documents</p>
+              </li>
+              <li>
+                <p>Sales Order Inquiry</p>
+              </li>
+              <li>
+                <p>Inventory History Inquiry</p>
+              </li>
+              <li>
+                <p>Accounts Receiveable Customer Inquiry</p>
+              </li>
+              <li>
+                <p>Purchae Order Inquiry</p>
+              </li>
+              <li>
+                <p>Shipping Request Inquiry</p>
+              </li>
+            </ol>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h4> </h4>
+     
     <hr class="hrule" />
   </div>
-  <div class="horizontal-rule-align-left">
+  <p>
     <h2-modern>Version Comments</h2-modern>
-  </div>
-  <p>placeholder text</p>
+  </p>
+  <p>Use this section to make comments on different versions of the sales order. This section will only be active if the Order Acknowledgement report has been printed and the sales order header or lines have been subsequently amended. You can then add version comments to each amendment of the order acknowledgement.</p>
   <h2>
     <h2-modern>Extra</h2-modern>
   </h2>
@@ -2211,7 +2290,7 @@
           <p><span class="software">Bill to Address</span></p>
         </td>
         <td>
-          <p>This will default ot the billing address specified on the <span class="software">Sales Order Details</span> section of the sales order record. </p>
+          <p>This will default to the billing address specified on the <span class="software">Sales Order Details</span> section of the sales order record. </p>
         </td>
         <td>
           <p>No</p>
@@ -2219,6 +2298,12 @@
       </tr>
     </tbody>
   </table>
-  <h3> </h3>
+  <div class="horizontal-rule-align-left">
+    <hr class="hrule" />
+  </div>
+  <h2>
+    <h2-modern>Invoice Details</h2-modern>
+  </h2>
+  <p>Use the Invoice Details section to view invoice line details for a sales order. </p>
 </body>
 </html>

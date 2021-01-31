@@ -10,6 +10,109 @@
 </head>
 <body>
   <h1>Advanced Search Filters</h1>
-  <p> </p>
+  <p>Use the <span class="software">Advanced Search Filters</span> window to search for records using queries sent to the Elastic Search engine, allowing you to build and perform search queries that return results incredibly fast, even when searching large databases.</p>
+  <p>To display this window,  click <img height="32" src="../assets/Images/advanced_search.png" width="33" /> next to the search bar at the top of the Radius window. </p>
+  <p><img src="../assets/Images/Screenshots/Search_Sales_Order_Bar.png" /></p>
+  <p class="Tip-Note-Text"><span class="software">Note</span>:  For more detailed information, see <a data-xref="{title}" href="../About_the_Advanced_Search.htm">About the Advanced Search</a> and <a data-xref="{title}" href="../How_to_Use_the_Advanced_Search.htm">How to Use the Advanced Search </a>. </p>
+  <p>When your changes are complete, click <span class="software">Done</span> to close this window. </p>
+  <div class="minitoc" data-minitoc-targetid="drop-down" data-type="minitoc" style="">
+    <p class="minitoc-caption" data-close-text="" data-expanded="true" data-open-text="Contents" data-type="minitoc-caption" href="File_and_Link_Attachments.htm#" style="">Mini TOC (placeholder)</p>
+    <ol class="minitoc-list" data-from-selector="h2" data-to-selector="h4" data-type="minitoc-list" style="">
+      <li>Heading</li>
+    </ol>
+  </div>
+  <h2> </h2>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse">
+    <tbody>
+      <tr class="t1st">
+        <td>
+          <p><span class="software">Section</span></p>
+        </td>
+        <td>
+          <p><span class="software">Description</span></p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p><span class="software">Field</span></p>
+        </td>
+        <td>
+          <p>Select a field to search against.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><b>Type</b></p>
+        </td>
+        <td>
+          <p>Select the strictness of the search. Choose from:</p>
+          <ol class="RoundSquare">
+            <li>
+              <p><span class="software">Must</span>: The results must equal the specified criteria. See the examples listed above.</p>
+            </li>
+            <li>
+              <p><span class="software">Must not</span>: The results must not equal the specified criteria. For example, to exclude Flexible estimates from your search results, use the following criteria.</p>
+            </li>
+            <li>
+              <p><span class="software">Should</span>: This prioritizes the results of the search results that have been returned with optional criteria. For example, if you have results returned that have a range of 2.000 to 4.000, you can prioritize 3.785 to the top of the results list.</p>
+            </li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><span class="software">Operator</span></p>
+        </td>
+        <td>
+          <p>Select which search to perform against the Value. Choose from:</p>
+          <ol class="RoundSquare">
+            <li>
+              <p><span class="software">Range</span>: The value must be between the specified limits.</p>
+            </li>
+            <li>
+              <p><span class="software">Match</span>: The results have to contain this word.</p>
+            </li>
+            <li>
+              <p><span class="software">Exists</span>: The estimate must have the specified field populated.</p>
+            </li>
+            <li>
+              <p><span class="software">Prefix</span>: The word in the specified field must begin with this. If there are two words in the field then either word can begin with this.</p>
+            </li>
+            <li>
+              <p><span class="software">Fuzzy</span>: The word in the specified field must be similar to this. This is useful for spelling mistakes.</p>
+            </li>
+            <li>
+              <p><span class="software">Wildcard</span>: You can search using wildcards, meaning that the a symbol can be used to replace or represent one or more characters. The most common wildcards are the asterisk (*), which represents one or more characters and question mark (?) that represents a single character.</p>
+            </li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Field Name</p>
+        </td>
+        <td>
+          <p>Depending on the field and operator selected, the choices below vary: </p>
+          <p>If you selected one of the following options from the Operator section, enter or select a value to query for in the respective value field at the bottom of the window:<br />
+            Match<br />
+            Wildcard<br />
+            Prefix<br />
+            Fuzzy<br />
+            If you selected Range from the Operator field , do the following:<br />
+            Enter the minimum value to filter by in the From field.<br />
+            Enter the maximum value to filter by in the To field. </p>
+          <ol class="RoundSquare">
+            <li>
+              <p>true</p>
+            </li>
+            <li>
+              <p>false</p>
+            </li>
+          </ol>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2> </h2>
 </body>
 </html>
