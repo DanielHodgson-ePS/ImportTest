@@ -12,10 +12,10 @@
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  border-top: solid 4px #4e66c9;
+  border-top: solid 1px #c0c0c0;;
   padding-top: 1rem;
   background-color: #fefffa;
-  max-width: 95%;
+  max-width: 100%;
 }
 
 
@@ -94,7 +94,7 @@ ul.accordion li.accordion i:before, ul.accordion li.accordion i:after {
   height: 9px;
 }
 ul.accordion li.accordion i:before {
-  transform: translate(2px, 0) rotate(45deg);c
+  transform: translate(2px, 0) rotate(45deg);
 }
 ul li i:after {
   transform: translate(-2px, 0) rotate(-45deg);
@@ -123,13 +123,9 @@ ul.accordion li.accordion input[type=checkbox]:checked ~ i:after {
   transform: translate(2px, 0) rotate(-45deg);
 }
 
-.StdTable{
+.StdTable, .Styled-Table{
  display:none;
 }
-ul.accordion li.accordion input[type=checkbox]:checked ~ .StdTable {
- display: block;
-}
-
 
 
 @keyframes flipdown {
