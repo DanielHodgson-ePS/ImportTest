@@ -32,9 +32,16 @@
  
 
 .Styled-Table tbody p {
-  
    font-size: 0.9rem;
-  
+}
+
+
+.t1st td {
+  font-weight: 900;
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+  background: #2980b9;
 }
 
 @media screen and (max-width: 580px) {
@@ -59,6 +66,10 @@
   
   .Styled-Table th {
     display: none;
+  }
+  
+  .t1st {
+    display: none !important;
   }
 
   .Styled-Table td {
