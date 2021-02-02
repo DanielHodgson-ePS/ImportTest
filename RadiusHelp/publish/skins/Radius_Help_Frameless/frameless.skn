@@ -69,7 +69,7 @@
       <treeChevronPosition>right</treeChevronPosition>
       <showBrowseSequenceInRightPanel type="boolean">false</showBrowseSequenceInRightPanel>
       <minitoc_levelFrom>2</minitoc_levelFrom>
-      <minitoc_levelTo>4</minitoc_levelTo>
+      <minitoc_levelTo>2</minitoc_levelTo>
       <minitoc_caption></minitoc_caption>
       <gdprCompliant type="boolean">false</gdprCompliant>
       <showOnlyDesktopView type="boolean">true</showOnlyDesktopView>

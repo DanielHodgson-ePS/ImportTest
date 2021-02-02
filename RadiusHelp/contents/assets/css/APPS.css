@@ -1,4 +1,30 @@
 /*Created with Adobe RoboHelp 11.*/
+
+/*Horizontal Page Dividers*/
+.horizontal-rule-align-left {}
+.hrule {
+  background: #2B77CB;
+  height: 4px;
+  width: 20%;
+  border: none;
+  margin-left: 0;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.hrule-inner {
+  background: #c0c0c0;
+  margin-top: 1.75em;
+  margin-bottom: 2.5em;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  height: 1px;
+  width: 90%;
+  border: none;
+}
+
+
+/* font styles*/
+
 h1 {
   font-style: normal;
   font-size: 2.5rem;
@@ -17,7 +43,7 @@ h1 {
 }
 h2 {
   font-family: Verdana;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 2pt;
   margin-left: 0;
@@ -28,25 +54,43 @@ h2 {
   font-weight: bold;
 }
 h3 {
-  font-family: Arial;
-  font-size: 11pt;
-  font-style: italic;
+  font-family: Verdana;
+  font-size: 1.4rem;
   font-weight: bold;
-  margin-left: 5.75pt;
+  margin-bottom: 2pt;
+  margin-left: 0;
   margin-right: 6.5pt;
-  margin-top: 20px;
   text-align: left;
+  text-indent: 0.13pt;
+  margin-top: 24px;
+  font-weight: bold;
 }
-h5 {
-  font-family: Arial;
-  margin-bottom: 3pt;
-  margin-left: 5.75pt;
+
+h4 {
+  font-family: Verdana;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2pt;
+  margin-left: 0;
   margin-right: 6.5pt;
-  margin-top: 12pt;
   text-align: left;
-  font-size: 10pt;
-  x-next-class: ;
-  x-next-type: P;
+  text-indent: 0.13pt;
+  margin-top: 24px;
+  font-weight: bold;
+}
+
+h5 {
+  font-family: Verdana;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 2pt;
+  margin-left: 0;
+  margin-right: 6.5pt;
+  text-align: left;
+  text-indent: 0.13pt;
+  margin-top: 24px;
+  font-weight: bold;
 }
 li.P-BlueText {
   color: #0000ff;
@@ -60,20 +104,15 @@ li.P-Code-Base {
   text-align: left;
 }
 normal {
-  font-family: Arial;
-  font-size: 9pt;
-  line-height: 12pt;
-  text-indent: 0px;
+  font-family: Inter;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.5;
 }
 p {
-  font-family: Arial;
-  line-height: 12pt;
-  margin-bottom: 2pt;
-  margin-right: 0pt;
-  margin-top: 10pt;
-  font-size: 10pt;
-  font-weight: normal;
-  margin-left: 0;
+  font-family: Inter;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 p.BlueText {
   color: #0000ff;
@@ -99,110 +138,38 @@ p.Heading-how-to-Help {
   x-next-type: P;
 }
 p.Normal-Text {
+   font-family: Inter;
+  font-size: 1rem;
   color: #000000;
-  font-family: Arial;
-  font-size: 9pt;
-  margin-bottom: 0pt;
-  margin-left: 0px;
-  margin-top: 10px;
-  x-next-class: Normal-Text;
-  x-next-type: P;
+  line-height: 1.5;
 }
 p.Tip-Note-Step-Text {
-  background-color: rgb(213, 213, 213);
-  border-bottom-color: rgb(213, 213, 213);
-  border-bottom-style: Solid;
-  border-bottom-width: 5px;
-  border-left-color: rgb(213, 213, 213);
-  border-left-style: Solid;
-  border-left-width: 5px;
-  border-right-color: rgb(213, 213, 213);
-  border-right-style: Solid;
-  border-right-width: 5px;
-  border-top-color: rgb(213, 213, 213);
-  border-top-style: Solid;
-  border-top-width: 5px;
-  font-family: Arial;
-  margin-right: 6.5pt;
-  margin-top: 8pt;
-  text-align: left;
-  margin-bottom: 6pt;
-  x-next-class: Normal-Text;
-  x-next-type: P;
-  font-size: 10pt;
-  margin-left: .28in;
+  font-family: Inter;
+  font-size: 1rem;
+  border-left: 4px solid #2B77CB;
+  padding-left: 0.5rem;
+  margin-left: 1rem;
 }
 p.Tip-Note-Step-Text-Indent {
-  background-color: rgb(213, 213, 213);
-  border-bottom-color: rgb(213, 213, 213);
-  border-bottom-style: Solid;
-  border-left-color: rgb(213, 213, 213);
-  border-left-style: Solid;
-  border-right-color: rgb(213, 213, 213);
-  border-right-style: Solid;
-  border-top-color: rgb(213, 213, 213);
-  border-top-style: Solid;
-  font-family: Arial;
-  margin-right: 6.5pt;
-  margin-top: 8pt;
-  text-align: left;
-  margin-bottom: 6pt;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-top-width: 5px;
-  border-bottom-width: 5px;
-  font-size: 10pt;
-  x-next-class: Normal-Text;
-  x-next-type: P;
-  margin-left: .58in;
+   font-family: Inter;
+  font-size: 1rem;
+  border-left: 4px solid #2B77CB;
+  padding-left: 0.5rem;
+  margin-left: 3rem;
 }
 p.Tip-Note-Text {
-  background-color: rgb(213, 213, 213);
-  border-bottom-color: rgb(213, 213, 213);
-  border-bottom-style: Solid;
-  border-bottom-width: 5px;
-  border-left-color: rgb(213, 213, 213);
-  border-left-style: Solid;
-  border-left-width: 5px;
-  border-right-color: rgb(213, 213, 213);
-  border-right-style: Solid;
-  border-right-width: 5px;
-  border-top-color: rgb(213, 213, 213);
-  border-top-style: Solid;
-  border-top-width: 5px;
-  font-family: Arial;
-  margin-left: 0px;
-  margin-right: 6.5pt;
-  margin-top: 8pt;
-  text-align: left;
-  margin-bottom: 6pt;
-  x-next-class: ;
-  x-next-type: P;
-  font-size: 10pt;
+ font-family: Inter;
+  font-size: 1rem;
+  border-left: 4px solid #2B77CB;
+  padding-left: 0.5rem;
+  margin-left: 1rem;
 }
 p.Tip-Note-Text-Modern {
-  background-color: rgb(213, 213, 213);
-  border-bottom-color: rgb(213, 213, 213);
-  border-bottom-style: Solid;
-  border-bottom-width: 5px;
-  border-left-color: rgb(213, 213, 213);
-  border-left-style: Solid;
-  border-left-width: 5px;
-  border-right-color: rgb(213, 213, 213);
-  border-right-style: Solid;
-  border-right-width: 5px;
-  border-top-color: rgb(213, 213, 213);
-  border-top-style: Solid;
-  border-top-width: 5px;
   font-family: Inter;
-  margin-left: 0px;
-  margin-right: 6.5pt;
-  margin-top: 8pt;
-  text-align: left;
-  margin-bottom: 6pt;
-  x-next-class: ;
-  x-next-type: P;
   font-size: 1rem;
+  border-left: 4px solid #2B77CB;
+  padding-left: 0.5rem;
+  margin-left: 1rem;
 }
 p.index-1 {
   font-family: Arial;
@@ -324,51 +291,13 @@ p.Tip-Note-Step-Text-Indent2 {
   x-next-type: P;
   margin-left: .9in;
 }
-table.StdTable {
-  font-family: Arial;
-  font-size: 10pt;
-  x-1st-row: 1;
-  x-row-pat-count: 2;
-  x-border-spacing: 0px;
-  border-width: 1px;
-  border-style: none;
-  border-color: #000000;
-  border-left-width: 0;
-  border-top-width: 1px;
-  border-top-style: none;
-  border-top-color: #000000;
-  border-right-width: 0;
-  border-bottom-width: 0;
-}
-table.StdTable td {
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-table.StdTable tr:nth-child(even) td {
-  border-bottom-style: Solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #c0c0c0;
-}
-table.StdTable tr:nth-child(odd) td {
-  font-family: Arial;
-  font-size: 10pt;
-  border-bottom-style: Solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #c0c0c0;
-}
-table.StdTable tr:first-child td {
-  font-family: Arial;
-  font-size: 10pt;
-  font-weight: bold;
-  border-bottom-style: Solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #999999;
-}
+
+
 span.software {
-  font-family: Arial;
-  font-size: 10pt;
+  font-family: Inter;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.5;
   font-weight: bold;
 }
 span.Emphasis {
@@ -376,24 +305,18 @@ span.Emphasis {
   font-size: 10pt;
   font-style: italic;
 }
-h4 {
-  font-weight: bold;
-  margin-top: 14pt;
-  margin-bottom: 14pt;
-  margin-left: 0pt;
-  margin-right: 0pt;
-  page-break-after: avoid;
-  font-family: Arial;
-  font-size: 11pt;
-}
+
 p.SeeAlso {
-  font-size: 12pt;
+   font-family: Verdana;
+  font-size: 1.2rem;
   font-weight: bold;
-  text-indent: .1pt;
-  margin-left: 0px;
+  margin-bottom: 2pt;
+  margin-left: 0;
   margin-right: 6.5pt;
+  text-align: left;
+  text-indent: 0.13pt;
   margin-top: 24px;
-  line-height: Normal;
+  font-weight: bold;
 }
 p.Related_Topics {
   font-weight: bold;

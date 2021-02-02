@@ -300,6 +300,7 @@ label {
 
   
 .RH-LAYOUT-TOOLBAR-button-0 {
+    display: none;
     font-weight: 700;
     font-size: 0.875rem;
   }
@@ -682,7 +683,6 @@ label {
   background-image: url('unsaved.svg');;
   margin-left: 0px;
   margin-right: 0.5rem;
-  background-color: #EBECF0;
 }
 
 .RH-LAYOUT-RIGHTPANEL-rightpanel-bmrk-saved {
@@ -701,6 +701,7 @@ label {
 .RH-LAYOUT-RIGHTPANEL-highlight-remove-button {
   background-image: url('highlight.svg');;
   background-color: #EBECF0;
+  display: none;
 }
 
 .RH-LAYOUT-RIGHTPANEL-pageup-button {
