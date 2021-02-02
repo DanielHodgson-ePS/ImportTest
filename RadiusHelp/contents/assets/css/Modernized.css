@@ -35,6 +35,29 @@
   color: rgba(0, 0, 0, 0.5);
   background-color: rgba(193, 199, 208, 0.2);
 }
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+}
+/* Tab IDs used for openTab function in myScript.js, add tabs as needed */
+#Tab1 {
+  color: black;
+}
+#Tab2 {
+  color: black;
+}
+#Tab3 {
+  color: black;
+}
+#Tab4 {
+  color: black;
+}
+#Tab5 {
+  color: black;
+}
+
 /*use this to center image*/
 .center-horizontal {
   display: block;
@@ -67,27 +90,7 @@
   clear: both;
   display: table;
 }
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: white;
-  display: none;
-}
-/* Tab IDs used for openTab function in myScript.js, add tabs as needed */
-#Tab1 {
-  color: black;
-}
-#Tab2 {
-  color: black;
-}
-#Tab3 {
-  color: black;
-}
-#Tab4 {
-  color: black;
-}
-#Tab5 {
-  color: black;
-}
+
 /*Horizontal Page Dividers*/
 .horizontal-rule-align-left {}
 .hrule {
@@ -109,40 +112,7 @@
   width: 90%;
   border: none;
 }
-/*Headings and Paragraphs*/
-h1 {
-  font-size: 2.1rem;
-  font-style: normal;
-  margin-bottom: 12pt;
-  margin-left: -5px;
-  margin-top: 8pt;
-  text-indent: 0.03in;
-  font-family: Arial;
-  color: #000000;
-  border-left-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-bottom-style: none;
-  text-decoration: none;
-}
-h2.modern {
-  font-family: Arial;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 2pt;
-  margin-left: 0;
-  margin-right: 6.5pt;
-  text-align: left;
-  text-indent: 0.13pt;
-  margin-top: 24px;
-  font-weight: bold;
-}
-p.modernbody {
-  font-family: Inter;
-  font-size: 1rem;
-  color: #000000;
-  line-height: 1.5;
-}
+
 /*Lists*/
 ol.modernlist {
   list-style: none;
