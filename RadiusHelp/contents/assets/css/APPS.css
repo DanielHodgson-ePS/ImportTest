@@ -48,7 +48,7 @@ h1 {
 }
 h2 {
   font-family: Verdana;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 2pt;
   margin-left: 0;
@@ -60,7 +60,7 @@ h2 {
 }
 h3 {
   font-family: Verdana;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 2pt;
   margin-left: 0;
@@ -70,9 +70,26 @@ h3 {
   margin-top: 24px;
   font-weight: bold;
 }
+
+h3.dropdown {
+
+  font-family: Verdana;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2B77CB;
+  margin-bottom: 2pt;
+  margin-left: 0;
+  margin-right: 6.5pt;
+  text-align: left;
+  text-indent: 0.13pt;
+  margin-top: 24px;
+  font-weight: bold;
+  
+}
+
 h4 {
   font-family: Verdana;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 2pt;
   margin-left: 0;
@@ -84,7 +101,7 @@ h4 {
 }
 h5 {
   font-family: Verdana;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   font-style: italic;
   margin-bottom: 2pt;

@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/Accordion_Dropdown.css" />
 </head>
 <body>
-  <h1 style="font-size: 2.5rem;font-family: Verdana"><span style="font-size:2.1rem;"><span style="font-weight:bold;">Radius Tutorials - About the Advanced Search</span></span></h1>
+  <h1>Radius Tutorials - About the Advanced Search</h1>
   <p class="modernbody"><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText"><span style="font-size: 1rem;"></span></span></span></span></p>
   <p class="modernbody"><span style="font-family:Inter;"><span style="font-size:1rem;"><span class="bodyText">The Radius Advanced Search utilizes the Elastic Search engine, allowing you to build and perform search queries that return results incredibly fast, even when searching large databases. You can access this window by clicking <span style="font-weight:bold;">Advanced Search</span> <img height="20" src="assets/Images/advanced_search.png" width="20" /> next to the search field on the toolbar.</span></span></span></p>
   <p><img height="" src="assets/gifs/advancedsearch.gif" width="100%" /></p>
@@ -24,14 +24,14 @@
   <p class="modernbody">Search queries are built against a <span style="font-weight:bold;">Field</span>, for which you select a <span style="font-weight:bold;">Type</span>, <span style="font-weight:bold;">Operator</span>, and enter or select a value. Multiple criteria can be added for a query, allowing you to create complex searches. Each criteria you define is automatically saved, so it can be easily used again, and can be edited or deleted from within the Advanced Search window.</p>
   <p class="modernbody"><span class="expandtext" data-targetname="expanding"></span></p>
   <div class="accordion-wrapper">
-    <h2>Operators</h2>
+    <h2><span style="color:#000000;">Operators</span></h2>
     <p class="modernbody">An operator in the Advanced Search is the element that tells the search to perform a specific relational or logical operation and produce final result. Simply put, an operator is used to define the conditions of the search you want to perform. The following information gives a detailed breakdown and example for each of the operators available in the Advanced Search.</p>
     <ul class="accordion">
       <li class="accordion"><input name="accordion" type="checkbox" /> <i></i>
-        <h2>Match</h2>
+        <h3 class="dropdown">Match</h3>
         <p class="modernbody accordion"><span style="font-weight:bold;"></span>The results have to contain this word.</p>
         <p class="modernbody accordion">The following example is looking for an estimate that has a Product group that contains the word Boxes. Results for this includes Boxes or Food Boxes</p>
-        <table cellpadding="1" cellspacing="0" class="Styled-Table" style="border-collapse: collapse;">
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
           <colgroup>
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
@@ -40,17 +40,15 @@
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
           </colgroup>
-          <thead>
-            <tr class="t1st">
-              <th style="font-family: Inter;font-size: 1rem">Field</th>
-              <th style="font-family: Inter;font-size: 1rem">Type</th>
-              <th style="font-family: Inter;font-size: 1rem">Operator</th>
-              <th style="font-family: Inter;font-size: 1rem">Value</th>
-              <th style="font-family: Inter;font-size: 1rem">From Value</th>
-              <th style="font-family: Inter;font-size: 1rem">To Value</th>
-            </tr>
-          </thead>
           <tbody>
+            <tr class="t1st">
+              <td style="font-family: Inter;font-size: 1rem">Field</td>
+              <td style="font-family: Inter;font-size: 1rem">Type</td>
+              <td style="font-family: Inter;font-size: 1rem">Operator</td>
+              <td style="font-family: Inter;font-size: 1rem">Value</td>
+              <td style="font-family: Inter;font-size: 1rem">From Value</td>
+              <td style="font-family: Inter;font-size: 1rem">To Value</td>
+            </tr>
             <tr class="t2Row">
               <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Product Group</td>
               <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Must</td>
@@ -63,10 +61,10 @@
         </table>
       </li>
       <li class="accordion"><input name="accordion" type="checkbox" /> <i></i>
-        <h2>Range</h2>
+        <h3 class="dropdown">Range</h3>
         <p class="modernbody"><span style="font-weight:bold;"></span><span>The value must be between the specified limits.</span></p>
         <p class="modernbody">The following example is looking for an item with a Dim A that is greater than 4.000 but less than or equal to 12.000. </p>
-        <table cellpadding="1" cellspacing="0" class="Styled-Table" style="border-collapse: collapse;">
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
           <colgroup>
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
@@ -75,17 +73,15 @@
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
           </colgroup>
-          <thead>
-            <tr class="t1st">
-              <th style="font-family: Inter;font-size: 1rem">Field</th>
-              <th style="font-family: Inter;font-size: 1rem">Type</th>
-              <th style="font-family: Inter;font-size: 1rem">Operator</th>
-              <th style="font-family: Inter;font-size: 1rem">Value</th>
-              <th style="font-family: Inter;font-size: 1rem">From Value</th>
-              <th style="font-family: Inter;font-size: 1rem">To Value</th>
-            </tr>
-          </thead>
           <tbody>
+            <tr class="t1st">
+              <td style="font-family: Inter;font-size: 1rem">Field</td>
+              <td style="font-family: Inter;font-size: 1rem">Type</td>
+              <td style="font-family: Inter;font-size: 1rem">Operator</td>
+              <td style="font-family: Inter;font-size: 1rem">Value</td>
+              <td style="font-family: Inter;font-size: 1rem">From Value</td>
+              <td style="font-family: Inter;font-size: 1rem">To Value</td>
+            </tr>
             <tr class="t2Row">
               <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Dim A</td>
               <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Must</td>
@@ -98,10 +94,10 @@
         </table>
       </li>
       <li class="accordion"><input name="accordion" type="checkbox" /> <i></i>
-        <h2>Wildcard</h2>
+        <h3 class="dropdown">Wildcard</h3>
         <p class="modernbody"><span style="font-weight:bold;"></span>You can search using wildcards, meaning that a symbol can be used to replace or represent one or more characters. The most common wildcards are the asterisk (*), which represents one or more characters and question mark (?) that represents a single character.</p>
         <p class="modernbody">The following example is looking for an estimate that has an Estimate Title that contains the exact word coating using an operator of Match.</p>
-        <table cellpadding="1" cellspacing="0" class="Styled-Table" style="border-collapse: collapse;">
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
           <colgroup>
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
@@ -110,17 +106,15 @@
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
           </colgroup>
-          <thead>
-            <tr class="t1st">
-              <th style="font-family: Inter;font-size: 1rem">Field</th>
-              <th style="font-family: Inter;font-size: 1rem">Type</th>
-              <th style="font-family: Inter;font-size: 1rem">Operator</th>
-              <th style="font-family: Inter;font-size: 1rem">Value</th>
-              <th style="font-family: Inter;font-size: 1rem">From Value</th>
-              <th style="font-family: Inter;font-size: 1rem">To Value</th>
-            </tr>
-          </thead>
           <tbody>
+            <tr class="t1st">
+              <td style="font-family: Inter;font-size: 1rem">Field</td>
+              <td style="font-family: Inter;font-size: 1rem">Type</td>
+              <td style="font-family: Inter;font-size: 1rem">Operator</td>
+              <td style="font-family: Inter;font-size: 1rem">Value</td>
+              <td style="font-family: Inter;font-size: 1rem">From Value</td>
+              <td style="font-family: Inter;font-size: 1rem">To Value</td>
+            </tr>
             <tr class="t2Row">
               <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Estimate Title</td>
               <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Must</td>
@@ -136,39 +130,7 @@
           <li class="modernbody"><span style="font-style:italic;">Coating and Slitting</span></li>
           <li class="modernbody"><span style="font-style:italic;">Extrusion Coating with Drool</span></li>
         </ol>
-        <p class="modernbody">However, if you use an operator of Wildcard and look for an estimate that has an Estimate Title that contains coating*, the asterisk * can represent multiple characters.</p>
-        <p> </p>
-        <table cellpadding="1" cellspacing="0" class="Styled-Table" style="border-collapse: collapse;">
-          <colgroup>
-            <col style="width: 12.5%;" />
-            <col style="width: 12.5%;" />
-            <col style="width: 12.5%;" />
-            <col style="width: 12.5%;" />
-            <col style="width: 12.5%;" />
-            <col style="width: 12.5%;" />
-          </colgroup>
-          <thead>
-            <tr class="t1st">
-              <th style="font-family: Inter;font-size: 1rem">Field</th>
-              <th style="font-family: Inter;font-size: 1rem">Type</th>
-              <th style="font-family: Inter;font-size: 1rem">Operator</th>
-              <th style="font-family: Inter;font-size: 1rem">Value</th>
-              <th style="font-family: Inter;font-size: 1rem">From Value</th>
-              <th style="font-family: Inter;font-size: 1rem">To Value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="t2Row">
-              <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Estimate Title</td>
-              <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Must</td>
-              <td style="font-family: Inter;font-size: 1rem;font-weight: bold">Wildcard</td>
-              <td style="font-family: Inter;font-size: 1rem"><span style="font-style:italic;">Coating*</span></td>
-              <td style="font-family: Inter;font-size: 1rem"> </td>
-              <td style="font-family: Inter;font-size: 1rem"> </td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="modernbody">The results show the following estimate titles:</p>
+        <p class="modernbody">However, if you use an operator of Wildcard and look for an estimate that has an Estimate Title that contains coating*, the asterisk * can represent multiple characters.<span style="font-size: 1rem;">The results show the following estimate titles:</span></p>
         <ol class="modernlist">
           <li class="modernbody"><span style="font-style:italic;">Coating and Slitting</span></li>
           <li class="modernbody"><span style="font-style:italic;">Coatings Multi pass</span></li>
@@ -177,10 +139,10 @@
         </ol>
       </li>
       <li class="accordion"><input name="accordion" type="checkbox" /> <i></i>
-        <h2>Exists</h2>
+        <h3 class="dropdown">Exists</h3>
         <p class="modernbody">The estimate must have the specified field populated.</p>
         <p class="modernbody">The following example is looking for an estimate that has a Customer code specified.</p>
-        <table cellpadding="1" cellspacing="0" class="Styled-Table" style="border-collapse: collapse;">
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
           <colgroup>
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
@@ -189,17 +151,15 @@
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
           </colgroup>
-          <thead>
-            <tr class="t1st">
-              <th style="font-size: 1rem;font-family: Inter">Field</th>
-              <th style="font-size: 1rem;font-family: Inter">Type</th>
-              <th style="font-size: 1rem;font-family: Inter">Operator</th>
-              <th style="font-size: 1rem;font-family: Inter">Value</th>
-              <th style="font-size: 1rem;font-family: Inter">From Value</th>
-              <th style="font-size: 1rem;font-family: Inter">To Value</th>
-            </tr>
-          </thead>
           <tbody>
+            <tr class="t1st">
+              <td style="font-size: 1rem;font-family: Inter">Field</td>
+              <td style="font-size: 1rem;font-family: Inter">Type</td>
+              <td style="font-size: 1rem;font-family: Inter">Operator</td>
+              <td style="font-size: 1rem;font-family: Inter">Value</td>
+              <td style="font-size: 1rem;font-family: Inter">From Value</td>
+              <td style="font-size: 1rem;font-family: Inter">To Value</td>
+            </tr>
             <tr class="t2Row">
               <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Customer Code</td>
               <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Must</td>
@@ -212,10 +172,10 @@
         </table>
       </li>
       <li class="accordion"><input name="accordion" type="checkbox" /> <i></i>
-        <h2>Prefix</h2>
+        <h3 class="dropdown">Prefix</h3>
         <p class="modernbody">The word in the specified field must begin with this. If there are two words in the field then either word can begin with this.</p>
         <p class="modernbody">The following example is looking for an estimate that has a Product group that contains a word staring with Pack. For example, if you search for Pack then the results could include Packaging or Flexible Packaging.</p>
-        <table cellpadding="1" cellspacing="0" class="Styled-Table" style="border-collapse: collapse;">
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
           <colgroup>
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
@@ -224,17 +184,15 @@
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
           </colgroup>
-          <thead>
-            <tr class="t1st">
-              <th style="font-size: 1rem;font-family: Inter">Field</th>
-              <th style="font-size: 1rem;font-family: Inter">Type</th>
-              <th style="font-size: 1rem;font-family: Inter">Operator</th>
-              <th style="font-size: 1rem;font-family: Inter">Value</th>
-              <th style="font-size: 1rem;font-family: Inter">From Value</th>
-              <th style="font-size: 1rem;font-family: Inter">To Value</th>
-            </tr>
-          </thead>
           <tbody>
+            <tr class="t1st">
+              <td style="font-size: 1rem;font-family: Inter">Field</td>
+              <td style="font-size: 1rem;font-family: Inter">Type</td>
+              <td style="font-size: 1rem;font-family: Inter">Operator</td>
+              <td style="font-size: 1rem;font-family: Inter">Value</td>
+              <td style="font-size: 1rem;font-family: Inter">From Value</td>
+              <td style="font-size: 1rem;font-family: Inter">To Value</td>
+            </tr>
             <tr class="t2Row">
               <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Product Code</td>
               <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Must</td>
@@ -247,10 +205,10 @@
         </table>
       </li>
       <li class="accordion"><input name="accordion" type="checkbox" /> <i></i>
-        <h2>Fuzzy</h2>
+        <h3 class="dropdown">Fuzzy</h3>
         <p class="modernbody">The word in the specified field must be similar to this. This is useful for spelling mistakes.</p>
         <p class="modernbody">For example, if you misspell Fle<span style="color:#00d100;">xi</span>ble as Fle<span style="color:#ff0000;">ix</span>ble in the search criteria then the results would include words listed as Flexible with the correct spelling.   </p>
-        <table cellpadding="1" cellspacing="0" class="Styled-Table" style="border-collapse: collapse;">
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
           <colgroup>
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
@@ -259,17 +217,15 @@
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
           </colgroup>
-          <thead>
-            <tr class="t1st">
-              <th style="font-size: 1rem;font-family: Inter">Field</th>
-              <th style="font-size: 1rem;font-family: Inter">Type</th>
-              <th style="font-size: 1rem;font-family: Inter">Operator</th>
-              <th style="font-size: 1rem;font-family: Inter">Value</th>
-              <th style="font-size: 1rem;font-family: Inter">From Value</th>
-              <th style="font-size: 1rem;font-family: Inter">To Value</th>
-            </tr>
-          </thead>
           <tbody>
+            <tr class="t1st">
+              <td style="font-size: 1rem;font-family: Inter">Field</td>
+              <td style="font-size: 1rem;font-family: Inter">Type</td>
+              <td style="font-size: 1rem;font-family: Inter">Operator</td>
+              <td style="font-size: 1rem;font-family: Inter">Value</td>
+              <td style="font-size: 1rem;font-family: Inter">From Value</td>
+              <td style="font-size: 1rem;font-family: Inter">To Value</td>
+            </tr>
             <tr class="t2Row">
               <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Product Group</td>
               <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Must</td>
@@ -284,17 +240,17 @@
     </ul>
   </div>
   <div class="accordion-wrapper">
-    <h1><span style="font-size:1.5rem;"><b>Types</b></span></h1>
+    <h2><span style="color:#000000;"><b>Types</b></span></h2>
     <p class="modernbody">Types define how you want to match your data, essentially determining whether it must or should include, or whether it should exclude, the results you are querying for. The following information gives a detailed explanation and example of the search types available in the advanced search. </p>
     <ul class="accordion">
       <li class="accordion"><input name="accordion" type="checkbox" /> <i></i>
-        <h2>Must</h2>
+        <h3 class="dropdown">Must</h3>
         <p class="modernbody">The results must equal the specified criteria. See the examples listed above.</p>
       </li>
       <li class="accordion"><input name="accordion" type="checkbox" /> <i></i>
-        <h2>Must not</h2>
+        <h3 class="dropdown">Must not</h3>
         <p class="modernbody">The results must not equal the specified criteria. For example, to exclude Flexible estimates from your search results, use the following criteria.</p>
-        <table cellpadding="1" cellspacing="0" class="Styled-Table" style="border-collapse: collapse;">
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
           <colgroup>
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
@@ -303,17 +259,15 @@
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
           </colgroup>
-          <thead>
-            <tr class="t1st">
-              <th style="font-size: 1rem;font-family: Inter">Field</th>
-              <th style="font-size: 1rem;font-family: Inter">Type</th>
-              <th style="font-size: 1rem;font-family: Inter">Operator</th>
-              <th style="font-size: 1rem;font-family: Inter">Value</th>
-              <th style="font-size: 1rem;font-family: Inter">From Value</th>
-              <th style="font-size: 1rem;font-family: Inter">To Value</th>
-            </tr>
-          </thead>
           <tbody>
+            <tr class="t1st">
+              <td style="font-size: 1rem;font-family: Inter">Field</td>
+              <td style="font-size: 1rem;font-family: Inter">Type</td>
+              <td style="font-size: 1rem;font-family: Inter">Operator</td>
+              <td style="font-size: 1rem;font-family: Inter">Value</td>
+              <td style="font-size: 1rem;font-family: Inter">From Value</td>
+              <td style="font-size: 1rem;font-family: Inter">To Value</td>
+            </tr>
             <tr class="t2Row">
               <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Product Code</td>
               <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Must not</td>
@@ -326,9 +280,9 @@
         </table>
       </li>
       <li class="accordion"><input name="accordion" type="checkbox" /> <i></i>
-        <h2>Should</h2>
+        <h3 class="dropdown">Should</h3>
         <p class="modernbody">This prioritizes the results of the search results that have been returned with optional criteria. For example, if you have results returned that have a range of 2.000 to 4.000, you can prioritize 3.785 to the top of the results list.</p>
-        <table cellpadding="1" cellspacing="0" class="Styled-Table" style="border-collapse: collapse;">
+        <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
           <colgroup>
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
@@ -337,17 +291,15 @@
             <col style="width: 12.5%;" />
             <col style="width: 12.5%;" />
           </colgroup>
-          <thead>
-            <tr class="t1st">
-              <th style="font-size: 1rem;font-family: Inter">Field</th>
-              <th style="font-size: 1rem;font-family: Inter">Type</th>
-              <th style="font-size: 1rem;font-family: Inter">Operator</th>
-              <th style="font-size: 1rem;font-family: Inter">Value</th>
-              <th style="font-size: 1rem;font-family: Inter">From Value</th>
-              <th style="font-size: 1rem;font-family: Inter">To Value</th>
-            </tr>
-          </thead>
           <tbody>
+            <tr class="t1st">
+              <td style="font-size: 1rem;font-family: Inter">Field</td>
+              <td style="font-size: 1rem;font-family: Inter">Type</td>
+              <td style="font-size: 1rem;font-family: Inter">Operator</td>
+              <td style="font-size: 1rem;font-family: Inter">Value</td>
+              <td style="font-size: 1rem;font-family: Inter">From Value</td>
+              <td style="font-size: 1rem;font-family: Inter">To Value</td>
+            </tr>
             <tr class="t2Row">
               <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Dim A</td>
               <td style="font-size: 1rem;font-family: Inter;font-weight: bold">Must</td>
