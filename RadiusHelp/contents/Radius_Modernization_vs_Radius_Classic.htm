@@ -9,6 +9,7 @@
   <title>Radius Modernization vs Radius Classic</title>
   <style type="text/css">
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="assets/js/TabContent.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/APPS.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/Modernized.css" />
@@ -55,7 +56,7 @@
   <p class="modernbody"><span style="font-family:Inter;"> <span class="bodyText"> <span style="font-size:1rem;">Once you have customized a page to how you want it, you can then save it as a view. Views can be shared with other users, and even set as default at an administrative level.</span></span></span></p>
   <p class="modernbody note">For detailed instructions on creating, saving, and assigning permissions for views and layouts, see  <a data-xref="{title}" href="How_to_Create_Views_and_Layouts.htm">How to Create Views and Layouts</a>.</p>
   <div class="tablink-navigation">
-    <div style="text-align:center;"><button class="defaultopen tablink tablink-left" onclick="openTab(&#39;Tab1&#39;, this, &#39;#aaaaaa&#39;)">Classic</button><button class="tablink tablink-right" onclick="openTab(&#39;Tab2&#39;, this, &#39;#aaaaaa&#39;)">Modern</button> </div>
+    <div  class="tablink-center" style="text-align:center;"><button class="defaultopen tablink tablink-left" onclick="openTab(&#39;Tab1&#39;, this, &#39;#aaaaaa&#39;)">Classic</button><button class="tablink tablink-right" onclick="openTab(&#39;Tab2&#39;, this, &#39;#aaaaaa&#39;)">Modern</button> </div>
   </div>
   <div class="tabcontent" id="Tab1">
     <p class="modernbody">In the classic Radius system, you had to manually search for sales order records and filter them by their Status in order to view a refined list of them. You then had to select each record you wanted to edit and click multiple buttons in order to edit them.</p>
@@ -66,7 +67,10 @@
     <img height="" src="assets/gifs/FilterByStatusModern.gif" style="display: block; margin: 1em auto 1em auto; border-width: 1px; border-style: ridge; border-color: #c3c3c3;" width="90%" />
   </div>
   <script>
+    //<![CDATA[
+    resizeTabs();
     openDefaultTabs();
+    //]]>
   </script>
   <div class="horizontal-rule-align-left">
     <hr class="hrule" />

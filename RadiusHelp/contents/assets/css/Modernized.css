@@ -5,11 +5,51 @@
   font-family: "Inter-Regular";
   src: url("contents\assets\css\Inter-Regular.ttf");
 }
+
+/* Style tab links */
+.tablink-navigation {
+  position: relative;
+  width: 90%;
+  display: block;
+  margin: 2rem auto;
+  border-bottom: 1px solid #c3c3c3;
+  font-size: 0;
+}
+.tablink {
+  display: inline;
+  background-color: rgba(193, 199, 208, 0.3);
+  color: #000000;
+  border: 1px solid #c3c3c3;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: none;
+  outline: none;
+  box-shadow: 0px 1px 0px 0px #c3c3c3;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 25%;
+}
+.tablink-left {
+  border-radius: 8px 0px 0px 0px;
+}
+.tablink-middle {
+  border-radius: 0px 0px 0px 0px;
+}
+.tablink-right {
+  border-radius: 0px 8px 0px 0px;
+}
+.tablink:hover {
+  color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(193, 199, 208, 0.2);
+}
+
+/*use this to center image*/
 .center-horizontal {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+/*Note styles*/
 .note {
   font-family: Inter;
   font-size: 1rem;
@@ -34,40 +74,6 @@
   content: "";
   clear: both;
   display: table;
-}
-/* Style tab links */
-.tablink-navigation {
-  position: relative;
-  width: 90%;
-  display: block;
-  margin: 2rem auto;
-  border-bottom: 1px solid #c3c3c3;
-  font-size: 0;
-}
-.tablink {
-  display: inline-block;
-  background-color: #c3c3c3;
-  color: white;
-  border: none;
-  border-radius: 8px 8px 0px 0px;
-  border-bottom: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px;
-  font-size: 17px;
-  width: 25%;
-}
-.tablink-left {
-  border-radius: 8px 0px 0px 0px;
-}
-.tablink-middle {
-  border-radius: 0px 0px 0px 0px;
-}
-.tablink-right {
-  border-radius: 0px 8px 0px 0px;
-}
-.tablink:hover {
-  background-color: #b7b7b7;
 }
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {

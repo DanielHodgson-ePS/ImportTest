@@ -6,6 +6,7 @@
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <title>Managing Views and Layouts</title>
   <meta name="topic-status" content="Draft" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="assets/js/TabContent.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/APPS.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/Modernized.css" />
@@ -22,7 +23,9 @@
     <hr class="hrule" />
   </div>
   <div class="tablink-navigation">    
-    <div style="text-align:center;">             <button class="defaultopen tablink tablink-left" onclick="openTab(&#39;Tab1&#39;, this, &#39;#aaaaaa&#39;)">Landing Page Views</button><button class="tablink tablink-right" onclick="openTab(&#39;Tab2&#39;, this, &#39;#aaaaaa&#39;)">Form Views</button> </div>
+    <div class="tablink-center" style="text-align:center;">             
+      <button class="defaultopen tablink tablink-left" onclick="openTab(&#39;Tab1&#39;, this, &#39;#aaaaaa&#39;)">Landing Page Views</button><button class="tablink tablink-right" onclick="openTab(&#39;Tab2&#39;, this, &#39;#aaaaaa&#39;)">Form Views</button> 
+    </div>
   </div>
   <div class="tabcontent" id="Tab1">
     <h2 class="modernbody">
@@ -118,7 +121,8 @@
   </div>
   <script>
     //<![CDATA[
-openDefaultTabs()
+    resizeTabs();
+    openDefaultTabs();
     //<![CDATA[]]>
     //]]>
   </script>
