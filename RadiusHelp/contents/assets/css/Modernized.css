@@ -5,7 +5,6 @@
   font-family: "Inter-Regular";
   src: url("contents\assets\css\Inter-Regular.ttf");
 }
-
 /* Style tab links */
 .tablink-navigation {
   position: relative;
@@ -42,7 +41,6 @@
   color: rgba(0, 0, 0, 0.5);
   background-color: rgba(193, 199, 208, 0.2);
 }
-
 /*use this to center image*/
 .center-horizontal {
   display: block;
@@ -133,7 +131,7 @@ h1 {
   border-bottom-style: none;
   text-decoration: none;
 }
-h2-modern {
+h2.modern {
   font-family: Arial;
   font-size: 1.5rem;
   font-weight: bold;
