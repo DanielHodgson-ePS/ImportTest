@@ -320,8 +320,9 @@ span.software {
   font-weight: bold;
 }
 span.Emphasis {
-  font-family: Arial;
-  font-size: 10pt;
+  font-family: Inter;
+  font-size: 1rem;
+  line-height: 1.5;
   font-style: italic;
 }
 p.SeeAlso {
