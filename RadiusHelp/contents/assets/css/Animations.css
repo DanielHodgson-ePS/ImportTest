@@ -1,5 +1,6 @@
 .rainbow {
   text-align: center;
+  font-size: 1.8rem;
   animation: colorRotate 1.5s linear 0s infinite;
 }
 @keyframes colorRotate {
