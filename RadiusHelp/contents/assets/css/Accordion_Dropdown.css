@@ -50,7 +50,7 @@ li.accordion ol {
   overflow: hidden;
 }
 
-li.accordion > table {
+.table-wrapper {
   display: none;
 }
 
@@ -116,6 +116,11 @@ ul.accordion li.accordion input[type=checkbox]:checked ~  * {
   max-height: 800px;
   opacity: 1;
   transform: translate(0, 0);
+  display: block;
+}
+
+ul.accordion li.accordion input[type=checkbox]:checked .table-wrapper > table {
+  
   display: block;
 }
 
