@@ -1,5 +1,6 @@
 .StdTable {
-  margin: 0 0 40px 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   max-width: 100%;
   border-bottom: 4px solid #2980b9;
 }
@@ -25,7 +26,7 @@
 }
 
 .StdTable td {
-  padding: 6px 12px;
+  padding: 0.5rem 0.5rem;
   font-size: 0.9rem;
 }
  
@@ -34,14 +35,22 @@
    font-size: 0.9rem;
 }
 
-
 .t1st td {
-  font-weight: 900;
-  font-size: 1rem;
+  padding-top: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
   color: #ffffff !important;
   text-align: center;
   background: #2980b9;
 }
+
+.t1st td > p {
+  font-size: 1.2rem;
+ 	 	font-weight: bold; 
+  margin-top: 0.2rem !important;
+  margin-bottom: 0.2rem !important;
+}
+
 
 @media screen and (max-width: 580px) {
   .StdTable {

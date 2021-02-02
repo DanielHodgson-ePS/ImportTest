@@ -1,6 +1,5 @@
 /*Created with Adobe RoboHelp 11.*/
 
-
 /*Import Font*/
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @font-face {
@@ -28,7 +27,6 @@
   width: 90%;
   border: none;
 }
-
 /* font styles*/
 h1 {
   font-style: normal;
@@ -70,9 +68,7 @@ h3 {
   margin-top: 24px;
   font-weight: bold;
 }
-
 h3.dropdown {
-
   font-family: Verdana;
   font-size: 1.5rem;
   font-weight: bold;
@@ -84,9 +80,7 @@ h3.dropdown {
   text-indent: 0.13pt;
   margin-top: 24px;
   font-weight: bold;
-  
 }
-
 h4 {
   font-family: Verdana;
   font-size: 1.3rem;
@@ -311,7 +305,6 @@ p.Tip-Note-Step-Text-Indent2 {
   x-next-type: P;
   margin-left: .9in;
 }
-
 span.software {
   font-family: Inter;
   font-size: 1rem;
@@ -2681,39 +2674,7 @@ ol.Decimal {
 ul.Disc {
   list-style-type: disc;
 }
-table.hdrevenrowsnobdr {
-  border-collapse: collapse;
-}
-table.hdrevenrowsnobdr td {
-  border-width: 1px;
-  border-style: none;
-  border-color: transparent;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-table.hdrevenrowsnobdr tr:first-child td {
-  background-color: var(--hdrevenrowsnobdr-theme-color);
-  color: #FFFFFF;
-}
-table.hdrevenrowsnobdr tr:nth-child(even) td {
-  background-color: var(--hdrevenrowsnobdr-row-color);
-}
-table.Table-Modern {
-  font-family: Inter;
-}
-table.Table-Modern tr:nth-child(even) td {
-  background-color: #ffffff;
-}
-table.Table-Modern tr:nth-child(odd) td {
-  background-color: #ffffff;
-}
-table.Table-Modern tr:first-child td {
-  font-family: Inter;
-  background-color: #406fcb;
-  color: #fdfdfd;
-}
+
 ul.Square {
   list-style-type: square;
 }

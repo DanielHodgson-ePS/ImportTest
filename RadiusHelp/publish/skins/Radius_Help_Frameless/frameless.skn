@@ -88,7 +88,6 @@
       <show_filter type="boolean">true</show_filter>
       <default_pane>toc</default_pane>
       <assets type="array">
-        <assetsitem>example.pdf</assetsitem>
         <assetsitem>font.css</assetsitem>
         <assetsitem>Animations.css</assetsitem>
       </assets>

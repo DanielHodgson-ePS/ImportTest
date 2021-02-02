@@ -17,10 +17,12 @@
   border-bottom: none;
   outline: none;
   box-shadow: 0px 1px 0px 0px #c3c3c3;
+  text-overflow: ellipsis;
   cursor: pointer;
   padding: 1rem;
   font-size: 1.2rem;
   width: 25%;
+  max-height: 100%;
 }
 .tablink-left {
   border-radius: 8px 0px 0px 0px;
@@ -35,13 +37,12 @@
   color: rgba(0, 0, 0, 0.5);
   background-color: rgba(193, 199, 208, 0.2);
 }
-
-/* Style the tab content (and add height:100% for full page content) */
+/* Style the tab content */
 .tabcontent {
   color: white;
   display: none;
 }
-/* Tab IDs used for openTab function in myScript.js, add tabs as needed */
+/* Tab IDs used for openTab function in tabcontent.js, add tabs as needed - temporary solution until I have time to script a betetr one*/
 #Tab1 {
   color: black;
 }
@@ -57,7 +58,6 @@
 #Tab5 {
   color: black;
 }
-
 /*use this to center image*/
 .center-horizontal {
   display: block;
@@ -81,16 +81,15 @@
 }
 .column {
   float: left;
-  width: 45%;
-  padding-left: 2%;
-  padding-right: 2%;
+  width: 47%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
-
 /*Horizontal Page Dividers*/
 .horizontal-rule-align-left {}
 .hrule {
@@ -112,7 +111,6 @@
   width: 90%;
   border: none;
 }
-
 /*Lists*/
 ol.modernlist {
   list-style: none;

@@ -36,7 +36,7 @@ label {
 }
 
 .RH-LAYOUT-thumbnail-close {
-  background-image: url('cross.svg');;
+  background-image: url('cross.svg');;;
 }
 
 .RH-LAYOUT-thumbnail-image {
@@ -74,7 +74,7 @@ label {
 .RH-LAYOUT-HEADER-logo {
   background-size: 5rem 5rem;
   margin-right: 0.5rem;
-  background-image: url('logo.png');;
+  background-image: url('logo.png');;;
 }
 
 .rh-layout-HEADER-logo-link {
@@ -203,14 +203,14 @@ label {
 }
 
 .RH-LAYOUT-LEFTPANEL-expand-icon {
-  background-image: url('ch-right.svg');;
+  background-image: url('ch-right.svg');;;
 }
 
 .RH-LAYOUT-LEFTPANEL-expanded-title {
 }
 
 .RH-LAYOUT-LEFTPANEL-collapse-icon {
-  background-image: url('ch-down.svg');;
+  background-image: url('ch-down.svg');;;
 }
 
 .RH-LAYOUT-LEFTPANEL-selected-title {
@@ -309,11 +309,11 @@ label {
   }
 
   .RH-LAYOUT-TOOLBAR-button-0 .RH-LAYOUT-TOOLBAR-button-icon {
-    background-image: url('expand_all.svg');;
+    background-image: url('expand_all.svg');;;
   }
   
   .RH-LAYOUT-TOOLBAR-button-0 .RH-LAYOUT-TOOLBAR-button-icon-applied {
-  background-image: url('collapse_all.svg');;
+  background-image: url('collapse_all.svg');;;
   }
   
   .RH-LAYOUT-TOOLBAR-button-1 {
@@ -325,11 +325,11 @@ label {
   }
 
   .RH-LAYOUT-TOOLBAR-button-1 .RH-LAYOUT-TOOLBAR-button-icon {
-    background-image: url('unsaved.svg');;
+    background-image: url('unsaved.svg');;;
   }
   
   .RH-LAYOUT-TOOLBAR-button-1 .RH-LAYOUT-TOOLBAR-button-icon-applied {
-  background-image: url('saved.svg');;
+  background-image: url('saved.svg');;;
   }
   
   .RH-LAYOUT-TOOLBAR-button-2 {
@@ -341,11 +341,11 @@ label {
   }
   
   .RH-LAYOUT-TOOLBAR-button-2 .RH-LAYOUT-TOOLBAR-button-icon {
-    background-image: url('filter.svg');;
+    background-image: url('filter.svg');;;
   }
   
   .RH-LAYOUT-TOOLBAR-button-2 .RH-LAYOUT-TOOLBAR-button-icon-applied {
-  background-image: url('filter2.svg');;
+  background-image: url('filter2.svg');;;
   }
   
   .RH-LAYOUT-TOOLBAR-button-3 {
@@ -357,11 +357,11 @@ label {
   }
   
   .RH-LAYOUT-TOOLBAR-button-3 .RH-LAYOUT-TOOLBAR-button-icon {
-    background-image: url('bmrk_select.svg');;
+    background-image: url('bmrk_select.svg');;;
   }
   
   .RH-LAYOUT-TOOLBAR-button-3 .RH-LAYOUT-TOOLBAR-button-icon-applied {
-  background-image: url('bmrk_unselect.svg');;
+  background-image: url('bmrk_unselect.svg');;;
   }
   
   .RH-LAYOUT-TOOLBAR-button-4 {
@@ -373,11 +373,11 @@ label {
   }
   
   .RH-LAYOUT-TOOLBAR-button-4 .RH-LAYOUT-TOOLBAR-button-icon {
-    background-image: url('download_pdf.svg');;
+    background-image: url('download_pdf.svg');;;
   }
   
   .RH-LAYOUT-TOOLBAR-button-4 .RH-LAYOUT-TOOLBAR-button-icon-applied {
-  background-image: url('download_pdf.svg');;
+  background-image: url('download_pdf.svg');;;
   }
   
   .RH-LAYOUT-TOOLBAR-button-5 {
@@ -389,11 +389,11 @@ label {
   }
   
   .RH-LAYOUT-TOOLBAR-button-5 .RH-LAYOUT-TOOLBAR-button-icon {
-    background-image: url('search.svg');;
+    background-image: url('search.svg');;;
   }
   
   .RH-LAYOUT-TOOLBAR-button-5 .RH-LAYOUT-TOOLBAR-button-icon-applied {
-  background-image: url('search.svg');;
+  background-image: url('search.svg');;;
   }
   
   .RH-LAYOUT-TOOLBAR-button-6 {
@@ -406,11 +406,11 @@ label {
   }
 
   .RH-LAYOUT-TOOLBAR-button-6 .RH-LAYOUT-TOOLBAR-button-icon {
-    background-image: url('share.svg');;
+    background-image: url('share.svg');;;
   }
   
   .RH-LAYOUT-TOOLBAR-button-6 .RH-LAYOUT-TOOLBAR-button-icon-applied {
-  background-image: url('share.svg');;
+  background-image: url('share.svg');;;
   }
   
   .RH-LAYOUT-TOOLBAR-button-7 {
@@ -422,11 +422,11 @@ label {
 }
 
   .RH-LAYOUT-TOOLBAR-button-7 .RH-LAYOUT-TOOLBAR-button-icon {
-    background-image: url('Dark.svg');;
+    background-image: url('Dark.svg');;;
   }
   
   .RH-LAYOUT-TOOLBAR-button-7 .RH-LAYOUT-TOOLBAR-button-icon-applied {
-  background-image: url('light.svg');;
+  background-image: url('light.svg');;;
   }
 .RH-LAYOUT-HOMEPAGE-TOOLBAR-button-1 {
     font-size: 0.875rem;
@@ -438,11 +438,11 @@ label {
 }
 
 .RH-LAYOUT-HOMEPAGE-TOOLBAR-button-1 .RH-LAYOUT-HOMEPAGE-TOOLBAR-button-icon {
-    background-image: url('homepage-unsaved.svg');;
+    background-image: url('homepage-unsaved.svg');;;
 }
   
 .RH-LAYOUT-HOMEPAGE-TOOLBAR-button-1 .RH-LAYOUT-HOMEPAGE-TOOLBAR-button-icon-applied {
-  background-image: url('homepage-saved.svg');;
+  background-image: url('homepage-saved.svg');;;
 }
   
 .RH-LAYOUT-HOMEPAGE-TOOLBAR-button-2 {
@@ -455,11 +455,11 @@ label {
 }
   
 .RH-LAYOUT-HOMEPAGE-TOOLBAR-button-2 .RH-LAYOUT-HOMEPAGE-TOOLBAR-button-icon {
-    background-image: url('homepage-filter.svg');;
+    background-image: url('homepage-filter.svg');;;
 }
   
 .RH-LAYOUT-HOMEPAGE-TOOLBAR-button-2 .RH-LAYOUT-HOMEPAGE-TOOLBAR-button-icon-applied {
-  background-image: url('homepage-filter2.svg');;
+  background-image: url('homepage-filter2.svg');;;
 }
 .nav {
 }
@@ -523,11 +523,11 @@ label {
 }
 
 .RH-LAYOUT-TOOLBAR-panel-show {
-  background-image: url('expand_toc.svg');;
+  background-image: url('expand_toc.svg');;;
 }
 
 .RH-LAYOUT-TOOLBAR-panel-hide {
-  background-image: url('collapse_toc.svg');;
+  background-image: url('collapse_toc.svg');;;
 }
 
 .RH-LAYOUT-TOOLBAR-menu-close {
@@ -569,7 +569,7 @@ label {
 }
 
 .RH-LAYOUT-SEARCHRESULTS-results-close {
-  background-image: url('cross.svg');;
+  background-image: url('cross.svg');;;
 }
 
 .RH-LAYOUT-SEARCHRESULTS-results-inner-box {
@@ -719,7 +719,7 @@ label {
 }
 
 .RH-LAYOUT-RIGHTPANEL-regular-screen-button {
-  background-image: url('regular_screen.svg');;
+  background-image: url('regular_screen.svg');;;
 }
 
 .RH-LAYOUT-RIGHTPANEL-prev-button {
@@ -747,10 +747,11 @@ label {
 }
 .RH-LAYOUT-HOMEPAGE-TITLEBAR-container {
   background-image: url('quick_finder_banner.jpg');;
+  font-size: 16px;
 }
 
 .RH-LAYOUT-HOMEPAGE-TITLEBAR-title-bar {
-  height: 11rem;
+  height: 6rem;
   font-size: 2rem;
   margin-bottom: 3.5rem;
   color: #ffffff;
@@ -845,7 +846,7 @@ label {
 }
 
 .RH-LAYOUT-HOMEPAGE-SEARCHBOX-icon {
-  background-image: url('search.svg');;
+  background-image: url('search.svg');;;
 }
 
 .RH-LAYOUT-HOMEPAGE-SEARCHBOX-text-field {
@@ -932,7 +933,7 @@ label {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
-  height: 258px;
+  height: 280px;
   border-width: 1px;
   border-style: none;
   border-color: #000000;
@@ -957,12 +958,11 @@ label {
   border-bottom-right-radius: 0.25rem;
   height: 177px;
   width: 288px;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5REM;
   margin-right: 2rem;
 }
 
 .RH-LAYOUT-HOMEPAGE-TOC-details-box {
-  height: 2rem;
   background-color: #4e66c9;
   border-width: 0px;
   border-style: none;
@@ -971,10 +971,14 @@ label {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
 }
 
 .RH-LAYOUT-HOMEPAGE-TOC-title-box {
-  height: 2rem;
+  height: 3rem;
 }
 
 .RH-LAYOUT-HOMEPAGE-TOC-description-box {
@@ -1004,7 +1008,7 @@ label {
 }
 
 .RH-LAYOUT-HOMEPAGE-SEARCHRESULTS-close-icon {
-  background-image: url('cross.svg');;
+  background-image: url('cross.svg');;;
 }
 
 .rh-layout-HOMEPAGE-title-a-div a {
@@ -1038,7 +1042,7 @@ label {
 .RH-LAYOUT-HOMEPAGE-TOC-title {
   font-weight: 700;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #FFFFFF;
   text-transform: uppercase;
   padding-top: 5px;
@@ -1356,7 +1360,7 @@ label {
 }
 
 .RH-LAYOUT-BRS-prev-box:before {
-  background-image: url('brs-ch-left.svg');;
+  background-image: url('brs-ch-left.svg');;;
 }
 
 .RH-LAYOUT-BRS-next-box {
@@ -1372,7 +1376,7 @@ label {
 }
 
 .RH-LAYOUT-BRS-next-box:after {
-  background-image: url('brs-ch-right.svg');;
+  background-image: url('brs-ch-right.svg');;;
 }
 .RH-LAYOUT-COOKIES-popover {
 }
@@ -1540,11 +1544,11 @@ label {
 }
 
 .RH-LAYOUT-SEARCHBOX-search-icon {
-  background-image: url('search.svg');;
+  background-image: url('search.svg');;;
 }
 
 .RH-LAYOUT-SEARCHBOX-search .RH-LAYOUT-SEARCHBOX-search-icon {
-  background-image: url('search.svg');;
+  background-image: url('search.svg');;;
 }
 
 .rh-layout-SEARCHBOX-searchcontainer {
@@ -1841,14 +1845,14 @@ label {
 }
 
 .RH-LAYOUT-INDEX-expand-icon {
-  background-image: url('ch-right.svg');;
+  background-image: url('ch-right.svg');;;
 }
 
 .RH-LAYOUT-INDEX-expanded-keyword {
 }
 
 .RH-LAYOUT-INDEX-collapse-icon {
-  background-image: url('ch-down.svg');;
+  background-image: url('ch-down.svg');;;
 }
 
 .RH-LAYOUT-INDEX-selected-keyword {
@@ -1873,7 +1877,7 @@ label {
 }
 
 .RH-LAYOUT-HOMEPAGE-SIDEBAR-close-icon {
-    background-image: url('cross.svg');;
+    background-image: url('cross.svg');;;
 }
 
 .RH-LAYOUT-HOMEPAGE-SIDEBAR-content {
@@ -2731,7 +2735,7 @@ label {
 }
 
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-HEADER-logo {
-  background-image: url('logo.png');;
+  background-image: url('logo.png');;;
 }
 
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-HEADER-title {
@@ -2898,7 +2902,7 @@ label {
 }
 
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-LEFTPANEL-panel-hide {
-  background-image: url('collapse_toc.svg');;
+  background-image: url('collapse_toc.svg');;;
 }
 
 .RH-LAYOUT-BODY-mobile-view .nav ul {
@@ -3001,11 +3005,11 @@ label {
 }
 
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-HOMEPAGE-HEADERMENU-menu-open-icon {
-    background-image: url('menu.svg');;
+    background-image: url('menu.svg');;;
 }
 
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-HOMEPAGE-HEADERMENU-menu-close-icon {
-    background-image: url('cross.svg');;
+    background-image: url('cross.svg');;;
 }
 
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-HOMEPAGE-HEADERMENU-list {

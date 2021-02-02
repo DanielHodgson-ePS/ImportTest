@@ -2,15 +2,16 @@ window.addEventListener('resize', resizeTabs, true);
 
 // If there are at least 4 tabs, Loop through every set of tabcontent-navigation buttons in the page and resize buttons based on number of buttons
 function resizeTabs() {
+  
   var tablinkNavs = document.getElementsByClassName("tablink-navigation");
   
-  if(tablinkNavs.length >= 4) {
-  for (i = 0; i < tablinkNavs.length; i++) {   
-    var buttons = $(".tablink-center > .tablink");
-    buttons.width((100 / buttons.length) - 10 + '%');
-  }
-  }
-}
+   if(tablinkNavs.length >= 4) {
+     for (i = 0; i < tablinkNavs.length; i++) {     
+       var buttons = $(".tablink-center > .tablink"); 
+       buttons.width((100 / buttons.length) - 10 + '%');
+      }
+    }   
+ }
 
 function openTab(pageName, elmnt, color) {
  
