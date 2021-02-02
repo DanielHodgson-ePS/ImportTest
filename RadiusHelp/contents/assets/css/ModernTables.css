@@ -1,6 +1,7 @@
 .StdTable {
   margin: 0 0 40px 0;
   max-width: 100%;
+  border-bottom: 4px solid #2980b9;
 }
 
 

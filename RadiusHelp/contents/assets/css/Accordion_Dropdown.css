@@ -50,6 +50,10 @@ li.accordion ol {
   overflow: hidden;
 }
 
+li.accordion > table {
+  display: none;
+}
+
 
 ul.accordion {
   list-style: none;
@@ -83,7 +87,7 @@ ul.accordion li.accordion:last-of-type {
 ul.accordion li.accordion i {
   position: absolute;
   transform: translate(-6px, 0);
-  margin-top: 16px;
+  margin-top: 1rem;
   right: 0;
 }
 ul.accordion li.accordion i:before, ul.accordion li.accordion i:after {
@@ -122,11 +126,6 @@ ul.accordion li.accordion input[type=checkbox]:checked ~ i:before {
 ul.accordion li.accordion input[type=checkbox]:checked ~ i:after {
   transform: translate(2px, 0) rotate(-45deg);
 }
-
-.StdTable, .Styled-Table{
- display:none;
-}
-
 
 @keyframes flipdown {
   0% {
