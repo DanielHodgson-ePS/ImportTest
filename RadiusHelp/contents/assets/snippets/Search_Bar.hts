@@ -7,6 +7,7 @@
   <meta name="topic-comment" content="" />
   <title>Search_Bar</title>
   <link rel="stylesheet" type="text/css" href="../css/APPS.css" />
+  <link rel="stylesheet" type="text/css" href="../css/ModernTables.css" />
 </head>
 <body>
   <p>Use the search bar at the top to filter topics in the grid. </p>
@@ -15,10 +16,11 @@
     <tbody>
       <tr class="t1st">
         <td>
-          <p><span class="software">Button</span></p>
+          <p>Button</p>
         </td>
+        
         <td>
-          <p><span class="software">Description</span></p>
+          <p>Description</p>
         </td>
       </tr>
       <tr>
