@@ -1,5 +1,12 @@
 /*Created with Adobe RoboHelp 11.*/
 
+
+/*Import Font*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("contents\assets\css\Inter-Regular.ttf");
+}
 /*Horizontal Page Dividers*/
 .horizontal-rule-align-left {}
 .hrule {
@@ -22,9 +29,7 @@
   border: none;
 }
 
-
 /* font styles*/
-
 h1 {
   font-style: normal;
   font-size: 2.5rem;
@@ -65,7 +70,6 @@ h3 {
   margin-top: 24px;
   font-weight: bold;
 }
-
 h4 {
   font-family: Verdana;
   font-size: 1.2rem;
@@ -78,7 +82,6 @@ h4 {
   margin-top: 24px;
   font-weight: bold;
 }
-
 h5 {
   font-family: Verdana;
   font-size: 1rem;
@@ -138,7 +141,7 @@ p.Heading-how-to-Help {
   x-next-type: P;
 }
 p.Normal-Text {
-   font-family: Inter;
+  font-family: Inter;
   font-size: 1rem;
   color: #000000;
   line-height: 1.5;
@@ -151,14 +154,14 @@ p.Tip-Note-Step-Text {
   margin-left: 1rem;
 }
 p.Tip-Note-Step-Text-Indent {
-   font-family: Inter;
+  font-family: Inter;
   font-size: 1rem;
   border-left: 4px solid #2B77CB;
   padding-left: 0.5rem;
   margin-left: 3rem;
 }
 p.Tip-Note-Text {
- font-family: Inter;
+  font-family: Inter;
   font-size: 1rem;
   border-left: 4px solid #2B77CB;
   padding-left: 0.5rem;
@@ -292,7 +295,6 @@ p.Tip-Note-Step-Text-Indent2 {
   margin-left: .9in;
 }
 
-
 span.software {
   font-family: Inter;
   font-size: 1rem;
@@ -305,9 +307,8 @@ span.Emphasis {
   font-size: 10pt;
   font-style: italic;
 }
-
 p.SeeAlso {
-   font-family: Verdana;
+  font-family: Verdana;
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 2pt;
