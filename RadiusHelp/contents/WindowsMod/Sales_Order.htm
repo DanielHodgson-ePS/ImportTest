@@ -15,7 +15,7 @@
   <p>A sales order is an order from a customer to make or supply one or more items. It does not require the existence of an estimate before it can be entered and since items may be supplied from inventory or purchased a sales order does not automatically require a production job.</p>
   <ol class="modernlist">
     <li>
-      <p>The sales order is treated as a requirement for the items ordered. The instructions to deliver the goods are entered as shipping requests. Each request is for a single shipment and specifies what is to be shipped, when and to whom.</p>
+      <p>The sales order is treated as a requirement for the items ordered. The instructions to deliver the goods are entered as shipping requests. Each request is for a single shipment and specifies what is to be shipped, when and to whom.</p>
     </li>
     <li>
       <p>If there is a production estimate, a production job can be automatically generated from the sales order entry; otherwise the sales order items are processed through the requirements procedures.</p>
@@ -446,7 +446,7 @@
             <p><span class="software">Day Prior</span></p>
           </td>
           <td>
-            <p>The number of days the order is to be ready before the customer&#39;s date. This will default on selection of the ship to address if lead time has been defined for the address. You can exclude non shipment days from the lead days calculation by using the<span class="software"> Non ShipmentDates/Days</span> window.</p>
+            <p>The number of days the order is to be ready before the customer&#39;s date. This will default on selection of the ship to address if lead time has been defined for the address. You can exclude non shipment days from the lead days calculation by using the<span class="software"> Non Shipment Dates/Days</span> window.</p>
           </td>
           <td>
             <p> </p>
@@ -469,7 +469,7 @@
           </td>
           <td>
             <p>The currency in which the sales order is priced. This will default from the customer record.</p>
-            <p>If the <span class="software">Status</span> field under <span class="software">GL Interface</span> is set to <span class="software">XLink Onl</span>y on the <span class="software">General Ledge</span>r tab of the <span class="software">Company &gt; Options &gt; Company Level Options</span> window, you can change the currency to be different to the currency of the customer. After saving the sales order, you can update the sales order currency until an order line item is created for this order. Then, you will no longer be able to change the currency.  </p>
+            <p>If the <span class="software">Status</span> field under <span class="software">GL Interface</span> is set to <span class="software">XLink Only</span> on the <span class="software">General Ledge</span>r tab of the <span class="software">Company &gt; Options &gt; Company Level Options</span> window, you can change the currency to be different to the currency of the customer. After saving the sales order, you can update the sales order currency until an order line item is created for this order. Then, you will no longer be able to change the currency.  </p>
             <p>When the currency of the customer and sales order is different, the currency will be automatically converted to the currency of the customer when displayed in the <span class="software">Sales order balance</span> field on the <span class="software">Detail</span> tab of the <span class="software">Company &gt; Customers and Suppliers &gt; Customers</span> window. </p>
             <p class="Tip-Note-Text"><span class="software">Note</span>:  If you have the iQuote integration enabled in the <span class="software">Integrations &gt; Integration Options</span> window, changing the currency is not supported in that workflow even if the <span class="software">Status</span> under <span class="software">GL Interface</span> is set to <span class="software">XLink Only</span> on the <span class="software">General Ledge</span><span class="software">r</span> tab of the <span class="software">Company &gt; Options &gt; Company Level Option</span>s window. <br />
                </p>
@@ -575,7 +575,7 @@
       </tr>
       <tr>
         <td>
-          <p><span class="software">EDI Remitance to Address</span></p>
+          <p><span class="software">EDI Remittance to Address</span></p>
         </td>
         <td>
           <p>Optionally, select a separate address to use for EDI (Electronic Data Interchange) transmissions where the customers can send their payments. </p>
@@ -1032,10 +1032,11 @@
         </tr>
         <tr>
           <td>
-            <p><span class="software">End user</span></p>
+            <p><span class="software">End Use</span></p>
           </td>
           <td>
-            <p> </p>
+            <p>Specify the type of end product, such as food or pharmaceuticals.</p>
+            <p>This is used for determining the taxability in the OneSource integration when the item type or group type code cannot be used. </p>
           </td>
           <td>
             <p>No</p>
@@ -1252,7 +1253,7 @@
       </tbody>
     </table>
     <h5>Sales Order Lines Balances Chart/Table</h5>
-    <p>The <span class="software">Sales Order Lines Balances</span> chart/table displays the order line fulfilment status. You can switch between viewing the balances in <span class="software">Quantity</span> and <span class="software">Value</span>.  </p>
+    <p>The <span class="software">Sales Order Lines Balances</span> chart/table displays the order line fulfillment status. You can switch between viewing the balances in <span class="software">Quantity</span> and <span class="software">Value</span>.  </p>
     <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
       <colgroup>
         <col />
@@ -1304,7 +1305,7 @@
             <p><span class="software">Outstanding</span></p>
           </td>
           <td>
-            <p>The quantity or value of undelievered shipping requests. </p>
+            <p>The quantity or value of undelivered shipping requests. </p>
           </td>
         </tr>
         <tr>
@@ -1328,7 +1329,7 @@
             <p><span class="software">CIS</span></p>
           </td>
           <td>
-            <p>The quantiy or value remaining of CIS inventory in stock. </p>
+            <p>The quantity or value remaining of CIS inventory in stock. </p>
           </td>
         </tr>
       </tbody>
@@ -1637,7 +1638,7 @@
           <p><span class="software">End Use Code</span></p>
         </td>
         <td>
-          <p>Specify the type of end product, such as food or pharmaeuticals.</p>
+          <p>Specify the type of end product, such as food or pharmaceuticals.</p>
           <p>This is used for determining the taxability in the OneSource integration when the item type or group type code cannot be used. </p>
         </td>
         <td>
@@ -1688,7 +1689,7 @@
               <p><span class="software">Not Exported</span> - No XLink record has been created and no XLink record is set to be created for this shipping request.</p>
             </li>
             <li>
-              <p><span class="software">Awaiting Export</span> - Select to export the shipping request data and create an XLink record. To create an XLink record using this option, first select<span class="software"> Awaiting Expor</span>t from the drop-down list, generate the request and then click Accept.  When the XLink record is created, the status changes to Exported and will appear on the Shipping tab of the Sales Order window.</p>
+              <p><span class="software">Awaiting Export</span> - Select to export the shipping request data and create an XLink record. To create an XLink record using this option, first select<span class="software"> Awaiting Export</span> from the drop-down list, generate the request and then click Accept.  When the XLink record is created, the status changes to Exported and will appear on the Shipping tab of the Sales Order window.</p>
             </li>
           </ul>
           <p class="Tip-Note-Text"><span class="software">Note</span>:  This option is only available if you have set the <span class="software">Shipping request </span>option to <span class="software">Export </span>or <span class="software">Both </span>on the <span class="software">XLink Options</span> tab of the XLink <span class="software">Options </span>window.</p>
@@ -1849,7 +1850,7 @@
                 <p><img src="../assets/Images/CommandsMod/Add2.png" /> <span class="software">Add Shipping Request Line</span>: Select to add a new shipping request line. </p>
               </li>
               <li>
-                <p><span class="software"><img height="16" src="../assets/Images/CommandsMod/Edit.png" width="20" />Edit Shipping Request Line</span>: Select to edit the shipping request linedetails. </p>
+                <p><span class="software"><img height="16" src="../assets/Images/CommandsMod/Edit.png" width="20" />Edit Shipping Request Line</span>: Select to edit the shipping request line details. </p>
               </li>
               <li>
                 <p><span class="software"><span class="software"><img src="../assets/Images/CommandsMod/Duplicate_sml.png" /> </span>Clone Request Headers</span>: Select to make a copy of the shipping request line.</p>
@@ -1879,10 +1880,10 @@
                 <p>Inventory History Inquiry</p>
               </li>
               <li>
-                <p>Accounts Receiveable Customer Inquiry</p>
+                <p>Accounts Receivable Customer Inquiry</p>
               </li>
               <li>
-                <p>Purchae Order Inquiry</p>
+                <p>Purchase Order Inquiry</p>
               </li>
               <li>
                 <p>Shipping Request Inquiry</p>
@@ -2035,7 +2036,7 @@
           <p><span class="software">Internal Comment</span></p>
         </td>
         <td>
-          <p>Enter any comment to explain the reason for the changes to the sales order.  The internal commnets field will not print on any documentation sent to the customer. </p>
+          <p>Enter any comment to explain the reason for the changes to the sales order.  The internal comments field will not print on any documentation sent to the customer. </p>
         </td>
       </tr>
       <tr>
@@ -2433,7 +2434,7 @@
               <p><span class="software">Requirement on Hold</span> (check box)</p>
             </td>
             <td>
-              <p>Select to place the billing requirement intially <span class="Emphasis">on hold</span> until it has been approved. </p>
+              <p>Select to place the billing requirement initially <span class="Emphasis">on hold</span> until it has been approved. </p>
             </td>
             <td>
               <p>No</p>
@@ -2607,7 +2608,7 @@
   <h2>
     <h2-modern>Invoice Details</h2-modern>
   </h2>
-  <p>Use the <span class="software">Invoice Details</span> sectio<span class="software"></span>n to view invoice line details for a sales order. </p>
+  <p>Use the <span class="software">Invoice Details</span> section to view invoice line details for a sales order. </p>
   <h3>Invoice Line Details</h3>
   <p>The top section lists the invoice details for the </p>
   <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
