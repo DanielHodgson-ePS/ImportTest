@@ -750,7 +750,7 @@ label {
 }
 
 .RH-LAYOUT-HOMEPAGE-TITLEBAR-title-bar {
-  height: 6rem;
+  height: 10rem;
   font-size: 2rem;
   margin-bottom: 3.5rem;
   color: #ffffff;
@@ -764,7 +764,7 @@ label {
 .RH-LAYOUT-HOMEPAGE-TITLEBAR-logo {
   background-image: url('logo.png');;
   margin-right: 0.5rem;
-  background-size: 100% 5rem;
+  background-size: 5rem 5rem;
 }
 
 .rh-layout-HOMEPAGE-TITLEBAR-logo-link {
