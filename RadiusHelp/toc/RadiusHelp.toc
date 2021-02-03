@@ -2,6 +2,7 @@
 <map type="toc">
   <title>Table of Contents</title>
   <page href="../contents/Intro/welcome.htm" format="html" homepage-tile="assets/Images/welcome.png" processing-role="normal"></page>
+  <page href="../contents/Intro/Copyright.htm" format="html" processing-role="normal"></page>
   <book navtitle="Tutorials" format="html" homepage-tile="assets/Images/toc_tile_test.png" processing-role="normal">
     <page href="../contents/Radius_Modernization_vs_Radius_Classic.htm" format="html" homepage-tile="assets/Images/PreviewImages/ModernVsClassic.jpg" processing-role="normal"></page>
     <page href="../contents/Navigation.htm" format="html" homepage-tile="assets/Images/PreviewImages/Navigation.jpg" processing-role="normal"></page>

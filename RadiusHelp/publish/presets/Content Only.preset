@@ -1,121 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <preset>
-  
-<content>
-    
-<index type="boolean">true</index>
-    
-<generateMapFiles type="boolean">true</generateMapFiles>
-    
-<generateBRS type="boolean">true</generateBRS>
-    
-<toc>
-      
-<path>../../toc/RadiusHelp.toc</path>
-      
-<name>Default</name>
+  <title>Blank Project</title>
+  <content>
+    <toc>
+      <name>RadiusHelp</name>
+      <path>../../toc/RadiusHelp.toc</path>
     </toc>
-    
-<glossary>
-      
-<path>../../glossary/Default.glo</path>
-      
-<name>Default</name>
+    <index type="boolean">true</index>
+    <glossary>
+      <name>Default</name>
+      <path>../../glossary/Default.glo</path>
     </glossary>
-    
-<masterpage></masterpage>
-    
-<brs type="array"></brs>
-    
-<includeExpandingText type="boolean">false</includeExpandingText>
-    
-<includeDropdownText type="boolean">false</includeDropdownText>
+    <brs type="array"></brs>
+    <masterpage></masterpage>
+    <includeExpandingText type="boolean">false</includeExpandingText>
+    <includeDropdownText type="boolean">false</includeDropdownText>
   </content>
-  
-<starterPage>default.xml</starterPage>
-  
-<search>
-    
-<context type="boolean">true</context>
-    
-<contextLimit type="number">100</contextLimit>
-    
-<suggestion type="boolean">true</suggestion>
-    
-<fuzzy type="boolean">true</fuzzy>
-    
-<glossary type="boolean">true</glossary>
-    
-<showSpeclChars type="boolean">false</showSpeclChars>
-    
-<speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
-  </search>
-  
-<name>Content Only</name>
-  
-<type>xml</type>
-  
-<title>Blank Project</title>
-  
-<outputPath>C:/Users/danielho/OneDrive - Electronics for Imaging, Inc/Documents/My RoboHelp Projects/outputs/RadiusModernizedHelp/Content Only</outputPath>
-  
-<generateMapFiles type="boolean">true</generateMapFiles>
-  
-<generateBRS type="boolean">true</generateBRS>
-  
-<xmltype>
-    
-<name>XHTML</name>
-    
-<displayName>XHTML</displayName>
+  <type>xml</type>
+  <outputPath>C:/Users/danielho/OneDrive - Electronics for Imaging, Inc/Documents/My RoboHelp Projects/outputs/RadiusModernizedHelp/Content Only</outputPath>
+  <name>Content Only</name>
+  <starterPage>default.xml</starterPage>
+  <xmltype>
+    <displayName>XHTML</displayName>
+    <name>XHTML</name>
   </xmltype>
-  
-<xmltarget>
-    
-<zendesk>
-      
-<useflattoc type="boolean">false</useflattoc>
-      
-<useinlinestyles type="boolean">true</useinlinestyles>
-      
-<usedocs type="boolean">true</usedocs>
-      
-<useimages type="boolean">true</useimages>
-      
-<removetitle type="boolean">true</removetitle>
-      
-<usejs type="boolean">true</usejs>
-    </zendesk>
-    
-<salesforce>
-      
-<useinlinestyles type="boolean">true</useinlinestyles>
-      
-<usedocs type="boolean">true</usedocs>
-      
-<useimages type="boolean">true</useimages>
-      
-<removetitle type="boolean">true</removetitle>
+  <xmltarget>
+    <salesforce>
+      <useinlinestyles type="boolean">true</useinlinestyles>
+      <useimages type="boolean">true</useimages>
+      <usedocs type="boolean">true</usedocs>
+      <removetitle type="boolean">true</removetitle>
     </salesforce>
-    
-<servicenow>
-      
-<removetitle type="boolean">true</removetitle>
-      
-<useflattoc type="boolean">false</useflattoc>
-      
-<draft type="boolean">false</draft>
-      
-<usetags type="boolean">true</usetags>
-      
-<useinlinestyles type="boolean">true</useinlinestyles>
-      
-<usedocs type="boolean">true</usedocs>
-      
-<useimages type="boolean">true</useimages>
+    <zendesk>
+      <useinlinestyles type="boolean">true</useinlinestyles>
+      <useimages type="boolean">true</useimages>
+      <usedocs type="boolean">true</usedocs>
+      <usejs type="boolean">true</usejs>
+      <useflattoc type="boolean">false</useflattoc>
+      <removetitle type="boolean">true</removetitle>
+    </zendesk>
+    <servicenow>
+      <useinlinestyles type="boolean">true</useinlinestyles>
+      <useimages type="boolean">true</useimages>
+      <usedocs type="boolean">true</usedocs>
+      <usetags type="boolean">true</usetags>
+      <draft type="boolean">false</draft>
+      <useflattoc type="boolean">false</useflattoc>
+      <removetitle type="boolean">true</removetitle>
     </servicenow>
   </xmltarget>
-  
-<patchHomepage type="boolean">true</patchHomepage>
+  <search>
+    <suggestion type="boolean">true</suggestion>
+    <context type="boolean">true</context>
+    <contextLimit type="number">100</contextLimit>
+    <glossary type="boolean">true</glossary>
+    <showSpeclChars type="boolean">false</showSpeclChars>
+    <speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
+    <fuzzy type="boolean">true</fuzzy>
+  </search>
+  <patchHomepage type="boolean">true</patchHomepage>
+  <gdprCompliance type="boolean">true</gdprCompliance>
+  <serversStatus type="array"></serversStatus>
+  <republish type="boolean">false</republish>
+  <generateMapFiles type="boolean">true</generateMapFiles>
+  <generateBRS type="boolean">true</generateBRS>
 </preset>
