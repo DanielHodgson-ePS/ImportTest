@@ -13,7 +13,7 @@
   <h1>Sales Orders</h1>
   <p>Use the <span class="software">Sales Orders </span>page to record customer’s purchase order details, agreed selling prices, extra charges and shipping details. </p>
   <p>A sales order is an order from a customer to make or supply one or more items. It does not require the existence of an estimate before it can be entered and since items may be supplied from inventory or purchased a sales order does not automatically require a production job.</p>
-  <ol class="modernlist">
+  <ol class="RoundSquare">
     <li>
       <p>The sales order is treated as a requirement for the items ordered. The instructions to deliver the goods are entered as shipping requests. Each request is for a single shipment and specifies what is to be shipped, when and to whom.</p>
     </li>
@@ -145,7 +145,7 @@
           <p><span class="software">Required Date</span></p>
         </td>
         <td>
-          <p>Specify the date that the customer required the order. </p>
+          <p>Specify the date that the customer requires the order. </p>
         </td>
         <td>
           <p>Yes</p>
@@ -203,7 +203,9 @@
         <td>
           <p>Select the language to use for external documents associated with this order. </p>
         </td>
-        <td>No</td>
+        <td>
+          <p>No</p>
+        </td>
       </tr>
       <tr>
         <td>
@@ -212,7 +214,9 @@
         <td>
           <p>The unique number to identify this sales order. This number is automatically generated when the sales order is saved. </p>
         </td>
-        <td>No</td>
+        <td>
+          <p>No</p>
+        </td>
       </tr>
       <tr>
         <td>
@@ -221,7 +225,9 @@
         <td>
           <p>Specify the contact at the customer. </p>
         </td>
-        <td>No</td>
+        <td>
+          <p>No</p>
+        </td>
       </tr>
       <tr>
         <td>
@@ -230,7 +236,9 @@
         <td>
           <p>The current status of the order. This defaults to <span class="software">Authorized</span> but can be set to <span class="software">Held</span>, or <span class="software">Credit held</span>. <span class="software">Complete</span> would not be appropriate for a new order entry.</p>
         </td>
-        <td>No</td>
+        <td>
+          <p>No</p>
+        </td>
       </tr>
       <tr>
         <td>
@@ -239,7 +247,9 @@
         <td>
           <p>The status of the production job. The field will normally be automatically populated based on the linked job. </p>
         </td>
-        <td>No</td>
+        <td>
+          <p>No</p>
+        </td>
       </tr>
       <tr>
         <td>
@@ -248,7 +258,9 @@
         <td>
           <p>The customer service representative code. This will default to the CSR code maintained on the Customer Representative table. </p>
         </td>
-        <td>No</td>
+        <td>
+          <p>No</p>
+        </td>
       </tr>
       <tr>
         <td>
@@ -257,16 +269,20 @@
         <td>
           <p>Enter the date that the customer placed the order. This will default to today&#39;s date but can be changed as needed.  </p>
         </td>
-        <td>No</td>
+        <td>
+          <p>No</p>
+        </td>
       </tr>
       <tr>
         <td>
-          <p><span class="software">Entered By</span></p>
+          <p><span class="software">Entered by</span></p>
         </td>
         <td>
           <p>The name of the Radius user who entered the sales order. This will default to the user that is currently logged in. </p>
         </td>
-        <td>No</td>
+        <td>
+          <p>No</p>
+        </td>
       </tr>
       <tr>
         <td>
@@ -277,7 +293,9 @@
           <p>A broker order is an order received from a third-party on behalf of the final customer. The broker purchases the finished product from you (and is your customer) but requests that you ship the products to his customer pretending to be the broker. The shipping documentation therefore does not show your company’s name and address but uses the broker’s address instead.</p>
           <p class="Tip-Note-Text"><span class="software">Note</span>: This field is only active when the <span class="software">Broker Order</span> check box is selected. </p>
         </td>
-        <td>No</td>
+        <td>
+          <p>No</p>
+        </td>
       </tr>
     </tbody>
   </table>
@@ -307,10 +325,12 @@
       <tr>
         <td><span class="software">Broker Order</span></td>
         <td>
-          <p>Select this check box if the order has been received from a broker. This opens up the <span class="software">Sub-Client Nam</span>e field to enter their client&#39;s name.</p>
+          <p>Select this check box if the order has been received from a broker. This opens up the <span class="software">Sub-Client Name</span> field to enter their client&#39;s name.</p>
           <p>A broker order is an order received from a third-party on behalf of the final customer. The broker purchases the finished product from you (and is your customer) but requests that you ship the products to his customer pretending to be the broker. The shipping documentation therefore does not show your company’s name and address but uses the broker’s address instead when this check box is selected. </p>
         </td>
-        <td>No</td>
+        <td>
+          <p>No</p>
+        </td>
       </tr>
       <tr class="t2Row">
         <td>
@@ -331,7 +351,9 @@
           <p>When a billing requirement is automatically created, it will default this selection to the billing requirement and the billing requirement will not be set as <span class="software">On Hold</span>. </p>
           <p class="Tip-Note-Text"><span class="software">Note</span>: For the automatic invoicing to run, you need to set up a Windows Scheduled task.</p>
         </td>
-        <td>No</td>
+        <td>
+          <p>No</p>
+        </td>
       </tr>
     </tbody>
   </table>
@@ -394,7 +416,7 @@
             </ol>
           </td>
           <td>
-            <p> </p>
+            <p>No</p>
           </td>
         </tr>
         <tr class="t2Row">
@@ -426,29 +448,29 @@
             <p>For more information on the Wells Fargo Payment Gateway Interface, contact EFI support. </p>
           </td>
           <td>
-            <p> </p>
+            <p>No</p>
           </td>
         </tr>
         <tr class="t1Row">
           <td>
-            <p><span class="software">Rep</span></p>
+            <p><span class="software">Sales Representative</span></p>
           </td>
           <td>
             <p>Sales representative code; this will default to the sales representative code maintained on the Customer Representative table.</p>
           </td>
           <td>
-            <p> </p>
+            <p>No</p>
           </td>
         </tr>
         <tr>
           <td>
-            <p><span class="software">Day Prior</span></p>
+            <p><span class="software">Days Prior</span></p>
           </td>
           <td>
             <p>The number of days the order is to be ready before the customer&#39;s date. This will default on selection of the ship to address if lead time has been defined for the address. You can exclude non shipment days from the lead days calculation by using the<span class="software"> Non Shipment Dates/Days</span> window.</p>
           </td>
           <td>
-            <p> </p>
+            <p>No</p>
           </td>
         </tr>
         <tr>
@@ -463,7 +485,7 @@
                </p>
           </td>
           <td>
-            <p> </p>
+            <p>No</p>
           </td>
         </tr>
         <tr>
@@ -566,7 +588,7 @@
           <p><span class="software">EDI Remittance to Address</span></p>
         </td>
         <td>
-          <p>Optionally, select a separate address to use for EDI (Electronic Data Interchange) transmissions where the customers can send their payments. </p>
+          <p>Optionally select a separate address to use for EDI (Electronic Data Interchange) transmissions where the customers can send their payments. </p>
         </td>
         <td>
           <p>No</p>
@@ -592,7 +614,7 @@
     <h2-modern>Order Details</h2-modern>
   </h2>
   <div class="droptext" data-targetname="drop-down14">
-    <p>The <span class="software">Order Details</span> section contains the lines are the items on the sales order. If the sales order is linked to an estimate, the lines will be automatically created from the estimate details.</p>
+    <p>The <span class="software">Order Details</span> section contains the lines for the items on the sales order. If the sales order is linked to an estimate, the lines will be automatically created from the estimate details.</p>
     <h3>Standard Grid Buttons (Order Details)</h3>
     <div data-conref="../assets/snippets/Standard_Grid_Buttons.hts"> </div>
     <h3>Grid Buttons (Order Lines Grid)</h3>
@@ -612,7 +634,7 @@
             <span class="software"> </span>
           </td>
           <td>
-            <p>Click to edit all order line in the grid. </p>
+            <p>Click to edit all order lines in the grid. </p>
           </td>
         </tr>
         <tr class="t1Row">
@@ -628,13 +650,17 @@
           <td>
             <p><img src="../assets/Images/CommandsMod/Clear_All.png" /> <span class="software">Cancel</span></p>
           </td>
-          <td>If you choose to edit the order lines in the grid view, click this to cancel your changes. </td>
+          <td>
+            <p>If you choose to edit the order lines in the grid view, click this to cancel your changes. </p>
+          </td>
         </tr>
         <tr>
           <td>
             <p><img src="../assets/Images/CommandsMod/Save.png" /> <span class="software">Apply</span></p>
           </td>
-          <td>If you choose to edit the order lines in the grid view, click this to save your changes. </td>
+          <td>
+            <p>If you choose to edit the order lines in the grid view, click this to save your changes. </p>
+          </td>
         </tr>
         <tr>
           <td>
@@ -663,49 +689,49 @@
                 <p><span class="software">Reset Total Order Quantity</span>: </p>
               </li>
             </ol>
-            <p>The following options are only applicable if you are running the modern Radius through classic Radius. </p>
+            <p>The following options are only applicable if you are running the modern Radius through classic Radius.  Select an option to open that corresponding record in Radius. </p>
             <ol class="RoundSquare">
               <li>
-                <p>Items</p>
+                <p><span class="software">Items</span></p>
               </li>
               <li>
-                <p>Supply / Demand</p>
+                <p><span class="software">Supply / Demand</span></p>
               </li>
               <li>
-                <p>Inventory Status</p>
+                <p><span class="software">Inventory Status</span></p>
               </li>
               <li>
-                <p>Sales Order Inquiry</p>
+                <p><span class="software">Sales Order Inquiry</span></p>
               </li>
               <li>
-                <p>Inventory History Inquiry</p>
+                <p><span class="software">Inventory History Inquiry</span></p>
               </li>
               <li>
-                <p>Accounts Receivable Customer Inquiry</p>
+                <p><span class="software">Accounts Receivable Customer Inquiry</span></p>
               </li>
               <li>
-                <p>Purchase Order Inquiry</p>
+                <p><span class="software">Purchase Order Inquiry</span></p>
               </li>
               <li>
-                <p>Shipping Request Inquiry</p>
+                <p><span class="software">Shipping Request Inquiry</span></p>
               </li>
               <li>
-                <p>Job Level</p>
+                <p><span class="software">Job Level</span></p>
               </li>
               <li>
-                <p>Task Level Traceability Inquiry</p>
+                <p><span class="software">Task Level Traceability Inquiry</span></p>
               </li>
               <li>
-                <p>Estimate Entry/Amend</p>
+                <p><span class="software">Estimate Entry/Amend</span></p>
               </li>
               <li>
-                <p>View Sales Order Job</p>
+                <p><span class="software">View Sales Order Job</span></p>
               </li>
               <li>
-                <p>Maintain Sales Order Tasks</p>
+                <p><span class="software">Maintain Sales Order Tasks</span></p>
               </li>
               <li>
-                <p>Standard Billing Requirements</p>
+                <p><span class="software">Standard Billing Requirements</span></p>
               </li>
             </ol>
           </td>
@@ -769,7 +795,7 @@
             <p><span class="software"><img src="../assets/Images/CommandsMod/Sales_Order_Line_Pricing.png" /> Sales Order Line Pricing</span></p>
           </td>
           <td>
-            <p>Click to display the <a href="Sales_Order_Line_Price_Breadkdown.htm"><span class="software">Sales Order Line Price Breakdown</span></a> window. </p>
+            <p>Click to display the <span class="software">Sales Order Line Price Breakdown</span> window. </p>
           </td>
         </tr>
         <tr>
@@ -911,7 +937,7 @@
             <p><span class="software">Customer Item Reference </span></p>
           </td>
           <td>
-            <p>Optionally, enter the customer’s reference for the item that they require or click <img src="../assets/Images/CommandsMod/lookup.png" /> to select from a list of finished product items which are linked to the customer. Items are linked to customers using the <span class="software">Customer code</span> field on the <span class="software">Produced/Sold Details</span> tab of the <span class="software">Items</span> window.</p>
+            <p>Optionally, enter the customer’s reference for the item that they require or click <img src="../assets/Images/CommandsMod/lookup.png" /> to select from a list of finished product items which are linked to the customer. Items are linked to customers using the <span class="software">Customer code</span> field on the <span class="software">Produced/Sold Details</span> tab of the <span class="software">Items</span> window.</p>
           </td>
           <td>
             <p>No</p>
@@ -922,7 +948,7 @@
             <p><span class="software">Customer PO Line</span></p>
           </td>
           <td>
-            <p>Optionally, enter a line reference. This is sometimes required by some customers as a means of identifying the purchase order line in their computer system.</p>
+            <p>Optionally, enter a line reference. This is sometimes required by some customers as a means of identifying the purchase order line in their computer system.</p>
           </td>
           <td>
             <p>No</p>
@@ -1443,13 +1469,13 @@
               <p><span class="software">Reset Total Order Quantity</span>: </p>
             </li>
           </ol>
-          <p>The following options are only applicable if you are running the modern Radius through classic Radius. </p>
+          <p>The following options are only applicable if you are running the modern Radius through classic Radius. Select an option to open that corresponding record in Radius. </p>
           <ol class="RoundSquare">
             <li>
-              <p>Sales Order Inquiry</p>
+              <p><span class="software">Sales Order Inquiry</span></p>
             </li>
             <li>
-              <p>Shipping Request Inquiry</p>
+              <p><span class="software">Shipping Request Inquiry</span></p>
             </li>
           </ol>
         </td>
@@ -1578,7 +1604,7 @@
           <p><span class="software">PRO Number</span></p>
         </td>
         <td>
-          <p> The Pro Number or Progressive Number is a unique reference number used by freight carriers as a tracking reference.</p>
+          <p>The Pro Number or Progressive Number is a unique reference number used by freight carriers as a tracking reference.</p>
         </td>
         <td>
           <p> </p>
@@ -1699,7 +1725,7 @@
           <p><span class="software">Copy Lines</span></p>
         </td>
         <td>
-          <p>Use this to copy the contents of a shipping request. First, click <span class="software"><span class="software"><img src="../assets/Images/CommandsMod/Duplicate_sml.png" /> </span>Duplicate Shipping Request Headers</span> from the buttons when the shipping request is listed as a grid then select what aspects of the shipping request that you want to copy in the new shipping request:</p>
+          <p>Use this to copy the contents of a shipping request. First, click <span class="software"><span class="software"><img src="../assets/Images/CommandsMod/Duplicate_sml.png" /> </span>Duplicate Shipping Request Headers</span> from the buttons when the shipping request line is listed in the grid then select what aspects of the shipping request that you want to copy in the new shipping request:</p>
           <ol class="RoundSquare">
             <li>
               <p><span class="software">As Is</span> - Select this to copy all of the information in the <span class="software">Shipping Request Headers</span> section and the <span class="software">Shipping Request Lines </span>section of the shipping request. This copies all of the details about the items that need to be shipped.</p>
@@ -1729,7 +1755,6 @@
       </tr>
     </tbody>
   </table>
-  <div class="horizontal-rule-align-left"> </div>
   <div class="horizontal-rule-align-left">
     <hr class="hrule-inner" />
   </div>
@@ -1851,34 +1876,34 @@
                 <p><span class="software">Delete Shipping Request Line</span>: Select to delete this sales order shipping request line. </p>
               </li>
             </ol>
-            <p>The following options are only applicable if you are running the modern Radius through classic Radius. </p>
+            <p>The following options are only applicable if you are running the modern Radius through classic Radius. Select an option to open that corresponding record in Radius. </p>
             <ol class="RoundSquare">
               <li>
-                <p>Items</p>
+                <p><span class="software">Items</span></p>
               </li>
               <li>
-                <p>Supply / Demand</p>
+                <p><span class="software">Supply / Demand</span></p>
               </li>
               <li>
-                <p>Inventory Status</p>
+                <p><span class="software">Inventory Status</span></p>
               </li>
               <li>
-                <p>Print Shipping Documents</p>
+                <p><span class="software">Print Shipping Documents</span></p>
               </li>
               <li>
-                <p>Sales Order Inquiry</p>
+                <p><span class="software">Sales Order Inquiry</span></p>
               </li>
               <li>
-                <p>Inventory History Inquiry</p>
+                <p><span class="software">Inventory History Inquiry</span></p>
               </li>
               <li>
-                <p>Accounts Receivable Customer Inquiry</p>
+                <p><span class="software">Accounts Receivable Customer Inquiry</span></p>
               </li>
               <li>
-                <p>Purchase Order Inquiry</p>
+                <p><span class="software">Purchase Order Inquiry</span></p>
               </li>
               <li>
-                <p>Shipping Request Inquiry</p>
+                <p><span class="software">Shipping Request Inquiry</span></p>
               </li>
             </ol>
           </td>
@@ -1891,12 +1916,12 @@
     <h2-modern>Version Comments</h2-modern>
   </h2>
   <p>Use this section to make comments on different versions of the sales order. This section will only be active if the Order Acknowledgement report has been printed and the sales order header or lines have been subsequently amended. You can then add version comments to each amendment of the order acknowledgement.</p>
-  <h3>Buttons (Version Comments)</h3>
+  <h3>Buttons / Options (Version Comments)</h3>
   <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
     <tbody>
       <tr class="t1st">
         <td>
-          <p>Button</p>
+          <p>Button / Options</p>
         </td>
         <td>
           <p>Description</p>
@@ -1924,16 +1949,16 @@
           <p>Select one of the following options from the drop-down: </p>
           <ol class="RoundSquare">
             <li>
-              <p>Sort by Date Time - Descending</p>
+              <p><span class="software">Sort by Date Time - Descending</span></p>
             </li>
             <li>
-              <p>Sort by Date Time - Ascending</p>
+              <p><span class="software">Sort by Date Time - Ascending</span></p>
             </li>
             <li>
-              <p>Sort by User - Descending</p>
+              <p><span class="software">Sort by User - Descending</span></p>
             </li>
             <li>
-              <p>Sort by User - Ascending</p>
+              <p><span class="software">Sort by User - Ascending</span></p>
             </li>
           </ol>
         </td>
@@ -1991,7 +2016,9 @@
       </tr>
       <tr>
         <td><img src="../assets/Images/CommandsMod/Cancel.png" /> <span class="software">Cancel</span></td>
-        <td>Click to cancel editing your version comments. This button is only visible when you are editing a comment. </td>
+        <td>
+          <p>Click to cancel editing your version comments. This button is only visible when you are editing a comment. </p>
+        </td>
       </tr>
     </tbody>
   </table>
@@ -2008,7 +2035,7 @@
       </tr>
       <tr>
         <td>
-          <p>Version Date Time</p>
+          <p><span class="software">Version Date Time</span></p>
         </td>
         <td>
           <p>The date and time the new version was created. </p>
@@ -2102,40 +2129,40 @@
                   <p><span class="software">Delete Extra</span>: Select to delete this extra. </p>
                 </li>
               </ol>
-              <p>The following options are only applicable if you are running the modern Radius through classic Radius. </p>
+              <p>The following options are only applicable if you are running the modern Radius through classic Radius. Select an option to open that corresponding record in Radius. </p>
               <ol class="RoundSquare">
                 <li>
-                  <p>Items</p>
+                  <p><span class="software">Items</span></p>
                 </li>
                 <li>
-                  <p>Supply / Demand</p>
+                  <p><span class="software">Supply / Demand</span></p>
                 </li>
                 <li>
-                  <p>Inventory Status</p>
+                  <p><span class="software">Inventory Status</span></p>
                 </li>
                 <li>
-                  <p>Sales Order Inquiry</p>
+                  <p><span class="software">Sales Order Inquiry</span></p>
                 </li>
                 <li>
-                  <p>Inventory History Inquiry</p>
+                  <p><span class="software">Inventory History Inquiry</span></p>
                 </li>
                 <li>
-                  <p>Accounts Receivable Customer Inquiry</p>
+                  <p><span class="software">Accounts Receivable Customer Inquiry</span></p>
                 </li>
                 <li>
-                  <p> Purchase Order Inquiry</p>
+                  <p><span class="software"> Purchase Order Inquiry</span></p>
                 </li>
                 <li>
-                  <p>Shipping Request Inquiry</p>
+                  <p><span class="software">Shipping Request Inquiry</span></p>
                 </li>
                 <li>
-                  <p>Job Level</p>
+                  <p><span class="software">Job Level</span></p>
                 </li>
                 <li>
-                  <p>Task Level Traceability Inquiry</p>
+                  <p><span class="software">Task Level Traceability Inquiry</span></p>
                 </li>
                 <li>
-                  <p>Estimate Entry/Amend</p>
+                  <p><span class="software">Estimate Entry/Amend</span></p>
                 </li>
               </ol>
             </td>
@@ -2202,7 +2229,7 @@
                   <p>If the quantity and unit price are entered.</p>
                 </li>
                 <li>
-                  <p>If the Bill Code is selected. </p>
+                  <p>If the <span class="software">Bill Code</span> is selected. </p>
                 </li>
               </ol>
             </td>
@@ -2377,7 +2404,7 @@
               <p><span class="software">Customer Reference</span></p>
             </td>
             <td>
-              <p> Optionally enter the customer purchase order reference if the customer requires a separate purchase order reference for the extra charge.</p>
+              <p>Optionally, enter the customer purchase order reference if the customer requires a separate purchase order reference for the extra charge.</p>
             </td>
             <td>
               <p>No</p>
@@ -2388,7 +2415,7 @@
               <p><span class="software">Customer PO Line</span></p>
             </td>
             <td>
-              <p>Optionally enter the customer’s purchase order line relating to the extra charge. Some customer’s require this information to allow them to record the extra charge in their system.</p>
+              <p>Optionally, enter the customer’s purchase order line relating to the extra charge. Some customer’s require this information to allow them to record the extra charge in their system.</p>
             </td>
             <td>
               <p>No</p>
@@ -2399,7 +2426,7 @@
               <p><span class="software">Customer PO Release</span></p>
             </td>
             <td>
-              <p>Optionally enter the customer&#39;s release reference fro the extra charge.</p>
+              <p>Optionally, enter the customer&#39;s release reference fro the extra charge.</p>
             </td>
             <td>
               <p>No</p>
@@ -2604,7 +2631,6 @@
   </h2>
   <p>Use the <span class="software">Invoice Details</span> section to view invoice line details for a sales order. </p>
   <h3>Invoice Line Details</h3>
-  <p>The top section lists the invoice details for the </p>
   <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
     <colgroup>
       <col />
@@ -2669,26 +2695,10 @@
       </tr>
       <tr>
         <td>
-          <p><span class="software">To Ship</span></p>
-        </td>
-        <td>
-          <p> </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
           <p><span class="software">Production Grouping</span></p>
         </td>
         <td>
           <p>The production grouping number assigned to a grouping of production requirements by pricing combination. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Unit</span></p>
-        </td>
-        <td>
-          <p> </p>
         </td>
       </tr>
       <tr>
