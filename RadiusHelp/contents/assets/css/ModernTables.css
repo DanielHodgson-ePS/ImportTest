@@ -25,6 +25,7 @@
   background: #2980b9;
 }
 
+
 .StdTable td {
   padding: 0.5rem 0.5rem;
   font-size: 0.9rem;
@@ -32,7 +33,7 @@
  
 
 .StdTable tbody p {
-   font-size: 0.9rem;
+   font-size: 1rem;
 }
 
 .t1st td {
