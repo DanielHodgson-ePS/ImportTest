@@ -43,6 +43,7 @@
   color: #ffffff !important;
   text-align: center;
   background: #2980b9;
+  cursor: pointer;
 }
 
 .t1st td > p {
