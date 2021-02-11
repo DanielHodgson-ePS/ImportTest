@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     insertPageDividers();
 
@@ -19,14 +19,26 @@ const minorDivider = `
 function insertPageDividers() {
 
     var xpathDividerMinor = "//p[contains(text(),'[divider-minor]')]" || "//span[contains(text(),'[divider-minor]')]";
-    var matchingMinorDivider = document.evaluate(xpathDividerMinor, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+    var nodesSnapshotMinorDivider = document.evaluate(xpathDividerMinor, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
 
     var xpathDividerMajor = "//p[contains(text(),'[divider-major]')]" || "//span[contains(text(),'[divider-major]')]";;
-    var matchingMajorDivider = document.evaluate(xpathDividerMajor, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+    var nodesSnapshotMajorDivider = document.evaluate(xpathDividerMajor, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
 
-    matchingMinorDivider.innerHTML = minorDivider;
-    matchingMinorDivider.style.display = "block";
-    
-    matchingMajorDivider.innerHTML = majorDivider;
-    matchingMajorDivider.style.display = "block";
+
+
+
+    for (i = 0; i < nodesSnapshotMinorDivider.snapshotLength; i++) {
+        nodesSnapshotMinorDivider.snapshotItem(i).innerHTML = minorDivider;
+        nodesSnapshotMinorDivider.snapshotItem(i).style.display = "block";
+    }
+
+    for (i = 0; i < nodesSnapshotMajorDivider.snapshotLength; i++) {
+        nodesSnapshotMajorDivider.snapshotItem(i).innerHTML = majorDivider;
+        nodesSnapshotMajorDivider.snapshotItem(i).style.display = "block";
+    }
+    // matchingMinorDivider.innerHTML = minorDivider;
+    // matchingMinorDivider.style.display = "block";
+
+    //matchingMajorDivider.innerHTML = majorDivider;
+    // matchingMajorDivider.style.display = "block";
 }
