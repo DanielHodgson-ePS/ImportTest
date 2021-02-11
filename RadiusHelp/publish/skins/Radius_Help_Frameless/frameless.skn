@@ -89,7 +89,6 @@
       <default_pane>toc</default_pane>
       <assets type="array">
         <assetsitem>font.css</assetsitem>
-        <assetsitem>Animations.css</assetsitem>
       </assets>
       <custom_buttons type="array">
         <custom_buttonsitem>

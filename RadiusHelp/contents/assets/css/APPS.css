@@ -1,5 +1,4 @@
 /*Created with Adobe RoboHelp 11.*/
-
 /*Import Font*/
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @font-face {
@@ -7,7 +6,9 @@
   src: url("contents\assets\css\Inter-Regular.ttf");
 }
 /*Horizontal Page Dividers*/
-.horizontal-rule-align-left {}
+.hide {
+  display: block;
+}
 .hrule {
   background: #2B77CB;
   height: 4px;
@@ -2674,7 +2675,6 @@ ol.Decimal {
 ul.Disc {
   list-style-type: disc;
 }
-
 ul.Square {
   list-style-type: square;
 }
