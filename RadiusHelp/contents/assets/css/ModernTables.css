@@ -43,6 +43,7 @@
   color: #ffffff !important;
   text-align: center;
   background: #2980b9;
+  cursor: pointer;
 }
 
 .t1st td > p {
@@ -82,17 +83,20 @@
   }
 
   .StdTable td {
-    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .StdTable td:before {
-    margin-bottom: 3px;
+    padding-bottom: 0.5rem;
+    padding-top:  0.5rem;
     content: attr(data-title);
     min-width: 98px;
-    font-size: 0.9rem;
-    line-height: 1rem;
+    font-family: "Inter";
+    font-size: 1.1rem;
     font-weight: bold;
+    line-height: 1rem;
     text-transform: uppercase;
-    color: #969696;
+    color: #2980b9;
     display: block;
   }
 }
