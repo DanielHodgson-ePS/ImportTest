@@ -15,6 +15,7 @@
     <page href="../contents/About_the_Advanced_Search.htm" format="html" homepage-tile="assets/Images/PreviewImages/AboutAdvancedSearch.jpg" processing-role="normal"></page>
   </book>
   <book navtitle="Page Descriptions" format="html" homepage-tile="assets/Images/windows.png" processing-role="normal">
+    <page href="../contents/MergeTest2.htm" format="html" processing-role="normal"></page>
     <page href="../contents/WindowsMod/Sales_Order_Landing_Page.htm" format="html" homepage-tile="assets/Images/PreviewImages/SalesOrdersLanding.jpg" processing-role="normal"></page>
     <page href="../contents/WindowsMod/Sales_Order.htm" format="html" homepage-tile="assets/Images/PreviewImages/SalesOrdersAddEdit.jpg" processing-role="normal"></page>
     <book navtitle="Subwindows" format="html" homepage-tile="assets/Images/subwindows.png" processing-role="normal">
