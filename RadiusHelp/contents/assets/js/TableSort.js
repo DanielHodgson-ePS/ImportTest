@@ -12,15 +12,11 @@ var allValidTables = [];
 var originalTables = [];
 var allTableheadings = [];
 
-
-
 $(document).ready(function () {
 
- 
   allTables = Array.from(document.querySelectorAll("table"));
   allValidTables = allTables.filter(table => table.querySelector(".t1st") != null);
-
-  console.log(allValidTables.length);
+  //console.log(allValidTables.length);
   assignTableDataAttribs();
   cloneOriginalTables();
   sortTables();
@@ -62,7 +58,6 @@ function cloneOriginalTables() {
 
 function sortTables() {
 
-
   document.querySelectorAll('.t1st > td').forEach(td => {
 
     td.dataset.clickCount = 0;
@@ -102,7 +97,6 @@ function sortTables() {
 
 function assignTitleDataToCells() {
 
-
   for (i = 0; i < allValidTables.length; i++) {
 
     var table = allValidTables[i];
@@ -112,13 +106,12 @@ function assignTitleDataToCells() {
       continue;
 
     var r = 1; 
-
+    
     while (row = table.rows[r++]) {
 
       var c = 0;
 
       while (cell = row.cells[c++]) {
-
 
         const heading = allTableheadings[i][c - 1];
         if (typeof heading !== 'undefined')
