@@ -36,4 +36,9 @@ function insertPageDividers() {
         nodesSnapshotMajorDivider.snapshotItem(i).innerHTML = majorDivider;
         nodesSnapshotMajorDivider.snapshotItem(i).style.display = "block";
     }
+    // matchingMinorDivider.innerHTML = minorDivider;
+    // matchingMinorDivider.style.display = "block";
+
+    //matchingMajorDivider.innerHTML = majorDivider;
+    // matchingMajorDivider.style.display = "block";
 }
