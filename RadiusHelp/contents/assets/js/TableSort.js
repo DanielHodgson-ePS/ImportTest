@@ -9,9 +9,8 @@ var allValidTables = [];
 var originalTables = [];
 var allTableotherHeadings = [];
 
-var projectPath = window.location.protocol + "//" + window.location.host;
-
-alert(projectPath);
+var origin = window.location.origin;
+var imagePath = origin + "/contents/assets/Images/icons/";
 
 $(document).ready(function () {
 
@@ -20,9 +19,9 @@ $(document).ready(function () {
 
   assignTableDataAttribs();
   addInitialTableHeadingImages();
+  assignTitleDataToCells();
   cloneOriginalTables();
   sortTables();
-  assignTitleDataToCells();
 });
 
 
@@ -62,7 +61,7 @@ function cloneOriginalTables() {
 function addInitialTableHeadingImages() {
 
   var unsortedIcon = new Image();
-  unsortedIcon.src = projectPath + "/assets/Images/Icons/unsorted.png";
+  unsortedIcon.src = imagePath + "unsorted.png";
   unsortedIcon.className = "tableIcon";
 
   $(".tableIconWrapper > p").append(unsortedIcon);
@@ -82,12 +81,11 @@ function sortTables() {
       var tableNum = table.dataset.tableNumber;
       var headings = Array.from(table.querySelectorAll('.t1st > td'));
 
-
       headings.forEach(heading => {
         heading.dataset.clickedLast = "false";
 
         var unsortedIcon = new Image();
-        unsortedIcon.src = "/assets/Images/Icons/unsorted.png";
+        unsortedIcon.src = imagePath + "unsorted.png";
         unsortedIcon.className = "tableIcon";
 
         heading.querySelector("img").replaceWith(unsortedIcon);
@@ -103,7 +101,6 @@ function sortTables() {
       var newClickCount = currClickCount + 1;
       currentHeading.dataset.clickCount = newClickCount;
 
-
       if (currentHeading.dataset.clickCount % 3 == 0) {
 
         var $clone = originalTables[tableNum].clone(true);
@@ -114,16 +111,15 @@ function sortTables() {
       if (currentHeading.dataset.clickCount % 1 == 0) {
 
         var ascendingIcon = new Image();
-        ascendingIcon.src = projectPath + "/assets/Images/Icons/sort-ascending.png";
+        ascendingIcon.src = imagePath + "sort-ascending.png";
         ascendingIcon.className = "tableIcon";
         currentHeading.querySelector("img").replaceWith(ascendingIcon);
       }
 
-
       if (currentHeading.dataset.clickCount % 2 == 0) {
 
         var descendingIcon = new Image();
-        descendingIcon.src = projectPath + "/assets/Images/Icons/sort-descending.png";
+        descendingIcon.src = imagePath + "sort-descending.png";
         descendingIcon.className = "tableIcon";
         currentHeading.querySelector("img").replaceWith(descendingIcon);
       }
@@ -161,7 +157,7 @@ function assignTitleDataToCells() {
         const heading = allTableotherHeadings[i][c - 1];
         if (typeof heading !== 'undefined')
           var headingText = heading.innerText;
-        //console.log("i: " + i + " c: " + c + " heading: " + headingText);
+         //console.log("i: " + i + " c: " + c + " heading: " + headingText);
         cell.dataset.title = headingText;
       }
     }
