@@ -1,3 +1,4 @@
+
 window.addEventListener('resize', resizeTabs, true);
 
 // If there are at least 4 tabs, Loop through every set of tabcontent-navigation buttons in the page and resize buttons based on number of buttons
@@ -40,9 +41,15 @@ function openTab(pageName, elmnt, color) {
 
 function openDefaultTabs() {
   
-  // Opens all tabs with class="defaultopen" on page load
+  // Opens all tabs with class="defaultopen"
   var tabDefaults = document.getElementsByClassName("defaultopen");
   for (i = 0; i < tabDefaults.length; i++) {
     tabDefaults[i].click();
   }
 }
+
+
+$(window).on( "load", function() {   
+  resizeTabs();
+  openDefaultTabs();
+});

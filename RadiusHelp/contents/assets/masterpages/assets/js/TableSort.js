@@ -57,7 +57,7 @@ function addInitialTableIcons() {
     icon.id = "tableIcon" + i;
     icon.className = "tableIcon";
     heading.append(icon);
-    css("#tableIcon" + i, "content", "URL('../Images/icons/unsorted.png')");
+    css("#tableIcon" + i, "content", "URL('/contents/assets/Images/icons/unsorted.png')");
   }
 }
 
@@ -78,7 +78,7 @@ function sortTables() {
       headings.forEach(heading => {
 
         var icon = heading.querySelector(".tableIconWrapper > p > img");
-        css("#" + icon.id, "content", "URL('..Images/icons/unsorted.png')");
+        css("#" + icon.id, "content", "URL('/contents/assets/Images/icons/unsorted.png')");
 
         heading.dataset.clickedLast = "false";
         currentHeading.dataset.clickedLast = "true";
@@ -95,7 +95,7 @@ function sortTables() {
       if (currentHeading.dataset.clickCount % 3 == 0) {
 
         var icon = currentHeading.querySelector(".tableIconWrapper > p > img");
-        css("#" + icon.id, "content", "URL('../Images/icons/unsorted.png')");
+        css("#" + icon.id, "content", "URL('/contents/assets/Images/icons/unsorted.png')");
 
         var $clone = originalTables[tableNum].clone(true);
         $("table[data-table-number='" + tableNum + "']").replaceWith($clone);
@@ -105,12 +105,12 @@ function sortTables() {
       else if (currentHeading.dataset.clickCount % 2 == 0) {
 
         var icon = currentHeading.querySelector(".tableIconWrapper > p > img");
-        css("#" + icon.id, "content", "URL('../Images/icons/sort-descending.png')");
+        css("#" + icon.id, "content", "URL('/contents/assets/Images/icons/sort-descending.png')");
       }
       else if (currentHeading.dataset.clickCount % 1 == 0) {
 
         var icon = currentHeading.querySelector(".tableIconWrapper > p > img");
-        css("#" + icon.id, "content", "URL('../Images/icons/sort-ascending.png')");
+        css("#" + icon.id, "content", "URL('/contents/assets/Images/icons/sort-ascending.png')");
       }
 
       Array.from(tbody.querySelectorAll('tr:not(.t1st)'))
@@ -191,7 +191,20 @@ tableInitFunctions().forEach(f => {
 })
 
 
+var target = document.querySelector('title');
 
+// create an observer instance
+var observer = new MutationObserver(function(mutations) {
+    // We need only first event and only new value of the title
+   // console.log(mutations[0].target.nodeValue);
+    console.log("Topic changed");
+});
+
+// configuration of the observer:
+var config = { subtree: true, characterData: true, childList: true };
+
+// pass in the target node, as well as the observer options
+observer.observe(target, config);
 
 
 
