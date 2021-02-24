@@ -9,7 +9,7 @@ var allValidTables = [];
 var originalTables = [];
 var allValidTableHeadings = [];
 var stylesheet;
-var rootContext;
+var path = location.protocol + '//' + location.host;
 
 
 function getValidTables() {
@@ -55,9 +55,10 @@ function addInitialTableIcons() {
 
     var icon = new Image();
     icon.id = "tableIcon" + i;
+    icon.src = path + '/assets/Images/icons/unsorted.png';
     icon.className = "tableIcon";
     heading.append(icon);
-    css("#tableIcon" + i, "content", "URL('../Images/icons/unsorted.png')");
+    //css("#tableIcon" + i, "content", "URL('../assets/Images/icons/unsorted.png')");
   }
 }
 
@@ -78,7 +79,9 @@ function sortTables() {
       headings.forEach(heading => {
 
         var icon = heading.querySelector(".tableIconWrapper > p > img");
-        css("#" + icon.id, "content", "URL('..Images/icons/unsorted.png')");
+        //css("#" + icon.id, "content", "URL('../assets/Images/icons/unsorted.png')");
+        icon.src = path + '/assets/Images/icons/unsorted.png';
+
 
         heading.dataset.clickedLast = "false";
         currentHeading.dataset.clickedLast = "true";
@@ -95,7 +98,8 @@ function sortTables() {
       if (currentHeading.dataset.clickCount % 3 == 0) {
 
         var icon = currentHeading.querySelector(".tableIconWrapper > p > img");
-        css("#" + icon.id, "content", "URL('../Images/icons/unsorted.png')");
+        icon.src = path + '/assets/Images/icons/unsorted.png';
+        //css("#" + icon.id, "content", "URL('/assets/Images/icons/unsorted.png')");
 
         var $clone = originalTables[tableNum].clone(true);
         $("table[data-table-number='" + tableNum + "']").replaceWith($clone);
@@ -105,12 +109,14 @@ function sortTables() {
       else if (currentHeading.dataset.clickCount % 2 == 0) {
 
         var icon = currentHeading.querySelector(".tableIconWrapper > p > img");
-        css("#" + icon.id, "content", "URL('../Images/icons/sort-descending.png')");
+        icon.src = path + '/assets/Images/icons/sort-descending.png';
+        //css("#" + icon.id, "content", "URL('/assets/Images/icons/sort-descending.png')");
       }
       else if (currentHeading.dataset.clickCount % 1 == 0) {
 
         var icon = currentHeading.querySelector(".tableIconWrapper > p > img");
-        css("#" + icon.id, "content", "URL('../Images/icons/sort-ascending.png')");
+        icon.src = path + '/assets/Images/icons/sort-ascending.png';
+        // css("#" + icon.id, "content", "URL('/assets/Images/icons/sort-ascending.png')");
       }
 
       Array.from(tbody.querySelectorAll('tr:not(.t1st)'))
@@ -152,34 +158,16 @@ function assignCollumnHeadingData() {
   }
 }
 
-
-function createIconStyleSheet() {
-  // create a new stylesheet to hold IDs for table heading icons 
-  // so they can be styled individually
-  var style = document.createElement('style');
-  document.head.appendChild(style);
-  stylesheet = style.sheet;
-}
-
-// Update icon stylesheet containing table IDs to handle icon changes
-function css(selector, property, value) {
-  try {
-    stylesheet.insertRule(selector + ' {' + property + ':' + value + '}', stylesheet.cssRules.length);
-  }
-  catch (err) { }
-}
-
-
 function tableInitFunctions() {
 
   var functions = [];
   functions.push(getValidTables);
   functions.push(assignTableDataAttribs);
   functions.push(assignCollumnHeadingData);
-  functions.push(createIconStyleSheet);
   functions.push(addInitialTableIcons);
   functions.push(cloneOriginalTables);
   functions.push(sortTables);
+  functions.push(createTitleMutationObserver);
   return functions;
 }
 
@@ -191,7 +179,28 @@ tableInitFunctions().forEach(f => {
 })
 
 
+// In a generated robohelp project, switching between topics partially updates the DOM
+// Therefore no window.onLoad event is generated
+// Instead, watch for changes to the html head
+function createTitleMutationObserver() {
 
+  var target = document.querySelector('head');
+
+  var observer = new MutationObserver(function (mutations) {
+    getValidTables();
+    assignTableDataAttribs();
+    assignCollumnHeadingData();
+    addInitialTableIcons();
+    cloneOriginalTables();
+    sortTables();
+  });
+
+  var config = {
+    subtree: true,
+    childList: true
+  };
+  observer.observe(target, config);
+}
 
 
 
