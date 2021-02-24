@@ -8,9 +8,25 @@ var alltables = [];
 var allValidTables = [];
 var originalTables = [];
 var allValidTableHeadings = [];
-var stylesheet;
-var path = location.protocol + '//' + location.host;
 
+function getImagePathRecursively(pathAddition, imageName) {
+
+  console.log("Called");
+
+  var img = new Image();
+  var path = pathAddition + "../assets/Images/icons/" + imageName;
+  img.src = path;
+
+  img.onload = function (e) {
+    return path;
+  };
+
+  img.onerror = function (e) {
+    getImagePathRecursively("../", imageName);
+  };
+
+   return path;
+}
 
 function getValidTables() {
   allTables = Array.from(document.querySelectorAll("table"));
@@ -55,10 +71,9 @@ function addInitialTableIcons() {
 
     var icon = new Image();
     icon.id = "tableIcon" + i;
-    icon.src = path + '/assets/Images/icons/unsorted.png';
+    icon.src = getImagePathRecursively("", "unsorted.png");
     icon.className = "tableIcon";
     heading.append(icon);
-    //css("#tableIcon" + i, "content", "URL('../assets/Images/icons/unsorted.png')");
   }
 }
 
@@ -79,9 +94,7 @@ function sortTables() {
       headings.forEach(heading => {
 
         var icon = heading.querySelector(".tableIconWrapper > p > img");
-        //css("#" + icon.id, "content", "URL('../assets/Images/icons/unsorted.png')");
-        icon.src = path + '/assets/Images/icons/unsorted.png';
-
+        icon.src = getImagePathRecursively("", "unsorted.png");
 
         heading.dataset.clickedLast = "false";
         currentHeading.dataset.clickedLast = "true";
@@ -98,8 +111,7 @@ function sortTables() {
       if (currentHeading.dataset.clickCount % 3 == 0) {
 
         var icon = currentHeading.querySelector(".tableIconWrapper > p > img");
-        icon.src = path + '/assets/Images/icons/unsorted.png';
-        //css("#" + icon.id, "content", "URL('/assets/Images/icons/unsorted.png')");
+        icon.src = getImagePathRecursively("", "unsorted.png");
 
         var $clone = originalTables[tableNum].clone(true);
         $("table[data-table-number='" + tableNum + "']").replaceWith($clone);
@@ -109,14 +121,12 @@ function sortTables() {
       else if (currentHeading.dataset.clickCount % 2 == 0) {
 
         var icon = currentHeading.querySelector(".tableIconWrapper > p > img");
-        icon.src = path + '/assets/Images/icons/sort-descending.png';
-        //css("#" + icon.id, "content", "URL('/assets/Images/icons/sort-descending.png')");
+        icon.src = getImagePathRecursively("", "sort-descending.png");
       }
       else if (currentHeading.dataset.clickCount % 1 == 0) {
 
         var icon = currentHeading.querySelector(".tableIconWrapper > p > img");
-        icon.src = path + '/assets/Images/icons/sort-ascending.png';
-        // css("#" + icon.id, "content", "URL('/assets/Images/icons/sort-ascending.png')");
+        icon.src = getImagePathRecursively("", "sort-ascending.png");
       }
 
       Array.from(tbody.querySelectorAll('tr:not(.t1st)'))
