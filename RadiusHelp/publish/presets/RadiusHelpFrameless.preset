@@ -12,6 +12,9 @@
       <path>../../toc/RadiusHelp.toc</path>
     </toc>
     <index type="boolean">true</index>
+    <masterpage>
+      <path>../../contents/assets/masterpages/Test_Master_Page.htt</path>
+    </masterpage>
     <mapFiles type="array">
       <mapFilesitem>
         <name>EFI_Radius_Help</name>
