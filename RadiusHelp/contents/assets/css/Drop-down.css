@@ -1,0 +1,45 @@
+/*Created with Adobe RoboHelp*/
+
+.drop-down-wrapper {
+  padding-bottom: 2rem;
+  border-bottom : 1px dotted;
+}
+
+.drop-down-icon {
+  width : 1.5rem;
+  height: 1.5rem;
+  float : right;
+}
+
+a.dropspot {
+  display        : block;
+  cursor         : pointer;
+  color          : #2B77CB;
+  font-size      : 1.5rem;
+  font-family    : "Arial";
+  font-weight    : bold;
+  text-decoration: none;
+  position       : relative;
+  margin-top     : 2rem;
+  margin-bottom  : 0.5rem;
+  padding-top    : 0.5rem;
+  animation      : flipdown 0.5s ease both;
+}
+
+a.dropspot p {
+  font-family: Inter;
+  font-size  : 1rem;
+}
+
+
+a.dropspot,
+a.dropspot:hover,
+a.dropspot:visited,
+a.dropspot:active {
+  color          : #2B77CB;
+  text-decoration: none;
+}
+
+
+
+

@@ -1,22 +1,68 @@
-
-.rainbow {
-  text-align: center;
-  animation: colorRotate 1.5s linear 0s infinite;
-}
 @keyframes colorRotate {
-	from {
+  from {
     color: #6666ff;
   }
+
   10% {
     color: #0099ff;
   }
+
+  25% {
+    color: #ffff00;
+  }
+
   50% {
     color: #00ff00;
   }
+
   75% {
     color: #ff3399;
   }
+
   100% {
     color: #6666ff;
   }
+}
+
+.rainbow {
+  text-align: center;
+  font-size : 1.8rem;
+  animation : colorRotate 1.5s linear 0s infinite;
+}
+
+
+
+@keyframes flipdown {
+
+  0% {
+    opacity         : 0;
+    transform-origin: top center;
+    transform       : rotateX(-90deg);
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  80% {
+    transform: rotateX(8deg);
+  }
+
+  83% {
+    transform: rotateX(6deg);
+  }
+
+  92% {
+    transform: rotateX(-3deg);
+  }
+
+  100% {
+    transform-origin: top center;
+    transform       : rotateX(0deg);
+  }
+}
+
+.droptext>* {
+  animation : flipdown 0.5s ease both;
+  transition: all 0.25s ease-in-out;
 }
