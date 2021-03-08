@@ -4,9 +4,7 @@ const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
   v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
 )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
 
-var alltables = [];
-var allValidTables = [];
-var originalTables = [];
+var allOriginalTables = [];
 var allValidTableHeadings = [];
 
 function getImagePathRecursively(pathAddition, imageName, timeOutCount) {
@@ -24,30 +22,36 @@ function getImagePathRecursively(pathAddition, imageName, timeOutCount) {
   };
 
   img.onerror = function (e) {
-    if(timeOutCount >= 10) {
+    if (timeOutCount >= 10) {
       console.log("Could not find file after 10 recursive calls")
       return path;
     }
     getImagePathRecursively("../", imageName, timeOutCount);
   };
 
-   return path;
+  return path;
 }
 
 function getValidTables() {
-  allTables = Array.from(document.querySelectorAll("table"));
-  allValidTables = allTables.filter(table => table.querySelector(".t1st") != null);
+  var allTables = Array.from(document.querySelectorAll("table"));
+  var allValidTables = allTables.filter(table => table.querySelector(".t1st") != null);
+
+  //console.log("no. of tables = " + allValidTables.length);
+  return allValidTables;
 }
 
 function assignTableDataAttribs() {
 
-  for (i = 0; i < allValidTables.length; i++) {
+  var validTableHeadings = [];
 
-    var table = allValidTables[i];
+  for (i = 0; i < getValidTables().length; i++) {
+
+    var table = getValidTables()[i];
     table.dataset.tableNumber = i;
 
     var headings = table.querySelector('.t1st').querySelectorAll("td");
-    allValidTableHeadings.push(headings);
+
+    validTableHeadings.push(headings);
 
     headings.forEach(heading => {
       heading.dataset.clickCount = 0;
@@ -56,16 +60,23 @@ function assignTableDataAttribs() {
       $(headingText).wrap("<div class='tableIconWrapper'>");
     });
   }
+
+  allValidTableHeadings = validTableHeadings;
 }
 
 
 function cloneOriginalTables() {
 
-  for (i = 0; i < allValidTables.length; i++) {
-    table = allValidTables[i];
+  var allValidT = getValidTables();
+  var originalTables = [];
+
+  for (i = 0; i < allValidT.length; i++) {
+    table = allValidT[i];
     var clone = $("table[data-table-number='" + i + "']").clone(true);
     originalTables.push(clone);
   }
+
+  allOriginalTables = originalTables;
 }
 
 function addInitialTableIcons() {
@@ -119,7 +130,7 @@ function sortTables() {
         var icon = currentHeading.querySelector(".tableIconWrapper > p > img");
         icon.src = getImagePathRecursively("", "unsorted.png", 0);
 
-        var $clone = originalTables[tableNum].clone(true);
+        var $clone = allOriginalTables[tableNum].clone(true);
         $("table[data-table-number='" + tableNum + "']").replaceWith($clone);
 
         sortTables();
@@ -147,9 +158,11 @@ function sortTables() {
 // Used for mobile view 
 function assignCollumnHeadingData() {
 
-  for (i = 0; i < allValidTables.length; i++) {
+  var validTables = getValidTables();
 
-    var table = allValidTables[i];
+  for (i = 0; i < validTables.length; i++) {
+
+    var table = validTables[i];
     var headingRow = table.querySelector('.t1st');
 
     if (null == headingRow)
@@ -177,7 +190,7 @@ function assignCollumnHeadingData() {
 function tableInitFunctions() {
 
   var functions = [];
-  functions.push(getValidTables);
+
   functions.push(assignTableDataAttribs);
   functions.push(assignCollumnHeadingData);
   functions.push(addInitialTableIcons);
@@ -203,7 +216,7 @@ function createTitleMutationObserver() {
   var target = document.querySelector('head');
 
   var observer = new MutationObserver(function (mutations) {
-    getValidTables();
+
     assignTableDataAttribs();
     assignCollumnHeadingData();
     addInitialTableIcons();

@@ -1,7 +1,6 @@
 /*Created with Adobe RoboHelp 11.*/
 /*Import Font*/
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
 @font-face {
   font-family: "Inter-Regular";
   src: url("contents\assets\css\Inter-Regular.ttf");
@@ -2680,4 +2679,196 @@ ul.Square {
   list-style-type: square;
 }
 
+ul.modernlist {
+  list-style: none;
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 20px;
+  --list-indent: 48px;
+  --vertical-spacing: 12px;
+  counter-reset: item1;
+  padding-left: var(--prefix-size);
+  margin-left: calc(var(--list-indent) - var(--prefix-size));
+}
+ul.modernlist>li:before {
+  counter-increment: item1;
+  content: counter(item1, disc);
+  text-align: right;
+  position: absolute;
+  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
+  margin-right: var(--prefix-gap);
+  width: var(--prefix-size);
+  overflow: hidden;
+  font-family: Inter;
+  font-size: 1rem;
+  line-height: 1.15;
+}
+ul.modernlist>li {
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 20px;
+  --list-indent: 48px;
+  --vertical-spacing: 12px;
+  position: relative;
+  margin-top: calc(var(--vertical-spacing) / 2);
+  margin-bottom: calc(var(--vertical-spacing) / 2);
+  font-family: Inter;
+  font-size: 1rem;
+}
+ul.modernlist>li>ul {
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 20px;
+  --list-indent: 32px;
+  --vertical-spacing: 12px;
+  counter-reset: item2;
+  list-style: none;
+  padding-left: var(--prefix-size);
+  margin-left: calc(var(--list-indent) - var(--prefix-size));
+}
+ul.modernlist>li>ul>li {
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 20px;
+  --list-indent: 32px;
+  --vertical-spacing: 12px;
+  position: relative;
+  margin-top: calc(var(--vertical-spacing) / 2);
+  margin-bottom: calc(var(--vertical-spacing) / 2);
+  font-family: Inter;
+  font-size: 1rem;
+}
+ul.modernlist>li>ul>li:before {
+  counter-increment: item2;
+  content: counter(item2, disc);
+  text-align: right;
+  position: absolute;
+  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
+  margin-right: var(--prefix-gap);
+  width: var(--prefix-size);
+  overflow: hidden;
+}
+ul.modernlist>li>ul>li>ul {
+  list-style: none;
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 20px;
+  --list-indent: 32px;
+  --vertical-spacing: 12px;
+  counter-reset: item3;
+  padding-left: var(--prefix-size);
+  margin-left: calc(var(--list-indent) - var(--prefix-size));
+}
+ul.modernlist>li>ul>li>ul>li:before {
+  counter-increment: item3;
+  content: counter(item3, disc);
+  text-align: right;
+  position: absolute;
+  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
+  margin-right: var(--prefix-gap);
+  width: var(--prefix-size);
+  overflow: hidden;
+}
+ul.modernlist>li>ul>li>ul>li {
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 20px;
+  --list-indent: 32px;
+  --vertical-spacing: 12px;
+  position: relative;
+  margin-top: calc(var(--vertical-spacing) / 2);
+  margin-bottom: calc(var(--vertical-spacing) / 2);
+}
 
+ul.modernlist>li>ul>li>ul>li>ul {
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 24px;
+  --list-indent: 32px;
+  --vertical-spacing: 0px;
+  counter-reset: item4;
+  list-style: none;
+  padding-left: var(--prefix-size);
+  margin-left: calc(var(--list-indent) - var(--prefix-size));
+}
+ul.modernlist>li>ul>li>ul>li>ul>li {
+  --prefix-size: 40px;
+  --prefix-fixed-size: false;
+  --prefix-gap: 24px;
+  --list-indent: 32px;
+  --vertical-spacing: 0px;
+  position: relative;
+  margin-top: calc(var(--vertical-spacing) / 2);
+  margin-bottom: calc(var(--vertical-spacing) / 2);
+}
+ul.modernlist>li>ul>li>ul>li>ul>li:before {
+  counter-increment: item4;
+  content: counter(item4, disc);
+  text-align: right;
+  position: absolute;
+  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
+  margin-right: var(--prefix-gap);
+  width: var(--prefix-size);
+  overflow: hidden;
+}
+
+
+/* 							Styling tabs  						*/
+.tablink-navigation {
+  position: relative;
+  width: 90%;
+  display: block;
+  margin: 2rem auto;
+  border-bottom: 1px solid #c3c3c3;
+  font-size: 0;
+}
+.tablink {
+  display: inline;
+  background-color: rgba(193, 199, 208, 0.3);
+  color: #000000;
+  border: 1px solid #c3c3c3;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: none;
+  outline: none;
+  box-shadow: 0px 1px 0px 0px #c3c3c3;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 25%;
+  max-height: 100%;
+}
+.tablink-left {
+  border-radius: 8px 0px 0px 0px;
+}
+.tablink-middle {
+  border-radius: 0px 0px 0px 0px;
+}
+.tablink-right {
+  border-radius: 0px 8px 0px 0px;
+}
+.tablink:hover {
+  color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(193, 199, 208, 0.2);
+}
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: block;
+}
+/* Tab IDs used for openTab function in tabcontent.js, add tabs as needed - temporary solution until I have time to script a betetr one*/
+#Tab1 {
+  color: black;
+}
+#Tab2 {
+  color: black;
+}
+#Tab3 {
+  color: black;
+}
+#Tab4 {
+  color: black;
+}
+#Tab5 {
+  color: black;
+}
