@@ -12,7 +12,7 @@ function getImagePathRecursively(pathAddition, imageName, timeOutCount) {
   console.log("Called");
 
   var img = new Image();
-  var path = pathAddition + "../assets/Images/icons/" + imageName;
+  var path = pathAddition + "assets/Images/icons/" + imageName;
   img.src = path;
 
   timeOutCount++;
