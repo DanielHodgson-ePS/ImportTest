@@ -1,11 +1,14 @@
 /*Created with Adobe RoboHelp 11.*/
-/*Import Font*/
+
+/*--------------------------------Import Font---------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 @font-face {
   font-family: "Inter-Regular";
   src: url("contents\assets\css\Inter-Regular.ttf");
 }
-/*Horizontal Page Dividers*/
+
+/*----------------------------Horizontal Page Dividers-----------------------------*/
 .hide {
   display: block;
 }
@@ -28,7 +31,8 @@
   width: 90%;
   border: none;
 }
-/* font styles*/
+/*-----------------------------Paragraph and Heading Styles----------------------------------*/
+
 h1 {
   font-style: normal;
   font-size: 2.5rem;
@@ -107,21 +111,24 @@ h5 {
   margin-top: 24px;
   font-weight: bold;
 }
-li.P-BlueText {
-  color: #0000ff;
+
+h6 {
+  font-weight: bold;
+  margin-top: 14pt;
+  margin-bottom: 14pt;
+  margin-right: 0pt;
+  page-break-after: avoid;
+  font-size: 10pt;
   font-family: Arial;
-  font-size: 9pt;
-  text-align: left;
+  font-style: italic;
+  x-next-class: ;
+  x-next-type: P;
+  margin-left: 5.8pt;
 }
-li.P-Code-Base {
-  font-family: "Courier New";
-  font-size: 9pt;
-  text-align: left;
-}
+
 normal {
   font-family: Inter;
   font-size: 1rem;
-  color: #000000;
   line-height: 1.5;
 }
 p {
@@ -141,7 +148,7 @@ p.BlueText {
 }
 p.Heading-how-to-Help {
   font-family: Arial;
-  font-style: italic;
+  font-style: italic;m
   font-weight: bold;
   margin-bottom: 2pt;
   margin-left: 0px;
@@ -158,71 +165,7 @@ p.Normal-Text {
   color: #000000;
   line-height: 1.5;
 }
-p.Tip-Note-Step-Text {
-  font-family: Inter;
-  font-size: 1rem;
-  border-left: 4px solid #2B77CB;
-  padding-left: 0.5rem;
-  margin-left: 1rem;
-}
-p.Tip-Note-Step-Text-Indent {
-  font-family: Inter;
-  font-size: 1rem;
-  border-left: 4px solid #2B77CB;
-  padding-left: 0.5rem;
-  margin-left: 3rem;
-}
-p.Tip-Note-Text {
-  font-family: Inter;
-  font-size: 1rem;
-  border-left: 4px solid #2B77CB;
-  padding-left: 0.5rem;
-  margin-left: 1rem;
-}
-p.Tip-Note-Text-Modern {
-  font-family: Inter;
-  font-size: 1rem;
-  border-left: 4px solid #2B77CB;
-  padding-left: 0.5rem;
-  margin-left: 1rem;
-}
-p.index-1 {
-  font-family: Arial;
-  font-size: 9pt;
-  margin-bottom: 2.4pt;
-  margin-left: 5.75pt;
-  margin-right: 6.5pt;
-  margin-top: 0pt;
-  text-align: left;
-}
-p.index-2 {
-  font-family: Arial;
-  font-size: 9pt;
-  margin-bottom: 2.4pt;
-  margin-left: 18pt;
-  margin-right: 6.5pt;
-  margin-top: 0pt;
-  text-align: left;
-}
-p.index-3 {
-  font-family: Arial;
-  font-size: 9pt;
-  margin-bottom: 2.4pt;
-  margin-left: 36pt;
-  margin-right: 6.5pt;
-  margin-top: 0pt;
-  text-align: left;
-}
-p.index-heading {
-  font-family: Arial;
-  font-size: 11pt;
-  font-weight: bold;
-  margin-bottom: 6.1pt;
-  margin-left: 5.75pt;
-  margin-right: 6.5pt;
-  margin-top: 15.1pt;
-  text-align: left;
-}
+
 p.Norm-HangIndent {
   line-height: 12pt;
   margin-bottom: 3pt;
@@ -232,80 +175,7 @@ p.Norm-HangIndent {
   x-next-type: P;
   margin-top: 6pt;
 }
-p.Text-Sub-Step-1 {
-  margin-left: 0.28in;
-  margin-top: 4pt;
-  x-next-class: Text-Sub-Step-1;
-  x-next-type: p;
-}
-p.Text-Sub-Step-2 {
-  margin-left: .58in;
-  x-next-class: Normal-Text;
-  x-next-type: P;
-  margin-top: 4pt;
-}
-span.rls-1-BasicNumber {
-  font-family: Arial;
-  font-size: 9pt;
-}
-span.rls-1-Bullets {
-  font-family: Arial;
-  font-size: 9pt;
-}
-span.rls-2-BasicNumber {
-  font-family: Arial;
-  font-size: 9pt;
-}
-span.rls-2-Bullets {
-  font-family: Arial;
-  font-size: 9pt;
-}
-span.rls-3-BasicNumber {
-  font-family: Arial;
-  font-size: 9pt;
-}
-span.rls-3-Bullets {
-  font-family: Arial;
-  font-size: 9pt;
-}
-span.rls-4-Bullets {
-  font-family: Arial;
-  font-size: 9pt;
-}
-span.rls-5-Bullets {
-  font-size: 10pt;
-}
-span.rls-6-Bullets {
-  font-size: 10pt;
-}
-span.rls-7-Bullets {
-  font-size: 10pt;
-}
-span.rls-8-Bullets {
-  font-size: 10pt;
-}
-span.rls-9-Bullets {
-  font-size: 8pt;
-}
-p.Tip-Note-Step-Text-Indent2 {
-  border-left-style: Solid;
-  border-left-width: 4px;
-  border-right-style: Solid;
-  border-right-width: 4px;
-  border-top-style: Solid;
-  border-top-width: 4px;
-  border-bottom-style: Solid;
-  border-bottom-width: 4px;
-  border-left-color: #d5d5d5;
-  border-right-color: #d5d5d5;
-  border-top-color: #d5d5d5;
-  border-bottom-color: #d5d5d5;
-  background-color: #d5d5d5;
-  margin-bottom: 8pt;
-  x-next-class: ;
-  x-next-type: P;
-  margin-left: .9in;
-}
+
 span.software {
   font-family: Inter;
   font-size: 1rem;
@@ -334,28 +204,74 @@ p.SeeAlso {
 p.Related_Topics {
   font-weight: bold;
 }
-span.rls-7-MuiltLevelLinkedHeading {
-  font-size: 7pt;
+
+
+/*------------------------------Note Styles---------------------------------*/
+
+p.Tip-Note-Step-Text {
+  font-family: Inter;
+  font-size: 1rem;
+  border-left: 4px solid #2B77CB;
+  padding-left: 0.5rem;
+  margin-left: 1rem;
 }
-span.rls-8-MuiltLevelLinkedHeading {
-  font-size: 7pt;
+p.Tip-Note-Step-Text-Indent {
+  font-family: Inter;
+  font-size: 1rem;
+  border-left: 4px solid #2B77CB;
+  padding-left: 0.5rem;
+  margin-left: 3rem;
 }
-span.rls-9-MuiltLevelLinkedHeading {
-  font-size: 7pt;
+p.Tip-Note-Text {
+  font-family: Inter;
+  font-size: 1rem;
+  border-left: 4px solid #2B77CB;
+  padding-left: 0.5rem;
+  margin-left: 1rem;
 }
-h6 {
-  font-weight: bold;
-  margin-top: 14pt;
-  margin-bottom: 14pt;
-  margin-right: 0pt;
-  page-break-after: avoid;
-  font-size: 10pt;
-  font-family: Arial;
-  font-style: italic;
+p.Tip-Note-Text-Modern {
+  font-family: Inter;
+  font-size: 1rem;
+  border-left: 4px solid #2B77CB;
+  padding-left: 0.5rem;
+  margin-left: 1rem;
+}
+
+p.Tip-Note-Step-Text-Indent2 {
+  border-left-style: Solid;
+  border-left-width: 4px;
+  border-right-style: Solid;
+  border-right-width: 4px;
+  border-top-style: Solid;
+  border-top-width: 4px;
+  border-bottom-style: Solid;
+  border-bottom-width: 4px;
+  border-left-color: #d5d5d5;
+  border-right-color: #d5d5d5;
+  border-top-color: #d5d5d5;
+  border-bottom-color: #d5d5d5;
+  background-color: #d5d5d5;
+  margin-bottom: 8pt;
   x-next-class: ;
   x-next-type: P;
-  margin-left: 5.8pt;
+  margin-left: .9in;
 }
+
+
+/*-------------------------------------List Styles---------------------------------------------*/ 
+
+li.P-BlueText {
+  color: #0000ff;
+  font-family: Arial;
+  font-size: 9pt;
+  text-align: left;
+}
+li.P-Code-Base {
+  font-family: "Courier New";
+  font-size: 9pt;
+  text-align: left;
+}
+
 ol.BasicNumber {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
@@ -1502,298 +1418,7 @@ ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before
   width: var(--prefix-size);
   overflow: hidden;
 }
-ol.Bullets {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 40px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item1;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.Bullets>li {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 40px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.Bullets>li:before {
-  counter-increment: item1;
-  content: counter(item1, disc);
-  font-family: Arial;
-  font-size: 9pt;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.Bullets>li>ol {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 56px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item2;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.Bullets>li>ol>li {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 56px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.Bullets>li>ol>li:before {
-  counter-increment: item2;
-  content: counter(item2, disc);
-  font-family: Arial;
-  font-size: 9pt;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.Bullets>li>ol>li>ol {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 26px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item3;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.Bullets>li>ol>li>ol>li {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 26px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.Bullets>li>ol>li>ol>li:before {
-  counter-increment: item3;
-  content: counter(item3, disc);
-  font-family: Arial;
-  font-size: 9pt;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.Bullets>li>ol>li>ol>li>ol {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 38px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item4;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.Bullets>li>ol>li>ol>li>ol>li {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 38px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.Bullets>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item4;
-  content: counter(item4, disc);
-  font-family: Arial;
-  font-size: 9pt;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.Bullets>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: -40px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item5;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.Bullets>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: -40px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.Bullets>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item5;
-  content: counter(item5, disc);
-  font-size: 10pt;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.Bullets>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item6;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.Bullets>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.Bullets>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item6;
-  content: counter(item6, square);
-  font-size: 10pt;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.Bullets>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item7;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.Bullets>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.Bullets>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item7;
-  content: counter(item7, circle);
-  font-size: 10pt;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.Bullets>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item8;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.Bullets>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.Bullets>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item8;
-  content: counter(item8, square);
-  font-size: 10pt;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.Bullets>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item9;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.Bullets>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 26.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.Bullets>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item9;
-  content: counter(item9, disc);
-  font-size: 8pt;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
+
 ol.MultilevelIntegers {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
@@ -2679,7 +2304,7 @@ ul.Square {
   list-style-type: square;
 }
 
-ul.modernlist {
+ul.Bullets {
   list-style: none;
   --prefix-size: 40px;
   --prefix-fixed-size: false;
@@ -2690,7 +2315,7 @@ ul.modernlist {
   padding-left: var(--prefix-size);
   margin-left: calc(var(--list-indent) - var(--prefix-size));
 }
-ul.modernlist>li:before {
+ul>li:before {
   counter-increment: item1;
   content: counter(item1, disc);
   text-align: right;
@@ -2703,7 +2328,7 @@ ul.modernlist>li:before {
   font-size: 1rem;
   line-height: 1.15;
 }
-ul.modernlist>li {
+ul.Bullets>li {
   --prefix-size: 40px;
   --prefix-fixed-size: false;
   --prefix-gap: 20px;
@@ -2715,7 +2340,7 @@ ul.modernlist>li {
   font-family: Inter;
   font-size: 1rem;
 }
-ul.modernlist>li>ul {
+ul.Bullets>li>ul {
   --prefix-size: 40px;
   --prefix-fixed-size: false;
   --prefix-gap: 20px;
@@ -2726,7 +2351,7 @@ ul.modernlist>li>ul {
   padding-left: var(--prefix-size);
   margin-left: calc(var(--list-indent) - var(--prefix-size));
 }
-ul.modernlist>li>ul>li {
+ul.Bullets>li>ul>li {
   --prefix-size: 40px;
   --prefix-fixed-size: false;
   --prefix-gap: 20px;
@@ -2738,7 +2363,7 @@ ul.modernlist>li>ul>li {
   font-family: Inter;
   font-size: 1rem;
 }
-ul.modernlist>li>ul>li:before {
+ul.Bullets>li>ul>li:before {
   counter-increment: item2;
   content: counter(item2, disc);
   text-align: right;
@@ -2748,7 +2373,7 @@ ul.modernlist>li>ul>li:before {
   width: var(--prefix-size);
   overflow: hidden;
 }
-ul.modernlist>li>ul>li>ul {
+ul.Bullets>li>ul>li>ul {
   list-style: none;
   --prefix-size: 40px;
   --prefix-fixed-size: false;
@@ -2759,7 +2384,7 @@ ul.modernlist>li>ul>li>ul {
   padding-left: var(--prefix-size);
   margin-left: calc(var(--list-indent) - var(--prefix-size));
 }
-ul.modernlist>li>ul>li>ul>li:before {
+ul.Bullets>li>ul>li>ul>li:before {
   counter-increment: item3;
   content: counter(item3, disc);
   text-align: right;
@@ -2769,7 +2394,7 @@ ul.modernlist>li>ul>li>ul>li:before {
   width: var(--prefix-size);
   overflow: hidden;
 }
-ul.modernlist>li>ul>li>ul>li {
+ul.Bullets>li>ul>li>ul>li {
   --prefix-size: 40px;
   --prefix-fixed-size: false;
   --prefix-gap: 20px;
@@ -2780,7 +2405,7 @@ ul.modernlist>li>ul>li>ul>li {
   margin-bottom: calc(var(--vertical-spacing) / 2);
 }
 
-ul.modernlist>li>ul>li>ul>li>ul {
+ul.Bullets>li>ul>li>ul>li>ul {
   --prefix-size: 40px;
   --prefix-fixed-size: false;
   --prefix-gap: 24px;
@@ -2791,7 +2416,7 @@ ul.modernlist>li>ul>li>ul>li>ul {
   padding-left: var(--prefix-size);
   margin-left: calc(var(--list-indent) - var(--prefix-size));
 }
-ul.modernlist>li>ul>li>ul>li>ul>li {
+ul.Bullets>li>ul>li>ul>li>ul>li {
   --prefix-size: 40px;
   --prefix-fixed-size: false;
   --prefix-gap: 24px;
@@ -2801,7 +2426,7 @@ ul.modernlist>li>ul>li>ul>li>ul>li {
   margin-top: calc(var(--vertical-spacing) / 2);
   margin-bottom: calc(var(--vertical-spacing) / 2);
 }
-ul.modernlist>li>ul>li>ul>li>ul>li:before {
+ul.Bullets>li>ul>li>ul>li>ul>li:before {
   counter-increment: item4;
   content: counter(item4, disc);
   text-align: right;
@@ -2813,7 +2438,7 @@ ul.modernlist>li>ul>li>ul>li>ul>li:before {
 }
 
 
-/* 							Styling tabs  						*/
+/* -----------------------------------Tab Styles-------------------------------------*/
 .tablink-navigation {
   position: relative;
   width: 90%;
@@ -2851,12 +2476,14 @@ ul.modernlist>li>ul>li>ul>li>ul>li:before {
   color: rgba(0, 0, 0, 0.5);
   background-color: rgba(193, 199, 208, 0.2);
 }
-/* Style the tab content */
+
+/* --------------show / hide tabs--------------------*/
 .tabcontent {
   color: white;
   display: block;
 }
-/* Tab IDs used for openTab function in tabcontent.js, add tabs as needed - temporary solution until I have time to script a betetr one*/
+
+/*---Tab IDs used for openTab function in tabcontent.js, add tabs as needed - temporary solution until I have time to script a betetr one---*/
 #Tab1 {
   color: black;
 }
@@ -2871,4 +2498,11 @@ ul.modernlist>li>ul>li>ul>li>ul>li:before {
 }
 #Tab5 {
   color: black;
+}
+
+/*use this to center image*/
+.center-horizontal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
