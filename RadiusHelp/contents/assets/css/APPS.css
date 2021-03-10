@@ -1,13 +1,10 @@
 /*Created with Adobe RoboHelp 11.*/
-
 /*--------------------------------Import Font---------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
 @font-face {
   font-family: "Inter-Regular";
   src: url("contents\assets\css\Inter-Regular.ttf");
 }
-
 /*----------------------------Horizontal Page Dividers-----------------------------*/
 .hide {
   display: block;
@@ -32,7 +29,6 @@
   border: none;
 }
 /*-----------------------------Paragraph and Heading Styles----------------------------------*/
-
 h1 {
   font-style: normal;
   font-size: 2.5rem;
@@ -111,7 +107,6 @@ h5 {
   margin-top: 24px;
   font-weight: bold;
 }
-
 h6 {
   font-weight: bold;
   margin-top: 14pt;
@@ -125,7 +120,6 @@ h6 {
   x-next-type: P;
   margin-left: 5.8pt;
 }
-
 normal {
   font-family: Inter;
   font-size: 1rem;
@@ -136,6 +130,7 @@ p {
   font-size: 1rem;
   line-height: 1.5;
 }
+
 p.BlueText {
   color: #0000ff;
   font-family: Arial;
@@ -148,8 +143,8 @@ p.BlueText {
 }
 p.Heading-how-to-Help {
   font-family: Arial;
-  font-style: italic;m
-  font-weight: bold;
+  font-style: italic;
+  m font-weight: bold;
   margin-bottom: 2pt;
   margin-left: 0px;
   margin-right: 6.5pt;
@@ -165,7 +160,6 @@ p.Normal-Text {
   color: #000000;
   line-height: 1.5;
 }
-
 p.Norm-HangIndent {
   line-height: 12pt;
   margin-bottom: 3pt;
@@ -175,7 +169,6 @@ p.Norm-HangIndent {
   x-next-type: P;
   margin-top: 6pt;
 }
-
 span.software {
   font-family: Inter;
   font-size: 1rem;
@@ -205,9 +198,7 @@ p.Related_Topics {
   font-weight: bold;
 }
 
-
 /*------------------------------Note Styles---------------------------------*/
-
 p.Tip-Note-Step-Text {
   font-family: Inter;
   font-size: 1rem;
@@ -236,7 +227,6 @@ p.Tip-Note-Text-Modern {
   padding-left: 0.5rem;
   margin-left: 1rem;
 }
-
 p.Tip-Note-Step-Text-Indent2 {
   border-left-style: Solid;
   border-left-width: 4px;
@@ -257,9 +247,7 @@ p.Tip-Note-Step-Text-Indent2 {
   margin-left: .9in;
 }
 
-
-/*-------------------------------------List Styles---------------------------------------------*/ 
-
+/*-------------------------------------List Styles---------------------------------------------*/
 li.P-BlueText {
   color: #0000ff;
   font-family: Arial;
@@ -271,7 +259,6 @@ li.P-Code-Base {
   font-size: 9pt;
   text-align: left;
 }
-
 ol.BasicNumber {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
@@ -1418,7 +1405,6 @@ ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before
   width: var(--prefix-size);
   overflow: hidden;
 }
-
 ol.MultilevelIntegers {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
@@ -2303,7 +2289,6 @@ ul.Disc {
 ul.Square {
   list-style-type: square;
 }
-
 ul.Bullets {
   list-style: none;
   --prefix-size: 40px;
@@ -2404,7 +2389,6 @@ ul.Bullets>li>ul>li>ul>li {
   margin-top: calc(var(--vertical-spacing) / 2);
   margin-bottom: calc(var(--vertical-spacing) / 2);
 }
-
 ul.Bullets>li>ul>li>ul>li>ul {
   --prefix-size: 40px;
   --prefix-fixed-size: false;
@@ -2436,7 +2420,6 @@ ul.Bullets>li>ul>li>ul>li>ul>li:before {
   width: var(--prefix-size);
   overflow: hidden;
 }
-
 
 /* -----------------------------------Tab Styles-------------------------------------*/
 .tablink-navigation {
@@ -2476,13 +2459,11 @@ ul.Bullets>li>ul>li>ul>li>ul>li:before {
   color: rgba(0, 0, 0, 0.5);
   background-color: rgba(193, 199, 208, 0.2);
 }
-
 /* --------------show / hide tabs--------------------*/
 .tabcontent {
   color: white;
   display: block;
 }
-
 /*---Tab IDs used for openTab function in tabcontent.js, add tabs as needed - temporary solution until I have time to script a betetr one---*/
 #Tab1 {
   color: black;
@@ -2499,7 +2480,6 @@ ul.Bullets>li>ul>li>ul>li>ul>li:before {
 #Tab5 {
   color: black;
 }
-
 /*use this to center image*/
 .center-horizontal {
   display: block;
