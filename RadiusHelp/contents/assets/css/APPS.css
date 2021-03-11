@@ -130,7 +130,6 @@ p {
   font-size: 1rem;
   line-height: 1.5;
 }
-
 p.BlueText {
   color: #0000ff;
   font-family: Arial;
@@ -197,7 +196,6 @@ p.SeeAlso {
 p.Related_Topics {
   font-weight: bold;
 }
-
 /*------------------------------Note Styles---------------------------------*/
 p.Tip-Note-Step-Text {
   font-family: Inter;
@@ -246,7 +244,6 @@ p.Tip-Note-Step-Text-Indent2 {
   x-next-type: P;
   margin-left: .9in;
 }
-
 /*-------------------------------------List Styles---------------------------------------------*/
 li.P-BlueText {
   color: #0000ff;
@@ -2300,7 +2297,7 @@ ul.Bullets {
   padding-left: var(--prefix-size);
   margin-left: calc(var(--list-indent) - var(--prefix-size));
 }
-ul>li:before {
+ul.Bullets>li:before {
   counter-increment: item1;
   content: counter(item1, disc);
   text-align: right;
@@ -2420,7 +2417,6 @@ ul.Bullets>li>ul>li>ul>li>ul>li:before {
   width: var(--prefix-size);
   overflow: hidden;
 }
-
 /* -----------------------------------Tab Styles-------------------------------------*/
 .tablink-navigation {
   position: relative;
@@ -2485,4 +2481,17 @@ ul.Bullets>li>ul>li>ul>li>ul>li:before {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+
+.row {
+  display: flex;
+   align-items: center;
+  justify-content: center;
+}
+
+.column {
+  
+  text-align: center;
 }
