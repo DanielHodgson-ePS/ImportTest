@@ -35,7 +35,6 @@ function getImagePathRecursively(pathAddition, imageName, timeOutCount) {
 function getValidTables() {
   var allTables = Array.from(document.querySelectorAll("table"));
   var allValidTables = allTables.filter(table => table.querySelector(".t1st") != null);
-
   //console.log("no. of tables = " + allValidTables.length);
   return allValidTables;
 }
@@ -57,6 +56,9 @@ function assignTableDataAttribs() {
       heading.dataset.clickCount = 0;
       heading.dataset.clickedLast = "false";
       var headingText = heading.querySelector("p");
+      if (null == headingText) {
+        continue;
+      }
       $(headingText).wrap("<div class='tableIconWrapper'>");
     });
   }
