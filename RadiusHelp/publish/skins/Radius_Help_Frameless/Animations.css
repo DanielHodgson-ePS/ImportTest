@@ -62,7 +62,7 @@
   }
 }
 
-.droptext>* {
+.droptext > *:not(.StdTable) {
   animation : flipdown 0.5s ease both;
   transition: all 0.25s ease-in-out;
 }
