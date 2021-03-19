@@ -143,7 +143,7 @@ p.BlueText {
 p.Heading-how-to-Help {
   font-family: Arial;
   font-style: italic;
-  m font-weight: bold;
+  font-weight: bold;
   margin-bottom: 2pt;
   margin-left: 0px;
   margin-right: 6.5pt;
@@ -204,6 +204,13 @@ p.Tip-Note-Step-Text {
   padding-left: 0.5rem;
   margin-left: 1rem;
 }
+p.Example-Text {
+  font-family: Inter;
+  font-size: 1rem;
+  border-left: 4px solid #03fc17;
+  padding-left: 0.5rem;
+  margin-left: 1rem;
+}
 p.Tip-Note-Step-Text-Indent {
   font-family: Inter;
   font-size: 1rem;
@@ -212,13 +219,6 @@ p.Tip-Note-Step-Text-Indent {
   margin-left: 3rem;
 }
 p.Tip-Note-Text {
-  font-family: Inter;
-  font-size: 1rem;
-  border-left: 4px solid #2B77CB;
-  padding-left: 0.5rem;
-  margin-left: 1rem;
-}
-p.Tip-Note-Text-Modern {
   font-family: Inter;
   font-size: 1rem;
   border-left: 4px solid #2B77CB;
@@ -259,17 +259,6 @@ li.P-Code-Base {
 ol.BasicNumber {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 40px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item1;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
   --prefix-gap: 24px;
   --list-indent: 48px;
   --vertical-spacing: 12px;
@@ -278,41 +267,10 @@ ol.BasicNumber-modern {
   padding-left: var(--prefix-size);
   margin-left: calc(var(--list-indent) - var(--prefix-size));
 }
-ol.BasicNumber-modern2 {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 20px;
-  --list-indent: 80px;
-  --vertical-spacing: 12px;
-  list-style: none;
-  counter-reset: item1;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern3 {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 20px;
-  --list-indent: 112px;
-  --vertical-spacing: 12px;
-  list-style: none;
-  counter-reset: item1;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
+
 ol.BasicNumber>li {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 40px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
   --prefix-gap: 24px;
   --list-indent: 48px;
   --vertical-spacing: 12px;
@@ -322,46 +280,11 @@ ol.BasicNumber-modern>li {
   font-family: Inter;
   font-size: 1rem;
 }
-ol.BasicNumber-modern2>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 20px;
-  --list-indent: 80px;
-  --vertical-spacing: 12px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-  font-family: Inter;
-  font-size: 1rem;
-}
-ol.BasicNumber-modern3>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 20px;
-  --list-indent: 112px;
-  --vertical-spacing: 12px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-  font-family: Inter;
-  font-size: 1rem;
-}
+
 ol.BasicNumber>li:before {
   counter-increment: item1;
   content: counter(item1, decimal)".";
   font-family: Inter;
-  font-size: 9pt;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern>li:before {
-  counter-increment: item1;
-  content: counter(item1, decimal)".";
-  font-family: Inter;
   font-size: 1rem;
   text-align: right;
   position: absolute;
@@ -370,44 +293,10 @@ ol.BasicNumber-modern>li:before {
   width: var(--prefix-size);
   overflow: hidden;
 }
-ol.BasicNumber-modern2>li:before {
-  counter-increment: item1;
-  content: counter(item1, lower-alpha)".";
-  font-family: Inter;
-  font-size: 1rem;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern3>li:before {
-  counter-increment: item1;
-  content: counter(item1, lower-roman)".";
-  font-family: Inter;
-  font-size: 1rem;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
+
 ol.BasicNumber>li>ol {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 56px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item2;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern>li>ol {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
   --prefix-gap: 20px;
   --list-indent: 32px;
   --vertical-spacing: 8px;
@@ -416,41 +305,10 @@ ol.BasicNumber-modern>li>ol {
   padding-left: var(--prefix-size);
   margin-left: calc(var(--list-indent) - var(--prefix-size));
 }
-ol.BasicNumber-modern2>li>ol {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 20px;
-  --list-indent: 32px;
-  --vertical-spacing: 8px;
-  list-style: none;
-  counter-reset: item2;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern3>li>ol {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 20px;
-  --list-indent: 32px;
-  --vertical-spacing: 8px;
-  list-style: none;
-  counter-reset: item2;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
+
 ol.BasicNumber>li>ol>li {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 56px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern>li>ol>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
   --prefix-gap: 20px;
   --list-indent: 32px;
   --vertical-spacing: 8px;
@@ -458,42 +316,11 @@ ol.BasicNumber-modern>li>ol>li {
   margin-top: calc(var(--vertical-spacing) / 2);
   margin-bottom: calc(var(--vertical-spacing) / 2);
 }
-ol.BasicNumber-modern2>li>ol>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 20px;
-  --list-indent: 32px;
-  --vertical-spacing: 8px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern3>li>ol>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 20px;
-  --list-indent: 32px;
-  --vertical-spacing: 8px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
+
 ol.BasicNumber>li>ol>li:before {
   counter-increment: item2;
   content: counter(item2, lower-alpha)".";
   font-family: Inter;
-  font-size: 9pt;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern>li>ol>li:before {
-  counter-increment: item2;
-  content: counter(item2, lower-alpha)".";
-  font-family: Inter;
   font-size: 1rem;
   text-align: right;
   position: absolute;
@@ -502,44 +329,10 @@ ol.BasicNumber-modern>li>ol>li:before {
   width: var(--prefix-size);
   overflow: hidden;
 }
-ol.BasicNumber-modern2>li>ol>li:before {
-  counter-increment: item2;
-  content: counter(item2, lower-roman)".";
-  font-family: Inter;
-  font-size: 1rem;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern3>li>ol>li:before {
-  counter-increment: item2;
-  content: counter(item2, lower-roman)".";
-  font-family: Inter;
-  font-size: 1rem;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
+
 ol.BasicNumber>li>ol>li>ol {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 26px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item3;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern>li>ol>li>ol {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
   --prefix-gap: 20px;
   --list-indent: 34px;
   --vertical-spacing: 12px;
@@ -548,41 +341,10 @@ ol.BasicNumber-modern>li>ol>li>ol {
   padding-left: var(--prefix-size);
   margin-left: calc(var(--list-indent) - var(--prefix-size));
 }
-ol.BasicNumber-modern2>li>ol>li>ol {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 20px;
-  --list-indent: 34px;
-  --vertical-spacing: 12px;
-  list-style: none;
-  counter-reset: item3;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern3>li>ol>li>ol {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 20px;
-  --list-indent: 34px;
-  --vertical-spacing: 12px;
-  list-style: none;
-  counter-reset: item3;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
+
 ol.BasicNumber>li>ol>li>ol>li {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 26px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern>li>ol>li>ol>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
   --prefix-gap: 20px;
   --list-indent: 34px;
   --vertical-spacing: 12px;
@@ -590,42 +352,11 @@ ol.BasicNumber-modern>li>ol>li>ol>li {
   margin-top: calc(var(--vertical-spacing) / 2);
   margin-bottom: calc(var(--vertical-spacing) / 2);
 }
-ol.BasicNumber-modern2>li>ol>li>ol>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 20px;
-  --list-indent: 34px;
-  --vertical-spacing: 12px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 20px;
-  --list-indent: 34px;
-  --vertical-spacing: 12px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
+
 ol.BasicNumber>li>ol>li>ol>li:before {
   counter-increment: item3;
   content: counter(item3, lower-roman)".";
   font-family: Arial;
-  font-size: 9pt;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern>li>ol>li>ol>li:before {
-  counter-increment: item3;
-  content: counter(item3, lower-roman)".";
-  font-family: Arial;
   font-size: 1rem;
   text-align: right;
   position: absolute;
@@ -634,45 +365,11 @@ ol.BasicNumber-modern>li>ol>li>ol>li:before {
   width: var(--prefix-size);
   overflow: hidden;
 }
-ol.BasicNumber-modern2>li>ol>li>ol>li:before {
-  counter-increment: item3;
-  content: counter(item3, lower-roman)".";
-  font-family: Arial;
-  font-size: 1rem;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li:before {
-  counter-increment: item3;
-  content: counter(item3, lower-roman)".";
-  font-family: Arial;
-  font-size: 1rem;
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
+
 ol.BasicNumber>li>ol>li>ol>li>ol {
   --prefix-size: 36.7px;
   --prefix-fixed-size: 0;
   --prefix-gap: 4px;
-  --list-indent: -22px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item4;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern>li>ol>li>ol>li>ol {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
   --list-indent: 18px;
   --vertical-spacing: 0px;
   list-style: none;
@@ -680,68 +377,18 @@ ol.BasicNumber-modern>li>ol>li>ol>li>ol {
   padding-left: var(--prefix-size);
   margin-left: calc(var(--list-indent) - var(--prefix-size));
 }
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 18px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item4;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 18px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item4;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
+
 ol.BasicNumber>li>ol>li>ol>li>ol>li {
   --prefix-size: 36.7px;
   --prefix-fixed-size: 0;
   --prefix-gap: 4px;
-  --list-indent: -22px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
   --list-indent: 18px;
   --vertical-spacing: 0px;
   position: relative;
   margin-top: calc(var(--vertical-spacing) / 2);
   margin-bottom: calc(var(--vertical-spacing) / 2);
 }
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 18px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 18px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
+
 ol.BasicNumber>li>ol>li>ol>li>ol>li:before {
   counter-increment: item4;
   content: "("counter(item4, decimal)")";
@@ -752,70 +399,8 @@ ol.BasicNumber>li>ol>li>ol>li>ol>li:before {
   width: var(--prefix-size);
   overflow: hidden;
 }
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item4;
-  content: "("counter(item4, decimal)")";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item4;
-  content: "("counter(item4, decimal)")";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item4;
-  content: "("counter(item4, decimal)")";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
+
 ol.BasicNumber>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item5;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item5;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item5;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol {
   --prefix-size: 36.7px;
   --prefix-fixed-size: 0;
   --prefix-gap: 4px;
@@ -836,36 +421,7 @@ ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li {
   margin-top: calc(var(--vertical-spacing) / 2);
   margin-bottom: calc(var(--vertical-spacing) / 2);
 }
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
+
 ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li:before {
   counter-increment: item5;
   content: "("counter(item5, lower-roman)")";
@@ -876,70 +432,8 @@ ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li:before {
   width: var(--prefix-size);
   overflow: hidden;
 }
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item5;
-  content: "("counter(item5, lower-roman)")";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item5;
-  content: "("counter(item5, lower-roman)")";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item5;
-  content: "("counter(item5, lower-roman)")";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
+
 ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item6;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item6;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item6;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li>ol {
   --prefix-size: 36.7px;
   --prefix-fixed-size: 0;
   --prefix-gap: 4px;
@@ -960,36 +454,6 @@ ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li {
   margin-top: calc(var(--vertical-spacing) / 2);
   margin-bottom: calc(var(--vertical-spacing) / 2);
 }
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 36.7px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
 ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
   counter-increment: item6;
   content: "("counter(item6, lower-roman)")";
@@ -1000,70 +464,8 @@ ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
   width: var(--prefix-size);
   overflow: hidden;
 }
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item6;
-  content: "("counter(item6, lower-roman)")";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item6;
-  content: "("counter(item6, lower-roman)")";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item6;
-  content: "("counter(item6, lower-roman)")";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
+
 ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item7;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item7;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item7;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
   --prefix-gap: 4px;
@@ -1084,67 +486,7 @@ ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
   margin-top: calc(var(--vertical-spacing) / 2);
   margin-bottom: calc(var(--vertical-spacing) / 2);
 }
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
 ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item7;
-  content: counter(item7, decimal)".";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item7;
-  content: counter(item7, decimal)".";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item7;
-  content: counter(item7, decimal)".";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
   counter-increment: item7;
   content: counter(item7, decimal)".";
   text-align: right;
@@ -1165,39 +507,6 @@ ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
   padding-left: var(--prefix-size);
   margin-left: calc(var(--list-indent) - var(--prefix-size));
 }
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item8;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item8;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item8;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
 ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
@@ -1208,36 +517,7 @@ ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
   margin-top: calc(var(--vertical-spacing) / 2);
   margin-bottom: calc(var(--vertical-spacing) / 2);
 }
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
+
 ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
   counter-increment: item8;
   content: counter(item8, lower-alpha)".";
@@ -1248,36 +528,7 @@ ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
   width: var(--prefix-size);
   overflow: hidden;
 }
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item8;
-  content: counter(item8, lower-alpha)".";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item8;
-  content: counter(item8, lower-alpha)".";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item8;
-  content: counter(item8, lower-alpha)".";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
+
 ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
@@ -1289,39 +540,7 @@ ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
   padding-left: var(--prefix-size);
   margin-left: calc(var(--list-indent) - var(--prefix-size));
 }
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item9;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item9;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  list-style: none;
-  counter-reset: item9;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
+
 ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
@@ -1332,36 +551,7 @@ ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
   margin-top: calc(var(--vertical-spacing) / 2);
   margin-bottom: calc(var(--vertical-spacing) / 2);
 }
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li {
-  --prefix-size: 30.0px;
-  --prefix-fixed-size: 0;
-  --prefix-gap: 4px;
-  --list-indent: 20px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
+
 ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
   counter-increment: item9;
   content: counter(item9, lower-roman)".";
@@ -1372,36 +562,7 @@ ol.BasicNumber>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
   width: var(--prefix-size);
   overflow: hidden;
 }
-ol.BasicNumber-modern>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item9;
-  content: counter(item9, lower-roman)".";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern2>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item9;
-  content: counter(item9, lower-roman)".";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-ol.BasicNumber-modern3>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item9;
-  content: counter(item9, lower-roman)".";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
+
 ol.MultilevelIntegers {
   --prefix-size: 30.0px;
   --prefix-fixed-size: 0;
@@ -2482,16 +1643,11 @@ ul.Bullets>li>ul>li>ul>li>ul>li:before {
   margin-left: auto;
   margin-right: auto;
 }
-
-
-
 .row {
   display: flex;
-   align-items: center;
+  align-items: center;
   justify-content: center;
 }
-
 .column {
-  
   text-align: center;
 }
