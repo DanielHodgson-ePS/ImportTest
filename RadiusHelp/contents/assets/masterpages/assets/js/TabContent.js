@@ -49,11 +49,22 @@ function openDefaultTabs() {
 }
 
 
-$(window).on( "load", function() {   
-  resizeTabs();
-  openDefaultTabs();
-  createTitleMutationObserver();
-});
+function initFunctions() {
+
+  var functions = [];
+  functions.push(createTitleMutationObserver);
+  functions.push(resizeTabs);
+  functions.push(openDefaultTabs);
+  return functions;
+}
+
+
+initFunctions().forEach(f => {
+  window.addEventListener ?
+    window.addEventListener("load", f, false) :
+    window.attachEvent && window.attachEvent("onload", f);
+})
+
 
 
 // In a generated robohelp project, switching between topics partially updates the DOM
