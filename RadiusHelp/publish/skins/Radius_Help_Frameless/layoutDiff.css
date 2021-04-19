@@ -143,6 +143,7 @@ label {
   padding-bottom: 0.275rem;
   padding-left: 0.275rem;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .RH-LAYOUT-LEFTPANEL-title-level-0 {
@@ -156,6 +157,8 @@ label {
   padding-left: 1.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #707070;
 }
 
 .RH-LAYOUT-LEFTPANEL-title-level-2 {
@@ -261,7 +264,6 @@ label {
 .RH-LAYOUT-LEFTPANEL-tab {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  font-size: 0.875rem;
   color: #fefefe;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -325,11 +327,11 @@ label {
   }
 
   .RH-LAYOUT-TOOLBAR-button-1 .RH-LAYOUT-TOOLBAR-button-icon {
-    background-image: url('unsaved.svg');;
+    background-image: url('bookmark-white.svg');;
   }
   
   .RH-LAYOUT-TOOLBAR-button-1 .RH-LAYOUT-TOOLBAR-button-icon-applied {
-  background-image: url('saved.svg');;
+  background-image: url('bookmark-saved-white.svg');;
   }
   
   .RH-LAYOUT-TOOLBAR-button-2 {
@@ -429,12 +431,13 @@ label {
   background-image: url('light.svg');;
   }
 .RH-LAYOUT-HOMEPAGE-TOOLBAR-button-1 {
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     color: #FFFFFF;
     font-weight: 700;
 }
   
 .RH-LAYOUT-HOMEPAGE-TOOLBAR-button-1-applied {
+    font-size: 1.5rem;
 }
 
 .RH-LAYOUT-HOMEPAGE-TOOLBAR-button-1 .RH-LAYOUT-HOMEPAGE-TOOLBAR-button-icon {
@@ -446,7 +449,7 @@ label {
 }
   
 .RH-LAYOUT-HOMEPAGE-TOOLBAR-button-2 {
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     color: #FFFFFF;
     font-weight: 700;
 }
@@ -680,13 +683,13 @@ label {
 }
 
 .RH-LAYOUT-RIGHTPANEL-fav-button {
-  background-image: url('unsaved.svg');;
+  background-image: url('bookmark.svg');;
   margin-left: 0px;
   margin-right: 0.5rem;
 }
 
 .RH-LAYOUT-RIGHTPANEL-rightpanel-bmrk-saved {
-  background-image: url('saved.svg');;
+  background-image: url('bookmark-saved.svg');;
   margin-left: 0px;
   margin-right: 0.5rem;
   background-color: #EBECF0;
@@ -751,7 +754,7 @@ label {
 
 .RH-LAYOUT-HOMEPAGE-TITLEBAR-title-bar {
   height: 10rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 3.5rem;
   color: #ffffff;
   background-color: #263138;
@@ -771,10 +774,11 @@ label {
 }
 
 .RH-LAYOUT-HOMEPAGE-TITLEBAR-title {
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 2.5rem;
   color: #ffffff;
+  font-family: Arial;
 }
 
 .rh-layout-HOMEPAGE-titlebar-right-box {
@@ -1141,6 +1145,7 @@ label {
 }
 
 .RH-LAYOUT-MINITOC-item-level-1 {
+  font-size: 1rem;
 }
 
 .RH-LAYOUT-MINITOC-item-level-2 {
@@ -3254,6 +3259,7 @@ input[type='text']::-ms-clear {
   text-transform: uppercase;
   font-weight: 600;
   font-style: normal;
+  font-size: 2rem;
 }
 
 .RH-LAYOUT-FILTERS-caption p,.RH-LAYOUT-HOMEPAGE-FILTERS-caption p {

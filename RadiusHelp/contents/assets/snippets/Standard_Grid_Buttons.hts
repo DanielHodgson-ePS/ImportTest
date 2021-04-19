@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="generator" content="Adobe RoboHelp 2020" />
-  <meta name="topic-comment" content="" />
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  <meta name="topic-comment" content=""/>
   <title>Standard_Grid_Buttons</title>
-  <link rel="stylesheet" type="text/css" href="../css/APPS.css" />
-  <link rel="stylesheet" type="text/css" href="../css/ModernTables.css" />
+  <link rel="stylesheet" type="text/css" href="../css/APPS.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/ModernTables.css"/>
 </head>
 <body>
   <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
@@ -22,34 +21,34 @@
       </tr>
       <tr class="t1Row">
         <td>
-          <p><img src="../Images/CommandsMod/Clear_All.png" /> <span class="software">Clear All </span></p>
+          <p><img src="../Images/CommandsMod/Clear_All.png"/> <span class="software">Clear All </span></p>
         </td>
         <td>
           <p>If you have rerranged the columns and not saved it as a view, click this to discard your changes and return to the original layout. </p>
-          <p>See <a data-xref="{title}" href="../../How_to_Create_Views_and_Layouts.htm">How to Create Views and Layouts</a> for more information. </p>
+          <p>See <a data-xref="{title}" href="../../Tutorials/How_to_Create_Views_and_Layouts.htm">How to Create Views and Layouts</a> for more information. </p>
         </td>
       </tr>
       <tr>
         <td>
-          <p><img src="../Images/CommandsMod/Save.png" /> <span class="software">Save as View</span></p>
+          <p><img src="../Images/CommandsMod/Save.png"/> <span class="software">Save as View</span></p>
         </td>
         <td>
           <p>If you have rearranged the columns, click this to save the layout as a view. </p>
-          <p>See <a data-xref="{title}" href="../../How_to_Create_Views_and_Layouts.htm">How to Create Views and Layouts</a> for more information. </p>
+          <p>See <a data-xref="{title}" href="../../Tutorials/How_to_Create_Views_and_Layouts.htm">How to Create Views and Layouts</a> for more information. </p>
         </td>
       </tr>
       <tr>
         <td>
-          <p><img src="../Images/Customize Column.png" /> <span class="software">Customize Column</span></p>
+          <p><img src="../Images/Customize Column.png"/> <span class="software">Customize Column</span></p>
         </td>
         <td>
           <p>Click to display the <span class="software">Customize Column List</span> where you can change which columns are displayed in the grid. </p>
-          <p>See <a data-xref="{title}" href="../../How_to_Create_Views_and_Layouts.htm">How to Create Views and Layouts</a> for more information. </p>
+          <p>See <a data-xref="{title}" href="../../Tutorials/How_to_Create_Views_and_Layouts.htm">How to Create Views and Layouts</a> for more information. </p>
         </td>
       </tr>
       <tr>
         <td>
-          <p><img src="../Images/CommandsMod/Refresh_Data.png" /> <span class="software">Refresh Data</span></p>
+          <p><img src="../Images/CommandsMod/Refresh_Data.png"/> <span class="software">Refresh Data</span></p>
         </td>
         <td>
           <p>Click to refresh the data in the grid. </p>
@@ -57,7 +56,7 @@
       </tr>
       <tr>
         <td>
-          <p><img src="../Images/CommandsMod/File_Output.png" /> <span class="software">File Output</span></p>
+          <p><img src="../Images/CommandsMod/File_Output.png"/> <span class="software">File Output</span></p>
         </td>
         <td>
           <p>Click to export the data from the grid to an Excel spreadsheet. </p>
@@ -65,7 +64,7 @@
       </tr>
       <tr>
         <td>
-          <p><img src="../Images/More.png" /> <span class="software">More Options</span></p>
+          <p><img src="../Images/More.png"/> <span class="software">More Options</span></p>
         </td>
         <td>
           <p>Click to select from a list of menu options.</p>
@@ -73,5 +72,5 @@
       </tr>
     </tbody>
   </table>
-</body>
-</html>
+
+</body></html>

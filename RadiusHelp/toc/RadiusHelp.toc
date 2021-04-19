@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map type="toc">
   <title>Table of Contents</title>
-  <page href="../contents/Intro/welcome.htm" format="html" homepage-tile="assets/Images/welcome.png" processing-role="normal"></page>
-  <page href="../contents/Intro/Copyright.htm" format="html" homepage-tile="assets/Images/copyright.png" processing-role="normal"></page>
-  <book navtitle="Tutorials" format="html" homepage-tile="assets/Images/toc_tile_test.png" processing-role="normal">
-    <page href="../contents/Radius_Modernization_vs_Radius_Classic.htm" format="html" homepage-tile="assets/Images/PreviewImages/ModernVsClassic.jpg" processing-role="normal"></page>
-    <page href="../contents/Navigation.htm" format="html" homepage-tile="assets/Images/PreviewImages/Navigation.jpg" processing-role="normal"></page>
-    <page href="../contents/How_to_Create_Views_and_Layouts.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToViews.jpg" processing-role="normal"></page>
-    <page href="../contents/How_to_Use_the_Advanced_Search.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToAdvancedSearch.jpg" processing-role="normal"></page>
-    <page href="../contents/How_to_Create_a_Sales_Order.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToSalesOrder.jpg" processing-role="normal"></page>
-    <page href="../contents/How_to_Create_a_Shipping_Request.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToShipReq.jpg" processing-role="normal"></page>
-    <page href="../contents/Configuring_File_Attachment_Settings.htm" format="html" homepage-tile="assets/Images/PreviewImages/ConfigFileAttach.jpg" processing-role="normal"></page>
-    <page href="../contents/Managing_Views_and_Layouts.htm" format="html" homepage-tile="assets/Images/PreviewImages/ManagingViews.jpg" processing-role="normal"></page>
-    <page href="../contents/About_the_Advanced_Search.htm" format="html" homepage-tile="assets/Images/PreviewImages/AboutAdvancedSearch.jpg" processing-role="normal"></page>
-    <page href="../contents/DropDownTesting.htm" format="html" processing-role="normal"></page>
+  <book navtitle="Feature Descriptions" format="html" processing-role="normal">
+    <page href="../contents/About/About_the_Advanced_Search.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/About/Radius_Modernization_vs_Radius_Classic.htm" format="html" processing-role="normal"></page>
   </book>
   <book navtitle="Page Descriptions" format="html" homepage-tile="assets/Images/windows.png" processing-role="normal">
     <page href="../contents/WindowsMod/Sales_Order_Landing_Page.htm" format="html" homepage-tile="assets/Images/PreviewImages/SalesOrdersLanding.jpg" processing-role="normal"></page>
@@ -27,10 +17,19 @@
       <page href="../contents/WindowsMod/Interface_Order_Details.htm" format="html" homepage-tile="assets/Images/PreviewImages/InterfaceOrderDetails.jpg" processing-role="normal"></page>
       <page href="../contents/WindowsMod/Item_Code.htm" format="html" homepage-tile="assets/Images/PreviewImages/ItemCode.jpg" processing-role="normal"></page>
       <page href="../contents/WindowsMod/Quantities_By_Plant.htm" format="html" homepage-tile="assets/Images/PreviewImages/QuantitiesByPlant.jpg" processing-role="normal"></page>
-      <page href="../contents/Sales_Order_Analysis.htm" format="html" homepage-tile="assets/Images/PreviewImages/SalesOrdersAnalysis.jpg" processing-role="normal"></page>
       <page href="../contents/WindowsMod/Sales_Order_Notes.htm" format="html" homepage-tile="assets/Images/PreviewImages/SalesOrderNotes.jpg" processing-role="normal"></page>
+      <page href="../contents/WindowsMod/Sales_Order_Analysis.htm" format="html" processing-role="normal"></page>
       <page href="../contents/WindowsMod/Shipment_Tracking_Details.htm" format="html" homepage-tile="assets/Images/PreviewImages/ShipmentTrackingDetails.jpg" processing-role="normal"></page>
       <page href="../contents/WindowsMod/User_Defined_Elements.htm" format="html" homepage-tile="assets/Images/PreviewImages/UserDefinedElements.jpg" processing-role="normal"></page>
     </book>
+  </book>
+  <book navtitle="Tutorials" format="html" processing-role="normal">
+    <page href="../contents/Tutorials/Configuring_File_Attachment_Settings.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/Tutorials/How_to_Create_a_Sales_Order.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/Tutorials/How_to_Create_a_Shipping_Request.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/Tutorials/How_to_Create_Views_and_Layouts.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/Tutorials/How_to_Use_the_Advanced_Search.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/Tutorials/Managing_Views_and_Layouts.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/Tutorials/Navigation.htm" format="html" processing-role="normal"></page>
   </book>
 </map>
