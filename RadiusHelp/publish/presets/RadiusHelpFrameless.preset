@@ -1,121 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <preset>
-  
-<chatbotWelcomeText>Welcome! How may I help you?</chatbotWelcomeText>
-  
-<chatbotDefaultText>Sorry, I do not have an answer for that.</chatbotDefaultText>
-  
-<retryMsg>Hold on a minute...</retryMsg>
-  
-<placeholderText>Type your message here.</placeholderText>
-  
-<errorMsg>There seems to be a problem, please contact the administrator.</errorMsg>
-  
-<title>EFI Radius Help</title>
-  
-<content>
-    
-<toc>
-      
-<name>RadiusHelp</name>
-      
-<path>../../toc/RadiusHelp.toc</path>
+  <chatbotWelcomeText>Welcome! How may I help you?</chatbotWelcomeText>
+  <chatbotDefaultText>Sorry, I do not have an answer for that.</chatbotDefaultText>
+  <retryMsg>Hold on a minute...</retryMsg>
+  <placeholderText>Type your message here.</placeholderText>
+  <errorMsg>There seems to be a problem, please contact the administrator.</errorMsg>
+  <title>EFI Radius Help</title>
+  <content>
+    <toc>
+      <name>RadiusHelp</name>
+      <path>../../toc/RadiusHelp.toc</path>
     </toc>
-    
-<index type="boolean">true</index>
-    
-<masterpage>
-      
-<path>../../contents/assets/masterpages/RadiusHelpScriptHolder.htt</path>
+    <index type="boolean">true</index>
+    <masterpage>
+      <path>../../contents/assets/masterpages/RadiusHelpScriptHolder.htt</path>
     </masterpage>
-    
-<mapFiles type="array">
-      
-<mapFilesitem>
-        
-<name>EFI_Radius_Help</name>
-        
-<path>../mapfiles/EFI_Radius_Help.ali</path>
+    <mapFiles type="array">
+      <mapFilesitem>
+        <name>EFI_Radius_Help</name>
+        <path>../mapfiles/EFI_Radius_Help.ali</path>
       </mapFilesitem>
     </mapFiles>
-    
-<includeExpandingText type="boolean">true</includeExpandingText>
-    
-<includeDropdownText type="boolean">true</includeDropdownText>
+    <includeExpandingText type="boolean">true</includeExpandingText>
+    <includeDropdownText type="boolean">true</includeDropdownText>
   </content>
-  
-<type>frameless</type>
-  
-<glosstermEffect type="number">0</glosstermEffect>
-  
-<outputPath>C:/EPS_Documentation/HelpOutput/Radius8.1-EAMod/</outputPath>
-  
-<name>RadiusHelpFrameless</name>
-  
-<starterPage>index.htm</starterPage>
-  
-<defaultTopic>
-    
-<name>welcome</name>
-    
-<path>../../contents/Intro/welcome.htm</path>
+  <type>frameless</type>
+  <glosstermEffect type="number">0</glosstermEffect>
+  <outputPath>C:/EPS_Documentation/HelpOutput/Radius8.1-EAMod/</outputPath>
+  <name>RadiusHelpFrameless</name>
+  <starterPage>index.htm</starterPage>
+  <defaultTopic>
+    <name>welcome</name>
+    <path>../../contents/Intro/welcome.htm</path>
   </defaultTopic>
-  
-<chatbot>
-    
-<displayName>Google Dialogflow</displayName>
-    
-<name>dialogflow</name>
+  <chatbot>
+    <displayName>Google Dialogflow</displayName>
+    <name>dialogflow</name>
   </chatbot>
-  
-<mobileapp>
-    
-<android type="boolean">true</android>
-    
-<iOS type="boolean">false</iOS>
+  <mobileapp>
+    <android type="boolean">true</android>
+    <iOS type="boolean">false</iOS>
   </mobileapp>
-  
-<search>
-    
-<suggestion type="boolean">true</suggestion>
-    
-<context type="boolean">true</context>
-    
-<contextLimit type="number">100</contextLimit>
-    
-<maxSearchresults type="number">20</maxSearchresults>
-    
-<glossary type="boolean">false</glossary>
-    
-<searchsubstrings type="boolean">true</searchsubstrings>
-    
-<showSpeclChars type="boolean">false</showSpeclChars>
-    
-<speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
-    
-<fuzzy type="boolean">true</fuzzy>
+  <search>
+    <suggestion type="boolean">true</suggestion>
+    <context>description</context>
+    <contextLimit type="number">100</contextLimit>
+    <maxSearchresults type="number">20</maxSearchresults>
+    <glossary type="boolean">false</glossary>
+    <searchsubstrings type="boolean">true</searchsubstrings>
+    <showSpeclChars type="boolean">false</showSpeclChars>
+    <speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
+    <fuzzy type="boolean">true</fuzzy>
   </search>
-  
-<sitemap>
-    
-<use type="boolean">true</use>
+  <sitemap>
+    <use type="boolean">true</use>
   </sitemap>
-  
-<skin>
-    
-<name>frameless</name>
-    
-<path>../skins/Radius_Help_Frameless/frameless.skn</path>
+  <skin>
+    <name>frameless</name>
+    <path>../skins/Radius_Help_Frameless/frameless.skn</path>
   </skin>
-  
-<createThumbNails type="boolean">false</createThumbNails>
-  
-<patchHomepage type="boolean">true</patchHomepage>
-  
-<gdprCompliance type="boolean">true</gdprCompliance>
-  
-<dgflowApiClientKey></dgflowApiClientKey>
-  
-<dgflowApiDevKey></dgflowApiDevKey>
+  <createThumbNails type="boolean">false</createThumbNails>
+  <patchHomepage type="boolean">true</patchHomepage>
+  <gdprCompliance type="boolean">true</gdprCompliance>
+  <dgflowApiClientKey></dgflowApiClientKey>
+  <dgflowApiDevKey></dgflowApiDevKey>
 </preset>

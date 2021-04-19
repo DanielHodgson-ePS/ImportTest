@@ -3,7 +3,7 @@
   <layout>frameless_homepage</layout>
   <name>frameless_homepage</name>
   <layoutType>frameless</layoutType>
-  <version>2020.0.0</version>
+  <version>2020.4.0</version>
   <variables>
     <css>
       <theme-href-text-color></theme-href-text-color>

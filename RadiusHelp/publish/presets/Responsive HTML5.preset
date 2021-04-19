@@ -1,112 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <preset>
-  
-<content>
-    
-<index type="boolean">true</index>
-    
-<toc>
-      
-<path>../../toc/RadiusHelp.toc</path>
-      
-<name>Default</name>
+  <content>
+    <index type="boolean">true</index>
+    <toc>
+      <path>../../toc/RadiusHelp.toc</path>
+      <name>Default</name>
     </toc>
-    
-<glossary>
-      
-<path>../../glossary/Default.glo</path>
-      
-<name>Default</name>
+    <glossary>
+      <path>../../glossary/Default.glo</path>
+      <name>Default</name>
     </glossary>
-    
-<masterpage></masterpage>
-    
-<brs type="array"></brs>
-    
-<includeExpandingText type="boolean">true</includeExpandingText>
-    
-<includeDropdownText type="boolean">true</includeDropdownText>
+    <masterpage></masterpage>
+    <brs type="array"></brs>
+    <includeExpandingText type="boolean">true</includeExpandingText>
+    <includeDropdownText type="boolean">true</includeDropdownText>
   </content>
-  
-<starterPage>index.htm</starterPage>
-  
-<search>
-    
-<context type="boolean">true</context>
-    
-<contextLimit type="number">100</contextLimit>
-    
-<suggestion type="boolean">true</suggestion>
-    
-<fuzzy type="boolean">true</fuzzy>
-    
-<glossary type="boolean">true</glossary>
-    
-<showSpeclChars type="boolean">false</showSpeclChars>
-    
-<speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
-    
-<maxSearchresults type="number">20</maxSearchresults>
+  <starterPage>index.htm</starterPage>
+  <search>
+    <context>description</context>
+    <contextLimit type="number">100</contextLimit>
+    <suggestion type="boolean">true</suggestion>
+    <fuzzy type="boolean">true</fuzzy>
+    <glossary type="boolean">true</glossary>
+    <showSpeclChars type="boolean">false</showSpeclChars>
+    <speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
+    <maxSearchresults type="number">20</maxSearchresults>
   </search>
-  
-<sitemap>
-    
-<use type="boolean">true</use>
-    
-<changeFrequency></changeFrequency>
-    
-<helpBaseURL></helpBaseURL>
+  <sitemap>
+    <use type="boolean">true</use>
+    <changeFrequency></changeFrequency>
+    <helpBaseURL></helpBaseURL>
   </sitemap>
-  
-<skin></skin>
-  
-<name>Responsive HTML5</name>
-  
-<type>html5</type>
-  
-<title>Blank Project</title>
-  
-<defaultTopic>
-    
-<name>First_Topic.htm</name>
-    
-<path>../../contents/First_Topic.htm</path>
+  <skin></skin>
+  <name>Responsive HTML5</name>
+  <type>html5</type>
+  <title>Blank Project</title>
+  <defaultTopic>
+    <name>First_Topic.htm</name>
+    <path>../../contents/First_Topic.htm</path>
   </defaultTopic>
-  
-<glosstermEffect type="number">0</glosstermEffect>
-  
-<createThumbNails type="boolean">true</createThumbNails>
-  
-<use_thumbnails type="boolean">true</use_thumbnails>
-  
-<outputPath>C:/Users/danielho/OneDrive - Electronics for Imaging, Inc/Documents/My RoboHelp Projects/outputs/RadiusModernizedHelp/Responsive HTML5</outputPath>
-  
-<retryMsg>Hold on a minute...</retryMsg>
-  
-<errorMsg>There seems to be a problem, please contact the administrator.</errorMsg>
-  
-<placeholderText>Type your message here.</placeholderText>
-  
-<chatbotDefaultText>Sorry, I do not have an answer for that.</chatbotDefaultText>
-  
-<chatbotWelcomeText>Welcome! How may I help you?</chatbotWelcomeText>
-  
-<patchHomepage type="boolean">true</patchHomepage>
-  
-<gdprCompliance type="boolean">true</gdprCompliance>
-  
-<chatbot>
-    
-<name>dialogflow</name>
-    
-<displayName>Google Dialogflow</displayName>
+  <glosstermEffect type="number">0</glosstermEffect>
+  <createThumbNails type="boolean">true</createThumbNails>
+  <use_thumbnails type="boolean">true</use_thumbnails>
+  <outputPath>C:/Users/danielho/OneDrive - Electronics for Imaging, Inc/Documents/My RoboHelp Projects/outputs/RadiusModernizedHelp/Responsive HTML5</outputPath>
+  <retryMsg>Hold on a minute...</retryMsg>
+  <errorMsg>There seems to be a problem, please contact the administrator.</errorMsg>
+  <placeholderText>Type your message here.</placeholderText>
+  <chatbotDefaultText>Sorry, I do not have an answer for that.</chatbotDefaultText>
+  <chatbotWelcomeText>Welcome! How may I help you?</chatbotWelcomeText>
+  <patchHomepage type="boolean">true</patchHomepage>
+  <gdprCompliance type="boolean">true</gdprCompliance>
+  <chatbot>
+    <name>dialogflow</name>
+    <displayName>Google Dialogflow</displayName>
   </chatbot>
-  
-<mobileapp>
-    
-<android type="boolean">true</android>
-    
-<iOS type="boolean">false</iOS>
+  <mobileapp>
+    <android type="boolean">true</android>
+    <iOS type="boolean">false</iOS>
   </mobileapp>
 </preset>
