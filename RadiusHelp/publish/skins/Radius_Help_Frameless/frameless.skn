@@ -68,6 +68,7 @@
       <showBreadcrumbs type="boolean">true</showBreadcrumbs>
       <treeChevronPosition>right</treeChevronPosition>
       <showBrowseSequenceInRightPanel type="boolean">false</showBrowseSequenceInRightPanel>
+      <showRightPanel type="boolean">true</showRightPanel>
       <minitoc_levelFrom>2</minitoc_levelFrom>
       <minitoc_levelTo>2</minitoc_levelTo>
       <minitoc_caption></minitoc_caption>
