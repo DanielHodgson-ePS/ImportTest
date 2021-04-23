@@ -1,8 +1,12 @@
 
 window.addEventListener('resize', resizeTabs, true);
 
+
 // If there are at least 4 tabs, Loop through every set of tabcontent-navigation buttons in the page and resize buttons based on number of buttons
 function resizeTabs() {
+
+
+  console.log("resizing tabs");
   
   var tablinkNavs = document.getElementsByClassName("tablink-navigation");
   
@@ -40,6 +44,8 @@ function openTab(pageName, elmnt, color) {
 }
 
 function openDefaultTabs() {
+
+  console.log("opening default tabs");
   
   // Opens all tabs with class="defaultopen"
   var tabDefaults = document.getElementsByClassName("defaultopen");
@@ -52,7 +58,6 @@ function openDefaultTabs() {
 function initFunctions() {
 
   var functions = [];
-  functions.push(createTitleMutationObserver);
   functions.push(resizeTabs);
   functions.push(openDefaultTabs);
   return functions;
@@ -66,17 +71,14 @@ initFunctions().forEach(f => {
 })
 
 
-
 // In a generated robohelp project, switching between topics partially updates the DOM
 // Therefore no window.onLoad event is generated
-// Instead, watch for changes to the html head
-function createTitleMutationObserver() {
+// Instead, watch for changes to the html
 
   var target = document.querySelector('head');
-
   var observer = new MutationObserver(function (mutations) {
 
-    console.log("mutation observed");
+    //console.log("mutation observed");
     resizeTabs();
     openDefaultTabs();
   });
@@ -85,5 +87,5 @@ function createTitleMutationObserver() {
     subtree: true,
     childList: true
   };
+
   observer.observe(target, config);
-}

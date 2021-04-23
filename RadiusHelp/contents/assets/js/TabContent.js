@@ -76,7 +76,7 @@ function createTitleMutationObserver() {
 
   var observer = new MutationObserver(function (mutations) {
 
-    console.log("mutation observed");
+   // console.log("mutation observed");
     resizeTabs();
     openDefaultTabs();
   });

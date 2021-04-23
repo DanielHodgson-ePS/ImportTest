@@ -1,7 +1,10 @@
 
-// Need to restructure the html a little as Robohelp unecessarily wraps elements in <p> tags
+// Need to restructure the html a little as Robohelp unnecessarily wraps elements in <p> tags
 // Also add a wrapper for each dropdown 
 function formatHTML() {
+
+
+    console.log("Formatting html");
 
     $('.dropspot').unwrap();
 
@@ -19,7 +22,7 @@ function formatHTML() {
 }
 
 
-function changeIconClick() {
+function changeIconOnClick() {
 
     $(document).on('click', '.dropspot', function () {
 
@@ -42,26 +45,40 @@ function changeIconClick() {
 }
 
 
-window.onload = function () {
-    formatHTML();
-    changeIconClick();
-};
+
+function initFunctions() {
+
+    var functions = [];
+    functions.push(formatHTML);
+    functions.push(changeIconOnClick);
+    return functions;
+}
+
+
+initFunctions().forEach(f => {
+    window.addEventListener ?
+        window.addEventListener("load", f, false) :
+        window.attachEvent && window.attachEvent("onload", f);
+})
+
+
 
 // In a generated robohelp project, switching between topics partially updates the DOM
 // Therefore no window.onLoad event is generated
-// Instead, watch for changes to the html head
-function createTitleMutationObserver() {
+// Instead, watch for changes to the html
 
     var target = document.querySelector('head');
-
     var observer = new MutationObserver(function (mutations) {
+
+        console.log("mutation observed"); 
         formatHTML();
-        changeIconClick();
+        changeIconOnClick();
     });
 
     var config = {
         subtree: true,
         childList: true
     };
+
     observer.observe(target, config);
-}
+
