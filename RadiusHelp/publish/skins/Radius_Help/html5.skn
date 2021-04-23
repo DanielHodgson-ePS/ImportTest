@@ -2,7 +2,7 @@
 <skin>
   <layout>single_page_dark</layout>
   <name>Azure_Blue</name>
-  <version>2020.0.0</version>
+  <version>2020.4.0</version>
   <variables>
     <css>
       <filter_reset_image>filter_clearall.png</filter_reset_image>
@@ -113,6 +113,8 @@
       <custom_button_image_0>expand_all.svg</custom_button_image_0>
       <custom_button_image_1>removesearch_mark.svg</custom_button_image_1>
       <custom_button_image_2>print_desktop.png</custom_button_image_2>
+      <next_search_page_image>next.png</next_search_page_image>
+      <prev_search_page_image>previous.png</prev_search_page_image>
     </css>
     <html>
       <do_not_preserve_ar type="boolean">false</do_not_preserve_ar>

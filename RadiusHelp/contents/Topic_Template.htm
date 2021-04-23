@@ -21,13 +21,13 @@
   <h4>Heading 4</h4>
   <h5>Heading 5</h5>
   <hr class="hrule-inner" />
-  <p class="Normal-Text">This is standard paragraph text <strong>- </strong><strong>normal-text</strong></p>
+  <p class="Normal-Text"><span>This is standard paragraph text which uses the <strong>normal-text</strong> style. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> <strong>- </strong><strong>normal-text</strong></p>
   <hr class="hrule-inner" />
   <p class="Tip-Note-Step-Text">Tip-Note-Step-Text</p>
   <p class="Tip-Note-Step-Text-Indent">Tip-Note-Step-Text-Indent</p>
   <hr class="hrule-inner" />
-  <p><strong>Numbered list- BasicNumber-Modern</strong></p>
-  <ol class="BasicNumber-modern">
+  <p><strong>Numbered list- BasicNumber</strong></p>
+  <ol class="BasicNumber">
     <li>One
       <ol>
         <li>Two - Press tab to indent</li>
@@ -37,8 +37,8 @@
     <li>Four</li>
     <li>Five</li>
   </ol>
-  <p><strong>Bullet list -</strong> <strong>ModernList</strong></p>
-  <ul class="modernlist">
+  <p><strong>Bullet list -</strong> <strong>Bullets</strong></p>
+  <ul class="Bullets">
     <li>One
       <ul>
         <li>Three  - press tab to indent</li>
@@ -96,7 +96,7 @@
   <p>
     <font face="Inter">The following instructions describe how to add page dividers to your topic:</font>
   </p>
-  <ol class="BasicNumber-modern">
+  <ol class="BasicNumber">
     <li>Select the line in a topic where you want to add a page divider.</li>
     <li>
       <font face="Inter">Click Insert HTML Element   on the toolbar then select <strong>Horizonal </strong><strong>line</strong>. A hr element is added to the page.</font>
@@ -105,7 +105,7 @@
       <font face="Inter">Select the hr element and do one of the following depending on which divider you want to add:</font>
     </li>
   </ol>
-  <ul class="Bullets">
+  <ul class="Bullets" style="margin-left: 40px;">
     <li>
       <font face="Inter">To add a primary page divider, enter <em>hrule </em>in the <strong>Class </strong>field in the <strong>Attributes </strong>section of the right-hand panel.</font>
     </li>
@@ -113,7 +113,7 @@
       <font face="Inter">To add a secondary page divider, enter <em>hrule-inner</em> in the <strong>Class </strong>field in the <strong>Attributes </strong>section of the right-hand panel.</font>
     </li>
   </ul>
-  <ol class="BasicNumber-modern">
+  <ol class="BasicNumber">
     <li style="counter-reset: item1 3;" value="4">Tab out of the field to update the <strong>hr </strong>style.</li>
   </ol>
   <hr class="hrule" />
@@ -122,7 +122,7 @@
   <h3>Sizing</h3>
   <p>You should  avoid using pixels to size images, this causes them to be static so that they will not respond to screens with different dimensions or resolutions. </p>
   <p>Instead, you should choose from the following units, to make sure that the topic displays properly in different environments:</p>
-  <ul class="modernlist">
+  <ul class="Bullets">
     <li><strong>%</strong>: Sizes the image based on the parent container. For example, if the image has no parent element, a 100% width will make it as wie ad the topic page. If the image is in a container that is 50% of the topic page width, then givng it a 100% size will make it 50% of the topic page width. </li>
     <li><span><strong>em</strong>: Sizes the image based on the font-size of the parent element. 1em is equal to the current font-size of the element in question. If you haven’t set font size anywhere on the page, then it would be the browser default, which is probably 16px.  So by default 1em = 16px.</span></li>
     <li><strong>rem</strong>:  <span>While em </span><span>is relative to the font-size of its direct or nearest parent,</span> rem units determine the pixel size depending on the font size of the root element of the page, i.e. the html element. That root font size is multiplied by whatever number you’re using with your rem unit. For example, with a root element font size of 16px, 10rem would equate to 160px, i.e. 10 x 16 = 160.</li>
