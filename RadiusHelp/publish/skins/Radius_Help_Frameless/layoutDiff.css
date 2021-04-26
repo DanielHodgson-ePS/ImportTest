@@ -164,12 +164,16 @@ label {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-right: 0.275rem;
+  color: #707070;
+  font-size: 0.8rem;
 }
 
 .RH-LAYOUT-LEFTPANEL-title-level-3 {
   padding-left: 3rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  color: #707070;
+  font-size: 0.7rem;
 }
 
 .RH-LAYOUT-LEFTPANEL-title-level-4 {
@@ -208,6 +212,7 @@ label {
 }
 
 .RH-LAYOUT-LEFTPANEL-expanded-title {
+  color: #000000;
 }
 
 .RH-LAYOUT-LEFTPANEL-collapse-icon {
