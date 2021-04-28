@@ -14,6 +14,7 @@
     <index type="boolean">true</index>
     <masterpage>
       <path>../../contents/assets/masterpages/RadiusHelpScriptHolder.htt</path>
+      <name>RadiusHelpScriptHolder</name>
     </masterpage>
     <mapFiles type="array">
       <mapFilesitem>
@@ -60,6 +61,10 @@
     <path>../skins/Radius_Help_Frameless/frameless.skn</path>
   </skin>
   <createThumbNails type="boolean">false</createThumbNails>
+  <favicon>
+    <name>favicon</name>
+    <path>../../contents/assets/Images/favicon.ico</path>
+  </favicon>
   <patchHomepage type="boolean">true</patchHomepage>
   <gdprCompliance type="boolean">true</gdprCompliance>
   <dgflowApiClientKey></dgflowApiClientKey>
