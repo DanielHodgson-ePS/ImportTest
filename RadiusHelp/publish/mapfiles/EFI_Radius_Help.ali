@@ -1,30 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
 <aliaslist version="1.0">
   
+
 <alias name="Sales_Order" value="6000" link="../../contents/WindowsMod/Sales_Order.htm"></alias>
   
+
 <alias name="Sales_Order_(Landing_Page)" value="6001" link="../../contents/WindowsMod/Sales_Order_Landing_Page.htm"></alias>
   
+
 <alias name="Advanced_Search_Features" value="6002" link="../../contents/WindowsMod/Advanced_Search_Features.htm"></alias>
   
+
 <alias name="Manage_View" value="6003" link="../../contents/WindowsMod/Manage_View.htm"></alias>
   
-<alias name="Sales_Order_Analysis" value="6004" link="../../contents/Sales_Order_Analysis.htm"></alias>
+
+<alias name="Sales_Order_Analysis" value="6004" link="../../contents/WindowsMod/Sales_Order_Analysis.htm"></alias>
   
+
 <alias name="User_Defined_Elements" value="6005" link="../../contents/WindowsMod/User_Defined_Elements.htm"></alias>
   
+
 <alias name="Quantities_By_Plant" value="6006" link="../../contents/WindowsMod/Quantities_By_Plant.htm"></alias>
   
+
 <alias name="Interface_Order_Details" value="6007" link="../../contents/WindowsMod/Interface_Order_Details.htm"></alias>
   
+
 <alias name="Sales_Order_Notes" value="6008" link="../../contents/WindowsMod/Sales_Order_Notes.htm"></alias>
   
+
 <alias name="File_and_Link_Attachments" value="6009" link="../../contents/WindowsMod/File_and_Link_Attachments.htm"></alias>
   
+
 <alias name="Intercompany_Transaction_Details" value="6010" link="../../contents/WindowsMod/Intercompany_Transaction_Details.htm"></alias>
   
+
 <alias name="View_Access_Control" value="6011" link="../../contents/WindowsMod/View_Access_Control.htm"></alias>
   
+
 <alias name="Shipment_Tracking_Details" value="6012" link="../../contents/WindowsMod/Shipment_Tracking_Details.htm"></alias>
 </aliaslist>
