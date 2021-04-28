@@ -6,6 +6,15 @@
     <page href="../contents/About/Radius_Modernization_vs_Radius_Classic.htm" format="html" homepage-tile="assets/Images/PreviewImages/ModernVsClassic.jpg" processing-role="normal"></page>
     <page href="../contents/About/About_the_Advanced_Search.htm" format="html" homepage-tile="assets/Images/PreviewImages/AboutAdvancedSearch.jpg" processing-role="normal"></page>
   </book>
+  <book navtitle="Tutorials" format="html" homepage-tile="assets/Images/HowTos.png" processing-role="normal">
+    <page href="../contents/Tutorials/Configuring_File_Attachment_Settings.htm" format="html" homepage-tile="assets/Images/PreviewImages/ConfigFileAttach.jpg" processing-role="normal"></page>
+    <page href="../contents/Tutorials/How_to_Create_a_Sales_Order.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToSalesOrder.jpg" processing-role="normal"></page>
+    <page href="../contents/Tutorials/How_to_Create_a_Shipping_Request.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToShipReq.jpg" processing-role="normal"></page>
+    <page href="../contents/Tutorials/How_to_Create_Views_and_Layouts.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToViews.jpg" processing-role="normal"></page>
+    <page href="../contents/Tutorials/How_to_Use_the_Advanced_Search.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToAdvancedSearch.jpg" processing-role="normal"></page>
+    <page href="../contents/Tutorials/Managing_Views_and_Layouts.htm" format="html" homepage-tile="assets/Images/PreviewImages/ManagingViews.jpg" processing-role="normal"></page>
+    <page href="../contents/Tutorials/Navigation.htm" format="html" homepage-tile="assets/Images/PreviewImages/Navigation.jpg" processing-role="normal"></page>
+  </book>
   <book navtitle="Page Descriptions" format="html" homepage-tile="assets/Images/windows.png" processing-role="normal">
     <page href="../contents/WindowsMod/Sales_Order_Landing_Page.htm" format="html" homepage-tile="assets/Images/PreviewImages/SalesOrdersLanding.jpg" processing-role="normal"></page>
     <page href="../contents/WindowsMod/Sales_Order.htm" format="html" homepage-tile="assets/Images/PreviewImages/SalesOrdersAddEdit.jpg" processing-role="normal"></page>
@@ -24,13 +33,5 @@
       <page href="../contents/WindowsMod/User_Defined_Elements.htm" format="html" homepage-tile="assets/Images/PreviewImages/UserDefinedElements.jpg" processing-role="normal"></page>
     </book>
   </book>
-  <book navtitle="Tutorials" format="html" homepage-tile="assets/Images/HowTos.png" processing-role="normal">
-    <page href="../contents/Tutorials/Configuring_File_Attachment_Settings.htm" format="html" homepage-tile="assets/Images/PreviewImages/ConfigFileAttach.jpg" processing-role="normal"></page>
-    <page href="../contents/Tutorials/How_to_Create_a_Sales_Order.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToSalesOrder.jpg" processing-role="normal"></page>
-    <page href="../contents/Tutorials/How_to_Create_a_Shipping_Request.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToShipReq.jpg" processing-role="normal"></page>
-    <page href="../contents/Tutorials/How_to_Create_Views_and_Layouts.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToViews.jpg" processing-role="normal"></page>
-    <page href="../contents/Tutorials/How_to_Use_the_Advanced_Search.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToAdvancedSearch.jpg" processing-role="normal"></page>
-    <page href="../contents/Tutorials/Managing_Views_and_Layouts.htm" format="html" homepage-tile="assets/Images/PreviewImages/ManagingViews.jpg" processing-role="normal"></page>
-    <page href="../contents/Tutorials/Navigation.htm" format="html" homepage-tile="assets/Images/PreviewImages/Navigation.jpg" processing-role="normal"></page>
-  </book>
+  <page href="../contents/Intro/Copyright.htm" format="html" homepage-tile="assets/Images/copyright.png" processing-role="normal"></page>
 </map>
