@@ -12,8 +12,12 @@
 <body>
   <h1>Intercompany Transaction Details</h1>
   <p class="BodyText">Use the <span class="software">Intercompany Transaction Details</span> to view details of the original sales order in the source company from which this sales order was based on. This is only applicable if you are using intercompany transfers. </p>
+  <p class="BodyText"><span>Intercompany</span> transfer functionality allows you to place an order in one company, perform production and shipping in another (the destination company), and then perform billing in both companies. The destination company will bill the source company whilst the source company will bill the customer.</p>
   <p style="margin-left: 0px;">To display this window, click <span class="software"><img src="../assets/Images/CommandsMod/Intercompany_Transaction_Details.png" /> </span><span class="software">Intercompany Transaction Details</span> under the <span class="software">Sales Order Details</span> section of the <span class="software">Sales Orders</span> page. </p>
   <p style="margin-left: 0px;">The fields in this window are read-only. Click <span class="software">Done</span> to close this window. </p>
+  <h2 style="margin-left: 0px;">Exported Information</h2>
+  <p>The destination company details are shown under the <strong><span>Exported Information</span></strong> section when the <strong><span><span>Intercompany</span> Transaction Details</span></strong> window is displayed in the source company.</p>
+  <p class="Tip-Note-Step-Text"><strong><span>Note</span></strong>: The <span>Exported Information</span> section of the <span><span>Intercompany</span> Transaction Details</span> window is only populated for the source company.</p>
   <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse">
     <tbody>
       <tr class="t1st">
@@ -26,39 +30,83 @@
       </tr>
       <tr class="t2Row">
         <td>
-          <p><span class="software">Received from company</span></p>
+          <p><strong><span>Sent to company</span></strong></p>
         </td>
         <td>
-          <p>The linked company reference and company description for the company which sent the intercompany transfer request.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Received from plant</span></p>
-        </td>
-        <td>
-          <p>The linked plant code and plant description for the plant which sent the intercompany transfer request.</p>
+          <p>The linked company external reference and company description for the destination company which is performing the production.</p>
         </td>
       </tr>
       <tr>
         <td>
-          <p><span class="software">Purchase order</span></p>
+          <p><strong><span>Sent to plant</span></strong></p>
         </td>
         <td>
-          <p>The purchase order number of the linked company which was sent to create this sales order.</p>
+          <p>The linked plant code and plant description for the plant which is performing the production.</p>
         </td>
       </tr>
       <tr>
         <td>
-          <p><span class="software">Sales order</span></p>
+          <p><strong><span>Sent via purchase order</span></strong></p>
         </td>
         <td>
-          <p>The sales order number of the linked company which started the intercompany transfer.</p>
+          <p>The source company purchase order number that was used to send the order to the destination company.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><strong><span>Sales order</span></strong></p>
+        </td>
+        <td>
+          <p>The sales order number in the destination company.  </p>
         </td>
       </tr>
     </tbody>
   </table>
-  <h2><br />
-     </h2>
+  <h2>Imported Information</h2>
+  <p>The source company details are shown under the <span>Imported Information</span> section when the <span><span>Intercompany</span> Transaction Details</span> window is displayed in the destination company.</p>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse">
+    <tbody>
+      <tr class="t1st">
+        <td>
+          <p><span>Field</span></p>
+        </td>
+        <td>
+          <p><span>Description</span></p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p><strong><span>Received from company</span></strong></p>
+        </td>
+        <td>
+          <p>The linked company reference and company description for the source company which sent the <span>intercompany</span> transfer request.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><strong><span>Received from plant</span></strong></p>
+        </td>
+        <td>
+          <p>The linked plant code and plant description for the plant which sent the <span>intercompany</span> transfer request.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><strong><span>Purchase order</span></strong></p>
+        </td>
+        <td>
+          <p>The purchase order number of the linked source company which was sent to create this sales order.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><strong><span>Sales order</span></strong></p>
+        </td>
+        <td>
+          <p>The sales order number of the linked source company which started the <span>intercompany</span> transfer.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
