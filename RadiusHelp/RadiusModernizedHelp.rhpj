@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="2020.4.0">
+<project version="2020.5.0">
 <title>RadiusModernizedHelp</title>
 <id>764e1b71-f4a6-4018-8108-44cd71d630d9</id>
 <preferences>
 <language>en_US</language>
 <noInlineStyle>false</noInlineStyle>
+<advancedHtmlHelpOptions>false</advancedHtmlHelpOptions>
 <defaultCss>contents/assets/css/default.css</defaultCss>
 <defaultWsf>settings/import/word/default.wsf</defaultWsf>
 <defaultFsf>settings/import/fm/default.fsf</defaultFsf></preferences>
