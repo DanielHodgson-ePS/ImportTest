@@ -1629,5 +1629,6 @@ ul.Bullets>li>ul>li>ul>li>ul>li:before {
   justify-content: center;
 }
 .column {
+  flex: 1;
   text-align: center;
 }
