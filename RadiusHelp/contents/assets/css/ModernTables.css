@@ -31,7 +31,7 @@
   margin-top: 1rem;
   margin-bottom: 2rem;
   max-width: 100%;
-  border-bottom: 4px solid #2980b9;
+  border-bottom: 4px solid #4F6793;
 }
 
 .StdTable tr {
@@ -48,11 +48,11 @@
   font-size: 1rem;
   text-align: center;
   color: #ffffff;
-  background: #2980b9;
+  background: #4F6793;
 }
 
 .StdTable tr.blue {
-  background: #2980b9;
+  background: #4F6793;
 }
 
 .StdTable td {
@@ -72,7 +72,7 @@
   padding-right: 1rem;
   color: #ffffff !important;
   text-align: center;
-  background: #2980b9;
+  background: #4F6793;
   cursor: pointer;
   user-select: none;
 }
@@ -85,7 +85,7 @@
 
 @media screen and (max-width: 580px) {
   .StdTable {
-    border-top: 0.5rem solid #2980b9;
+    border-top: 0.5rem solid #4F6793;
   }
   .StdTable tr {
     padding: 14px 0 7px;
@@ -115,7 +115,7 @@
     font-weight: bold;
     line-height: 1rem;
     text-transform: uppercase;
-    color: #2980b9;
+    color: #4F6793;
     display: block;
   }
 }

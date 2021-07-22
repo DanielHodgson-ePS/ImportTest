@@ -8,202 +8,213 @@
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../assets/css/APPS.css" />
   <link rel="stylesheet" type="text/css" href="../assets/css/ModernTables.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/Drop-down.css" />
 </head>
 <body>
   <h1>Purchase Orders (Add/Edit Mode)</h1>
-  <p>Usde the <span class="software">Purchase Orders </span>(Add/Edit Mode) page to amend existing purchase orders which can then be sent to suppliers and add or amend purchase order lines. The purchase order price is used by invoice checking to verify that the supplier’s purchase invoice is correctly priced.</p>
+  <p>Us<span class="software"><span class="software"><span class="software"><span class="software"><span class="software"><span class="software"><span class="software"><span class="software"></span></span></span></span></span></span></span></span>e the <span class="software">Purchase Orders </span>(Add/Edit Mode) page to amend existing purchase orders which can then be sent to suppliers and add or amend purchase order lines. The purchase order price is used by invoice checking to verify that the supplier’s purchase invoice is correctly priced.</p>
   <h2>
     <h2-modern>Purchase Order Details</h2-modern>
   </h2>
   <p>The <span class="software">Purchase Order Details</span> section contains the main details of the purchase order record; holding the order number, order date, the required date, order status and other details.  </p>
-  <h3>Fields (Purchase Order Details)</h3>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Field</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Purchase order Number</span></p>
-        </td>
-        <td>
-          <p>This is the unique number which identifies the purchase order in the EFI Radius database. This will be automatically assigned when you save the new purchase order on this tab.</p>
-          <p class="Tip-Note-Step-Text"><span class="software">Note</span>: Auto-assigning purchase order numbers can be disabled by selecting <span class="software">Company &gt; Options &gt; Company Level Options </span>from the navigation pane, and specifying Manual in the Automatic purchase order numbering field of the Purchasing and Outsource tab.</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software">Version</span></p>
-        </td>
-        <td>
-          <p>    <br />
-            Displays an incremented version number if the purchase order is changed after it has been printed, then allows you to enter text to explain the reasons for the change. The field next to the version number will be automatically updated by EFI Radius and it indicates the print status of the purchase order.</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Print Status</span></p>
-        </td>
-        <td>
-          <p> This is automatically updated by EFI Radius and it indicates the print status of the purchase order.</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software">Supplier Code</span></p>
-        </td>
-        <td>
-          <p>Specify the supplier account code.</p>
-          <p>If you are using preferred suppliers, defined by clicking Item Preferred Suppliers <img src="../assets/images/image11.png" /><b></b> on the Items <span class="software">Details </span>tab of the <span class="software">Items &gt; Items </span>window, the supplier may be automatically populated from the item record when you create the first purchase order line. If you want it to be automatically populated, leave this field blank.</p>
-          <p class="Tip-Note-Step-Text"><span class="software">Note</span>:  When the supplier is selected, most of the remaining fields will fields will automatically default from the supplier record, but can be amended if required.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Language</span></p>
-        </td>
-        <td>
-          <p>    <br />
-            Select the language for printing the purchase order document and labels. This defaults to the language of the supplier.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Delivery Terms</span></p>
-        </td>
-        <td>
-          <p>    <br />
-            Select the language for printing the purchase order document and labels. This defaultsSelect the description of the method of delivery from this field. Depending on your business practices, this can be used in the following ways:</p>
-          <ul class="Bullets">
-            <li>Used to indicate the freight cost to the supplier for insurance purposes.  </li>
-            <li>Used for Intrastat purposes where the European Union requires that you tracks movement of goods for tax purposes.</li>
-          </ul>
-          <p>This defaults from the supplier record (<span class="software">Company &gt; Customers and Suppliers &gt; Suppliers</span>) but may be changed if required. You can set up and amend delivery terms in the <span class="software">System &gt; General Set-up &gt; Terms of delivery</span> window. to the language of the supplier.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Terms Code</span></p>
-        </td>
-        <td>
-          <p>Specify the settlement terms that the supplier allows. This defaults from the supplier but can be changed.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Order Date</span></p>
-        </td>
-        <td>
-          <p>Specify the date that the order is being placed on. For new and copied purchase orders, this defaults to today&#39;s date.</p>
-          <p>For intercompany transfers, this date defaults to the order date from the sales order.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Date Required</span></p>
-        </td>
-        <td>
-          <p>Specify the date by which the order is required.</p>
-          <p>For intercompany transfers, this date defaults to the required date from the sales order.</p>
-          <p class="Tip-Note-Step-Text"><span class="software">Note</span>:  Individual purchase order lines on the <span class="software">Lines </span>tab also have a required date. When you now add a purchase order line on the <span class="software">Lines </span>tab, the <span class="software">Date Required</span> field from the <span class="software">Header </span>tab automatically populates the <span class="software">Date Required</span> field on the <span class="software">Lines </span>tab. Also, if you change the date on the <span class="software">Header </span>tab and then click Save, a prompt will display asking if you want to update all purchase order lines on this purchase order to the updated date.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Country of Origin</span></p>
-        </td>
-        <td>
-          <p>Specify country the purchase order was raised in.</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3>Additional Fields (Purchase Order Details)</h3>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Field</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td><span class="software">Supplier Reference</span></td>
-        <td>
-          <p>Enter any references that the supplier may have given you, such as a quotation reference.</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td><span class="software">Last Date Change</span></td>
-        <td>
-          <p>Specify the date at which the supplier will not allow any amendments to the purchase order. A warning message will be displayed if the purchase order is amended after this date.</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3>Comments and Addresses (Purchase Order Details)</h3>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Field</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Purchase order Comments</span></p>
-        </td>
-        <td>
-          <p>Enter any comments that are required to print on the purchase order. </p>
-          <p>In the <span class="software">Purchase Order Comments</span> window, accessed by clicking <span class="software">Add from template</span>, you can enter text or add standard predefined phrases. </p>
-          <p class="Tip-Note-Step-Text"><span class="software">Note</span>: For intercompany transfers, this field populates with the source company sales order comments.</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software">Delivery Specifications</span></p>
-        </td>
-        <td>
-          <p>Enter location specific delivery comments attached to this purchase order. </p>
-          <p>In the <span class="software">Purchase Order Comments</span> window, accessed by clicking <span class="software">Add from template</span>, you can enter text or add standard predefined phrases. </p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><b>Approval Comments</b></p>
-        </td>
-        <td>
-          <p> This is automatically updated by EFI Radius and it indicates the print status of the purchase order.</p>
-        </td>
-      </tr>
-      <tr>
-        <td><span class="software">Supplier Address</span></td>
-        <td>
-          <p>Specify the address of the supplier of the purchased goods.</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h2> Annotations (Purchase Order Details)</h2>
-  <p> </p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#">Fields (Purchase Order Details)</a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Field</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Purchase order Number</span></p>
+          </td>
+          <td>
+            <p>This is the unique number which identifies the purchase order in the EFI Radius database. This will be automatically assigned when you save the new purchase order on this tab.</p>
+            <p class="Tip-Note-Step-Text"><span class="software">Note</span>: Auto-assigning purchase order numbers can be disabled by selecting <span class="software">Company &gt; Options &gt; Company Level Options </span>from the navigation pane, and specifying Manual in the Automatic purchase order numbering field of the Purchasing and Outsource tab.</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Version</span></p>
+          </td>
+          <td>
+            <p>    <br />
+              Displays an incremented version number if the purchase order is changed after it has been printed, then allows you to enter text to explain the reasons for the change. The field next to the version number will be automatically updated by EFI Radius and it indicates the print status of the purchase order.</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Print Status</span></p>
+          </td>
+          <td>
+            <p> This is automatically updated by EFI Radius and it indicates the print status of the purchase order.</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Supplier Code</span></p>
+          </td>
+          <td>
+            <p>Specify the supplier account code.</p>
+            <p>If you are using preferred suppliers, defined by clicking Item Preferred Suppliers <img src="../assets/images/image11.png" /><b></b> on the Items <span class="software">Details </span>tab of the <span class="software">Items &gt; Items </span>window, the supplier may be automatically populated from the item record when you create the first purchase order line. If you want it to be automatically populated, leave this field blank.</p>
+            <p class="Tip-Note-Step-Text"><span class="software">Note</span>:  When the supplier is selected, most of the remaining fields will fields will automatically default from the supplier record, but can be amended if required.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Language</span></p>
+          </td>
+          <td>
+            <p>    <br />
+              Select the language for printing the purchase order document and labels. This defaults to the language of the supplier.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Delivery Terms</span></p>
+          </td>
+          <td>
+            <p>    <br />
+              Select the language for printing the purchase order document and labels. This default selects the description of the method of delivery from this field. Depending on your business practices, this can be used in the following ways:</p>
+            <ul class="Bullets">
+              <li>Used to indicate the freight cost to the supplier for insurance purposes.  </li>
+              <li>Used for Intrastat purposes where the European Union requires that you tracks movement of goods for tax purposes.</li>
+            </ul>
+            <p>This defaults from the supplier record (<span class="software">Company &gt; Customers and Suppliers &gt; Suppliers</span>) but may be changed if required. You can set up and amend delivery terms in the <span class="software">System &gt; General Set-up &gt; Terms of delivery</span> window. to the language of the supplier.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Terms Code</span></p>
+          </td>
+          <td>
+            <p>Specify the settlement terms that the supplier allows. This defaults from the supplier but can be changed.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Order Date</span></p>
+          </td>
+          <td>
+            <p>Specify the date that the order is being placed on. For new and copied purchase orders, this defaults to today&#39;s date.</p>
+            <p>For intercompany transfers, this date defaults to the order date from the sales order.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Date Required</span></p>
+          </td>
+          <td>
+            <p>Specify the date by which the order is required.</p>
+            <p>For intercompany transfers, this date defaults to the required date from the sales order.</p>
+            <p class="Tip-Note-Step-Text"><span class="software">Note</span>:  Individual purchase order lines on the <span class="software">Lines </span>tab also have a required date. When you now add a purchase order line on the <span class="software">Lines </span>tab, the <span class="software">Date Required</span> field from the <span class="software">Header </span>tab automatically populates the <span class="software">Date Required</span> field on the <span class="software">Lines </span>tab. Also, if you change the date on the <span class="software">Header </span>tab and then click Save, a prompt will display asking if you want to update all purchase order lines on this purchase order to the updated date.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Country of Origin</span></p>
+          </td>
+          <td>
+            <p>Specify country the purchase order was raised in.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h3><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Additional Fields (Purchase Order Details)</a></h3>
+  <div class="droptext" data-targetname="drop-down1">
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Field</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td><span class="software">Supplier Reference</span></td>
+          <td>
+            <p>Enter any references that the supplier may have given you, such as a quotation reference.</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td><span class="software">Last Date Change</span></td>
+          <td>
+            <p>Specify the date at which the supplier will not allow any amendments to the purchase order. A warning message will be displayed if the purchase order is amended after this date.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h3><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#">Comments and Addresses (Purchase Order Details)</a></h3>
+  <div class="droptext" data-targetname="drop-down2">
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Field</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Purchase order Comments</span></p>
+          </td>
+          <td>
+            <p>Enter any comments that are required to print on the purchase order. </p>
+            <p>In the <span class="software">Purchase Order Comments</span> window, accessed by clicking <span class="software">Add from template</span>, you can enter text or add standard predefined phrases. </p>
+            <p class="Tip-Note-Step-Text"><span class="software">Note</span>: For intercompany transfers, this field populates with the source company sales order comments.</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Delivery Specifications</span></p>
+          </td>
+          <td>
+            <p>Enter location specific delivery comments attached to this purchase order. </p>
+            <p>In the <span class="software">Purchase Order Comments</span> window, accessed by clicking <span class="software">Add from template</span>, you can enter text or add standard predefined phrases. </p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><b>Approval Comments</b></p>
+          </td>
+          <td>
+            <p> This is automatically updated by EFI Radius and it indicates the print status of the purchase order.</p>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="software">Supplier Address</span></td>
+          <td>
+            <p>Specify the address of the supplier of the purchased goods.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#">Annotations (Purchase Order Details)</a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <p>Type your dropdown text here</p>
+  </div>
   <h2>
     <h2-modern>Order Details</h2-modern>
   </h2>
-  <div class="droptext" data-targetname="drop-down">
-    <p>The <span class="software">Order Details</span> section contains the lines for the items on the sales order. If the sales order is linked to an estimate, the lines will be automatically created from the estimate details.</p>
-    <h3>Standard Grid Buttons (Order Details)</h3>
+  <p>The <span class="software">Order Details</span> section contains the lines for the items on the sales order. If the sales order is linked to an estimate, the lines will be automatically created from the estimate details.</p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Standard Grid Buttons (Order Details)</a></p>
+  <div class="droptext" data-targetname="drop-down4">
     <div data-conref="../assets/snippets/Standard_Grid_Buttons.hts"> </div>
-    <h3>Grid Buttons (Order Lines Grid)</h3>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#">Grid Buttons (Order Lines Grid)</a></p>
+  <div class="droptext" data-targetname="drop-down5">
     <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
       <tbody>
         <tr class="t1st">
@@ -288,10 +299,18 @@
       </tbody>
     </table>
   </div>
-  <p> </p>
-  <h2>Price Groups</h2>
-  <h2>Requirements and Reservations</h2>
-  <p> </p>
-  <h2>Version Comments</h2>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#">Price Groups</a></p>
+  <div class="droptext" data-targetname="drop-down6">
+    <p>Type your dropdown text here</p>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#">Requirements and Reservations</a></p>
+  <div class="droptext" data-targetname="drop-down7">
+    <p>Type your dropdown text here</p>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#">Version Comments</a></p>
+  <div class="droptext" data-targetname="drop-down8">
+    <p>Type your dropdown text here</p>
+  </div>
+  <h2> </h2>
 </body>
 </html>

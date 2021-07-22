@@ -219,6 +219,9 @@ label {
   background-image: url('ch-down.svg');;
 }
 
+.RH-LAYOUT-LEFTPANEL-topic-icon {
+}
+
 .RH-LAYOUT-LEFTPANEL-selected-title {
   background-color: #EBECF0;
   font-weight: 700;
@@ -261,7 +264,7 @@ label {
 }
 
 .RH-LAYOUT-LEFTPANEL-tab-list {
-  background-color: #4e66c9;
+  background-color: #4F6793;
 }
 
 .RH-LAYOUT-LEFTPANEL-tab {
@@ -298,7 +301,7 @@ label {
 }
 
 .RH-LAYOUT-LEFTPANEL-selected-tab {
-  background-color: #4e66c9;
+  background-color: #4F6793;
 }
 .rh-layout-TOOLBAR-custom-button-wrapper {
 }
@@ -519,14 +522,14 @@ background-image: url('print.svg');;
 .RH-LAYOUT-TOOLBAR-toolbar-box {
   margin-right: 2rem;
   margin-left: 0.25rem;
-  background-color: #4f66c7;
+  background-color: #4F6793;
 }
 
 .RH-LAYOUT-TOOLBAR-toolbar {
   font-weight: 600;
   font-style: normal;
   margin-right: 2rem;
-  background-color: #4e66c9;
+  background-color: #4F6793;
   text-transform: uppercase;
   color: #fefefe;
   margin-bottom: 2rem;
@@ -614,7 +617,7 @@ background-image: url('print.svg');;
 
 .RH-LAYOUT-SEARCHRESULTS-results-inner-box .RH-LAYOUT-SEARCHRESULTS-result-item .RH-LAYOUT-SEARCHRESULTS-result-item-title {
   font-size: 1.25rem;
-  color: #d8931a;
+  color: #4F6793;
 }
 
 .RH-LAYOUT-SEARCHRESULTS-result-item-summary {
@@ -712,7 +715,7 @@ background-image: url('print.svg');;
 }
 
 .RH-LAYOUT-RIGHTPANEL-top-buttons {
-  background-color: #4f66c7;
+  background-color: #4F6793;
   margin-top: 1rem;
   margin-bottom: 2rem;
   padding-left: 10px;
@@ -1010,7 +1013,7 @@ background-image: url('print.svg');;
 }
 
 .RH-LAYOUT-HOMEPAGE-TOC-details-box {
-  background-color: #4e66c9;
+  background-color: #4F6793;
   border-width: 0px;
   border-style: none;
   border-color: #000000;
@@ -1066,7 +1069,7 @@ background-image: url('print.svg');;
 
 .RH-LAYOUT-HOMEPAGE-SEARCHRESULTS-result-item-title {
   font-weight: 700;
-  color: #d8931a;
+  color: #4F6793;
 }
 
 .RH-LAYOUT-HOMEPAGE-SEARCHRESULTS-result-item-summary {
@@ -1232,7 +1235,7 @@ background-image: url('print.svg');;
 
 .RH-LAYOUT-FILTERS-caption {
   height: 36px;
-  background-color: #4f66c7;
+  background-color: #4F6793;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0px;
@@ -1405,9 +1408,6 @@ background-image: url('print.svg');;
 .rh-layout-BCRUMBS-list-item:last-child a {
 }
 
-.rh-layout-BCRUMBS-list-item:last-child::before {
-}
-
 .rh-layout-BCRUMBS-nav {
 }
 .RH-LAYOUT-BRS-container {
@@ -1509,7 +1509,7 @@ background-image: url('print.svg');;
 
 .RH-LAYOUT-FAVORITE-header {
   font-weight: 700;
-  background-color: #4f66c7;
+  background-color: #4F6793;
   padding-left: 1rem;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -3324,6 +3324,9 @@ body::-webkit-scrollbar {
 }
 
 input[type='text']::-ms-clear {
+}
+
+.rh-layout-BCRUMBS-list-item:last-child::before {
 }
 
 .js-focus-visible .focus-visible {

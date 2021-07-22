@@ -53,7 +53,7 @@
       <custom_button_image_5>search.svg</custom_button_image_5>
     </css>
     <html>
-      <search_highlight_bg_color>#4e66c9</search_highlight_bg_color>
+      <search_highlight_bg_color>#4F6793</search_highlight_bg_color>
       <search_highlight_text_color>#000000</search_highlight_text_color>
       <tocImageDataSet type="array">
         <tocImageDataSetitem>tocimg1.png</tocImageDataSetitem>
@@ -66,6 +66,7 @@
         <tocImageDataSetitem>tocimg8.png</tocImageDataSetitem>
       </tocImageDataSet>
       <showBreadcrumbs type="boolean">true</showBreadcrumbs>
+      <hyperlinkHomeToDefaultTopic type="boolean">true</hyperlinkHomeToDefaultTopic>
       <treeChevronPosition>right</treeChevronPosition>
       <showBrowseSequenceInRightPanel type="boolean">false</showBrowseSequenceInRightPanel>
       <showRightPanel type="boolean">true</showRightPanel>
@@ -77,6 +78,7 @@
       <drillDownTOC type="boolean">true</drillDownTOC>
       <showTileDescription type="boolean">false</showTileDescription>
       <limitTilesCount type="boolean">false</limitTilesCount>
+      <tileSelection type="boolean">false</tileSelection>
       <showHeaderLinksOnHomepage type="boolean">false</showHeaderLinksOnHomepage>
       <showName type="boolean">true</showName>
       <toTop type="boolean">true</toTop>

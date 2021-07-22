@@ -10,7 +10,7 @@
   display: block;
 }
 .hrule {
-  background: #2B77CB;
+  background: #4F6793;
   height: 4px;
   width: 20%;
   border: none;
@@ -73,7 +73,7 @@ h3.dropdown {
   font-family: Verdana;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #2B77CB;
+  color: #4F6793;
   margin-bottom: 2pt;
   margin-left: 0;
   margin-right: 6.5pt;
@@ -200,7 +200,7 @@ p.Related_Topics {
 p.Tip-Note-Step-Text {
   font-family: Inter;
   font-size: 1rem;
-  border-left: 4px solid #2B77CB;
+  border-left: 4px solid #4F6793;
   padding-left: 0.5rem;
   margin-left: 1rem;
 }
@@ -214,14 +214,14 @@ p.Example-Text {
 p.Tip-Note-Step-Text-Indent {
   font-family: Inter;
   font-size: 1rem;
-  border-left: 4px solid #2B77CB;
+  border-left: 4px solid #4F6793;
   padding-left: 0.5rem;
   margin-left: 3rem;
 }
 p.Tip-Note-Text {
   font-family: Inter;
   font-size: 1rem;
-  border-left: 4px solid #2B77CB;
+  border-left: 4px solid #4F6793;
   padding-left: 0.5rem;
   margin-left: 1rem;
 }

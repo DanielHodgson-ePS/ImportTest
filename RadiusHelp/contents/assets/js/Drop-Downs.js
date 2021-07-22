@@ -71,5 +71,5 @@ function createTitleMutationObserver() {
         subtree: true,
         childList: true
     };
-    observer.observe(target, config);
+    //observer.observe(target, config);
 }
