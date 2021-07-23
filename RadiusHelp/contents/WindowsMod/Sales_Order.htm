@@ -8,6 +8,7 @@
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../assets/css/APPS.css" />
   <link rel="stylesheet" type="text/css" href="../assets/css/ModernTables.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/Drop-down.css" />
 </head>
 <body>
   <h1>Sales Orders </h1>
@@ -24,365 +25,363 @@
       <p>Sales order numbers can be automatically generated or manually entered. EFI recommends using automatic numbering. To do this, select the <span class="software">Auto sales order numbering</span> check box on the <span class="software">General Options</span> tab of the <span class="software">Plant Level Options</span> window. </p>
     </li>
   </ol>
-  <h2>
-    <h2-modern>Sales Order Details</h2-modern>
-  </h2>
-  <p>The <span class="software">Sales Order Details</span> section contains the main details of the sales order record, holding the customer account, order reference, the billing address, shipping address and other details.  </p>
-  <h3>Buttons (Sales Order Details)</h3>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
-    <colgroup>
-      <col />
-      <col />
-    </colgroup>
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Button</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td><img height="17" src="../assets/Images/CommandsMod/Sales_Order_Analysis.png" width="20" /> <span class="software">Sales Order Analysis</span></td>
-        <td>
-          <p>Click to open the <a data-xref="{title}" href="Sales_Order_Analysis.htm">Sales Order Analysis</a> window to maintain sales order analysis codes.  These codes are used for transaction analysis.</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td><span class="software"><span class="software"><img src="../assets/Images/CommandsMod/UserDefinedElements.png" /> </span>User Defined Elements</span></td>
-        <td>
-          <p>Click to open the <a data-xref="{title}" href="User_Defined_Elements.htm">User Defined Elements</a> where you can view user defined elements (custom fields) associated with the sales order. User Defined Elements are additional fields which you can define and add into the EFI Radius database. The purpose of the fields is to allow you to record additional information which can be viewed or added to customized reports. See <span class="software">Company &gt; Jobs and Costing &gt; User Defined Elements</span>.</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software"><img src="../assets/Images/CommandsMod/View_Quantities_by_Plant.png" /> View Quantities by Plant</span></p>
-        </td>
-        <td>
-          <p>Click to open the <a data-xref="{title}" href="Quantities_By_Plant.htm">Quantities By Plant</a> window to view which plants the order has been allocated to.</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software"><img src="../assets/Images/CommandsMod/Interface_Order_Details.png" /> Interface Order Details</span></p>
-        </td>
-        <td>
-          <p>Click to open the <a data-xref="{title}" href="Interface_Order_Details.htm">Interface Order Details</a> window where you can maintain interface details when sales orders are created from a third-party system.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software"><img src="../assets/Images/CommandsMod/Sales_Order_Notes.png" /> Sales Order Notes</span></p>
-        </td>
-        <td>
-          <p>Click to open the <a data-xref="{title}" href="Sales_Order_Notes.htm">Sales Order Notes</a> window where you can enter any additional notes on the sales order. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software"><img src="../assets/Images/CommandsMod/Files_Attachment.png" /> Files Attachment</span></p>
-        </td>
-        <td>
-          <p>Click to open the <a data-xref="{title}" href="File_and_Link_Attachments.htm">File and Link Attachments</a> where you can attach or link files to a sales order. This provides a way of including supplementary information. </p>
-          <p class="Tip-Note-Text"><span class="software">Note</span>:  By default, Radius allows.pdf, .xls, .xlsx, .doc, .docx, .png, .jpeg and .img file formats to be uploaded. The maximum number of files that can be uploaded is also limited to five, with a maximum file size of 10MB for each file. However, you can change these settings in the Admin Settings page or circumvent them by alternatively adding a weblink to the files. See <a href="../Tutorials/Configuring_File_Attachment_Settings.htm">Configuring File Attachment Settings</a> for more details.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software"><img src="../assets/Images/CommandsMod/Intercompany_Transaction_Details.png" />Intercompany Transaction Details</span></p>
-        </td>
-        <td>
-          <p>Click to open the <a data-xref="{title}" href="Intercompany_Transaction_Details.htm">Intercompany Transaction Details</a> window to view details of the original sales order in the source company from which this sales order was based on.</p>
-          <p>This is only applicable if you are using intercompany transfers. This button is only enabled when the <span class="software">Intercompany transfers in use</span> check box is selected on the <span class="software">General</span> tab of the <span class="software">Company &gt; Options &gt; Company Level Options</span> window.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><img src="../assets/Images/assign.png" /><span class="software">Rerrange Form Elements</span></p>
-        </td>
-        <td>
-          <p>Click to enabling &quot;drag and drop&quot; where you can rearrange the fields. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><img height="20" src="../assets/Images/Layouts.png" width="20" /> </p>
-        </td>
-        <td>
-          <p>Click to display different views that you can select for this form.</p>
-          <p>You can also select the following:</p>
-          <ol class="RoundSquare">
-            <li>
-              <p>Select <span class="software">Manage Views</span> to open the <a data-xref="{title}" href="Manage_View.htm">Manage Views</a> window where you delete a view or set a default view. </p>
-            </li>
-            <li>
-              <p>Select <span class="software">View Access Control</span> to open the <a data-xref="{title}" href="View_Access_Control.htm">View Access Control</a> window where you can specify which users have access to the views that you have created. View permissions can be assigned at a user-level or group-level. </p>
-            </li>
-          </ol>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3>Fields (Sales Order Details)</h3>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
-    <colgroup>
-      <col />
-      <col />
-      <col />
-    </colgroup>
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Field</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-        <td>
-          <p>Required</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Order Date</span></p>
-        </td>
-        <td>
-          <p>Enter the date of the order. This defaults to today but may be amended.</p>
-        </td>
-        <td>
-          <p>Yes</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software">Customer</span></p>
-        </td>
-        <td>
-          <p>Specify the customer account code that this order is for. If you selected a production estimate, this field will automatically populate when the estimate is selected. This can then be changed as needed. </p>
-        </td>
-        <td>
-          <p>Yes</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Required Date</span></p>
-        </td>
-        <td>
-          <p>Specify the date that the customer requires the order. </p>
-        </td>
-        <td>
-          <p>Yes</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software">Have Ready Date</span></p>
-        </td>
-        <td>
-          <p>Specify the date by which the order needs to be available for shipment in order to meet the delivery date. The default calculation is the <span class="software">Required Date</span> less the prior days. </p>
-        </td>
-        <td>
-          <p>Yes</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Estimate Code</span></p>
-        </td>
-        <td>
-          <p>If a production estimate exists, specify the production estimate number. The sales order details and lines will be created from the estimate. </p>
-          <p class="Tip-Note-Text"><span class="software">Note</span>: If you use the EFI Radius - EFI iQuote integration, this estimate code will likely refer to an estimate created in EFI iQuote. This is only possible when an iQuote integration has been set up, and made active in the <span class="software">Integration Options</span> window.</p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Version</span></p>
-        </td>
-        <td>
-          <p>Select which version of the estimate is to be used to create the sales order. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Job Code</span></p>
-        </td>
-        <td>
-          <p>The job linked to this sales order. This field is populated when the job is generated automatically with the sales order or when a job is created at a later point and linked to the sales order.</p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Document Language</span></p>
-        </td>
-        <td>
-          <p>Select the language to use for external documents associated with this order. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Sales Order</span></p>
-        </td>
-        <td>
-          <p>The unique number to identify this sales order. This number is automatically generated when the sales order is saved. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Your Contact</span></p>
-        </td>
-        <td>
-          <p>Specify the contact at the customer. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Order Status</span></p>
-        </td>
-        <td>
-          <p>The current status of the order. This defaults to <span class="software">Authorized</span> but can be set to <span class="software">Held</span>, or <span class="software">Credit held</span>. <span class="software">Complete</span> would not be appropriate for a new order entry.</p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Job Status Code</span></p>
-        </td>
-        <td>
-          <p>The status of the production job. The field will normally be automatically populated based on the linked job. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">CSR</span></p>
-        </td>
-        <td>
-          <p>The customer service representative code. This will default to the CSR code maintained on the Customer Representative table. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Customer Order Date</span></p>
-        </td>
-        <td>
-          <p>Enter the date that the customer placed the order. This will default to today&#39;s date but can be changed as needed.  </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Entered by</span></p>
-        </td>
-        <td>
-          <p>The name of the Radius user who entered the sales order. This will default to the user that is currently logged in. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Sub-Client Name</span></p>
-        </td>
-        <td>
-          <p>Enter the name of the broker&#39;s client. This will appear on the shipping documentation.</p>
-          <p>A broker order is an order received from a third-party on behalf of the final customer. The broker purchases the finished product from you (and is your customer) but requests that you ship the products to his customer pretending to be the broker. The shipping documentation therefore does not show your company’s name and address but uses the broker’s address instead.</p>
-          <p class="Tip-Note-Text"><span class="software">Note</span>: This field is only active when the <span class="software">Broker Order</span> check box is selected. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <table class="StdTable" style="border-collapse:collapse; border:undefined" width="100%">
-    <tbody>
-    </tbody>
-  </table>
-  <h3>Check Boxes (Sales Order Details)</h3>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
-    <colgroup>
-      <col />
-      <col />
-      <col />
-    </colgroup>
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Check Box</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-        <td>
-          <p>Required</p>
-        </td>
-      </tr>
-      <tr>
-        <td><span class="software">Broker Order</span></td>
-        <td>
-          <p>Select this check box if the order has been received from a broker. This opens up the <span class="software">Sub-Client Name</span> field to enter their client&#39;s name.</p>
-          <p>A broker order is an order received from a third-party on behalf of the final customer. The broker purchases the finished product from you (and is your customer) but requests that you ship the products to his customer pretending to be the broker. The shipping documentation therefore does not show your company’s name and address but uses the broker’s address instead when this check box is selected. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Create Job</span></p>
-        </td>
-        <td>
-          <p>Select to create a job when the sales order is created. If the check box is not selected, the requirement will have to be processed manually.</p>
-          <p class="Tip-Note-Text"><span class="software">Note</span>: You can only create a job where this is a valid production estimate. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td><span class="software">Auto Invoice</span></td>
-        <td>
-          <p>Select to automatically create invoices when a shipment is completed. This will automatically default to selected if the <span class="software">Auto invoice sales orders</span> check box is selected on the <span class="software">General Options</span> tab of the <span class="software">Plant &gt; Options &gt; Plant Level Options</span> window. </p>
-          <p>When a billing requirement is automatically created, it will default this selection to the billing requirement and the billing requirement will not be set as <span class="software">On Hold</span>. </p>
-          <p class="Tip-Note-Text"><span class="software">Note</span>: For the automatic invoicing to run, you need to set up a Windows Scheduled task.</p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="horizontal-rule-align-left">
+  <h2><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#">Sales Order Details</a></h2>
+  <div class="droptext" data-targetname="drop-down">
+    <p>The <span class="software">Sales Order Details</span> section contains the main details of the sales order record, holding the customer account, order reference, the billing address, shipping address and other details.  </p>
+    <h3>Buttons (Sales Order Details)</h3>
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
+      <colgroup>
+        <col />
+        <col />
+      </colgroup>
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Button</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td><img height="17" src="../assets/Images/CommandsMod/Sales_Order_Analysis.png" width="20" /> <span class="software">Sales Order Analysis</span></td>
+          <td>
+            <p>Click to open the <a data-xref="{title}" href="Sales_Order_Analysis.htm">Sales Order Analysis</a> window to maintain sales order analysis codes.  These codes are used for transaction analysis.</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td><span class="software"><span class="software"><img src="../assets/Images/CommandsMod/UserDefinedElements.png" /> </span>User Defined Elements</span></td>
+          <td>
+            <p>Click to open the <a data-xref="{title}" href="User_Defined_Elements.htm">User Defined Elements</a> where you can view user defined elements (custom fields) associated with the sales order. User Defined Elements are additional fields which you can define and add into the EFI Radius database. The purpose of the fields is to allow you to record additional information which can be viewed or added to customized reports. See <span class="software">Company &gt; Jobs and Costing &gt; User Defined Elements</span>.</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software"><img src="../assets/Images/CommandsMod/View_Quantities_by_Plant.png" /> View Quantities by Plant</span></p>
+          </td>
+          <td>
+            <p>Click to open the <a data-xref="{title}" href="Quantities_By_Plant.htm">Quantities By Plant</a> window to view which plants the order has been allocated to.</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software"><img src="../assets/Images/CommandsMod/Interface_Order_Details.png" /> Interface Order Details</span></p>
+          </td>
+          <td>
+            <p>Click to open the <a data-xref="{title}" href="Interface_Order_Details.htm">Interface Order Details</a> window where you can maintain interface details when sales orders are created from a third-party system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software"><img src="../assets/Images/CommandsMod/Sales_Order_Notes.png" /> Sales Order Notes</span></p>
+          </td>
+          <td>
+            <p>Click to open the <a data-xref="{title}" href="Sales_Order_Notes.htm">Sales Order Notes</a> window where you can enter any additional notes on the sales order. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software"><img src="../assets/Images/CommandsMod/Files_Attachment.png" /> Files Attachment</span></p>
+          </td>
+          <td>
+            <p>Click to open the <a data-xref="{title}" href="File_and_Link_Attachments.htm">File and Link Attachments</a> where you can attach or link files to a sales order. This provides a way of including supplementary information. </p>
+            <p class="Tip-Note-Text"><span class="software">Note</span>:  By default, Radius allows.pdf, .xls, .xlsx, .doc, .docx, .png, .jpeg and .img file formats to be uploaded. The maximum number of files that can be uploaded is also limited to five, with a maximum file size of 10MB for each file. However, you can change these settings in the Admin Settings page or circumvent them by alternatively adding a weblink to the files. See <a href="../Tutorials/Configuring_File_Attachment_Settings.htm">Configuring File Attachment Settings</a> for more details.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software"><img src="../assets/Images/CommandsMod/Intercompany_Transaction_Details.png" />Intercompany Transaction Details</span></p>
+          </td>
+          <td>
+            <p>Click to open the <a data-xref="{title}" href="Intercompany_Transaction_Details.htm">Intercompany Transaction Details</a> window to view details of the original sales order in the source company from which this sales order was based on.</p>
+            <p>This is only applicable if you are using intercompany transfers. This button is only enabled when the <span class="software">Intercompany transfers in use</span> check box is selected on the <span class="software">General</span> tab of the <span class="software">Company &gt; Options &gt; Company Level Options</span> window.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><img src="../assets/Images/assign.png" /><span class="software">Rerrange Form Elements</span></p>
+          </td>
+          <td>
+            <p>Click to enabling &quot;drag and drop&quot; where you can rearrange the fields. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><img height="20" src="../assets/Images/Layouts.png" width="20" /> </p>
+          </td>
+          <td>
+            <p>Click to display different views that you can select for this form.</p>
+            <p>You can also select the following:</p>
+            <ol class="RoundSquare">
+              <li>
+                <p>Select <span class="software">Manage Views</span> to open the <a data-xref="{title}" href="Manage_View.htm">Manage Views</a> window where you delete a view or set a default view. </p>
+              </li>
+              <li>
+                <p>Select <span class="software">View Access Control</span> to open the <a data-xref="{title}" href="View_Access_Control.htm">View Access Control</a> window where you can specify which users have access to the views that you have created. View permissions can be assigned at a user-level or group-level. </p>
+              </li>
+            </ol>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Fields (Sales Order Details)</h3>
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+      <colgroup>
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Field</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+          <td>
+            <p>Required</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Order Date</span></p>
+          </td>
+          <td>
+            <p>Enter the date of the order. This defaults to today but may be amended.</p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Customer</span></p>
+          </td>
+          <td>
+            <p>Specify the customer account code that this order is for. If you selected a production estimate, this field will automatically populate when the estimate is selected. This can then be changed as needed. </p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Required Date</span></p>
+          </td>
+          <td>
+            <p>Specify the date that the customer requires the order. </p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Have Ready Date</span></p>
+          </td>
+          <td>
+            <p>Specify the date by which the order needs to be available for shipment in order to meet the delivery date. The default calculation is the <span class="software">Required Date</span> less the prior days. </p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Estimate Code</span></p>
+          </td>
+          <td>
+            <p>If a production estimate exists, specify the production estimate number. The sales order details and lines will be created from the estimate. </p>
+            <p class="Tip-Note-Text"><span class="software">Note</span>: If you use the EFI Radius - EFI iQuote integration, this estimate code will likely refer to an estimate created in EFI iQuote. This is only possible when an iQuote integration has been set up, and made active in the <span class="software">Integration Options</span> window.</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Version</span></p>
+          </td>
+          <td>
+            <p>Select which version of the estimate is to be used to create the sales order. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Job Code</span></p>
+          </td>
+          <td>
+            <p>The job linked to this sales order. This field is populated when the job is generated automatically with the sales order or when a job is created at a later point and linked to the sales order.</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Document Language</span></p>
+          </td>
+          <td>
+            <p>Select the language to use for external documents associated with this order. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Sales Order</span></p>
+          </td>
+          <td>
+            <p>The unique number to identify this sales order. This number is automatically generated when the sales order is saved. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Your Contact</span></p>
+          </td>
+          <td>
+            <p>Specify the contact at the customer. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Order Status</span></p>
+          </td>
+          <td>
+            <p>The current status of the order. This defaults to <span class="software">Authorized</span> but can be set to <span class="software">Held</span>, or <span class="software">Credit held</span>. <span class="software">Complete</span> would not be appropriate for a new order entry.</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Job Status Code</span></p>
+          </td>
+          <td>
+            <p>The status of the production job. The field will normally be automatically populated based on the linked job. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">CSR</span></p>
+          </td>
+          <td>
+            <p>The customer service representative code. This will default to the CSR code maintained on the Customer Representative table. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Customer Order Date</span></p>
+          </td>
+          <td>
+            <p>Enter the date that the customer placed the order. This will default to today&#39;s date but can be changed as needed.  </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Entered by</span></p>
+          </td>
+          <td>
+            <p>The name of the Radius user who entered the sales order. This will default to the user that is currently logged in. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Sub-Client Name</span></p>
+          </td>
+          <td>
+            <p>Enter the name of the broker&#39;s client. This will appear on the shipping documentation.</p>
+            <p>A broker order is an order received from a third-party on behalf of the final customer. The broker purchases the finished product from you (and is your customer) but requests that you ship the products to his customer pretending to be the broker. The shipping documentation therefore does not show your company’s name and address but uses the broker’s address instead.</p>
+            <p class="Tip-Note-Text"><span class="software">Note</span>: This field is only active when the <span class="software">Broker Order</span> check box is selected. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="StdTable" style="border-collapse:collapse; border:undefined" width="100%">
+      <tbody>
+      </tbody>
+    </table>
+    <h3>Check Boxes (Sales Order Details)</h3>
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+      <colgroup>
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Check Box</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+          <td>
+            <p>Required</p>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="software">Broker Order</span></td>
+          <td>
+            <p>Select this check box if the order has been received from a broker. This opens up the <span class="software">Sub-Client Name</span> field to enter their client&#39;s name.</p>
+            <p>A broker order is an order received from a third-party on behalf of the final customer. The broker purchases the finished product from you (and is your customer) but requests that you ship the products to his customer pretending to be the broker. The shipping documentation therefore does not show your company’s name and address but uses the broker’s address instead when this check box is selected. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Create Job</span></p>
+          </td>
+          <td>
+            <p>Select to create a job when the sales order is created. If the check box is not selected, the requirement will have to be processed manually.</p>
+            <p class="Tip-Note-Text"><span class="software">Note</span>: You can only create a job where this is a valid production estimate. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="software">Auto Invoice</span></td>
+          <td>
+            <p>Select to automatically create invoices when a shipment is completed. This will automatically default to selected if the <span class="software">Auto invoice sales orders</span> check box is selected on the <span class="software">General Options</span> tab of the <span class="software">Plant &gt; Options &gt; Plant Level Options</span> window. </p>
+            <p>When a billing requirement is automatically created, it will default this selection to the billing requirement and the billing requirement will not be set as <span class="software">On Hold</span>. </p>
+            <p class="Tip-Note-Text"><span class="software">Note</span>: For the automatic invoicing to run, you need to set up a Windows Scheduled task.</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
     <div class="horizontal-rule-align-left">
       <hr class="hrule-inner" />
     </div>
@@ -538,107 +537,103 @@
       </tbody>
     </table>
     <hr class="hrule-inner" />
+    <h3>Comments and Addresses (Sales Order Details)</h3>
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Field</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+          <td>
+            <p>Required</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Ship to Address</span></p>
+          </td>
+          <td>
+            <p>Select the delivery address. </p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Bill to Address</span></p>
+          </td>
+          <td>
+            <p>Select the invoice address.</p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Order Comments</span></p>
+          </td>
+          <td>
+            <p>Enter any additional notes relating to the order. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Order Notes</span></p>
+          </td>
+          <td>
+            <p>Enter any internal notes regarding the sales order. These notes will not appear on any printed materials for the customer. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Customer Notes</span></p>
+          </td>
+          <td>
+            <p>Enter any notes regarding the sales order. These notes will be visible to the customer on printed materials. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">EDI Remittance to Address</span></p>
+          </td>
+          <td>
+            <p>Optionally select a separate address to use for EDI (Electronic Data Interchange) transmissions where the customers can send their payments. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Acknowledgement to Address</span></p>
+          </td>
+          <td>
+            <p>Select an address to use for order acknowledgements. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="horizontal-rule-align-left"> </div>
   </div>
-  <h3>Comments and Addresses (Sales Order Details)</h3>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Field</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-        <td>
-          <p>Required</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Ship to Address</span></p>
-        </td>
-        <td>
-          <p>Select the delivery address. </p>
-        </td>
-        <td>
-          <p>Yes</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software">Bill to Address</span></p>
-        </td>
-        <td>
-          <p>Select the invoice address.</p>
-        </td>
-        <td>
-          <p>Yes</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Order Comments</span></p>
-        </td>
-        <td>
-          <p>Enter any additional notes relating to the order. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Order Notes</span></p>
-        </td>
-        <td>
-          <p>Enter any internal notes regarding the sales order. These notes will not appear on any printed materials for the customer. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software">Customer Notes</span></p>
-        </td>
-        <td>
-          <p>Enter any notes regarding the sales order. These notes will be visible to the customer on printed materials. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">EDI Remittance to Address</span></p>
-        </td>
-        <td>
-          <p>Optionally select a separate address to use for EDI (Electronic Data Interchange) transmissions where the customers can send their payments. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Acknowledgement to Address</span></p>
-        </td>
-        <td>
-          <p>Select an address to use for order acknowledgements. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="horizontal-rule-align-left">
-    <hr class="hrule" />
-  </div>
-  <h2>
-    <h2-modern>Order Details</h2-modern>
-  </h2>
-  <div class="droptext" data-targetname="drop-down14">
+  <h2><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Order Details</a></h2>
+  <div class="droptext" data-targetname="drop-down1">
     <p>The <span class="software">Order Details</span> section contains the lines for the items on the sales order. If the sales order is linked to an estimate, the lines will be automatically created from the estimate details.</p>
     <h3>Standard Grid Buttons (Order Details)</h3>
     <div data-conref="../assets/snippets/Standard_Grid_Buttons.hts"> </div>
@@ -1201,7 +1196,7 @@
         </tr>
       </tbody>
     </table>
-    <div class="droptext" data-targetname="drop-down18">
+    <div class="droptext" data-targetname="drop-down2">
       <div class="horizontal-rule-align-left">
         <hr class="hrule-inner" />
       </div>
@@ -1430,438 +1425,19 @@
     </table>
     <h5>Inventory Item Balances Chart/Table</h5>
     <p>The <span class="software">Inventory Item Balances</span> chart/table displays the item balances available for the items linked to this sales order. </p>
-    <div class="horizontal-rule-align-left">
-      <hr class="hrule" />
-    </div>
   </div>
+  <hr class="hrule" />
   <h2>
     <h2-modern>Shipping</h2-modern>
   </h2>
   <p>Use this section to generate and view shipping instructions. You can also do this on the <span class="software">Shipping Requests</span> window. Shipping requests are a record of what the customer would like shipping on what date and to which location. Shipping requests tend to change as a result of delays in production and alterations by the customer. The shipping request is a key record in EFI Radius because it is used to monitor whether inventory will be produced in time, it forecasts likely sales turnover for a period and it allows the planning of shipments to customers.</p>
   <p>Radius uses a header - lines relationship for its shipping requests, meaning that you can combine multiple sales orders onto a single shipping request and shipping note. This is useful in the situation where the customer calls-off different finished product items from several orders that are all to be shipped on the same day. Each request is for one address on one date.</p>
   <p>Additionally, you can attach shipping lines to a header that were generated from different sales orders and plants. This is due to Radius using a header - lines relationship for shipping requests. The header contains details of a shipment, such as the customer and the address, while the lines contain everything you want to send with that shipment.  </p>
-  <h3>Shipping Request Headers</h3>
-  <h4>Standard Grid Buttons (Shipping Request Header)</h4>
-  <div data-conref="../assets/snippets/Standard_Grid_Buttons.hts"> </div>
-  <h4>Grid Buttons (Shipping Request Header)</h4>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Button</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><img src="../assets/Images/CommandsMod/Print.png" /> <span class="software">Print Shipping Release Form</span></p>
-        </td>
-        <td>
-          <p>Click to print the Shipping Request Release Form. </p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td><span class="software"> </span>
-          <p><span class="software"><img height="14" src="../assets/Images/CommandsMod/Add.png" style="cursor: nesw-resize;" width="15" /> Shipping</span></p>
-          <span class="software"> </span>
-        </td>
-        <td>
-          <p>Click to add a new order line and open the add/edit mode. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><img src="../assets/Images/More.png" /> <span class="software">More Options</span></p>
-        </td>
-        <td>
-          <p>Click to select from a list of menu options: </p>
-          <ol class="RoundSquare">
-            <li>
-              <p><img src="../assets/Images/CommandsMod/Add2.png" /> <span class="software">Add Lines</span>: Select to add a new shipping request. </p>
-            </li>
-            <li>
-              <p><span class="software"><img height="16" src="../assets/Images/CommandsMod/Edit.png" width="20" />Edit Shipping Request Header</span>: Select to edit the shipping request header details. </p>
-            </li>
-            <li>
-              <p><span class="software"><span class="software"><img src="../assets/Images/CommandsMod/Duplicate_sml.png" /> </span>Duplicate Shipping Request Headers</span>: Select to make a copy of the shipping request header information.</p>
-            </li>
-            <li>
-              <p><span class="software">Delete Shipping Request Headers</span>: Select to delete this sales order. </p>
-            </li>
-            <li>
-              <p><span class="software">Reset Total Order Quantity</span>: </p>
-            </li>
-          </ol>
-          <p>The following options are only applicable if you are running the modern Radius through classic Radius. Select an option to open that corresponding record in Radius. </p>
-          <ol class="RoundSquare">
-            <li>
-              <p><span class="software">Sales Order Inquiry</span></p>
-            </li>
-            <li>
-              <p><span class="software">Shipping Request Inquiry</span></p>
-            </li>
-          </ol>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3>New Shipping Request / Existing Shipping Request</h3>
-  <h4>Buttons (Shipping Requests - Add/Edit Mode)</h4>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Button</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software"><img src="../assets/Images/CommandsMod/Go_to_website.png" /> Go to Carrier Website</span></p>
-        </td>
-        <td>
-          <p>Click to be directed to the carrier’s external delivery tracking webpage. The order tracking number you entered in the <span class="software">PRO Number</span> field will be combined with the <span class="software">Carrier URL </span>to direct create the address.  </p>
-          <p class="Tip-Note-Text"><span class="software">Note</span>:  To use this feature, you must first set up the <span class="software">Carrier URL</span> and <span class="software">URL Tracking Tag</span> in the <span class="software">Carrier/Freight Agents</span> window.</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software"><img height="16" src="../assets/Images/CommandsMod/Shipment_Tracking.png" width="16" /> Shipment Tracking Details</span></p>
-        </td>
-        <td>
-          <p>Click to display the <a data-xref="{title}" href="Shipment_Tracking_Details.htm">Shipment Tracking Details</a> window where you can view all tracking numbers associated with a shipment and their individual freight value. </p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software"><span class="software"><img src="../assets/Images/CommandsMod/UserDefinedElements.png" /> </span>User Defined Elements</span></p>
-        </td>
-        <td>
-          <p> Click to open the <a data-xref="{title}" href="User_Defined_Elements.htm">User Defined Elements</a> where you can view user defined elements (custom fields) associated with the shipping request. User Defined Elements are additional fields which you can define and add into the EFI Radius database. The purpose of the fields is to allow you to record additional information which can be viewed or added to customized reports. See <span class="software">Company &gt; Jobs and Costing &gt; User Defined Elements</span>.</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h4>Columns / Fields (Shipping Request)</h4>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Field / Column</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-        <td>
-          <p>Required</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Customer</span></p>
-        </td>
-        <td>
-          <p> The name of the customer that the goods are being shipped to. This defaults from the main sales order details. </p>
-        </td>
-        <td>
-          <p>Yes</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software">Ship From Plant</span></p>
-        </td>
-        <td>
-          <p> This defaults to the plant on the sales order. If needed, select another plant from the drop-down list. </p>
-        </td>
-        <td>
-          <p>Yes</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Ship Date &amp; Time</span></p>
-        </td>
-        <td>
-          <p>Specify the date and optionally the time that the inventory should be available for shipment so that it arrives at the customer’s premises by the <span class="software">Arrival Date</span>. This will default from the <span class="software">Have Ready Date</span> from the main sales order details.. </p>
-        </td>
-        <td>
-          <p> Yes</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Arrival Date &amp; Time</span></p>
-        </td>
-        <td>
-          <p>Specify the date and optionally the time that the customer requires the shipment to arrive at their premises. This will default from the <span class="software">Required Date</span> from the main sales order details..</p>
-        </td>
-        <td>
-          <p>Yes</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Delivery Terms</span></p>
-        </td>
-        <td>
-          <p>This will default from the customer address details but may be altered if required.</p>
-        </td>
-        <td>
-          <p> Yes</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Transport Mode</span></p>
-        </td>
-        <td>
-          <p>Select the transport mode, which describes the method of delivery and its corresponding European Union Intrastat code. Transport modes are set up in the <span class="software">System &gt; General Set-up &gt; Transport Modes</span> window. </p>
-        </td>
-        <td>Yes</td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software">PRO Number</span></p>
-        </td>
-        <td>
-          <p>The Pro Number or Progressive Number is a unique reference number used by freight carriers as a tracking reference.</p>
-        </td>
-        <td>
-          <p> </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Status</span></p>
-        </td>
-        <td>
-          <p>Select either <span class="software">Firm</span> or <span class="software">Tentative</span> from the field. A <span class="software">Tentative</span> shipping request is your guess as to what the customer requires and when the customer requires the shipment. The actual requirements need to be ‘firmed up’ with the customer at some point and the status changed from <span class="software">Tentative</span> to <span class="software">Firm</span>. It is not possible to ship against a <span class="software">Tentative</span> shipping request</p>
-        </td>
-        <td>
-          <p> </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Language</span></p>
-        </td>
-        <td>
-          <p>This is the language in which the shipping documents are to be generated. This will default from the sales order language but can be changed if required.</p>
-        </td>
-        <td>
-          <p> </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Created from Ship Request</span></p>
-        </td>
-        <td>
-          <p>    <br />
-            This field is automatically completed by EFI Radius. It is populated when the shipping request has been created by EFI Radius from the <span class="software">Pick and Ship</span> window as a consequence of insufficient products were being shipped against the original shipping request.</p>
-        </td>
-        <td>
-          <p> </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">End Use Code</span></p>
-        </td>
-        <td>
-          <p>Specify the type of end product, such as food or pharmaceuticals.</p>
-          <p>This is used for determining the taxability in the OneSource integration when the item type or group type code cannot be used. </p>
-        </td>
-        <td>
-          <p> </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Lead Days</span></p>
-        </td>
-        <td>
-          <p>Specify the number of days it takes for the shipment to reach the customer. This may be preset against the customer address on the <span class="software">Lead Time</span> tab on the <span class="software">Plants</span> window.</p>
-        </td>
-        <td>
-          <p> </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Carrier Code</span></p>
-        </td>
-        <td>
-          <p>Optionally, specify the carrier that will be used for this shipment. This will be automatically populated when the shipping address is selected and a carrier code is available for the selected address. </p>
-        </td>
-        <td>
-          <p> </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Carrier Reference</span></p>
-        </td>
-        <td>
-          <p>Optionally, enter a reference that the carrier may have given you for the shipment. If the carrier code and delivery terms are not blank then additional validation will be performed when you save based on whether the delivery terms requires a carrier reference or not. If required to be entered and the carrier reference field is empty, an error will be displayed. If carrier reference is required to be empty and has a value, an error will be displayed.</p>
-        </td>
-        <td>
-          <p> </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">XLink Export Status</span></p>
-        </td>
-        <td>
-          <p>Select if you want the shipping request to be sent (or resent) to a 3rd party external system. This determines whether or not to create an XLink record for a shipping request. If you select to trigger the creation of an XLink record, the program updates the status when the XLink record is created to indicate the XLink record was successfully created.</p>
-          <ul class="Disc">
-            <li>
-              <p><span class="software">Not Exported</span> - No XLink record has been created and no XLink record is set to be created for this shipping request.</p>
-            </li>
-            <li>
-              <p><span class="software">Awaiting Export</span> - Select to export the shipping request data and create an XLink record. To create an XLink record using this option, first select<span class="software"> Awaiting Export</span> from the drop-down list, generate the request and then click Accept.  When the XLink record is created, the status changes to Exported and will appear on the Shipping tab of the Sales Order window.</p>
-            </li>
-          </ul>
-          <p class="Tip-Note-Text"><span class="software">Note</span>:  This option is only available if you have set the <span class="software">Shipping request </span>option to <span class="software">Export </span>or <span class="software">Both </span>on the <span class="software">XLink Options</span> tab of the XLink <span class="software">Options </span>window.</p>
-        </td>
-        <td>
-          <p> </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Project ID</span></p>
-        </td>
-        <td>
-          <p>This field is only applicable if you have the custom PrintStream integration. </p>
-        </td>
-        <td>
-          <p> </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Copy Lines</span></p>
-        </td>
-        <td>
-          <p>Use this to copy the contents of a shipping request. First, click <span class="software"><span class="software"><img src="../assets/Images/CommandsMod/Duplicate_sml.png" /> </span>Duplicate Shipping Request Headers</span> from the buttons when the shipping request line is listed in the grid then select what aspects of the shipping request that you want to copy in the new shipping request:</p>
-          <ol class="RoundSquare">
-            <li>
-              <p><span class="software">As Is</span> - Select this to copy all of the information in the <span class="software">Shipping Request Headers</span> section and the <span class="software">Shipping Request Lines </span>section of the shipping request. This copies all of the details about the items that need to be shipped.</p>
-            </li>
-            <li>
-              <p><span class="software">Short Shipped</span> - Select this to copy all of the information in the <span class="software">Shipping Request Headers</span> section and only the lines that have outstanding quantity still to ship.</p>
-            </li>
-            <li>
-              <p><span class="software">Header Only</span> - Select this to copy all of information in the <span class="software">Shipping Request Headers</span> section only. No information about what to ship in the <span class="software">Shipping Request Lines </span>section is copied.  </p>
-            </li>
-          </ol>
-        </td>
-        <td>
-          <p> </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Priority</span></p>
-        </td>
-        <td>
-          <p>Optionally, enter a priority number to help the warehouse decide the sequence in which shipping requests should be shipped. This field is not used by EFI Radius but can be printed on customized reports.</p>
-        </td>
-        <td>
-          <p> </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="horizontal-rule-align-left">
-    <hr class="hrule-inner" />
-  </div>
-  <h4>Comments and Addresses (Shipping - Sales Order Header)</h4>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Field</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-        <td>
-          <p>Required</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Ship to Address</span></p>
-        </td>
-        <td>
-          <p>Select the delivery address. </p>
-        </td>
-        <td>
-          <p>Yes</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software">Bill to Address</span></p>
-        </td>
-        <td>
-          <p>Select the invoice address.</p>
-        </td>
-        <td>
-          <p>Yes</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Broker Address</span></p>
-        </td>
-        <td>
-          <p>A broker order is an order received from a third-party on behalf of the final customer. The broker purchases the finished product from you (and is your customer) but requests that you ship the products to his customer pretending to be the broker. If applicable, specify the address of the broker. </p>
-        </td>
-        <td>No</td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Order Comments</span></p>
-        </td>
-        <td>
-          <p>Enter any additional notes relating to the order. </p>
-          <p>Click the <span class="software">Add from template</span> link to display the <span class="software">Ship Request Order Comments</span> window to add a comment from a template. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><b>BOL Comments</b></p>
-        </td>
-        <td>
-          <p>Enter any additional comments for the Bill of Lading document. For example, you can add delivery comments to the Bill of Lading document rather than to individual shipping requests it contains.</p>
-          <p>Click the <span class="software">Add from template</span> link to display the <span class="software">Ship Request BOL Comments</span> window to add a comment from a template. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="horizontal-rule-align-left">
-    <hr class="hrule-inner" />
-  </div>
-  <h3>Shipping Request Lines</h3>
-  <h4>Standard Grid Buttons (Shipping Request Header)</h4>
-  <div class="horizontal-rule-align-left">
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down15" href="#">Shipping Request Headers</a></p>
+  <div class="droptext" data-targetname="drop-down15">
+    <h4>Standard Grid Buttons (Shipping Request Header)</h4>
     <div data-conref="../assets/snippets/Standard_Grid_Buttons.hts"> </div>
-    <h4>Grid Buttons (Shipping Request Lines)</h4>
+    <h4>Grid Buttons (Shipping Request Header)</h4>
     <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
       <tbody>
         <tr class="t1st">
@@ -1873,12 +1449,20 @@
           </td>
         </tr>
         <tr>
+          <td>
+            <p><img src="../assets/Images/CommandsMod/Print.png" /> <span class="software">Print Shipping Release Form</span></p>
+          </td>
+          <td>
+            <p>Click to print the Shipping Request Release Form. </p>
+          </td>
+        </tr>
+        <tr class="t1Row">
           <td><span class="software"> </span>
-            <p><span class="software"><img height="14" src="../assets/Images/CommandsMod/Add.png" style="cursor: nesw-resize;" width="15" /> Shipping Line</span></p>
+            <p><span class="software"><img height="14" src="../assets/Images/CommandsMod/Add.png" style="cursor: nesw-resize;" width="15" /> Shipping</span></p>
             <span class="software"> </span>
           </td>
           <td>
-            <p>Click to display the <a href="Add_Ship_Request_from_Order_Lines.htm">Add Ship Request from Order Lines</a> window to add a shipping order line and open the add/edit mode. </p>
+            <p>Click to add a new order line and open the add/edit mode. </p>
           </td>
         </tr>
         <tr>
@@ -1889,43 +1473,25 @@
             <p>Click to select from a list of menu options: </p>
             <ol class="RoundSquare">
               <li>
-                <p><img src="../assets/Images/CommandsMod/Add2.png" /> <span class="software">Add Shipping Request Line</span>: Select to add a new shipping request line. </p>
+                <p><img src="../assets/Images/CommandsMod/Add2.png" /> <span class="software">Add Lines</span>: Select to add a new shipping request. </p>
               </li>
               <li>
-                <p><span class="software"><img height="16" src="../assets/Images/CommandsMod/Edit.png" width="20" />Edit Shipping Request Line</span>: Select to edit the shipping request line details. </p>
+                <p><span class="software"><img height="16" src="../assets/Images/CommandsMod/Edit.png" width="20" />Edit Shipping Request Header</span>: Select to edit the shipping request header details. </p>
               </li>
               <li>
-                <p><span class="software"><span class="software"><img src="../assets/Images/CommandsMod/Duplicate_sml.png" /> </span>Clone Request Headers</span>: Select to make a copy of the shipping request line.</p>
+                <p><span class="software"><span class="software"><img src="../assets/Images/CommandsMod/Duplicate_sml.png" /> </span>Duplicate Shipping Request Headers</span>: Select to make a copy of the shipping request header information.</p>
               </li>
               <li>
-                <p><span class="software">Delete Shipping Request Line</span>: Select to delete this sales order shipping request line. </p>
+                <p><span class="software">Delete Shipping Request Headers</span>: Select to delete this sales order. </p>
+              </li>
+              <li>
+                <p><span class="software">Reset Total Order Quantity</span>: </p>
               </li>
             </ol>
             <p>The following options are only applicable if you are running the modern Radius through classic Radius. Select an option to open that corresponding record in Radius. </p>
             <ol class="RoundSquare">
               <li>
-                <p><span class="software">Items</span></p>
-              </li>
-              <li>
-                <p><span class="software">Supply / Demand</span></p>
-              </li>
-              <li>
-                <p><span class="software">Inventory Status</span></p>
-              </li>
-              <li>
-                <p><span class="software">Print Shipping Documents</span></p>
-              </li>
-              <li>
                 <p><span class="software">Sales Order Inquiry</span></p>
-              </li>
-              <li>
-                <p><span class="software">Inventory History Inquiry</span></p>
-              </li>
-              <li>
-                <p><span class="software">Accounts Receivable Customer Inquiry</span></p>
-              </li>
-              <li>
-                <p><span class="software">Purchase Order Inquiry</span></p>
               </li>
               <li>
                 <p><span class="software">Shipping Request Inquiry</span></p>
@@ -1935,178 +1501,363 @@
         </tr>
       </tbody>
     </table>
-    <hr class="hrule" />
   </div>
-  <h2>
-    <h2-modern>Version Comments</h2-modern>
-  </h2>
-  <p>Use this section to make comments on different versions of the sales order. This section will only be active if the Order Acknowledgement report has been printed and the sales order header or lines have been subsequently amended. You can then add version comments to each amendment of the order acknowledgement.</p>
-  <h3>Buttons / Options (Version Comments)</h3>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Button / Options</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><img src="../assets/Images/CommandsMod/Expand_Collapse.png" /><span class="software"> Expand All</span></p>
-        </td>
-        <td>
-          <p>Click to expand the version details below and display any comments.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><img src="../assets/Images/CommandsMod/Expand_Collapse2.png" /><span class="software">Collapse All</span></p>
-        </td>
-        <td>
-          <p>Click to collapse the version details below and display any comments.  </p>
-        </td>
-      </tr>
-      <tr>
-        <td><span class="software">Sort by</span></td>
-        <td>
-          <p>Select one of the following options from the drop-down: </p>
-          <ol class="RoundSquare">
-            <li>
-              <p><span class="software">Sort by Date Time - Descending</span></p>
-            </li>
-            <li>
-              <p><span class="software">Sort by Date Time - Ascending</span></p>
-            </li>
-            <li>
-              <p><span class="software">Sort by User - Descending</span></p>
-            </li>
-            <li>
-              <p><span class="software">Sort by User - Ascending</span></p>
-            </li>
-          </ol>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>Search box (<span class="software">Search version comments here</span>)</p>
-        </td>
-        <td>
-          <p>Enter text in this box and click <img src="../assets/Images/CommandsMod/Search.png" /> to search the version comments. </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3>Grid Buttons (Version Comments)</h3>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Button</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><img src="../assets/Images/CommandsMod/Expand_Collapse.png" /><span class="software"> </span></p>
-        </td>
-        <td>
-          <p>Click to expand the selected version details. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><img src="../assets/Images/CommandsMod/Expand_Collapse2.png" /></p>
-        </td>
-        <td>
-          <p>Click to collapse the selected version details. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><img src="../assets/Images/CommandsMod/Edit.png" /> <span class="software">Edit All </span></p>
-        </td>
-        <td>
-          <p>Click to add or edit version comments. </p>
-        </td>
-      </tr>
-      <tr>
-        <td><img src="../assets/Images/SaveAsView.png" /> <span class="software">Save</span></td>
-        <td>
-          <p>Click to save your version comments. This button is only visible when you are editing a comment. </p>
-        </td>
-      </tr>
-      <tr>
-        <td><img src="../assets/Images/CommandsMod/Cancel.png" /> <span class="software">Cancel</span></td>
-        <td>
-          <p>Click to cancel editing your version comments. This button is only visible when you are editing a comment. </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3>Fields (Version Comments)</h3>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Field</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Version Date Time</span></p>
-        </td>
-        <td>
-          <p>The date and time the new version was created. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">User</span></p>
-        </td>
-        <td>
-          <p>The user code of the user who made the change to the sales order. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Internal Comment</span></p>
-        </td>
-        <td>
-          <p>Enter any comment to explain the reason for the changes to the sales order.  The internal comments field will not print on any documentation sent to the customer. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">External Comment</span></p>
-        </td>
-        <td>
-          <p>Enter any comment to explain the reason for the changes to the sales order. The external comments field will print on the Order Acknowledgement. </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="horizontal-rule-align-left">
-    <hr class="hrule" />
-  </div>
-  <h2>
-    <h2-modern>Extra</h2-modern>
-  </h2>
-  <p>Use this section to maintain any extra charges associated with the order or to enter a requirement for a credit. This allows extras to be maintained for the sales order without having to open the <span class="software">Billing Requirements</span> window.</p>
-  <p>An extra charge is an additional cost, not included in the selling price of the finished product, which is to be recharged to the customer. The extra charge may be for pre-press costs, die cutter costs or freight cost, etc. An extra charge must be linked to a sales order.</p>
-  <p>If extra charges have been defined in the production estimate used to create the sales order then extra charges will be automatically created and appear in the <span class="software">Extras</span> tab. (See <span class="software">Estimating &gt; Estimate Entry/Amend &gt; Pricing &gt; Additional Charges</span>). Any other extra charges can be added manually on this window or on the <span class="software">Job Planning &gt; Billing &gt; Billing Requirements</span> window.</p>
-  <div class="droptext" data-targetname="drop-down19">
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#">New Shipping Request / Existing Shipping Request</a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <h4>Buttons (Shipping Requests - Add/Edit Mode)</h4>
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Button</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software"><img src="../assets/Images/CommandsMod/Go_to_website.png" /> Go to Carrier Website</span></p>
+          </td>
+          <td>
+            <p>Click to be directed to the carrier’s external delivery tracking webpage. The order tracking number you entered in the <span class="software">PRO Number</span> field will be combined with the <span class="software">Carrier URL </span>to direct create the address.  </p>
+            <p class="Tip-Note-Text"><span class="software">Note</span>:  To use this feature, you must first set up the <span class="software">Carrier URL</span> and <span class="software">URL Tracking Tag</span> in the <span class="software">Carrier/Freight Agents</span> window.</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software"><img height="16" src="../assets/Images/CommandsMod/Shipment_Tracking.png" width="16" /> Shipment Tracking Details</span></p>
+          </td>
+          <td>
+            <p>Click to display the <a data-xref="{title}" href="Shipment_Tracking_Details.htm">Shipment Tracking Details</a> window where you can view all tracking numbers associated with a shipment and their individual freight value. </p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software"><span class="software"><img src="../assets/Images/CommandsMod/UserDefinedElements.png" /> </span>User Defined Elements</span></p>
+          </td>
+          <td>
+            <p> Click to open the <a data-xref="{title}" href="User_Defined_Elements.htm">User Defined Elements</a> where you can view user defined elements (custom fields) associated with the shipping request. User Defined Elements are additional fields which you can define and add into the EFI Radius database. The purpose of the fields is to allow you to record additional information which can be viewed or added to customized reports. See <span class="software">Company &gt; Jobs and Costing &gt; User Defined Elements</span>.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h4>Columns / Fields (Shipping Request)</h4>
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Field / Column</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+          <td>
+            <p>Required</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Customer</span></p>
+          </td>
+          <td>
+            <p> The name of the customer that the goods are being shipped to. This defaults from the main sales order details. </p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Ship From Plant</span></p>
+          </td>
+          <td>
+            <p> This defaults to the plant on the sales order. If needed, select another plant from the drop-down list. </p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Ship Date &amp; Time</span></p>
+          </td>
+          <td>
+            <p>Specify the date and optionally the time that the inventory should be available for shipment so that it arrives at the customer’s premises by the <span class="software">Arrival Date</span>. This will default from the <span class="software">Have Ready Date</span> from the main sales order details.. </p>
+          </td>
+          <td>
+            <p> Yes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Arrival Date &amp; Time</span></p>
+          </td>
+          <td>
+            <p>Specify the date and optionally the time that the customer requires the shipment to arrive at their premises. This will default from the <span class="software">Required Date</span> from the main sales order details..</p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Delivery Terms</span></p>
+          </td>
+          <td>
+            <p>This will default from the customer address details but may be altered if required.</p>
+          </td>
+          <td>
+            <p> Yes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Transport Mode</span></p>
+          </td>
+          <td>
+            <p>Select the transport mode, which describes the method of delivery and its corresponding European Union Intrastat code. Transport modes are set up in the <span class="software">System &gt; General Set-up &gt; Transport Modes</span> window. </p>
+          </td>
+          <td>Yes</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">PRO Number</span></p>
+          </td>
+          <td>
+            <p>The Pro Number or Progressive Number is a unique reference number used by freight carriers as a tracking reference.</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Status</span></p>
+          </td>
+          <td>
+            <p>Select either <span class="software">Firm</span> or <span class="software">Tentative</span> from the field. A <span class="software">Tentative</span> shipping request is your guess as to what the customer requires and when the customer requires the shipment. The actual requirements need to be ‘firmed up’ with the customer at some point and the status changed from <span class="software">Tentative</span> to <span class="software">Firm</span>. It is not possible to ship against a <span class="software">Tentative</span> shipping request</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Language</span></p>
+          </td>
+          <td>
+            <p>This is the language in which the shipping documents are to be generated. This will default from the sales order language but can be changed if required.</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Created from Ship Request</span></p>
+          </td>
+          <td>
+            <p>    <br />
+              This field is automatically completed by EFI Radius. It is populated when the shipping request has been created by EFI Radius from the <span class="software">Pick and Ship</span> window as a consequence of insufficient products were being shipped against the original shipping request.</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">End Use Code</span></p>
+          </td>
+          <td>
+            <p>Specify the type of end product, such as food or pharmaceuticals.</p>
+            <p>This is used for determining the taxability in the OneSource integration when the item type or group type code cannot be used. </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Lead Days</span></p>
+          </td>
+          <td>
+            <p>Specify the number of days it takes for the shipment to reach the customer. This may be preset against the customer address on the <span class="software">Lead Time</span> tab on the <span class="software">Plants</span> window.</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Carrier Code</span></p>
+          </td>
+          <td>
+            <p>Optionally, specify the carrier that will be used for this shipment. This will be automatically populated when the shipping address is selected and a carrier code is available for the selected address. </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Carrier Reference</span></p>
+          </td>
+          <td>
+            <p>Optionally, enter a reference that the carrier may have given you for the shipment. If the carrier code and delivery terms are not blank then additional validation will be performed when you save based on whether the delivery terms requires a carrier reference or not. If required to be entered and the carrier reference field is empty, an error will be displayed. If carrier reference is required to be empty and has a value, an error will be displayed.</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">XLink Export Status</span></p>
+          </td>
+          <td>
+            <p>Select if you want the shipping request to be sent (or resent) to a 3rd party external system. This determines whether or not to create an XLink record for a shipping request. If you select to trigger the creation of an XLink record, the program updates the status when the XLink record is created to indicate the XLink record was successfully created.</p>
+            <ul class="Disc">
+              <li>
+                <p><span class="software">Not Exported</span> - No XLink record has been created and no XLink record is set to be created for this shipping request.</p>
+              </li>
+              <li>
+                <p><span class="software">Awaiting Export</span> - Select to export the shipping request data and create an XLink record. To create an XLink record using this option, first select<span class="software"> Awaiting Export</span> from the drop-down list, generate the request and then click Accept.  When the XLink record is created, the status changes to Exported and will appear on the Shipping tab of the Sales Order window.</p>
+              </li>
+            </ul>
+            <p class="Tip-Note-Text"><span class="software">Note</span>:  This option is only available if you have set the <span class="software">Shipping request </span>option to <span class="software">Export </span>or <span class="software">Both </span>on the <span class="software">XLink Options</span> tab of the XLink <span class="software">Options </span>window.</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Project ID</span></p>
+          </td>
+          <td>
+            <p>This field is only applicable if you have the custom PrintStream integration. </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Copy Lines</span></p>
+          </td>
+          <td>
+            <p>Use this to copy the contents of a shipping request. First, click <span class="software"><span class="software"><img src="../assets/Images/CommandsMod/Duplicate_sml.png" /> </span>Duplicate Shipping Request Headers</span> from the buttons when the shipping request line is listed in the grid then select what aspects of the shipping request that you want to copy in the new shipping request:</p>
+            <ol class="RoundSquare">
+              <li>
+                <p><span class="software">As Is</span> - Select this to copy all of the information in the <span class="software">Shipping Request Headers</span> section and the <span class="software">Shipping Request Lines </span>section of the shipping request. This copies all of the details about the items that need to be shipped.</p>
+              </li>
+              <li>
+                <p><span class="software">Short Shipped</span> - Select this to copy all of the information in the <span class="software">Shipping Request Headers</span> section and only the lines that have outstanding quantity still to ship.</p>
+              </li>
+              <li>
+                <p><span class="software">Header Only</span> - Select this to copy all of information in the <span class="software">Shipping Request Headers</span> section only. No information about what to ship in the <span class="software">Shipping Request Lines </span>section is copied.  </p>
+              </li>
+            </ol>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Priority</span></p>
+          </td>
+          <td>
+            <p>Optionally, enter a priority number to help the warehouse decide the sequence in which shipping requests should be shipped. This field is not used by EFI Radius but can be printed on customized reports.</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
     <div class="horizontal-rule-align-left">
-      <h3>Standard Grid Buttons</h3>
+      <hr class="hrule-inner" />
+    </div>
+    <h4>Comments and Addresses (Shipping - Sales Order Header)</h4>
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Field</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+          <td>
+            <p>Required</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Ship to Address</span></p>
+          </td>
+          <td>
+            <p>Select the delivery address. </p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Bill to Address</span></p>
+          </td>
+          <td>
+            <p>Select the invoice address.</p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Broker Address</span></p>
+          </td>
+          <td>
+            <p>A broker order is an order received from a third-party on behalf of the final customer. The broker purchases the finished product from you (and is your customer) but requests that you ship the products to his customer pretending to be the broker. If applicable, specify the address of the broker. </p>
+          </td>
+          <td>No</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Order Comments</span></p>
+          </td>
+          <td>
+            <p>Enter any additional notes relating to the order. </p>
+            <p>Click the <span class="software">Add from template</span> link to display the <span class="software">Ship Request Order Comments</span> window to add a comment from a template. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>BOL Comments</b></p>
+          </td>
+          <td>
+            <p>Enter any additional comments for the Bill of Lading document. For example, you can add delivery comments to the Bill of Lading document rather than to individual shipping requests it contains.</p>
+            <p>Click the <span class="software">Add from template</span> link to display the <span class="software">Ship Request BOL Comments</span> window to add a comment from a template. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="horizontal-rule-align-left"> </div>
+  </div>
+  <h4><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Shipping Request Lines</a></h4>
+  <div class="droptext" data-targetname="drop-down4">
+    <h4>Standard Grid Buttons (Shipping Request Header)</h4>
+    <div class="horizontal-rule-align-left">
       <div data-conref="../assets/snippets/Standard_Grid_Buttons.hts"> </div>
-      <p> </p>
-      <h3>Grid Buttons (Extras)</h3>
+      <h4>Grid Buttons (Shipping Request Lines)</h4>
       <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
         <tbody>
           <tr class="t1st">
@@ -2119,8 +1870,253 @@
           </tr>
           <tr>
             <td><span class="software"> </span>
-              <p><span class="software"><img height="14" src="../assets/Images/CommandsMod/Add.png" style="cursor: nesw-resize;" width="15" /> Add Extra</span></p>
+              <p><span class="software"><img height="14" src="../assets/Images/CommandsMod/Add.png" style="cursor: nesw-resize;" width="15" /> Shipping Line</span></p>
               <span class="software"> </span>
+            </td>
+            <td>
+              <p>Click to display the <a href="Add_Ship_Request_from_Order_Lines.htm">Add Ship Request from Order Lines</a> window to add a shipping order line and open the add/edit mode. </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><img src="../assets/Images/More.png" /> <span class="software">More Options</span></p>
+            </td>
+            <td>
+              <p>Click to select from a list of menu options: </p>
+              <ol class="RoundSquare">
+                <li>
+                  <p><img src="../assets/Images/CommandsMod/Add2.png" /> <span class="software">Add Shipping Request Line</span>: Select to add a new shipping request line. </p>
+                </li>
+                <li>
+                  <p><span class="software"><img height="16" src="../assets/Images/CommandsMod/Edit.png" width="20" />Edit Shipping Request Line</span>: Select to edit the shipping request line details. </p>
+                </li>
+                <li>
+                  <p><span class="software"><span class="software"><img src="../assets/Images/CommandsMod/Duplicate_sml.png" /> </span>Clone Request Headers</span>: Select to make a copy of the shipping request line.</p>
+                </li>
+                <li>
+                  <p><span class="software">Delete Shipping Request Line</span>: Select to delete this sales order shipping request line. </p>
+                </li>
+              </ol>
+              <p>The following options are only applicable if you are running the modern Radius through classic Radius. Select an option to open that corresponding record in Radius. </p>
+              <ol class="RoundSquare">
+                <li>
+                  <p><span class="software">Items</span></p>
+                </li>
+                <li>
+                  <p><span class="software">Supply / Demand</span></p>
+                </li>
+                <li>
+                  <p><span class="software">Inventory Status</span></p>
+                </li>
+                <li>
+                  <p><span class="software">Print Shipping Documents</span></p>
+                </li>
+                <li>
+                  <p><span class="software">Sales Order Inquiry</span></p>
+                </li>
+                <li>
+                  <p><span class="software">Inventory History Inquiry</span></p>
+                </li>
+                <li>
+                  <p><span class="software">Accounts Receivable Customer Inquiry</span></p>
+                </li>
+                <li>
+                  <p><span class="software">Purchase Order Inquiry</span></p>
+                </li>
+                <li>
+                  <p><span class="software">Shipping Request Inquiry</span></p>
+                </li>
+              </ol>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr class="hrule" />
+    </div>
+    <h2>
+      <h2-modern>Version Comments</h2-modern>
+    </h2>
+    <p>Use this section to make comments on different versions of the sales order. This section will only be active if the Order Acknowledgement report has been printed and the sales order header or lines have been subsequently amended. You can then add version comments to each amendment of the order acknowledgement.</p>
+    <h3>Buttons / Options (Version Comments)</h3>
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Button / Options</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><img src="../assets/Images/CommandsMod/Expand_Collapse.png" /><span class="software"> Expand All</span></p>
+          </td>
+          <td>
+            <p>Click to expand the version details below and display any comments.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><img src="../assets/Images/CommandsMod/Expand_Collapse2.png" /><span class="software">Collapse All</span></p>
+          </td>
+          <td>
+            <p>Click to collapse the version details below and display any comments.  </p>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="software">Sort by</span></td>
+          <td>
+            <p>Select one of the following options from the drop-down: </p>
+            <ol class="RoundSquare">
+              <li>
+                <p><span class="software">Sort by Date Time - Descending</span></p>
+              </li>
+              <li>
+                <p><span class="software">Sort by Date Time - Ascending</span></p>
+              </li>
+              <li>
+                <p><span class="software">Sort by User - Descending</span></p>
+              </li>
+              <li>
+                <p><span class="software">Sort by User - Ascending</span></p>
+              </li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Search box (<span class="software">Search version comments here</span>)</p>
+          </td>
+          <td>
+            <p>Enter text in this box and click <img src="../assets/Images/CommandsMod/Search.png" /> to search the version comments. </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Grid Buttons (Version Comments)</h3>
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Button</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><img src="../assets/Images/CommandsMod/Expand_Collapse.png" /><span class="software"> </span></p>
+          </td>
+          <td>
+            <p>Click to expand the selected version details. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><img src="../assets/Images/CommandsMod/Expand_Collapse2.png" /></p>
+          </td>
+          <td>
+            <p>Click to collapse the selected version details. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><img src="../assets/Images/CommandsMod/Edit.png" /> <span class="software">Edit All </span></p>
+          </td>
+          <td>
+            <p>Click to add or edit version comments. </p>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="../assets/Images/SaveAsView.png" /> <span class="software">Save</span></td>
+          <td>
+            <p>Click to save your version comments. This button is only visible when you are editing a comment. </p>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="../assets/Images/CommandsMod/Cancel.png" /> <span class="software">Cancel</span></td>
+          <td>
+            <p>Click to cancel editing your version comments. This button is only visible when you are editing a comment. </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Fields (Version Comments)</h3>
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Field</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Version Date Time</span></p>
+          </td>
+          <td>
+            <p>The date and time the new version was created. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">User</span></p>
+          </td>
+          <td>
+            <p>The user code of the user who made the change to the sales order. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Internal Comment</span></p>
+          </td>
+          <td>
+            <p>Enter any comment to explain the reason for the changes to the sales order.  The internal comments field will not print on any documentation sent to the customer. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">External Comment</span></p>
+          </td>
+          <td>
+            <p>Enter any comment to explain the reason for the changes to the sales order. The external comments field will print on the Order Acknowledgement. </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="horizontal-rule-align-left"> </div>
+  </div>
+  <hr class="hrule" />
+  <h2>
+    <h2-modern>Extra</h2-modern>
+  </h2>
+  <p>Use this section to maintain any extra charges associated with the order or to enter a requirement for a credit. This allows extras to be maintained for the sales order without having to open the <span class="software">Billing Requirements</span> window.</p>
+  <p>An extra charge is an additional cost, not included in the selling price of the finished product, which is to be recharged to the customer. The extra charge may be for pre-press costs, die cutter costs or freight cost, etc. An extra charge must be linked to a sales order.</p>
+  <p>If extra charges have been defined in the production estimate used to create the sales order then extra charges will be automatically created and appear in the <span class="software">Extras</span> tab. (See <span class="software">Estimating &gt; Estimate Entry/Amend &gt; Pricing &gt; Additional Charges</span>). Any other extra charges can be added manually on this window or on the <span class="software">Job Planning &gt; Billing &gt; Billing Requirements</span> window.</p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#">Standard Grid Buttons</a></p>
+  <div class="droptext" data-targetname="drop-down7">
+    <div data-conref="../assets/snippets/Standard_Grid_Buttons.hts"> </div>
+  </div>
+  <div class="horizontal-rule-align-left">
+    <h3><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#">Grid Buttons (Extras)</a></h3>
+    <div class="droptext" data-targetname="drop-down8">
+      <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+        <tbody>
+          <tr class="t1st">
+            <td>
+              <p>Button</p>
+            </td>
+            <td>
+              <p>Description</p>
+            </td>
+          </tr>
+          <tr>
+            <td><span class="software"> </span>
+              <p><span class="software"><img height="14" data-cke-saved-src="../assets/Images/CommandsMod/Add.png" src="../assets/Images/CommandsMod/Add.png" style="cursor: nesw-resize;" width="15" /> Add Extra</span></p> <span class="software"> </span>
             </td>
             <td>
               <p>Click to add a new extra and open the <span class="software">New Extra Charge</span> section.</p>
@@ -2128,7 +2124,7 @@
           </tr>
           <tr>
             <td>
-              <p><img src="../assets/Images/CommandsMod/Duplicate_sml.png" />  <span class="software">Duplicate</span></p>
+              <p><img data-cke-saved-src="../assets/Images/CommandsMod/Duplicate_sml.png" src="../assets/Images/CommandsMod/Duplicate_sml.png" />  <span class="software">Duplicate</span></p>
             </td>
             <td>
               <p>Click to make a copy of the extra charge and open the <span class="software">Clone Extra Charge</span> section.</p>
@@ -2136,7 +2132,7 @@
           </tr>
           <tr>
             <td>
-              <p><img src="../assets/Images/More.png" /> <span class="software">More Options</span></p>
+              <p><img data-cke-saved-src="../assets/Images/More.png" src="../assets/Images/More.png" /> <span class="software">More Options</span></p>
             </td>
             <td>
               <p>Click to select from a list of menu options:  </p>
@@ -2194,7 +2190,9 @@
           </tr>
         </tbody>
       </table>
-      <h3>New Extra Charge / Clone Extra Charge</h3>
+    </div>
+    <h3><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down9" href="#">New Extra Charge / Clone Extra Charge</a></h3>
+    <div class="droptext" data-targetname="drop-down9">
       <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
         <tbody>
           <tr class="t1st">
@@ -2485,9 +2483,10 @@
           </tr>
         </tbody>
       </table>
-      <hr class="hrule-inner" />
     </div>
-    <h3>Additional Fields (Extras)</h3>
+  </div>
+  <h3><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down10" href="#">Additional Fields (Extras)</a></h3>
+  <div class="droptext" data-targetname="drop-down10">
     <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
       <tbody>
         <tr class="t1st">
@@ -2595,423 +2594,429 @@
       </tbody>
     </table>
   </div>
-  <div class="horizontal-rule-align-left">
-    <hr class="hrule-inner" />
+  <h3><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down11" href="#">Comments and Addresses (Extras)</a></h3>
+  <div class="droptext" data-targetname="drop-down11">
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Field/Column</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+          <td>
+            <p>Required</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Comments</span></p>
+          </td>
+          <td>
+            <p> Optionally, enter  and an additional description of the charge that will appear on the invoice. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Ship to Address</span></p>
+          </td>
+          <td>
+            <p> Optionally, select an address to ship to. For example, the extra charge for freight is to be invoiced separately from the shipment.</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Bill to Address</span></p>
+          </td>
+          <td>
+            <p>This will default to the billing address specified on the <span class="software">Sales Order Details</span> section of the sales order record. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
   <div class="horizontal-rule-align-left"> </div>
-  <h3>Comments and Addresses (Extras)</h3>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Field/Column</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-        <td>
-          <p>Required</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Comments</span></p>
-        </td>
-        <td>
-          <p> Optionally, enter  and an additional description of the charge that will appear on the invoice. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Ship to Address</span></p>
-        </td>
-        <td>
-          <p> Optionally, select an address to ship to. For example, the extra charge for freight is to be invoiced separately from the shipment.</p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software">Bill to Address</span></p>
-        </td>
-        <td>
-          <p>This will default to the billing address specified on the <span class="software">Sales Order Details</span> section of the sales order record. </p>
-        </td>
-        <td>
-          <p>No</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
   <div class="horizontal-rule-align-left">
     <hr class="hrule" />
   </div>
   <h2>
     <h2-modern>Invoice Details</h2-modern>
   </h2>
-  <p>Use the <span class="software">Invoice Details</span> section to view invoice line details for a sales order. </p>
-  <h3>Invoice Line Details</h3>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
-    <colgroup>
-      <col />
-      <col />
-    </colgroup>
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Field/Column</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Line Status</span></p>
-        </td>
-        <td>
-          <p>The status of the invoice line. </p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Date Required</span></p>
-        </td>
-        <td>
-          <p>The date that the customer required the order. </p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software">Ordered</span></p>
-        </td>
-        <td>
-          <p>The quantity ordered. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Shipped</span></p>
-        </td>
-        <td>
-          <p>The quantity shipped.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Outstanding</span></p>
-        </td>
-        <td>
-          <p>The quantity left to ship. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Shortfall</span></p>
-        </td>
-        <td>
-          <p>The quantity that has been shortfalled. A shortfall indicates that the full ordered quantity will not be shipped. This may happen due to under production or cancellation of the order by the customer. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Production Grouping</span></p>
-        </td>
-        <td>
-          <p>The production grouping number assigned to a grouping of production requirements by pricing combination. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Customer&#39;s Item Reference</span></p>
-        </td>
-        <td>
-          <p>The customer’s reference for the item. </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3>Bill Line Details</h3>
-  <p>Displays bill line details for the invoice line selected. </p>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
-    <colgroup>
-      <col />
-      <col />
-    </colgroup>
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Field/Column</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Line Type</span></p>
-        </td>
-        <td>
-          <p> The type of billing requirement for this line: </p>
-          <ol class="RoundSquare">
-            <li>
-              <p><span class="software">Shipment</span> - Billing requirement for completed shipments.</p>
-            </li>
-            <li>
-              <p><span class="software">CIS</span> - Billing requirements for Charged in Stock, Customers Invoiced Stock, or Bill and Hold inventory. This is used to bill inventory which has exceeded the agreed retention period and is allowed to be billed to the customer.</p>
-            </li>
-            <li>
-              <p><span class="software">CIS Guarantor</span> - Billing requirements for Charged in Stock, Customers Invoiced Stock, or Bill and Hold inventory which will be billed to the Guarantor customer instead of the sales order customer if the customer defaults.</p>
-            </li>
-            <li>
-              <p><span class="software">Pre-Billed</span> - Billing requirements for invoices or credits for pre-billed invoices in advance of shipment.</p>
-            </li>
-            <li>
-              <p><span class="software">Extra</span> - Billing requirements for extra costs not included in the selling price of products.</p>
-            </li>
-            <li>
-              <p><span class="software">Sundry</span> - Billing requirements for miscellaneous sales where no sales order exists.</p>
-            </li>
-            <li>
-              <p><span class="software">Return</span> - Billing requirements for products returned by the customer.</p>
-            </li>
-            <li>
-              <p><span class="software">Shipment(Pre-Billed)</span> - Billing requirements created to reduce the value of shipments because they have previously been pre-billed.</p>
-            </li>
-          </ol>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Item Description</span></p>
-        </td>
-        <td>
-          <p>The description of the item being billed on this line. </p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software">Quantity</span></p>
-        </td>
-        <td>
-          <p>The quantity of the item being billed on this line. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Unit</span></p>
-        </td>
-        <td>
-          <p>The quantity unit. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Value</span></p>
-        </td>
-        <td>
-          <p>The invoice line value excluding tax. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Tax Rate</span></p>
-        </td>
-        <td>
-          <p>The tax code applicable to the invoice line</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Price</span></p>
-        </td>
-        <td>
-          <p>The price of the item. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Item</span></p>
-        </td>
-        <td>
-          <p>The item code for the item being billed on this line. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Size</span></p>
-        </td>
-        <td>
-          <p>The dimensions of the item being billed on this line. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Total Value</span></p>
-        </td>
-        <td>
-          <p>The invoice line value including tax. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Tax Value</span></p>
-        </td>
-        <td>
-          <p>The invoice line&#39;s tax value. The invoice line tax percentage is displayed in the adjacent field. </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Comments</span></p>
-        </td>
-        <td>
-          <p>Displays additional comments. </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3>Bill Header Details</h3>
-  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
-    <colgroup>
-      <col />
-      <col />
-    </colgroup>
-    <tbody>
-      <tr class="t1st">
-        <td>
-          <p>Field/Column</p>
-        </td>
-        <td>
-          <p>Description</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Number</span></p>
-        </td>
-        <td>
-          <p>The invoice or credit number in the system.</p>
-        </td>
-      </tr>
-      <tr class="t2Row">
-        <td>
-          <p><span class="software">Customer Code</span></p>
-        </td>
-        <td>
-          <p> The customer code for the customer this invoice or credit note is for.</p>
-        </td>
-      </tr>
-      <tr class="t1Row">
-        <td>
-          <p><span class="software">Total Value</span></p>
-        </td>
-        <td>
-          <p>The total post-tax monetary value of this invoice or credit note.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Reference Value</span></p>
-        </td>
-        <td>
-          <p>This reference number is automatically assigned to a bill by the system when a final bill is processed. This field will only be populated for final invoices or credits.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Bill Reference Code</span></p>
-        </td>
-        <td>
-          <p>The billing reference code attached to this invoice. A billing reference code enables all invoices and credit notes with the billing reference code attached to be billed together when using the billing process.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Date</span></p>
-        </td>
-        <td>
-          <p>The bill date that this invoice or credit note was billed.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Tax Value</span></p>
-        </td>
-        <td>
-          <p>The value of tax payable on this invoice or credit note.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Status</span></p>
-        </td>
-        <td>
-          <p> The authorization status of  the invoice.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Terms Code</span></p>
-        </td>
-        <td>
-          <p>The terms code for the payment terms for the invoice or credit. The payment terms are the credit terms that you want to use for the customer’s invoices and payments.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Number</span></p>
-        </td>
-        <td>
-          <p> The invoice or credit number in the system.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Invoice Address</span></p>
-        </td>
-        <td>
-          <p>The address that this customer will receive their bills.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Ship to Address</span></p>
-        </td>
-        <td>
-          <p> The address that this customer will receive shipments to.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Legacy Customer Number</span></p>
-        </td>
-        <td>
-          <p>The reference number, which is no longer used, of the customer in a third party system.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Original Bill Number</span></p>
-        </td>
-        <td>
-          <p>The number of the invoice which this invoice replaced.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><span class="software">Reason for Replacement</span></p>
-        </td>
-        <td>
-          <p>The reason code for the invoice being replaced.</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <p>Use the <span class="software">Invoice Details</span> section to view invoice line details for a sales order. <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down12" href="#">Invoice Line Details</a></p>
+  <div class="droptext" data-targetname="drop-down12">
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+      <colgroup>
+        <col />
+        <col />
+      </colgroup>
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Field/Column</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Line Status</span></p>
+          </td>
+          <td>
+            <p>The status of the invoice line. </p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Date Required</span></p>
+          </td>
+          <td>
+            <p>The date that the customer required the order. </p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Ordered</span></p>
+          </td>
+          <td>
+            <p>The quantity ordered. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Shipped</span></p>
+          </td>
+          <td>
+            <p>The quantity shipped.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Outstanding</span></p>
+          </td>
+          <td>
+            <p>The quantity left to ship. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Shortfall</span></p>
+          </td>
+          <td>
+            <p>The quantity that has been shortfalled. A shortfall indicates that the full ordered quantity will not be shipped. This may happen due to under production or cancellation of the order by the customer. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Production Grouping</span></p>
+          </td>
+          <td>
+            <p>The production grouping number assigned to a grouping of production requirements by pricing combination. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Customer&#39;s Item Reference</span></p>
+          </td>
+          <td>
+            <p>The customer’s reference for the item. </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h3><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down13" href="#">Bill Line Details</a></h3>
+  <div class="droptext" data-targetname="drop-down13">
+    <p>Displays bill line details for the invoice line selected. </p>
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+      <colgroup>
+        <col />
+        <col />
+      </colgroup>
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Field/Column</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Line Type</span></p>
+          </td>
+          <td>
+            <p> The type of billing requirement for this line: </p>
+            <ol class="RoundSquare">
+              <li>
+                <p><span class="software">Shipment</span> - Billing requirement for completed shipments.</p>
+              </li>
+              <li>
+                <p><span class="software">CIS</span> - Billing requirements for Charged in Stock, Customers Invoiced Stock, or Bill and Hold inventory. This is used to bill inventory which has exceeded the agreed retention period and is allowed to be billed to the customer.</p>
+              </li>
+              <li>
+                <p><span class="software">CIS Guarantor</span> - Billing requirements for Charged in Stock, Customers Invoiced Stock, or Bill and Hold inventory which will be billed to the Guarantor customer instead of the sales order customer if the customer defaults.</p>
+              </li>
+              <li>
+                <p><span class="software">Pre-Billed</span> - Billing requirements for invoices or credits for pre-billed invoices in advance of shipment.</p>
+              </li>
+              <li>
+                <p><span class="software">Extra</span> - Billing requirements for extra costs not included in the selling price of products.</p>
+              </li>
+              <li>
+                <p><span class="software">Sundry</span> - Billing requirements for miscellaneous sales where no sales order exists.</p>
+              </li>
+              <li>
+                <p><span class="software">Return</span> - Billing requirements for products returned by the customer.</p>
+              </li>
+              <li>
+                <p><span class="software">Shipment(Pre-Billed)</span> - Billing requirements created to reduce the value of shipments because they have previously been pre-billed.</p>
+              </li>
+            </ol>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Item Description</span></p>
+          </td>
+          <td>
+            <p>The description of the item being billed on this line. </p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Quantity</span></p>
+          </td>
+          <td>
+            <p>The quantity of the item being billed on this line. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Unit</span></p>
+          </td>
+          <td>
+            <p>The quantity unit. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Value</span></p>
+          </td>
+          <td>
+            <p>The invoice line value excluding tax. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Tax Rate</span></p>
+          </td>
+          <td>
+            <p>The tax code applicable to the invoice line</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Price</span></p>
+          </td>
+          <td>
+            <p>The price of the item. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Item</span></p>
+          </td>
+          <td>
+            <p>The item code for the item being billed on this line. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Size</span></p>
+          </td>
+          <td>
+            <p>The dimensions of the item being billed on this line. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Total Value</span></p>
+          </td>
+          <td>
+            <p>The invoice line value including tax. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Tax Value</span></p>
+          </td>
+          <td>
+            <p>The invoice line&#39;s tax value. The invoice line tax percentage is displayed in the adjacent field. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Comments</span></p>
+          </td>
+          <td>
+            <p>Displays additional comments. </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h3><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down14" href="#">Bill Header Details</a></h3>
+  <div class="droptext" data-targetname="drop-down14">
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+      <colgroup>
+        <col />
+        <col />
+      </colgroup>
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Field/Column</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Number</span></p>
+          </td>
+          <td>
+            <p>The invoice or credit number in the system.</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Customer Code</span></p>
+          </td>
+          <td>
+            <p> The customer code for the customer this invoice or credit note is for.</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Total Value</span></p>
+          </td>
+          <td>
+            <p>The total post-tax monetary value of this invoice or credit note.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Reference Value</span></p>
+          </td>
+          <td>
+            <p>This reference number is automatically assigned to a bill by the system when a final bill is processed. This field will only be populated for final invoices or credits.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Bill Reference Code</span></p>
+          </td>
+          <td>
+            <p>The billing reference code attached to this invoice. A billing reference code enables all invoices and credit notes with the billing reference code attached to be billed together when using the billing process.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Date</span></p>
+          </td>
+          <td>
+            <p>The bill date that this invoice or credit note was billed.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Tax Value</span></p>
+          </td>
+          <td>
+            <p>The value of tax payable on this invoice or credit note.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Status</span></p>
+          </td>
+          <td>
+            <p> The authorization status of  the invoice.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Terms Code</span></p>
+          </td>
+          <td>
+            <p>The terms code for the payment terms for the invoice or credit. The payment terms are the credit terms that you want to use for the customer’s invoices and payments.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Number</span></p>
+          </td>
+          <td>
+            <p> The invoice or credit number in the system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Invoice Address</span></p>
+          </td>
+          <td>
+            <p>The address that this customer will receive their bills.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Ship to Address</span></p>
+          </td>
+          <td>
+            <p> The address that this customer will receive shipments to.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Legacy Customer Number</span></p>
+          </td>
+          <td>
+            <p>The reference number, which is no longer used, of the customer in a third party system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Original Bill Number</span></p>
+          </td>
+          <td>
+            <p>The number of the invoice which this invoice replaced.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Reason for Replacement</span></p>
+          </td>
+          <td>
+            <p>The reason code for the invoice being replaced.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <p> </p>
 </body>
 </html>
