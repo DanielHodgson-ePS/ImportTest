@@ -205,15 +205,16 @@
   <div class="droptext" data-targetname="drop-down3">
     <p>Type your dropdown text here</p>
   </div>
+  <hr class="hrule" />
   <h2>
-    <h2-modern>Order Details</h2-modern>
+    <h2-modern>Order Lines Tab</h2-modern>
   </h2>
-  <p>The <span class="software">Order Details</span> section contains the lines for the items on the sales order. If the sales order is linked to an estimate, the lines will be automatically created from the estimate details.</p>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Standard Grid Buttons (Order Details)</a></p>
+  <p>The <span class="software">Order Lines </span>tab contains the lines for the items on the sales order. If the sales order is linked to an estimate, the lines will be automatically created from the estimate details.</p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Standard Grid Buttons (Order Lines)</a></p>
   <div class="droptext" data-targetname="drop-down4">
     <div data-conref="../assets/snippets/Standard_Grid_Buttons.hts"> </div>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#">Grid Buttons (Order Lines Grid)</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#">Grid Buttons (Order Lines Table)</a></p>
   <div class="droptext" data-targetname="drop-down5">
     <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
       <tbody>
@@ -299,15 +300,353 @@
       </tbody>
     </table>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#">Price Groups</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down12" href="#">Purchase Order Lines (Add/Edit) Section</a></p>
+  <div class="droptext" data-targetname="drop-down12">
+    <p>The <span class="software">Purchase Order Lines</span> section allows you to enter information for a purchase order line and is accessed by clicking the <span class="software">+ Order Line</span> button above the grid on the <span class="software">Order Lines</span> tab (to create a new line) or by double-clicking an order line in the grid (to edit an existing line).</p>
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Field/Column</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+          <td>
+            <p>Required</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Item Code</span></p>
+          </td>
+          <td>
+            <p>Specify the code of the item which you want to purchase.</p>
+            <p>If you want to create a new item for this order line, you can do so by using a template. To do create a new item from a  template, select the <span class="software">From Template</span> tab in the <span class="software">Item Code</span> lookup window.</p>
+            <p>Once the template is selected, you must enter an <span class="software">Item Code</span> and <span class="software">Item Desc</span> for the new item. The new item is then created when you click <span class="software">OK</span>.</p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Plant Code</span></p>
+          </td>
+          <td>
+            <p>    <br />
+              Specify the plant you are purchasing for. This defaults to the plant you are currently operating using in EFI Radius but it can be changed if you are purchasing for another plant.</p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="software">Size</span></td>
+          <td>
+            <p>This field is automatically populated by Radius, if there are multiple sizes to an item you are able to specify one instead.</p>
+            <p class="Tip-Note-Step-Text"><span class="software">Note</span>:  The convention used in EFI Radius for sheet sizes is Cross grain x Parallel grain. For example, if the first dimension is greater than the second you are ordering short grain material.</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td><span class="software">Quantity</span></td>
+          <td>
+            <p>Enter the required quantity for this purchase order line and the unit of measure.</p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td><span class="software">Price</span></td>
+          <td>
+            <p>Enter the agreed selling price per unit of measure (normally per thousand). The price and unit of measure will have been automatically set by EFI Radius if the production estimate used to create the sales order was priced. The unit of measure is displayed to the right of the <span class="software">Price</span> field.</p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="software">Order Value</span></td>
+          <td>
+            <p><span>The quantity/value required to be purchased.</span></p>
+          </td>
+          <td><span class="software"></span></td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Date Required</span></p>
+          </td>
+          <td>
+            <p>Specify the date by which the order is required. This date automatically populates with the Date Required field from the Header tab. This can be amended as needed.</p>
+            <p>For intercompany transfers, this date defaults to the required date from the sales order line.</p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Available Date</span></p>
+          </td>
+          <td>
+            <p>Specify the date when the products will be available to be shipped from the supplier.</p>
+          </td>
+          <td>
+            <p>Yes</p>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="software">Confirmed Date</span></td>
+          <td>
+            <p>Specify the date that the supplier has told you as the confirmed delivery date.</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Deliver To</b></p>
+          </td>
+          <td>
+            <p>Specify the address of the warehouse where you want the supplier to ship the products. The address will print on the purchase order.</p>
+            <p>This field will default to a value but can be changed if necessary. Radius first looks at the item for a warehouse, if nothing is defined then it will check the item group for a warehouse. If none of these are defined then it will use the plant default. All subsequent lines will default to the warehouse on the first line (even if this has been overridden).</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Price Group</b></p>
+          </td>
+          <td>
+            <p>Use this field to combine purchase order lines together for group pricing. For example, if the price per ton for a material changes when you purchase a greater tonnage it might be possible to get a better price by combining together the quantities of different sizes of the same material. EFI Radius will automatically create the first price group; therefore the initial value of the first purchase order line must be left at zero. For subsequent purchase order lines the price group number will be incremented but it can be changed.</p>
+            <p><span class="software">Example:</span></p>
+            <p><span class="software">Purchase Price Table for Material AAA</span></p>
+            <ul class="Bullets">
+              <li>Price per ton for less than 1 ton = 450.00</li>
+              <li>Price per ton for 1 ton and above = 350.00</li>
+            </ul>
+            <p><span class="software">Purchase Order Line 1 for material AAA 12” wide</span></p>
+            <ul class="Bullets">
+              <li>0.871 tons – Price Group 1 Price = 450.00</li>
+            </ul>
+            <p><span class="software">Purchase Order Line 2 for material AAA 10” wide</span></p>
+            <ul class="Bullets">
+              <li>0.234 tons – Price Group 2 Price = 450.00</li>
+            </ul>
+            <p>If the Price Group for Line 2 is changed to Price Group 1</p>
+            <p>1.105 tons – Price Group 1 Price = 350.00</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Suppliers Line Reference</b></p>
+          </td>
+          <td>
+            <p>Optionally, enter a line reference. This is sometimes required by some customers as a means of identifying the purchase order line in their computer system.</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Supplier Code</b></p>
+          </td>
+          <td>
+            <p>If you have specified a supplier in the <span class="software">Purchase Order Details</span> section, it is displayed here. If you have not, specify a preferred supplier from the item record, or choose from the full list of suppliers.</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Suppliers Item Reference</b></p>
+          </td>
+          <td>
+            <p>Enter the supplier&#39;s reference code for the product. This may default from the preferred supplier if one has been selected. If the Item field has been left blank then the details of the required product can be entered into the Suppliers Item Ref field and the Purchase Order Line Comments field.</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Status</span></p>
+          </td>
+          <td>
+            <p>Click ... to allow the status of the line to be changed. ... is enabled if the currently <span class="software">PO line Status</span> is <span class="software">Active </span>and  <span class="software">PO Line status</span> field in the <span class="software">Company Level Options</span> window set to <span class="software">Change Status</span>. </p>
+            <p>If a purchase order line is flagged as <span class="Emphasis">Cancelled </span>then it will not be possible to receive against it, reserve against it or to create an ASN against the PO line. Validation is applicable to ensure that this is not possible.</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Purchase Overs % in use </span>(check box)</p>
+          </td>
+          <td>
+            <p>Select if you wish to override the maximum level of overs that your supplier can send to you. For more information, see <a href="../Tutorials/About_Overs_Percentages.htm">About Overs Percentages</a>.</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Allowed Overs</b></p>
+          </td>
+          <td>
+            <p>Enter the maximum level of overs that your supplier can send to you here as a percentage of the total purchase requirement.</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Max Roll Weight</b></p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Roll Diameter</b></p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Customer</b></p>
+          </td>
+          <td>
+            <p> The customer code that the purchase order is foe. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Core Specifications</b></p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down13" href="#">Comments and Addresses Section</a></p>
+  <div class="droptext" data-targetname="drop-down13">
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;" width="100%">
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Field/Column</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+          <td>
+            <p>Required</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Purchase Order Comments</span></p>
+          </td>
+          <td>
+            <p>Enter any comments that are required to print on the purchase order.</p>
+            <p>To add standard predefined phrases, click <span class="software">Add From Template </span>to open the P<span class="software">urchase Order Comments</span> window, then click<span class="software"> Add From Template </span>to open the second <span class="software">Purchase Order Comments</span> window where your comment templates are displayed. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Supplier Address</span></p>
+          </td>
+          <td>
+            <p>Specify the address of the supplier. This defaults from the supplier record but may be changed if required.</p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Delivery Specification</span></p>
+          </td>
+          <td>
+            <p>Enter or select location specific delivery comments attached to this purchase order.</p>
+            <p>To add standard predefined phrases, click <span class="software">Add From Template </span>to open the P<span class="software">urchase Order Comments</span> window, then click<span class="software"> Add From Template </span>to open the second <span class="software">Purchase Order Comments</span> window where your comment templates are displayed. </p>
+          </td>
+          <td>
+            <p>No</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <hr class="hrule" />
+  <h2>Price Group Tab</h2>
+  <p>Use the <span class="software">Price Groups</span> tab to:</p>
+  <ul class="Bullets">
+    <li>Group several order lines for the same Item together so that the cumulative quantity is used for the purchase price.</li>
+    <li>Override the purchase price table or enter a price when there is no price schedule.</li>
+    <li>Record the suppliers confirmation of the order.</li>
+  </ul>
+  <p>When you first enter a purchase order line, it has a price group of zero. When you save the line, it creates a price group record. If you enter a second line for the same item you can link it to the same price group. The system will then use the cumulative order quantity for the item when determining the purchase price from the price schedule.</p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down10" href="#">Price Groups Section</a></p>
+  <div class="droptext" data-targetname="drop-down10">
+    <p>Type your dropdown text here</p>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#">Price Group Details Section</a></p>
   <div class="droptext" data-targetname="drop-down6">
     <p>Type your dropdown text here</p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#">Requirements and Reservations</a></p>
+  <hr class="hrule" />
+  <h2>Requirements and Reservations Tab</h2>
+  <p>The <span class="software">Requirements and Reservations</span> tab lists all unplanned purchase requirements for the item on the selected purchase order line and all the reservations that have been made against the selected Purchase Order Line. </p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#">Requirements Section</a></p>
   <div class="droptext" data-targetname="drop-down7">
     <p>Type your dropdown text here</p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#">Version Comments</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down9" href="#">Reservations Section</a></p>
+  <div class="droptext" data-targetname="drop-down9">
+    <p>Type your dropdown text here</p>
+  </div>
+  <hr class="hrule" />
+  <h2>Version Comments Tab</h2>
+  <p>The <span class="software">Version Comments</span> tab allows you to attach internal and external comments to each version of the purhase order. External comments print on the purchase prder, internal comments do not. The initial version number is 0; this detail, and the status within version, is displayed in the purchase order details. The version number increases when the purchase order is amended and saved, but only after the existing version has been printed.</p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#">Version Comments Section</a></p>
   <div class="droptext" data-targetname="drop-down8">
     <p>Type your dropdown text here</p>
   </div>
