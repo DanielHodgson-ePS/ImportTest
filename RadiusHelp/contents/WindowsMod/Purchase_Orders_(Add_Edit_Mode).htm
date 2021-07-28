@@ -67,11 +67,68 @@
         </tr>
         <tr>
           <td>
+            <p><span class="software">Total PO Value</span></p>
+          </td>
+          <td>
+            <p>    Displays the total purchase order value, given as the sum of the PO lines on the <span class="software">Order Lines</span> tab.<br /></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Status</span></p>
+          </td>
+          <td>
+            <p>Select one of the following statuses:</p>
+            <ul class="Bullets">
+              <li><span class="software">On Hold</span>: the purchase order cannot be sent to the supplier because it is incomplete or not authorized.</li>
+              <li><span class="software">Authorized</span>: The purchase order can be sent to the supplier.</li>
+              <li><span class="software">Confirmed</span>: The purchase prices have been confirmed and cannot be changed. EFI Radius will automatically change the purchase order status to <span class="software">Confirmed </span>when the first shipment from the supplier is received so that the inventory values cannot be changed.</li>
+              <li><span class="software">Complete</span>: The purchase order is complete.</li>
+              <li><span class="software">Cancelled</span>: The purchase order has been cancelled.</li>
+            </ul>
+            <p class="Tip-Note-Step-Text-Indent"><span class="software">Note</span>: If <span class="software">In use</span> is selected from the <span class="software">PO Approvals in use</span> field on the <span class="software">Purchasing and Outsource </span>tab of the <span class="software">Company &gt; Options &gt; Company Level Options </span>window, you will not be able to select a status. One of the following status options will be automatically selected depending on whether your PO has been sent for approval:</p>
+            <ul class="Bullets">
+              <li><span class="software">Not sent for approval</span>: The purchase order has been created but not sent to a third-party for approval.</li>
+              <li><span class="software">Pending approval</span>: The purchase order has been sent to a third-party for approval but not yet been approved.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Currency</span></p>
+          </td>
+          <td>
+            <p>Displays the currency that will be used for the purchase order prices. This will default from the selected supplier and cannot be changed.<br /></p>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="software">Supplier Reference</span></td>
+          <td>
+            <p>Enter any references that the supplier may have given you, such as a quotation reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Your Contact</span></p>
+          </td>
+          <td>
+            <p>Specify the contact at the supplier&#39;s address.<br /></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="Normal-Text"><span class="software">Our Contact</span></p>
+          </td>
+          <td>
+            <p class="Normal-Text">Specify the contact at your company. This defaults to your user name but it can be changed if necessary.<br /></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
             <p><span class="software">Language</span></p>
           </td>
           <td>
-            <p>    <br />
-              Select the language for printing the purchase order document and labels. This defaults to the language of the supplier.</p>
+            <p>Select the language for printing the purchase order document and labels. This defaults to the language of the supplier.</p>
           </td>
         </tr>
         <tr>
@@ -123,35 +180,57 @@
             <p>Specify country the purchase order was raised in.</p>
           </td>
         </tr>
+        <tr>
+          <td>
+            <p><span class="software">Last Date Change</span></p>
+          </td>
+          <td>
+            <p>Optionally, specify the date at which the supplier will not allow any amendments to the purchase order. A warning message will be displayed if the purchase order is amended after this date.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Available at Suppleir</span> (check box)</p>
+          </td>
+          <td>
+            <p>Select to indicate that call off purchase orders should be considered as immediately available inventory. It also determines whether or not the call off status is passed to PSA.</p>
+            <p>When selected, the entire purchase order for inventory is immediately available and the call off status is passed to PSA. If unselected, the status of the material requirements in PSA will not be changed.</p>
+            <p>Note: This field is only active when the Call off order option is selected.</p>
+            <p>See About the Call Off Status for Free Stock Purchase Requirements for more information.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Tax</span></p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Call off Order </span>(check box)</p>
+          </td>
+          <td>
+            <p>Select to order a large quantity of materials and then request to ship material in smaller quantities over a period of time. The process of requesting the inventory is referred to as being &#39;called-off&#39;.  <br /></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Available at Supplier </span>(check box)</p>
+          </td>
+          <td>
+            <p>Select to indicate that call off purchase orders should be considered as immediately available inventory. It also determines whether or not the call off status is passed to PSA.</p>
+            <p>When selected, the entire purchase order for inventory is immediately available and the call off status is passed to PSA. If unselected, the status of the material requirements in PSA will not be changed.</p>
+            <p class="Tip-Note-Step-Text"><span class="software">Note</span>: This field is only active when the Call off order option is selected.</p>
+            <p>See About the Call Off Status for Free Stock Purchase Requirements for more information.</p>
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>
   <h3><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Additional Fields (Purchase Order Details)</a></h3>
   <div class="droptext" data-targetname="drop-down1">
-    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
-      <tbody>
-        <tr class="t1st">
-          <td>
-            <p>Field</p>
-          </td>
-          <td>
-            <p>Description</p>
-          </td>
-        </tr>
-        <tr class="t2Row">
-          <td><span class="software">Supplier Reference</span></td>
-          <td>
-            <p>Enter any references that the supplier may have given you, such as a quotation reference.</p>
-          </td>
-        </tr>
-        <tr class="t1Row">
-          <td><span class="software">Last Date Change</span></td>
-          <td>
-            <p>Specify the date at which the supplier will not allow any amendments to the purchase order. A warning message will be displayed if the purchase order is amended after this date.</p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
   </div>
   <h3><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#">Comments and Addresses (Purchase Order Details)</a></h3>
   <div class="droptext" data-targetname="drop-down2">
@@ -203,7 +282,8 @@
   </div>
   <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#">Annotations (Purchase Order Details)</a></p>
   <div class="droptext" data-targetname="drop-down3">
-    <p>Type your dropdown text here</p>
+    <p>Use the <span class="software">Annotations </span>section to add any relevant comments to your purchase orders. You can format the text using the editor provided, with Recet Notes displayed to the right-hand side of the memory.</p>
+    <p><img class="center-horizontal" height="380" src="../assets/gifs/PO_Annotations.gif" width="95%" /></p>
   </div>
   <hr class="hrule" />
   <h2>
@@ -614,7 +694,6 @@
       </tbody>
     </table>
   </div>
-  <p> </p>
   <hr class="hrule" />
   <h2>Price Group Tab</h2>
   <p>Use the <span class="software">Price Groups</span> tab to:</p>
@@ -626,26 +705,150 @@
   <p>When you first enter a purchase order line, it has a price group of zero. When you save the line, it creates a price group record. If you enter a second line for the same item you can link it to the same price group. The system will then use the cumulative order quantity for the item when determining the purchase price from the price schedule.</p>
   <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down10" href="#">Price Groups Section</a></p>
   <div class="droptext" data-targetname="drop-down10">
-    <p>Type your dropdown text here</p>
+    <p>The <span class="software">Price Groups</span> section displays a list of your available price groups. Selct a price group from the list to display its information in the <span class="software">Price Group Details</span> section.</p>
   </div>
   <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#">Price Group Details Section</a></p>
   <div class="droptext" data-targetname="drop-down6">
-    <p>Type your dropdown text here</p>
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse;">
+      <tbody>
+        <tr class="t1st">
+          <td>
+            <p>Field</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Price Group</span></p>
+          </td>
+          <td>
+            <p>Displays the price group code. </p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Item</span></p>
+          </td>
+          <td>
+            <p>Displays the item code the price group is for. </p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><span class="software">Item Desc</span></p>
+          </td>
+          <td>
+            <p>Displays the description of the <span class="software">Item Code </span>the price group is for. </p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><span class="software">Price Date</span></p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Ordered Value</span></p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Quantity</span></p>
+          </td>
+          <td>
+            <p>The quantity that will be used for purchase order prices. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Quantity Unit</span></p>
+          </td>
+          <td>
+            <p>The unit of measure that will be used for <span class="software">Quantity</span>. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Currency Code</span></p>
+          </td>
+          <td>
+            <p>The currency that will be used for the purchase order prices, This will default from the selected supplier and cannot be changed</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Confirmation Date</span></p>
+          </td>
+          <td>
+            <p>This field will only be active when the Status field has been set to Confirmed. The date will default to today but it can be changed to the date the supplier confirmed the purchase price.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Confirmtation Ref</span></p>
+          </td>
+          <td>
+            <p>This field will only be active when the <span class="software">Status </span>field has been set to Confirmed. Type in any appropriate reference relating to the supplier&#39;s confirmation of the purchase price such as an email reference or quotation reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Base Price</span></p>
+          </td>
+          <td>
+            <p>The purchase order price converted into the base currency used by your company</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Status</span></p>
+          </td>
+          <td>
+            <p><span>Select either <span class="software">Confirmed </span>or <span class="software">Unconfirmed </span>depending on whether the supplier has confirmed the purchase price. EFI Radius will change the status to Confirmed when the first shipment from the supplier is received so that inventory values cannot be changed.</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Price</span></p>
+          </td>
+          <td>
+            <p><span>The purchase price and unit of measure.</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="software">Override</span></p>
+          </td>
+          <td>
+            <p class="Normal-Text"><span>Select to indicate that a special purchase price has been entered and that if the purchase order line is subsequently amended the purchase order line price should not be recalculated by EFI Radius from the purchase price tables.</span></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="Normal-Text"> </p>
   </div>
   <hr class="hrule" />
   <h2>Requirements and Reservations Tab</h2>
-  <p>The <span class="software">Requirements and Reservations</span> tab lists all unplanned purchase requirements for the item on the selected purchase order line and all the reservations that have been made against the selected Purchase Order Line. </p>
+  <p>The <span class="software">Requirements and Reservations</span> tab lists all unplanned purchase requirements for the item on the selected purchase order line and all the reservations that have been made against the selected purchase order Line. </p>
   <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#">Requirements Section</a></p>
   <div class="droptext" data-targetname="drop-down7">
-    <p>Type your dropdown text here</p>
+    <p><img src="../assets/images/image12.png" /></p>
   </div>
   <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down9" href="#">Reservations Section</a></p>
   <div class="droptext" data-targetname="drop-down9">
-    <p>Type your dropdown text here</p>
+    <p><img src="../assets/images/image13.png" /></p>
   </div>
   <hr class="hrule" />
   <h2>Version Comments Tab</h2>
-  <p>The <span class="software">Version Comments</span> tab allows you to attach internal and external comments to each version of the purhase order. External comments print on the purchase prder, internal comments do not. The initial version number is 0; this detail, and the status within version, is displayed in the purchase order details. The version number increases when the purchase order is amended and saved, but only after the existing version has been printed.</p>
+  <p>The <span class="software">Version Comments</span> tab allows you to attach internal and external comments to each version of the purhase order. External comments print on the purchase order, internal comments do not. The initial version number is 0; this detail, and the status within version, is displayed in the purchase order details. The version number increases when the purchase order is amended and saved, but only after the existing version has been printed.</p>
   <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#">Version Comments Section</a></p>
   <div class="droptext" data-targetname="drop-down8">
     <p>Type your dropdown text here</p>

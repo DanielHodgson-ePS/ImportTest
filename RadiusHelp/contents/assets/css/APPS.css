@@ -226,23 +226,11 @@ p.Tip-Note-Text {
   margin-left: 1rem;
 }
 p.Tip-Note-Step-Text-Indent2 {
-  border-left-style: Solid;
-  border-left-width: 4px;
-  border-right-style: Solid;
-  border-right-width: 4px;
-  border-top-style: Solid;
-  border-top-width: 4px;
-  border-bottom-style: Solid;
-  border-bottom-width: 4px;
-  border-left-color: #d5d5d5;
-  border-right-color: #d5d5d5;
-  border-top-color: #d5d5d5;
-  border-bottom-color: #d5d5d5;
-  background-color: #d5d5d5;
-  margin-bottom: 8pt;
-  x-next-class: ;
-  x-next-type: P;
-  margin-left: .9in;
+  font-family: Inter;
+  font-size: 1rem;
+  border-left: 4px solid #4F6793;
+  padding-left: 0.5rem;
+  margin-left: 5rem;
 }
 /*-------------------------------------List Styles---------------------------------------------*/
 li.P-BlueText {
