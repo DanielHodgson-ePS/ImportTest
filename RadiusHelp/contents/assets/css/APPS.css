@@ -1587,7 +1587,7 @@ ul.Bullets>li>ul>li>ul>li>ul>li:before {
 /* --------------show / hide tabs--------------------*/
 .tabcontent {
   color: white;
-  display: none;
+  display: block;
 }
 /*---Tab IDs used for openTab function in tabcontent.js, add tabs as needed - temporary solution---*/
 #Tab1 {
