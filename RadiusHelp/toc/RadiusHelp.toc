@@ -9,6 +9,7 @@
 <book navtitle="Tutorials" format="html" homepage-tile="assets/Images/HowTos.png" processing-role="normal">
   <page href="../contents/Tutorials/Configuring_File_Attachment_Settings.htm" format="html" homepage-tile="assets/Images/PreviewImages/ConfigFileAttach.jpg" processing-role="normal"></page>
   <page href="../contents/Tutorials/How_to_Create_a_Sales_Order.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToSalesOrder.jpg" processing-role="normal"></page>
+  <page href="../contents/Tutorials/How_to_Create_a_Purchase_Order.htm" format="html" processing-role="normal"></page>
   <page href="../contents/Tutorials/How_to_Create_a_Shipping_Request.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToShipReq.jpg" processing-role="normal"></page>
   <page href="../contents/Tutorials/How_to_Create_Views_and_Layouts.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToViews.jpg" processing-role="normal"></page>
   <page href="../contents/Tutorials/How_to_Use_the_Advanced_Search.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToAdvancedSearch.jpg" processing-role="normal"></page>

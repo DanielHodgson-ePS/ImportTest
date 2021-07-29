@@ -20,6 +20,9 @@
   <h2><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#">Create a Standard Purchase Order</a></h2>
   <div class="droptext" data-targetname="drop-down">
     <p>The following information details how to create a standard purchase order that does not hasve to fulfill any specific requirement. While purchase orders can be more complex (such as with the inclusion of price groups and version comments) the following information covers the creation of a basic purchase header order and adding order lines.</p>
+    <p>A purchase order is composed of header information and line information. The header contains details about the Purchase Order Number, Order Date and Suppleir Code, whereas the lines contain information about the items being purchased. </p>
+    <h3>Step 1: Create a Purchase Order Header</h3>
+    <p>The following information details how to create a purchase order header to which you add your order lines.</p>
     <ol class="BasicNumber">
       <li>In Radius, hover over <span class="software">Purchase Orders </span><img height="18" src="../assets/images/image.png" width="19" /> on the navigation pane and select<span class="software"> Purchase Order</span>. The <span class="software">Purchase Orders</span> tab of the <a href="../WindowsMod/Purchase_Orders.htm">Purchase Orders</a> page opens. </li>
       <li>Click <span class="software">+ Create Purchase Order</span>. The <a href="../WindowsMod/Purchase_Orders_(Add_Edit_Mode).htm">Purchase Orders (Add/Edit Mode)</a> page opens.</li>
@@ -36,8 +39,14 @@
       <li style=""><span class="software">Requirements and Reservations</span></li>
       <li style=""><span class="software">Verison Comments</span></li>
     </ul>
+    <hr class="hrule-inner" />
+    <h3><img class="center-horizontal" height="664" src="../assets/gifs/New_PO_Nav.gif" width="95%" /></h3>
+    <h3>Step 2: Add Purchase Order Lines</h3>
+    <p>After creating your purchase order header, you must then add lines for eahc item you wish to purchase.</p>
     <ol class="BasicNumber">
-      <li style="counter-reset: item1 5;" value="6">Select the <span style="font-weight:bold;">Order Lines </span>tab then do the following:
+      <li style="counter-reset: item1 0;">In Radius, hover over <span class="software">Purchase Orders </span><img height="18" src="../assets/images/image.png" width="19" /> on the navigation pane and select<span class="software"> Purchase Order</span>. The <span class="software">Purchase Orders</span> tab of the <a href="../WindowsMod/Purchase_Orders.htm">Purchase Orders</a> page opens. </li>
+      <li style="">Click the <span class="software">Purchase Order Number </span>in the table for the order you want to add lines to. The <a href="../WindowsMod/Purchase_Orders_(Add_Edit_Mode).htm">Purchase Orders (Add/Edit Mode)</a> page opens.</li>
+      <li style="" value="1">Select the <span style="font-weight:bold;">Order Lines </span>tab then do the following:
         <ol>
           <li style="">Click <span class="software">+ Order Line</span> to add a line to the purchase order. The <span class="software">Purchase Order Lines</span> (Add/Edit) section displays.</li>
           <li style="">Complete the fields in the <span class="software">Purchase Order Lines </span>(Add/Edit) section as required. </li>
@@ -47,8 +56,10 @@
       </li>
       <li style="">Click <span class="software">Save All</span> to save your order lines and complete the purchase order.</li>
     </ol>
+    <ul class="Bullets" style="margin-left: 40px;">
+    </ul>
   </div>
-  <h2><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Create a Purchase Order From Purchase Requirements</a></h2>
+  <h2><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Convert Purchase Requirements to a Purchase Order</a></h2>
   <div class="droptext" data-targetname="drop-down1">
     <p>Purchase orders can also be raised by converting one or more purchase requirements. This can be accomplished through either the <span class="software">My Workspace (PR)</span> tab or the <span class="software">Requirements </span>tab of the <span class="software">Purchase Orders </span>page. </p>
     <p> </p>
@@ -59,12 +70,65 @@
       <h2>Convert Requirements to Purchase Order</h2>
       <p>The <span class="software">My Workspace (PR)</span> tab acts as a hub to convinienty vire your requirements based on configurable filters. Your requiremnts can quickly be drag and dropped into the <span class="software">Add to PO Line</span> column in this window, where you can then choose to either create a new purchase order for them or to add them to an existing purchase order. </p>
       <p>The following instructions detail how to convert a range of purchase requirements to a new purchase order.</p>
+      <ol class="BasicNumber">
+        <li>In Radius, hover over <span class="software">Purchase Orders </span><img height="18" src="../assets/images/image.png" width="19" /> on the navigation pane and select<span class="software"> Workspace - Requirements</span>. The <span class="software">My Workspace (PR)</span> tab of the <a href="../WindowsMod/Purchase_Orders.htm">Purchase Orders</a> page opens. </li>
+        <li>Drag and drop each of the requirements you want to convert to a purchase order into the <span class="software">Add to PO Line</span> column, then hover over <span class="software">Generate PO</span> and select <span class="software">Create New PO</span>. The <span class="software">PO Header</span> tab of the <span class="software">Generate PO</span> window opens.</li>
+      </ol>
+      <p><img class="center-horizontal" height="664" src="../assets/gifs/My_Workspace_PR_Convert.gif" width="70%" /></p>
+      <p> </p>
+      <ol class="BasicNumber">
+        <li style="counter-reset: item1 2;">Do the following:
+          <p class="Tip-Note-Step-Text"><span style="font-weight:bold;">Note</span>: Mandatory fields are marked with a <span style="color:#ff0000;">*</span>.</p>
+          <ol>
+            <li style="" value="3">Complete the fields in the <span class="software">Purchase Order Details</span> and <span class="software">Additional Fields</span> sections as required. </li>
+            <li style="" value="3">Optionally, complete the fields in the <span class="software">Comments and Addresses</span> fields as required. </li>
+            <li style="" value="3">Click <b>Next</b>. The <span class="software">Review Requirements</span> tab opens. </li>
+          </ol>
+        </li>
+        <li style="">Check the requirements on the purchase order header and deselect any as required.  </li>
+        <li style="">Click <span class="software">Preview Line</span>. The <span class="software">PO Line Preview</span> tab opens. </li>
+        <li style="">For each of the purchase order lines on the left-hand side, do the following:
+          <p class="Tip-Note-Step-Text"><span style="font-weight:bold;">Note</span>: Mandatory fields are marked with a <span style="color:#ff0000;">*</span>.</p>
+          <ol>
+            <li style="">Click <img height="20" src="../assets/images/image14.png" width="20" /> to display the purchase order line details. </li>
+            <li style="">Update any of the purchase order line fields as required.</li>
+          </ol>
+        </li>
+        <li style=""> Click <span class="software">Generate PO</span> to create the purchase order.</li>
+      </ol>
+      <p> </p>
     </div>
     <div class="tabcontent" id="Tab2">
       <h2>Convert Requirements to Purchase Order</h2>
+      <p> The <span class="software">Requirements </span>tab displays all of your requirements in a convienient searchable and customizable table. You can select a range of requirements from the table by clickign the check box next to the record, then choose to either create a new purchase order for them or to add them to an existing purchase order.  </p>
+      <p>The following instructions detail how to convert a range of purchase requirements to a new purchase order.</p>
+      <ol class="BasicNumber">
+        <li>In Radius, hover over <span class="software">Purchase Orders </span><img height="18" src="../assets/images/image.png" width="19" /> on the navigation pane and select<span class="software"> Requirements</span>. The <b>Requirements </b>tab of the <a href="../WindowsMod/Purchase_Orders.htm">Purchase Orders</a> page opens. </li>
+        <li>Select the check box next to each requirement you want to convert to a purchase order then click <span class="software">Create New PO</span>. The <span class="software">PO Header</span> tab of the <span class="software">Generate PO</span> window opens.</li>
+      </ol>
+      <p><img class="center-horizontal" height="664" src="../assets/gifs/Requirements_Browser_Convert_to_PO.gif" width="70%" /></p>
+      <p> </p>
+      <ol class="BasicNumber">
+        <li style="counter-reset: item1 2;">Do the following:
+          <p class="Tip-Note-Step-Text"><span style="font-weight:bold;">Note</span>: Mandatory fields are marked with a <span style="color:#ff0000;">*</span>.</p>
+          <ol>
+            <li style="" value="3">Complete the fields in the <span class="software">Purchase Order Details</span> and <span class="software">Additional Fields</span> sections as required. </li>
+            <li style="" value="3">Optionally, complete the fields in the <span class="software">Comments and Addresses</span> fields as required. </li>
+            <li style="" value="3">Click <b>Next</b>. The <span class="software">Review Requirements</span> tab opens. </li>
+          </ol>
+        </li>
+        <li style="">Check the requirements on the purchase order header and deselect any as required.  </li>
+        <li style="">Click <span class="software">Preview Line</span>. The <span class="software">PO Line Preview</span> tab opens. </li>
+        <li style="">For each of the purchase order lines on the left-hand side, do the following:
+          <p class="Tip-Note-Step-Text"><span style="font-weight:bold;">Note</span>: Mandatory fields are marked with a <span style="color:#ff0000;">*</span>.</p>
+          <ol>
+            <li style="">Click <img height="20" src="../assets/images/image14.png" width="20" /> to display the purchase order line details. </li>
+            <li style="">Update any of the purchase order line fields as required.</li>
+          </ol>
+        </li>
+        <li style=""> Click <span class="software">Generate PO</span> to create the purchase order.</li>
+      </ol>
     </div>
-    <p> The <span class="software">Requirements </span>tab displays all of your requirements in a convienient searchable and customizable table. You can select a range of requirements from the table by clickign the check box next to the record, then choose to either create a new purchase order for them or to add them to an existing purchase order.  </p>
-    <p>The following instructions detail how to convert a range of purchase requirements to a new purchase order.</p>
   </div>
   <p> </p>
 </body>
