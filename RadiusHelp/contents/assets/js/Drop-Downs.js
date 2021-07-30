@@ -16,7 +16,7 @@ function addDropdownIcons () {
 
     $('.drop-down-wrapper').each(function () {
         var icon = document.createElement('img');
-        icon.src = getImagePathRecursively("", "chevron_down.svg", 0);
+        icon.src = getImagePathRecursively("", "chevron_down.png", 0);
         icon.className = "drop-down-icon";
         icon.setAttribute("clicked", "false");
         this.prepend(icon);
