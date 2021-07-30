@@ -16,7 +16,7 @@ function addDropdownIcons () {
 
     $('.drop-down-wrapper').each(function () {
         var icon = document.createElement('img');
-        icon.src = getImagePathRecursively("", "chevron-down.svg", 0);
+        icon.src = getImagePathRecursively("", "chevron_down.svg", 0);
         icon.className = "drop-down-icon";
         icon.setAttribute("clicked", "false");
         this.prepend(icon);
@@ -33,12 +33,12 @@ function changeIconClick() {
         var icon = wrapper.querySelector('img');
 
         if (icon.getAttribute("clicked") == "false") {
-            icon.src = getImagePathRecursively("", "chevron-up.svg", 0);
+            icon.src = getImagePathRecursively("", "chevron_up.png", 0);
             icon.setAttribute("clicked", "true");
             console.log(icon);
 
         } else {
-            icon.src = getImagePathRecursively("", "chevron-down.svg", 0);
+            icon.src = getImagePathRecursively("", "chevron_down.png", 0);
             icon.setAttribute("clicked", "false");
             console.log(icon);
         }

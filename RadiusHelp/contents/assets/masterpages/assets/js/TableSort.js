@@ -138,12 +138,12 @@ function sortTables() {
       else if (currentHeading.dataset.clickCount % 2 == 0) {
 
         var icon = currentHeading.querySelector(".tableIconWrapper > p > img");
-        icon.src = getImagePathRecursively("", "sort-descending.png", 0);
+        icon.src = getImagePathRecursively("", "sort_descending.png", 0);
       }
       else if (currentHeading.dataset.clickCount % 1 == 0) {
 
         var icon = currentHeading.querySelector(".tableIconWrapper > p > img");
-        icon.src = getImagePathRecursively("", "sort-ascending.png", 0);
+        icon.src = getImagePathRecursively("", "sort_ascending.png", 0);
       }
 
       Array.from(tbody.querySelectorAll('tr:not(.t1st)'))

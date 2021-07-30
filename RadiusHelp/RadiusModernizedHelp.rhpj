@@ -39,7 +39,12 @@
 <color name="Olive" value="#808000"></color>
 <color name="Teal" value="#008080"></color>
 <color name="Silver" value="#C0C0C0"></color></colors>
-<links></links>
+<links>
+<link src="C:/EPS_Documentation/Radius/EarlyAdopter/RadiusHelp/contents/assets/Images/Icons/chevron_down.png" dest="contents/assets/Images/Icons/Icons/chevron_down.png"></link>
+<link src="C:/EPS_Documentation/Radius/EarlyAdopter/RadiusHelp/contents/assets/Images/Icons/chevron_up.png" dest="contents/assets/Images/Icons/Icons/chevron_up.png"></link>
+<link src="C:/EPS_Documentation/Radius/EarlyAdopter/RadiusHelp/contents/assets/Images/Icons/sort_ascending.png" dest="contents/assets/Images/Icons/Icons/sort_ascending.png"></link>
+<link src="C:/EPS_Documentation/Radius/EarlyAdopter/RadiusHelp/contents/assets/Images/Icons/sort_descending.png" dest="contents/assets/Images/Icons/Icons/sort_descending.png"></link>
+<link src="C:/EPS_Documentation/Radius/EarlyAdopter/RadiusHelp/contents/assets/Images/Icons/unsorted.png" dest="contents/assets/Images/Icons/Icons/unsorted.png"></link></links>
 <scripts></scripts>
 <authortabs></authortabs>
 <outputtabs></outputtabs>
