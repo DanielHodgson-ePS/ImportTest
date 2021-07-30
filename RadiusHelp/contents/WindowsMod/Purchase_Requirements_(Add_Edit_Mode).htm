@@ -7,7 +7,7 @@
   <title>Purchase Requirements (Add/Edit Mode)</title>
   <meta name="topic-status" content="Draft" />
 
-  <link rel="stylesheet" type="text/css" href="../assets/css/default.css" />
+
   <link rel="stylesheet" type="text/css" href="../assets/css/APPS.css" />
   <link rel="stylesheet" type="text/css" href="../assets/css/ModernTables.css" />
   <link rel="stylesheet" type="text/css" href="../assets/css/Drop-down.css" />
@@ -68,13 +68,13 @@
         <tr>
           <td style=""><span class="software">Have Ready Date</span></td>
           <td>
-            <p>Specify the date the goods must eb ready for. </p>
+            <p>Specify the date the goods must be ready for. </p>
           </td>
         </tr>
         <tr>
           <td style=""><span class="software">Action By</span></td>
           <td>
-            <p> </p>
+            <p>Specify the date that action is required by.</p>
           </td>
         </tr>
         <tr>
@@ -116,16 +116,12 @@
       </tbody>
     </table>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#">Additional Fields (Requirement Details)</a></p>
-  <div class="droptext" data-targetname="drop-down7">
-    <table class="StdTable" style="border-collapse:collapse; width:1094px; border:undefined">
-      <colgroup>
-        <col style="width:188px" />
-        <col style="width:839px" />
-      </colgroup>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Additional Fields (Requirement Details)</a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse; width: 1094px;">
       <tbody>
         <tr class="t1st">
-          <td>
+          <td style="">
             <p>Field</p>
           </td>
           <td>
@@ -133,86 +129,173 @@
           </td>
         </tr>
         <tr class="t2Row">
-          <td><span class="software">Required Quantity</span></td>
+          <td style="">
+            <p><span class="software">Required Quantity</span></p>
+          </td>
           <td>
-            <p> </p>
+            <p>The amount of an item needed to fulfil the requirement.</p>
           </td>
         </tr>
         <tr class="t1Row">
-          <td><span class="software">Inventory Quantity</span></td>
+          <td style="">
+            <p><span class="software">In Inventory Quantity</span></p>
+          </td>
           <td>
-            <p> </p>
+            <p>The amount of an requirment currently in inventory.</p>
           </td>
         </tr>
         <tr class="t2Row">
-          <td><span class="software">Issued Quantity</span></td>
+          <td style="">
+            <p><span class="software">Issued Quantity </span></p>
+          </td>
           <td>
-            <p> </p>
+            <p>The amount of the requirment that has been issued.</p>
           </td>
         </tr>
         <tr class="t1Row">
-          <td><span class="software">Shipped Quantity</span></td>
+          <td style="">
+            <p><span class="software">Shipped Quantity</span></p>
+          </td>
           <td>
-            <p> </p>
+            <p>The quantity of the requirement that has been shipped. </p>
           </td>
         </tr>
         <tr>
-          <td><span class="software">
-              <font face="Inter"><span style="font-size:16px"><b>On Order Quantity</b></span></font>
-            </span></td>
+          <td style="">
+            <p><span class="software">On Order Quantity</span></p>
+          </td>
           <td>
-            <p> </p>
+            <p>The amounf of the requirment that has been ordered but not yet received.</p>
           </td>
         </tr>
         <tr>
-          <td><span class="software">In production Quantity</span></td>
+          <td style="">
+            <p><span class="software">In Production Quantity</span></p>
+          </td>
           <td>
-            <p> </p>
+            <p>The amount of the requirment currently in production.</p>
           </td>
         </tr>
         <tr>
-          <td><span class="software">Issued Return Quantity</span></td>
+          <td style="">
+            <p><span class="software">Issued Return Quantity</span></p>
+          </td>
           <td>
-            <p> </p>
+            <p>The amount of the requirment that has been rreturned after issue.</p>
           </td>
         </tr>
         <tr>
-          <td><span class="software">Shipped Returned Quantity</span></td>
+          <td style="">
+            <p><span class="software">Shipped Return Quantity</span></p>
+          </td>
           <td>
-            <p> </p>
+            <p>The amount of the requirment that has been returned after shipment.</p>
           </td>
         </tr>
         <tr>
-          <td><span class="software">
-              <font face="Inter"><span style="font-size:16px"><b>Unplanned Quantity</b></span></font>
-            </span></td>
+          <td style="">
+            <p><span class="software">Unplanned Quantity</span></p>
+          </td>
           <td>
-            <p> </p>
+            <p>The quantity of this requirement that is not currently planned.</p>
           </td>
         </tr>
       </tbody>
     </table>
   </div>
-  <h2><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#">Annotations (Requirement Details)</a></h2>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#">Annotations Section</a></p>
   <div class="droptext" data-targetname="drop-down2">
-    <p>Type your dropdown text here<br /></p>
+    <div data-conref="../assets/snippets/Annotations.hts"> </div>
+    <p> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#">Inventory Section</a></p>
-  <div class="droptext" data-targetname="drop-down3">
-    <p>Type your dropdown text here</p>
-  </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">PO Section</a></p>
+  <h2>Inventory Tab</h2>
+  <p>The Inventory tab allows you to check whether the requirement can be fulfilled from inventory.</p>
+  <p>If there is free stock that you want to use to satisfy all or part of the requirement, click on the stock line to be reserved in the <span class="software">Available </span>table, and then click <img height="20" src="../assets/images/image17.png" width="20" /> to move it the <span class="software">Reserved </span>table. Enter the quantity to be reserved in the <span class="software">Reserved Quantity</span> column of the <span class="software">Reserved </span>table,then click <img height="20" src="../assets/images/image19.png" width="20" /> to save your reservation.</p>
+  <p>The requirement status is updated to<span class="software"> In Inventory</span> if the full requirement quantity has been satisfied.  Otherwise, the status is left as <span class="software">Unplanned</span>; signifying that further action is required to satisfy the full requirement.</p>
+  <hr class="hrule-inner" />
+  <p><img class="center-horizontal" height="670" src="../assets/images/image18.png" width="95%" /> </p>
+  <h2>PO Tab</h2>
+  <p>The PO tab displays any undelivered purchase order lines for this item that have free amounts. If you decide to satisfy all or part of the requirement from one of these lines, click on the order line to be reserved in the <span class="software">Available </span>table, and then click <img height="20" src="../assets/images/image17.png" width="20" /> to move it the <span class="software">Reserved </span>table. Enter the quantity to be reserved in the <span class="software">Reserved Quantity</span> column of the <span class="software">Reserved </span>table,then click <img height="20" src="../assets/images/image19.png" width="20" /> to save your reservation.</p>
+  <p>The requirement status is updated to<span class="software"> In Inventory</span> if the full requirement quantity has been satisfied.  Otherwise, the status is left as <span class="software">Unplanned</span>; signifying that further action is required to satisfy the full requirement.</p>
+  <hr class="hrule-inner" />
+  <p><img class="center-horizontal" height="785" src="../assets/images/image20.png" width="95%" /></p>
+  <h2>Jobs Tab</h2>
+  <p>The Reserved Jobs folder displays details of all reservations made against a Production Job for this requirement. If you decide to satisfy all or part of the requirement from one of these lines, click on the order line to be reserved in the <span class="software">Available </span>table, and then click <img height="20" src="../assets/images/image17.png" width="20" /> to move it the <span class="software">Reserved </span>table. Enter the quantity to be reserved in the <span class="software">Reserved Quantity</span> column of the <span class="software">Reserved </span>table,then click <img height="20" src="../assets/images/image19.png" width="20" /> to save your reservation.</p>
+  <p>The requirement status is updated to<span class="software"> In Inventory</span> if the full requirement quantity has been satisfied.  Otherwise, the status is left as <span class="software">Unplanned</span>; signifying that further action is required to satisfy the full requirement.</p>
+  <h2>Item Balances Tab</h2>
+  <p>The Item Balances tab displays balance details for the item in total, not  just for the highlighted requirement.  </p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Fields Section</a></p>
   <div class="droptext" data-targetname="drop-down4">
-    <p>Type your dropdown text here<br /></p>
+    <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse: collapse; width: 1094px;">
+      <colgroup>
+        <col style="width: 156px;" />
+        <col style="width: 871px;" />
+      </colgroup>
+      <tbody>
+        <tr class="t1st">
+          <td style="">
+            <p>Field</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td style="">
+            <p><span class="software">Item</span></p>
+          </td>
+          <td>
+            <p>Displays the item the requirement is for.</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td style="">
+            <p><span class="software">Description</span></p>
+          </td>
+          <td>
+            <p>Displays the description for the <span class="software">Item</span>.</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td style="">
+            <p><span class="software">Available Sizes</span></p>
+          </td>
+          <td>
+            <p>Select the size of the <span class="software">Item </span>to diaply item balaces for that specific size.</p>
+          </td>
+        </tr>
+        <tr class="t1Row">
+          <td style="">
+            <p><span class="software">Alternative</span></p>
+          </td>
+          <td>
+            <p>The <span class="software">Alternative </span>item lookup displays relevant information about the available inventory at size level. If all size data is required, then the available size should be cleared prior to selecting the alternative item lookup.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="">
+            <p><span class="software">Description</span></p>
+          </td>
+          <td>
+            <p>The description of the <span class="software">Alternative </span>item.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#">Jobs Section</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#">Balances Section</a></p>
   <div class="droptext" data-targetname="drop-down5">
-    <p>Type your dropdown text here<br /></p>
+    <p>The balances sections displays a visual representation of your item balances. Youn can select whether to view your data as a chart or a table by clicking either in <span class="software">Chart View</span> <img height="20" src="../assets/images/image22.png" width="23" /> or <span class="software">Table View</span> <img height="20" src="../assets/images/image21.png" width="23" />, respectively.</p>
+    <p>You can choose to view balances for the following by selecting the corresponding option from the dropdown field:</p>
+    <ul class="Bullets">
+      <li><span class="software">Quantities</span></li>
+      <li><span class="software">Values</span></li>
+      <li><span class="software">References</span></li>
+      <li><span class="software">Free Stock</span><span class="software"></span></li>
+    </ul>
+    <hr class="hrule-inner" />
+    <p><img class="center-horizontal" height="364" src="../assets/gifs/Reservations-ItemBalances.gif" width="70%" /></p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#">Item Balances Section</a></p>
-  <div class="droptext" data-targetname="drop-down6">
-    <p>Type your dropdown text here</p>
-  </div>
-  <h2> </h2>
+  <p> </p>
 </body>
 </html>
