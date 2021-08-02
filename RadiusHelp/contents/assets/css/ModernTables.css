@@ -21,6 +21,10 @@
   position: relative;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  background: url("../Images/Icons/chevron_down.png") no-repeat;
+  background: url("../Images/Icons/chevron_up.png") no-repeat;
+  background: url("../Images/Icons/unsorted.png") no-repeat;
+  background: url("../Images/Icons/sort_ascending.png") no-repeat;
   background: url("../Images/Icons/sort_descending.png") no-repeat;
   background-size: contain;
   width: 10%;
