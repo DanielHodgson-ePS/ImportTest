@@ -520,20 +520,25 @@ background-image: url('print.svg');;
 }
 
 .RH-LAYOUT-TOOLBAR-toolbar-box {
-  margin-right: 2rem;
-  margin-left: 0.25rem;
   background-color: #4F6793;
+  border-width: 0px;
+  border-color: #FFFFFF;
+  border-left-width: 0;
+  border-top-width: 0px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-style: none;
+  border-top-style: none;
+  border-top-color: #FFFFFF;
 }
 
 .RH-LAYOUT-TOOLBAR-toolbar {
   font-weight: 600;
   font-style: normal;
-  margin-right: 2rem;
   background-color: #4F6793;
   text-transform: uppercase;
   color: #fefefe;
   margin-bottom: 2rem;
-  margin-left: 0.25rem;
 }
 
 .RH-LAYOUT-HOMEPAGE-TOOLBAR-toolbar {
@@ -559,8 +564,8 @@ background-image: url('print.svg');;
 }
 .RH-LAYOUT-CENTERPANEL-container {
   margin-top: 1rem;
-  margin-left: 1.5rem;
   padding-top: 0.5rem;
+  margin-left: 1rem;
 }
 
 .RH-LAYOUT-CENTERPANEL-container-fullscreen {
@@ -568,8 +573,8 @@ background-image: url('print.svg');;
 
 
 .RH-LAYOUT-CENTERPANEL-topic-box {
-  padding-left: 0.2rem;
   margin-top: -0.75rem;
+  width: 100%;
 }
 
 
@@ -2237,6 +2242,7 @@ background-image: url('print.svg');;
     
 }
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-TOOLBAR-toolbar-box {
+    margin-right: 5%;
 }
 
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-TOOLBAR-toolbar {
@@ -2252,17 +2258,17 @@ background-image: url('print.svg');;
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-TOOLBAR-toc-icon-div {
     padding-left: 0.5rem;
     width: 2.5rem;
-    background-color: #3b4faa;
     margin-left: 1rem;
+    background-color: #4F6793;
 }
 
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-TOOLBAR-panel-show {
   background-image: url('expand_toc.svg');;
-  background-color: #3b4faa;
   margin-top: 0rem;
   margin-bottom: 0rem;
   margin-left: 0.25rem;
   margin-right: 0rem;
+  background-color: #4F6793;
 
 }
 .RH-LAYOUT-CENTERPANEL-top-panel {
@@ -2932,7 +2938,7 @@ background-image: url('print.svg');;
 
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-LEFTPANEL-tab-list {
   margin-left: 0px;
-  background-color: #4f66c7;
+  background-color: #4F6793;
   
 }
 
@@ -3020,6 +3026,7 @@ background-image: url('print.svg');;
 
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-LEFTPANEL-panel-hide {
   background-image: url('collapse_toc.svg');;
+  background-color: #4F6793;
 }
 
 .RH-LAYOUT-BODY-mobile-view .nav ul {
@@ -3353,7 +3360,7 @@ input[type='text']::-ms-clear {
 }
 
 .RH-LAYOUT-BODY-mobile-view .RH-LAYOUT-LEFTPANEL-panel-show {
-  background-color: #3c4fa8;
+  background-color: #4F6793;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: -2.5rem;

@@ -9,7 +9,7 @@ var allValidTableHeadings = [];
 
 function getImagePathRecursively(pathAddition, imageName, timeOutCount) {
 
-  console.log("Called");
+  //console.log("Called");
 
   var img = new Image();
   var path = pathAddition + "assets/Images/Icons/" + imageName;

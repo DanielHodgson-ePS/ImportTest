@@ -35,12 +35,12 @@ function changeIconClick() {
         if (icon.getAttribute("clicked") == "false") {
             icon.src = getImagePathRecursively("", "chevron_up.png", 0);
             icon.setAttribute("clicked", "true");
-            console.log(icon);
+          //  console.log(icon);
 
         } else {
             icon.src = getImagePathRecursively("", "chevron_down.png", 0);
             icon.setAttribute("clicked", "false");
-            console.log(icon);
+            //console.log(icon);
         }
         return false;
     });
