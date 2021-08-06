@@ -24,7 +24,7 @@ window.addEventListener('load', (event) => {
   
   
 
-var callback = function(htmPath){
+var openTopicPreview = function(htmPath){
  
   modal.style.display = "block";
   document.getElementById("myContent").innerHTML='<object type="text/html" class="inserted-content" data="' + htmPath + '" ></object>';

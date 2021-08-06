@@ -1,3 +1,5 @@
+// Rainbow text
+
 @keyframes colorRotate {
   from {
     color: #6666ff;
@@ -31,6 +33,7 @@
 }
 
 
+// Aniamtion for Dropdowns
 
 @keyframes flipdown {
 
@@ -65,4 +68,18 @@
 .droptext > *:not(.StdTable) {
   animation : flipdown 0.5s ease both;
   transition: all 0.25s ease-in-out;
+}
+
+
+// Animation for Modals
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
 }

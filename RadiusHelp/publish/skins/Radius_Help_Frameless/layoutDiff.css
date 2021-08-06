@@ -574,7 +574,8 @@ background-image: url('print.svg');;
 
 .RH-LAYOUT-CENTERPANEL-topic-box {
   margin-top: -0.75rem;
-  width: 100%;
+  width: 99%;
+  padding-left: 0.2rem;
 }
 
 

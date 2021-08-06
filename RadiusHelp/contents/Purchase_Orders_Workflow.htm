@@ -2,36 +2,35 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes" />
-  <meta name="version" content="2020.0.0" />
-  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./favicon.ico" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="generator" content="Adobe RoboHelp 2020" />
-  <title>Sales Order Workflow</title>
+  <title>Purchase Orders Workflow</title>
   <meta name="topic-status" content="Draft" />
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script src="assets/js/MermaidTweaks.js"></script>
-
   <link rel="stylesheet" type="text/css" href="assets/css/APPS.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/Animations.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/Mermaid.css" />
 </head>
 <body>
-  <h1>Sales Order WorkFlow</h1>
+  <h1>Purchase Order WorkFlow</h1>
   <p>Here is one mermaid diagram:</p>
-  <div class="mermaid">graph TD
-    A([Start]) --&gt; |From New| B([Create Sales Order Header])
-    A --&gt;|From Estimate| B
-    B --&gt; D[Add Sales Order Lines]
-    B -.-&gt; |Optional| C[Add Files to Sales Order]
-    C-.-&gt; D
-    D -.-&gt;|Optional|E[Add Extras]
-    %% Class Definitions
-    %% =================
+<div class="mermaid">
+    graph TD
+    A([Start]) --> |From New| B([Create Purchase Order Header])
+    B --> D[Add Purchase Order Lines]
+    A -->|Convert Requirements| C([Select Requirements to Convert])
+    C --> E([Generate Purchase Order])
+    E --> F[Complete PO Details]
+    F --> G[Confirm PO Lines] 
+
+    %% Class Definitions 
+    %% ================= 
     class A cssClass
-    click B call openTopicPreview(&quot;Tutorials/How_to_Create_a_Sales_Order.htm&quot;) &quot;Tooltip for a callback&quot;;
-    class B clickableNode
+    click B call openTopicPreview("Tutorials/How_to_Create_a_Purchase_Order.htm") "Tooltip for a callback";
+  	  class B clickableNode
+    click C call openTopicPreview("Tutorials/How_to_Create_a_Purchase_Order.htm") "Tooltip for a callback";
+    class C clickableNode
   </div>
   <div class="modal" id="myModal">
     <div class="modal-content">
@@ -44,6 +43,5 @@
       </div>
     </div>
   </div>
-  <p> </p>
 </body>
 </html>
