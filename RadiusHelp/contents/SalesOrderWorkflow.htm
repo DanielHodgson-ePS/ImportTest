@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2020.0.0"/>
+
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./favicon.ico"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  <title>Sales Order Workflow</title>
+  <meta name="topic-status" content="Draft"/>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script src="assets/js/MermaidTweaks.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/APPS.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/Mermaid.css"/>
+</head>
+<body>
+  <h1>Sales Order WorkFlow</h1>
+  <p>Here is one mermaid diagram:</p>
+  <div class="mermaid">
+    graph TD
+    A([Start]) --&gt; |From New| B([Create Sales Order Header])
+    A --&gt;|From Estimate| B
+    B --&gt; D[Add Sales Order Lines]
+    B -.-&gt; |Optional| C[Add Files to Sales Order]
+    C-.-&gt; D
+    D -.-&gt;|Optional| E[Add Extras]
+    
+    %% Class Definitions 
+    %% ================= 
+    class A cssClass
+    click B call callback("Tutorials/How_to_Create_a_Sales_Order.htm") &quot;Tooltip for a callback&quot;;
+  </div>
+
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <div class="modal-header"><span class="close">×</span>
+        <h2>Topic Preview</h2>
+      </div>
+      <div class="modal-body" id="myContent"> </div>
+      <div class="modal-footer">
+        <h3>Preview Footer</h3>
+      </div>
+    </div>
+  </div>
+
+</body></html>
