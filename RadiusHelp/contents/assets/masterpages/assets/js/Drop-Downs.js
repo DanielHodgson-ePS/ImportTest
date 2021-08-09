@@ -80,5 +80,5 @@ initFunctions().forEach(f => {
         childList: true
     };
 
-    //observer.observe(target, config);
+   // observer.observe(target, config);
 

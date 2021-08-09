@@ -7,17 +7,23 @@ const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
 var allOriginalTables = [];
 var allValidTableHeadings = [];
 
-function getImagePathRecursively(pathAddition, imageName, timeOutCount) {
+function getImagePathRecursively(pathAdditon, imageName, timeOutCount) {
 
   //console.log("Called");
 
   var img = new Image();
-  var path = pathAddition + "../assets/Images/Icons/" + imageName;
+  var imageRoute = "../assets/Images/Icons/";
+  var path = pathAdditon + imageRoute + imageName;
+ // console.log("path: " + path);
+  //console.log(timeOutCount);
   img.src = path;
 
   timeOutCount++;
 
+  
   img.onload = function (e) {
+    //console.log("true")
+    //console.log(path)
     return path;
   };
 
@@ -26,9 +32,12 @@ function getImagePathRecursively(pathAddition, imageName, timeOutCount) {
       console.log("Could not find file after 10 recursive calls")
       return path;
     }
-    getImagePathRecursively("../", imageName, timeOutCount);
+    
+    var newPathAddition = pathAdditon + "../";
+    getImagePathRecursively(newPathAddition, imageName, timeOutCount);
   };
 
+ 
   return path;
 }
 
@@ -111,7 +120,7 @@ function sortTables() {
       headings.forEach(heading => {
 
         var icon = heading.querySelector(".tableIconWrapper > p > img");
-        icon.src = getImagePathRecursively("", "unsorted.png", 0);
+        icon.src = getImagePathRecursively("","unsorted.png", 0);
 
         heading.dataset.clickedLast = "false";
         currentHeading.dataset.clickedLast = "true";
@@ -128,7 +137,7 @@ function sortTables() {
       if (currentHeading.dataset.clickCount % 3 == 0) {
 
         var icon = currentHeading.querySelector(".tableIconWrapper > p > img");
-        icon.src = getImagePathRecursively("", "unsorted.png", 0);
+        icon.src = getImagePathRecursively("","unsorted.png", 0);
 
         var $clone = allOriginalTables[tableNum].clone(true);
         $("table[data-table-number='" + tableNum + "']").replaceWith($clone);
@@ -138,7 +147,7 @@ function sortTables() {
       else if (currentHeading.dataset.clickCount % 2 == 0) {
 
         var icon = currentHeading.querySelector(".tableIconWrapper > p > img");
-        icon.src = getImagePathRecursively("", "sort_descending.png", 0);
+        icon.src = getImagePathRecursively("","sort_descending.png", 0);
       }
       else if (currentHeading.dataset.clickCount % 1 == 0) {
 
