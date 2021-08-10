@@ -15,4 +15,9 @@
   <alias name="Shipment_Tracking_Details" value="6012" link="../../contents/WindowsMod/Shipment_Tracking_Details.htm"></alias>
   <alias name="Add_Ship_Request_from_Order_Lines" value="6013" link="../../contents/WindowsMod/Add_Ship_Request_from_Order_Lines.htm"></alias>
   <alias name="Admin_Settings" value="6014" link="../../contents/WindowsMod/Admin_Settings.htm"></alias>
+  <alias name="Purchase_Orders" value="6026" link="../../contents/WindowsMod/Purchase_Orders.htm"></alias>
+  <alias name="Purchase_Orders_(Add/Edit_Mode)" value="6027" link="../../contents/WindowsMod/Purchase_Orders_(Add_Edit_Mode).htm"></alias>
+  <alias name="Purchase_Requirements_(Add/Edit_Mode)" value="6028" link="../../contents/WindowsMod/Purchase_Requirements_(Add_Edit_Mode).htm"></alias>
+  <alias name="Reservations" value="6018" link="../../contents/WindowsMod/Reservations.htm"></alias>
+  <alias name="Sales_Order_Comments" value="6017" link="../../contents/WindowsMod/Sales_Order_Comments.htm"></alias>
 </aliaslist>

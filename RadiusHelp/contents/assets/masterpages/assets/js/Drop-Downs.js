@@ -3,7 +3,6 @@
 // Also add a wrapper for each dropdown 
 function formatHTML() {
 
-
     console.log("Formatting html");
 
     $('.dropspot').unwrap();
