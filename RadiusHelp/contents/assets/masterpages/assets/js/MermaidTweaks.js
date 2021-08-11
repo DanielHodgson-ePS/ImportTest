@@ -2,6 +2,16 @@
 
 var modal;
 
+var config = {
+  startOnLoad: true,
+  flowchart: {
+    useMaxWidth: true,
+    htmlLabels: true,
+    curve: 'cardinal',
+  },
+  securityLevel: 'loose',
+};
+
 window.addEventListener('load', (event) => {
 
   modal = document.getElementById("myModal");
@@ -18,6 +28,10 @@ window.addEventListener('load', (event) => {
       modal.style.display = "none";
     }
   }
+
+
+  mermaid.initialize(config);
+  
 });
 
 
@@ -28,14 +42,5 @@ var openTopicPreview = function (htmPath) {
   document.getElementById("myContent").innerHTML = '<object type="text/html" class="inserted-content" data="' + htmPath + '" ></object>';
 }
 
-var config = {
-  startOnLoad: true,
-  flowchart: {
-    useMaxWidth: true,
-    htmlLabels: true,
-    curve: 'cardinal',
-  },
-  securityLevel: 'loose',
-};
 
-mermaid.initialize(config);
+

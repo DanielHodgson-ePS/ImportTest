@@ -71,6 +71,9 @@ initFunctions().forEach(f => {
 })
 
 
+/*
+
+
 // In a generated robohelp project, switching between topics partially updates the DOM
 // Therefore no window.onLoad event is generated
 // Instead, watch for changes to the html
@@ -79,8 +82,8 @@ initFunctions().forEach(f => {
   var observer = new MutationObserver(function (mutations) {
 
     //console.log("mutation observed");
-    resizeTabs();
-    openDefaultTabs();
+   // resizeTabs();
+    //openDefaultTabs();
   });
 
   var config = {
@@ -88,4 +91,7 @@ initFunctions().forEach(f => {
     childList: true
   };
 
-  observer.observe(target, config);
+  //observer.observe(target, config);
+
+
+  */

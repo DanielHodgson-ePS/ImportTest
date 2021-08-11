@@ -13,7 +13,6 @@
     <script src="assets/js/TableSort.js" type="text/javascript"></script>
     <script src="assets/js/TabContent.js" type="text/javascript"></script>
     <script src="assets/js/Drop-Downs.js" type="text/javascript"></script>
-    <script src="assets/js/MermaidTweaks.js"></script>
   </footer>
 </body>
 </html>

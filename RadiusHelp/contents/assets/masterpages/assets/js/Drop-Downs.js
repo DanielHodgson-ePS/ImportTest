@@ -21,7 +21,7 @@ function formatHTML() {
 }
 
 
-function changeIconOnClick() {
+//function changeIconOnClick() {
 
     $(document).on('click', '.dropspot', function () {
 
@@ -41,7 +41,7 @@ function changeIconOnClick() {
         return false;
     });
 
-}
+//}
 
 
 
@@ -49,7 +49,7 @@ function initFunctions() {
 
     var functions = [];
     functions.push(formatHTML);
-    functions.push(changeIconOnClick);
+    functions.push(startObserving);
     return functions;
 }
 
@@ -62,22 +62,36 @@ initFunctions().forEach(f => {
 
 
 
+
 // In a generated robohelp project, switching between topics partially updates the DOM
 // Therefore no window.onLoad event is generated
-// Instead, watch for changes to the html
+// Instead, watch for changes to the html and force a window.onload event
 
-    var target = document.querySelector('head');
-    var observer = new MutationObserver(function (mutations) {
 
-       // console.log("mutation observed"); 
-        formatHTML();
-        changeIconOnClick();
-    });
 
+
+var target = document.querySelector('head');
+    
+var observer = new MutationObserver(function (mutations) {
+    observer.disconnect();
+    console.log("mutation observed");
+    dispatchEvent(new Event('load'));
+ });
+
+
+
+
+function startObserving() {
     var config = {
         subtree: true,
         childList: true
     };
 
-   // observer.observe(target, config);
+    observer.observe(target, config);
+}
+
+
+
+
+
 

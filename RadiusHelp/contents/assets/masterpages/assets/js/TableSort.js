@@ -206,7 +206,7 @@ function tableInitFunctions() {
   functions.push(addInitialTableIcons);
   functions.push(cloneOriginalTables);
   functions.push(sortTables);
-  functions.push(createTitleMutationObserver);
+  //functions.push(createTitleMutationObserver);
   return functions;
 }
 
@@ -218,6 +218,9 @@ tableInitFunctions().forEach(f => {
 })
 
 
+
+/*
+
 // In a generated robohelp project, switching between topics partially updates the DOM
 // Therefore no window.onLoad event is generated
 // Instead, watch for changes to the html head
@@ -227,23 +230,23 @@ function createTitleMutationObserver() {
 
   var observer = new MutationObserver(function (mutations) {
 
-    assignTableDataAttribs();
-    assignCollumnHeadingData();
-    addInitialTableIcons();
-    cloneOriginalTables();
-    sortTables();
+    //assignTableDataAttribs();
+  //  assignCollumnHeadingData();
+   // addInitialTableIcons();
+   // cloneOriginalTables();
+   // sortTables();
   });
 
   var config = {
     subtree: true,
     childList: true
   };
-  observer.observe(target, config);
+  //observer.observe(target, config);
 }
 
 
 
-
+*/
 
 
 
