@@ -20,4 +20,6 @@
   <alias name="Purchase_Requirements_(Add/Edit_Mode)" value="6028" link="../../contents/WindowsMod/Purchase_Requirements_(Add_Edit_Mode).htm"></alias>
   <alias name="Reservations" value="6018" link="../../contents/WindowsMod/Reservations.htm"></alias>
   <alias name="Sales_Order_Comments" value="6017" link="../../contents/WindowsMod/Sales_Order_Comments.htm"></alias>
+  <alias name="Sales_Order_Line_Price_Breakdown" value="6016" link="../../contents/WindowsMod/Sales_Order_Line_Price_Breadkdown.htm"></alias>
+  <alias name="Extra_Comments" value="6025" link="../../contents/WindowsMod/Extra_Comments.htm"></alias>
 </aliaslist>

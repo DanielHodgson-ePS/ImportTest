@@ -11,7 +11,6 @@
   <title>Sales Order Workflow</title>
   <meta name="topic-status" content="Draft" />
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-  <script src="../assets/js/MermaidTweaks.js"></script>
   <link rel="stylesheet" type="text/css" href="../assets/css/APPS.css" />
   <link rel="stylesheet" type="text/css" href="../assets/css/Animations.css" />
   <link rel="stylesheet" type="text/css" href="../assets/css/Mermaid.css" />
@@ -19,22 +18,21 @@
 <body>
   <h1>Sales Order WorkFlow</h1>
   <p>Here is one mermaid diagram:</p>
-  <div class="mermaid">
-    graph TD
-    A([Start]) --&gt; |From New| B([Create Sales Order Header])
-    A --&gt;|From Estimate| B
-    B --&gt; D[Add Sales Order Lines]
-    B -.-&gt; |Optional| C[Add Files to Sales Order]
-    C-.-&gt; D
-    D -.-&gt;|Optional| E[Add Extras]
-    
-    %% Class Definitions
-    %% =================
-    class A cssClass
-    click B call openTopicPreview(&quot;../Tutorials/How_to_Create_a_Sales_Order.htm&quot;) &quot;Tooltip for a callback&quot;;
-    class B clickableNode
+  <div>
+    <div class="mermaid">
+      graph TD
+      A([Start]) --&gt; |From New| B([Create Sales Order Header])
+      A --&gt;|From Estimate| B
+      B --&gt; D[Add Sales Order Lines]
+      B -.-&gt; |Optional| C[Add Files to Sales Order]
+      C-.-&gt; D
+      D -.-&gt;|Optional| E[Add Extras]
+      %% Class Definitions
+      %% =================
+      class A cssClass
+      click B call openTopicPreview(&quot;../Tutorials/How_to_Create_a_Sales_Order.htm&quot;) &quot;Tooltip for a callback&quot;;
+      class B clickableNode</div>
   </div>
-  
   <div class="modal" id="myModal">
     <div class="modal-content">
       <div class="modal-header"><span class="close">×</span>

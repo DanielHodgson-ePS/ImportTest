@@ -34,6 +34,8 @@
     <page href="../contents/WindowsMod/Sales_Order_Notes.htm" format="html" homepage-tile="assets/Images/PreviewImages/SalesOrderNotes.jpg" processing-role="normal"></page>
     <page href="../contents/WindowsMod/Sales_Order_Analysis.htm" format="html" homepage-tile="assets/Images/PreviewImages/SalesOrdersAnalysis.jpg" processing-role="normal"></page>
     <page href="../contents/WindowsMod/Sales_Order_Comments.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/WindowsMod/Extra_Comments.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/WindowsMod/Sales_Order_Line_Price_Breadkdown.htm" format="html" processing-role="normal"></page>
     <page href="../contents/WindowsMod/Reservations.htm" format="html" processing-role="normal"></page>
     <page href="../contents/WindowsMod/Shipment_Tracking_Details.htm" format="html" homepage-tile="assets/Images/PreviewImages/ShipmentTrackingDetails.jpg" processing-role="normal"></page>
     <page href="../contents/WindowsMod/User_Defined_Elements.htm" format="html" homepage-tile="assets/Images/PreviewImages/UserDefinedElements.jpg" processing-role="normal"></page>
