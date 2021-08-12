@@ -3,21 +3,23 @@
 // Also add a wrapper for each dropdown 
 function formatHTML() {
 
-    console.log("Formatting html");
+    //console.log("Formatting html");
 
-    $('.dropspot').unwrap();
+    if (document.getElementsByClassName("drop-down-icon").length <= 0) {
+        $('.dropspot').unwrap();
 
-    $('.dropspot').each(function () {
-        $(this).next('.droptext').addBack().wrapAll('<div class="drop-down-wrapper"/></div');
-    });
+        $('.dropspot').each(function () {
+            $(this).next('.droptext').addBack().wrapAll('<div class="drop-down-wrapper"/></div');
+        });
 
-    $('.drop-down-wrapper').each(function () {
-        var icon = document.createElement('img');
-        icon.src = getImagePathRecursively("", "chevron_down.png", 0);
-        icon.className = "drop-down-icon";
-        icon.setAttribute("clicked", "false");
-        this.prepend(icon);
-    });
+        $('.drop-down-wrapper').each(function () {
+            var icon = document.createElement('img');
+            icon.src = getImagePathRecursively("", "chevron_down.png", 0);
+            icon.className = "drop-down-icon";
+            icon.setAttribute("clicked", "false");
+            this.prepend(icon);
+        });
+    }
 }
 
 

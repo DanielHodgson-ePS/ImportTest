@@ -92,14 +92,17 @@ function addInitialTableIcons() {
 
   var headings = document.querySelectorAll(".tableIconWrapper > p");
 
-  for (i = 0; i < headings.length; i++) {
-    var heading = headings[i];
+  if (!document.getElementById("tableIcon" + i)) {
 
-    var icon = new Image();
-    icon.id = "tableIcon" + i;
-    icon.src = getImagePathRecursively("", "unsorted.png", 0);
-    icon.className = "tableIcon";
-    heading.append(icon);
+    for (i = 0; i < headings.length; i++) {
+      var heading = headings[i];
+
+      var icon = new Image();
+      icon.id = "tableIcon" + i;
+      icon.src = getImagePathRecursively("", "unsorted.png", 0);
+      icon.className = "tableIcon";
+      heading.append(icon);
+    }
   }
 }
 
