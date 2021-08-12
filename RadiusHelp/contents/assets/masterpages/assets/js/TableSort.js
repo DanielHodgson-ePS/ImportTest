@@ -169,7 +169,6 @@ function assignCollumnHeadingData() {
 
   var validTables = getValidTables();
 
-
   for (i = 0; i < validTables.length; i++) {
 
     var table = validTables[i];
@@ -198,15 +197,12 @@ function assignCollumnHeadingData() {
 }
 
 function tableInitFunctions() {
-
   var functions = [];
-
   functions.push(assignTableDataAttribs);
   functions.push(assignCollumnHeadingData);
   functions.push(addInitialTableIcons);
   functions.push(cloneOriginalTables);
   functions.push(sortTables);
-  //functions.push(createTitleMutationObserver);
   return functions;
 }
 
@@ -217,36 +213,6 @@ tableInitFunctions().forEach(f => {
     window.attachEvent && window.attachEvent("onload", f);
 })
 
-
-
-/*
-
-// In a generated robohelp project, switching between topics partially updates the DOM
-// Therefore no window.onLoad event is generated
-// Instead, watch for changes to the html head
-function createTitleMutationObserver() {
-
-  var target = document.querySelector('head');
-
-  var observer = new MutationObserver(function (mutations) {
-
-    //assignTableDataAttribs();
-  //  assignCollumnHeadingData();
-   // addInitialTableIcons();
-   // cloneOriginalTables();
-   // sortTables();
-  });
-
-  var config = {
-    subtree: true,
-    childList: true
-  };
-  //observer.observe(target, config);
-}
-
-
-
-*/
 
 
 

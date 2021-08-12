@@ -21,27 +21,24 @@ function formatHTML() {
 }
 
 
-//function changeIconOnClick() {
+$(document).on('click', '.dropspot', function () {
 
-    $(document).on('click', '.dropspot', function () {
+    var wrapper = this.closest(".drop-down-wrapper");
+    var icon = wrapper.querySelector('img');
 
-        var wrapper = this.closest(".drop-down-wrapper");
-        var icon = wrapper.querySelector('img');
+    if (icon.getAttribute("clicked") == "false") {
+        icon.src = getImagePathRecursively("", "chevron_up.png", 0);
+        icon.setAttribute("clicked", "true");
+        // console.log(icon);
 
-        if (icon.getAttribute("clicked") == "false") {
-            icon.src = getImagePathRecursively("", "chevron_up.png", 0);
-            icon.setAttribute("clicked", "true");
-           // console.log(icon);
+    } else {
+        icon.src = getImagePathRecursively("", "chevron_down.png", 0);
+        icon.setAttribute("clicked", "false");
+        //  console.log(icon);
+    }
+    return false;
+});
 
-        } else {
-            icon.src = getImagePathRecursively("", "chevron_down.png", 0);
-            icon.setAttribute("clicked", "false");
-          //  console.log(icon);
-        }
-        return false;
-    });
-
-//}
 
 
 
@@ -49,7 +46,6 @@ function initFunctions() {
 
     var functions = [];
     functions.push(formatHTML);
-    functions.push(startObserving);
     return functions;
 }
 
@@ -63,32 +59,7 @@ initFunctions().forEach(f => {
 
 
 
-// In a generated robohelp project, switching between topics partially updates the DOM
-// Therefore no window.onLoad event is generated
-// Instead, watch for changes to the html and force a window.onload event
 
-
-
-
-var target = document.querySelector('head');
-    
-var observer = new MutationObserver(function (mutations) {
-    observer.disconnect();
-    console.log("mutation observed");
-    dispatchEvent(new Event('load'));
- });
-
-
-
-
-function startObserving() {
-    var config = {
-        subtree: true,
-        childList: true
-    };
-
-    observer.observe(target, config);
-}
 
 
 

@@ -7,21 +7,21 @@ function resizeTabs() {
 
 
   console.log("resizing tabs");
-  
+
   var tablinkNavs = document.getElementsByClassName("tablink-navigation");
-  
-   if(tablinkNavs.length >= 4) {
-     for (i = 0; i < tablinkNavs.length; i++) {     
-       var buttons = $(".tablink-center > .tablink"); 
-       buttons.width((100 / buttons.length) - 10 + '%');
-      }
-    }   
- }
+
+  if (tablinkNavs.length >= 4) {
+    for (i = 0; i < tablinkNavs.length; i++) {
+      var buttons = $(".tablink-center > .tablink");
+      buttons.width((100 / buttons.length) - 10 + '%');
+    }
+  }
+}
 
 function openTab(pageName, elmnt, color) {
- 
+
   var i, tabcontent, tablinks;
-  
+
   // Hide all elements with class="tabcontent" by default
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -46,7 +46,7 @@ function openTab(pageName, elmnt, color) {
 function openDefaultTabs() {
 
   console.log("opening default tabs");
-  
+
   // Opens all tabs with class="defaultopen"
   var tabDefaults = document.getElementsByClassName("defaultopen");
   for (i = 0; i < tabDefaults.length; i++) {
@@ -69,29 +69,3 @@ initFunctions().forEach(f => {
     window.addEventListener("load", f, false) :
     window.attachEvent && window.attachEvent("onload", f);
 })
-
-
-/*
-
-
-// In a generated robohelp project, switching between topics partially updates the DOM
-// Therefore no window.onLoad event is generated
-// Instead, watch for changes to the html
-
-  var target = document.querySelector('head');
-  var observer = new MutationObserver(function (mutations) {
-
-    //console.log("mutation observed");
-   // resizeTabs();
-    //openDefaultTabs();
-  });
-
-  var config = {
-    subtree: true,
-    childList: true
-  };
-
-  //observer.observe(target, config);
-
-
-  */
