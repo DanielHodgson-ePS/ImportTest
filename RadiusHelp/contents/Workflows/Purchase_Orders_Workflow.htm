@@ -6,7 +6,6 @@
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <title>Purchase Orders Workflow</title>
   <meta name="topic-status" content="Draft" />
-  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../assets/css/APPS.css" />
   <link rel="stylesheet" type="text/css" href="../assets/css/Animations.css" />
   <link rel="stylesheet" type="text/css" href="../assets/css/Mermaid.css" />
@@ -14,14 +13,15 @@
 <body>
   <h1>Purchase Order WorkFlow</h1>
   <p>Here is one mermaid diagram:</p>
-  <div class="mermaid">
+ <div class="mermaid">
     graph TD
     A([Start]) --&gt; |From New| B([Create Purchase Order Header])
-    B --&gt; D[Add Purchase Order Lines]
-    A --&gt;|Convert Requirements| C([Select Requirements to Convert])
-    C --&gt; E([Generate Purchase Order])
-    E --&gt; F[Complete PO Details]
+    B --&gt; D[Add Purchase Order Lines] 
+    A --&gt;|Convert Requirements| C([Select Requirements to Convert]) 
+    C --&gt; E([Generate Purchase Order]) 
+    E --&gt; F[Complete PO Details] 
     F --&gt; G[Confirm PO Lines]
+   
     %% Class Definitions
     %% =================
     class A cssClass
@@ -38,11 +38,9 @@
       <div class="modal-body" id="myContent"> </div>
       <div class="modal-footer">
         <h3>Preview Footer</h3>
-      </div> 
+      </div>
     </div>
   </div>
-  <footer data-region="footer">
-        
-  </footer>
+  <footer data-region="footer"> </footer>
 </body>
 </html>

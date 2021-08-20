@@ -34,6 +34,7 @@
     <name>welcome</name>
     <path>../../contents/Intro/welcome.htm</path>
   </defaultTopic>
+  <hpTopicPath></hpTopicPath>
   <chatbot>
     <displayName>Google Dialogflow</displayName>
     <name>dialogflow</name>

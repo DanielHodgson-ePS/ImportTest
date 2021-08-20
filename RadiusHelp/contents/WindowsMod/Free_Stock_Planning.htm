@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Free Stock Planning</title>
+  <meta name="topic-status" content="Draft" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/APPS.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/Drop-down.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/ModernTables.css" />
+</head>
+<body>
+  <h1>Free Stock Planning</h1>
+  <p>Use the <span class="software">Free Stock Planning</span> window,a ccessed by clicking the <span class="software">Run Free Stock Planning</span> button on the <span class="software">FSP </span>tab of the <a href="Purchase_Orders.htm">Purchase Orders</a> window, to process purchase requirements where it is not appropriate to reserve the requirements against specific inventory, purchase order lines or jobs.</p>
+  <p>You can select the requirements to be planned based on the following selections for item group, item, quarantine status, QA release status.</p>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+    <tbody>
+      <tr class="t1st">
+        <td>
+          <p>Field</p>
+        </td>
+        <td>
+          <p>Description</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p style="font-weight: bold;">From Item Group</p>
+        </td>
+        <td class="t2Col">
+          <p>Specify the start range for the item group.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p><span style="font-weight: bold;">From Item Type</span></p>
+        </td>
+        <td class="t2Col">
+          <p>Specify the start range for the item type. A group has to be selected before specifying the item type.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p style="font-weight: bold;">From Item</p>
+        </td>
+        <td class="t2Col">
+          <p>Specify the start range for the item code.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p style="font-weight: bold;">To Item Group</p>
+        </td>
+        <td class="t2Col">
+          <p>Specify the end range for the item group.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p style="font-weight: bold;">To Item Type</p>
+        </td>
+        <td class="t2Col">
+          <p>Specify the end range for the item type. A group has to be selected before specifying the item type.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p style="font-weight: bold;">To Item</p>
+        </td>
+        <td class="t2Col">
+          <p>Specify the end range for the item code.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p style="font-weight: bold;">Cutoff date</p>
+        </td>
+        <td class="t2Col">
+          <p>Specify the planning run cut off date.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p style="font-weight: bold;">Plan Stock available</p>
+        </td>
+        <td class="t2Col">
+          <p class="BodyText">Enter the delay time in days when comparing the have ready date with the due date for purchase orders and the production receipts. The default setting is 1 day.</p>
+          <ul class="Bullets">
+            <li class="Bullets" data-list-level="2"><span style="font-weight: bold;">Days after expected delivery from supplier</span> - Days to add to expected delivery date to determine planned available date.</li>
+            <li class="Bullets" data-list-level="2"><span style="font-weight: bold;">Days after expected receipt from production</span> - Days to add to expected receipt date to determine planned available date.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p style="font-weight: bold;">Generate Reorder Requirements <span style="font-weight: normal;">(Check box)</span></p>
+        </td>
+        <td class="t2Col">
+          <p>Select to generate reorder requirements while running a stock planning.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p><span class="software">Quarantined stock in planning calculation</span></p>
+        </td>
+        <td class="t2Col">
+          <p>Select whether to <span class="software">Exclude </span>or <span class="software">Include </span>quarantined stock in planning calculation.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p><span class="software">Stock waiting QA Release in planning calculation</span></p>
+        </td>
+        <td class="t2Col">
+          <p>Select to exclude stock waiting QA release in planning calculation.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p><span class="software">Generate Reorder Requirements</span> (Check Box)</p>
+        </td>
+        <td class="t2Col">
+          <p>This is used when you have the <span class="software">Inventory re-order level </span>field set to <span class="software">Company </span>or <span class="software">Plant </span>on the <span class="software">Inventory </span>tab of the <span class="software">Company Level Options</span> window. It allows you to process a range of items (by group, type or range of items) and generate reorder requirements based on item re-order level, minimum, maximum stock and re-order quantity.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p><span class="software">Quarantined stock in reorder calculation</span></p>
+        </td>
+        <td class="t2Col">
+          <p>Select whether to <span class="software">Exclude </span>or <span class="software">Include </span>quarantined stock in reorder calculation.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p><span class="software">Stock waiting QA Release in reorder calculation</span></p>
+        </td>
+        <td class="t2Col">
+          <p>Select whether to <span class="software">Exclude </span>or <span class="software">Include </span>stock waiting QA release in reorder calculation.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+    <tbody>
+      <tr class="t1st">
+        <td>
+          <p>Buttons</p>
+        </td>
+        <td>
+          <p>Description</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p style="font-weight: bold;">Plan</p>
+        </td>
+        <td class="t2Col">
+          <p>Click to run the Free Stock requirement planning details. A <span style="font-weight: bold;">Question</span> dialog box opens, click <span style="font-weight: bold;">Yes</span>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="t1st">
+          <p style="font-weight: bold;">Cancel</p>
+        </td>
+        <td class="t2Col">
+          <p>Click to cancel the free stock requirement planning. The<span style="font-weight: bold;"> Free Stock Planning</span> window closes.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+</body>
+</html>

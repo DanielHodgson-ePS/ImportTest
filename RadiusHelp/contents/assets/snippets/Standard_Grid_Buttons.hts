@@ -39,7 +39,7 @@
       </tr>
       <tr>
         <td>
-          <p><img src="../Images/Customize Column.png"/> <span class="software">Customize Column</span></p>
+          <p><img src="../Images/Icons/Customize Column.png"/> <span class="software">Customize Column</span></p>
         </td>
         <td>
           <p>Click to display the <span class="software">Customize Column List</span> where you can change which columns are displayed in the grid. </p>
@@ -64,7 +64,7 @@
       </tr>
       <tr>
         <td>
-          <p><img src="../Images/More.png"/> <span class="software">More Options</span></p>
+          <p><img src="../Images/Icons/More.png"/> <span class="software">More Options</span></p>
         </td>
         <td>
           <p>Click to select from a list of menu options.</p>

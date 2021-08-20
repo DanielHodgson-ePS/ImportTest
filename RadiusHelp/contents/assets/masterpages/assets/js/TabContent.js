@@ -6,7 +6,7 @@ window.addEventListener('resize', resizeTabs, true);
 function resizeTabs() {
 
 
-  console.log("resizing tabs");
+  //console.log("resizing tabs");
 
   var tablinkNavs = document.getElementsByClassName("tablink-navigation");
 
@@ -45,7 +45,7 @@ function openTab(pageName, elmnt, color) {
 
 function openDefaultTabs() {
 
-  console.log("opening default tabs");
+  //console.log("opening default tabs");
 
   // Opens all tabs with class="defaultopen"
   var tabDefaults = document.getElementsByClassName("defaultopen");

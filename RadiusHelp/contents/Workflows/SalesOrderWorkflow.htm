@@ -10,7 +10,6 @@
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <title>Sales Order Workflow</title>
   <meta name="topic-status" content="Draft" />
-  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../assets/css/APPS.css" />
   <link rel="stylesheet" type="text/css" href="../assets/css/Animations.css" />
   <link rel="stylesheet" type="text/css" href="../assets/css/Mermaid.css" />
@@ -27,11 +26,13 @@
       B -.-&gt; |Optional| C[Add Files to Sales Order]
       C-.-&gt; D
       D -.-&gt;|Optional| E[Add Extras]
+      
       %% Class Definitions
       %% =================
       class A cssClass
       click B call openTopicPreview(&quot;../../Tutorials/How_to_Create_a_Sales_Order.htm&quot;) &quot;Tooltip for a callback&quot;;
-      class B clickableNode</div>
+      class B clickableNode
+    </div>
   </div>
   <div class="modal" id="myModal">
     <div class="modal-content">
@@ -42,11 +43,9 @@
       <div class="modal-footer">
         <h3>Preview Footer</h3>
       </div>
-    </div> 
+    </div>
   </div>
   <p> </p>
-    <footer data-region="footer">
-      
-  </footer>
+  <footer data-region="footer"> </footer>
 </body>
 </html>
