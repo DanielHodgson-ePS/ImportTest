@@ -9,7 +9,7 @@
 <book navtitle="Tutorials" format="html" homepage-tile="assets/Images/ToC_Tile_Images/SystemConfiguration.jpeg" processing-role="normal">
   <page href="../contents/Tutorials/Configuring_File_Attachment_Settings.htm" format="html" homepage-tile="assets/Images/PreviewImages/ConfigFileAttach.jpg" processing-role="normal"></page>
   <page href="../contents/Tutorials/How_to_Create_a_Sales_Order.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToSalesOrder.jpg" processing-role="normal"></page>
-  <page href="../contents/Tutorials/How_to_Create_a_Purchase_Order.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToCreateAPurchaseOrder.jpg" processing-role="normal"></page>
+  <page href="../contents/Tutorials/How_to_Create_a_Purchase_Order.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToCreateAPurchaseOrder.jpg" processing-role="resource-only"></page>
   <page href="../contents/Tutorials/How_to_Create_a_Shipping_Request.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToShipReq.jpg" processing-role="normal"></page>
   <page href="../contents/Tutorials/How_to_Create_Views_and_Layouts.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToViews.jpg" processing-role="normal"></page>
   <page href="../contents/Tutorials/How_to_Use_the_Advanced_Search.htm" format="html" homepage-tile="assets/Images/PreviewImages/HowToAdvancedSearch.jpg" processing-role="normal"></page>
@@ -41,7 +41,7 @@
   <page href="../contents/WindowsMod/Purchase_Orders_(Add_Edit_Mode).htm" format="html" processing-role="normal"></page>
   <page href="../contents/WindowsMod/Purchase_Requirements_(Add_Edit_Mode).htm" format="html" processing-role="normal"></page>
 </book>
-<book navtitle="Workflows" format="html" processing-role="normal">
+<book navtitle="Workflows" format="html" processing-role="resource-only">
   <page href="../contents/Workflows/SalesOrderWorkflow.htm" format="html" processing-role="normal"></page>
   <page href="../contents/Workflows/Purchase_Orders_Workflow.htm" format="html" processing-role="normal"></page>
 </book>
