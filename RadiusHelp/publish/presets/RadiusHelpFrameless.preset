@@ -27,7 +27,7 @@
   </content>
   <type>frameless</type>
   <glosstermEffect type="number">0</glosstermEffect>
-  <outputPath>C:/EPS_Documentation/HelpOutput/Radius8.1-EAMod/</outputPath>
+  <outputPath>C:/EPS_Documentation/HelpOutput/RadiusMod/</outputPath>
   <name>RadiusHelpFrameless</name>
   <starterPage>index.htm</starterPage>
   <defaultTopic>
