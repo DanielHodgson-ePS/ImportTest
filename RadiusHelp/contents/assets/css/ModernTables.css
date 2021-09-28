@@ -60,10 +60,12 @@
 }
 
 .StdTable td {
+  font-family: Inter;
+  line-height: 1.5;
   position: relative;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .StdTable tbody p {

@@ -327,13 +327,13 @@
       </tbody>
     </table>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#">FSP (Free Stock Planning) Tab</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#">Free Stock Planning Tab</a></p>
   <div class="droptext" data-targetname="drop-down7">
-    <p>Use the <span class="software">FSP </span>tab to process purchase requirements where it is not appropriate to reserve the requirements against specific inventory, purchase order lines or jobs.</p>
+    <p>Use the <span class="software">Free Stock Planning </span>(FSP) tab to process purchase requirements where it is not appropriate to reserve the requirements against specific inventory, purchase order lines or jobs.</p>
     <h3>Filters</h3>
     <div class="droptext" data-targetname="drop-down9">
       <p>Use the filters to filter the data displayed in the grid. </p>
-      <p><img src="../assets/Images/Screenshots/FSP_Filters.png" /></p>
+      <p><img class="center-horizontal" height="68" src="../assets/Images/Screenshots/FSP_Filters.png" width="70%" /></p>
       <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
         <tbody>
           <tr class="t1st">
@@ -346,70 +346,34 @@
           </tr>
           <tr>
             <td>
-              <p><span class="software">All Sales Orders</span></p>
+              <p><span class="software">Free Stock UnPlanned</span></p>
             </td>
             <td>
-              <p>Click to show all sales orders in the grid, regardless of their status. </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p><span class="software">Held</span></p>
-            </td>
-            <td>
-              <p>Click to show sales orders with a status of held in the grid. </p>
+              <p>Click to show requirements that cannot be fully satisfied by free inventory. </p>
             </td>
           </tr>
           <tr>
             <td>
-              <p><span class="software">Completed</span></p>
+              <p><span class="software">Free Stock Inventory</span></p>
             </td>
             <td>
-              <p>Click to show sales orders with a status of completed in the grid. </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p><span class="software">Authorized</span></p>
-            </td>
-            <td>
-              <p>Click to show sales orders with a status of authorized in the grid. </p>
+              <p>Click to show requirements that can be satisfied from free stock inventory.</p>
             </td>
           </tr>
           <tr>
             <td>
-              <p><span class="software">Credit Held</span></p>
+              <p><span class="software">Free Stock Production</span></p>
             </td>
             <td>
-              <p>Click to show sales orders with a status of credit held in the grid. </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p><strong>Intercompany Sales Orders</strong></p>
-            </td>
-            <td>
-              <p>Click to show intercompany sales orders.</p>
+              <p>Click to show requirements that can be satisfied by production jobs.</p>
             </td>
           </tr>
           <tr>
             <td>
-              <p><img src="../assets/Images/Icons/More.png" /> </p>
+              <p><span class="software">Free Stock Purchase Order</span></p>
             </td>
             <td>
-              <p>Click to display further filter options or to create a custom view:</p>
-              <ul class="Disc">
-                <li>
-                  <p><img src="../assets/Images/CommandsMod/Save.png" />  <span class="software">Save View</span>: Click to save the current filter bar selection. </p>
-                </li>
-                <li>
-                  <p><img src="../assets/Images/Icons/ManageViews.png" />  <span class="software">Manage Views</span>: Click to display the <a data-xref="{title}" href="Manage_View.htm">Manage Views</a> window where you can select the views to display by default. </p>
-                </li>
-                <li>
-                  <p><img src="../assets/Images/Icons/ViewAccessControlButton.png" />  <span class="software">View Access Control</span>: Click to assign view permissions. </p>
-                </li>
-              </ul>
-              <p>For more information, see  <a data-xref="{title}" href="../Tutorials/How_to_Create_Views_and_Layouts.htm">How to Create Views and Layouts</a> and  <a data-xref="{title}" href="../Tutorials/Managing_Views_and_Layouts.htm">Managing Views and Layouts</a>. </p>
+              <p>Click to show requirments that can be satisfied by purchase orders.</p>
             </td>
           </tr>
         </tbody>
@@ -417,29 +381,33 @@
     </div>
     <h3>Buttons</h3>
     <table cellpadding="1" cellspacing="0" class="StdTable" style="border-collapse:collapse;">
+      <colgroup>
+        <col style="width: 136px;" />
+        <col style="width: 918px;" />
+      </colgroup>
       <tbody>
         <tr class="t1st">
-          <td>
+          <td style="">
             <p>Filter Button</p>
           </td>
-          <td>
+          <td style="">
             <p>Description</p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="">
             <p><b>Run Free Stock Planning</b></p>
           </td>
-          <td>
-            <p>Click to display the <span class="software">Free Stock Planning</span> window, where you can process purchase requirements where it is not appropriate to reserve the requirements against specific inventory, purchase order lines or jobs. </p>
+          <td style="">
+            <p>Click to display the <span class="software">Free Stock Planning</span> window, where you can check for requirements that are set to <span class="Emphasis">Use free stock</span> where the have ready date is within the cut-off date and compile a free stock availability list from the free stock inventory quantity and all outstanding purchase order and production job quantities.</p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="">
             <p><span class="software">Grid View / Column View</span></p>
           </td>
-          <td>
-            <p>Click to switch between displaying the Free Stock Planning grid and the Free Stock Planning columns sections.</p>
+          <td style="">
+            <p>Click to switch between displaying the <span class="software">Free Stock Planning</span> grid and the <span class="software">Free Stock Planning</span> columns sections.</p>
           </td>
         </tr>
       </tbody>
@@ -536,6 +504,10 @@
         <td>
           <p>Select if you want to include inventory flagged as quarantined in the search results.</p>
         </td>
+      </tr>
+      <tr>
+        <td>Required In</td>
+        <td> </td>
       </tr>
     </tbody>
   </table>
